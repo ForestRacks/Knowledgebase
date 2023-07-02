@@ -1,8 +1,9 @@
 {
   "index": "Introduction",
   "mysql": "MySQL Tricks",
-  "about": {
-    "title": "About",
+  "about": "About Us",
+  "test": {
+    "title": "Stand-alone page",
     "type": "page"
   },
   "contact": {
