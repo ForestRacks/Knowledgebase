@@ -1,7 +1,8 @@
 {
   "index": "Introduction",
-  "mysql": "MySQL Tricks",
   "about": "About Us",
+  "mysql": "MySQL Tricks",
+  "games": "Game Servers",
   "test": {
     "title": "Stand-alone page",
     "type": "page"
