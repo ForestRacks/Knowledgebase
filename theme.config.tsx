@@ -9,9 +9,9 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.forestracks.com',
   },
-  docsRepositoryBase: 'https://github.com/ForestRacks/Knowledgebase',
+  docsRepositoryBase: 'https://github.com/ForestRacks/Knowledgebase/blob/Production',
   footer: {
-    text: 'ForestRacks',
+    text: '© 2023 Forest Racks LLC',
   },
 }
 
