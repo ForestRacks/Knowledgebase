@@ -5,10 +5,6 @@
   "games": "Game Servers",
   "installing": "Install Software",
   "networking": "Networking",
-  "test": {
-    "title": "Stand-alone page",
-    "type": "page"
-  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
