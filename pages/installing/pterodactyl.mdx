@@ -1,0 +1,17 @@
+# Install Pterodactyl
+This guide walks you through the process of using our a custom Pterodactyl Panel installation bash script to easily setup Pterodactyl Panel. If you encounter any issues during the installation process, our troubleshooting section has some helpful tips.
+
+## Installation:
+1) To get started, it's important to ensure that your machine is freshly reinstalled if you've made any changes to it beforehand. 
+2) Point a DNS A-Record to your machine's IP address, such as panel.forestracks.com to 192.168.53.72.
+3) To download and run the installer, simply enter the following command into your terminal and follow the prompts:
+```bash
+bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
+```
+## Post Installation:
+Please note "YOUR_FQDN" refers to the panel URL you set during the installation process.
+* After the installation is complete, go to http://YOUR_FQDN/admin/nodes/view/1/allocation to add the necessary ports for your games.
+
+## Troubleshooting:
+* If you receive a mysql connection error, you may have run the installer multiple times – in this case, the best solution is to reinstall your operating system and run the install script again.
+* If you encounter Let's Encrypt SSL generation errors, it could be because you're using an IP address instead of a domain or because the FQDN you're trying to generate an SSL for doesn't have an A-Record pointing to your machine IP.

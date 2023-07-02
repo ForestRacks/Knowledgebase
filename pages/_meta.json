@@ -3,6 +3,7 @@
   "about": "About Us",
   "mysql": "MySQL Tricks",
   "games": "Game Servers",
+  "installing": "Install Software",
   "test": {
     "title": "Stand-alone page",
     "type": "page"
