@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/ForestRacks/Knowledgebase',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.forestracks.com',
   },
   docsRepositoryBase: 'https://github.com/ForestRacks/Knowledgebase',
   footer: {
