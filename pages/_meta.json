@@ -1,7 +1,6 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "mysql": "MySQL Tricks",
   "about": {
     "title": "About",
     "type": "page"

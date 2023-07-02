@@ -1,0 +1,12 @@
+# MySQL Importing
+
+## import a .sql file from the MySQL command line
+After entering the MySQL shell with the `mysql` command, you can use the "source" command to import `your_sql_file.sql`
+```mysql
+use db_name;
+SET autocommit=0 ; source /root/your_sql_file.sql ; COMMIT ;
+```
+## import a .sql file from bash
+```bash
+mysql -p db_name < your_sql_file.sql
+```

@@ -1,0 +1,8 @@
+# MySQL Backups
+To protect your data, you should regularly take backups of your database into a .sql dump
+
+## Dump into separate .sql files
+You can backup each MySQL database into its own individual .sql file by using:
+```sql
+mysql -s -r -e 'show databases' | while read db; do mysqldump $db > ${db}.sql; done 
+```
