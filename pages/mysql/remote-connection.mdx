@@ -1,5 +1,14 @@
 # Enabling Remote Connection to MySQL
 
+## Creating a MySQL user for a remote IP.
+For specifics on how [MySQL users](/mysql/creating-users) work and how [MySQL privileges](/mysql/creating-databases) work, follow the corresponding guides but this example, is using the MySQL shell to allow access to the remote IP `192.168.53.72`.
+```sql
+# You should change the username and password below to something unique.
+CREATE USER 'your_user'@'192.168.53.72' IDENTIFIED BY 'somePasswordHere';
+# Allocate privileges to the user you created
+GRANT ALL PRIVILEGES *.* TO 'your_user'@'192.168.53.72';
+```
+
 ## Changing the MySQL Configuration
 
 To enable remote connections to your MySQL server, you need to modify the MySQL configuration file usually located at `/etc/my.cnf` but if you cannout find it, type `find /etc -iname my.cnf` to locate it.
