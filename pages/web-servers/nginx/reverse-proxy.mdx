@@ -29,4 +29,4 @@ The `ssl on;` directive enables SSL/TLS for the server block.
 
 The `location /` block specifies the location where requests will be proxied. In this example, all requests will be forwarded to http://localhost:3000, which is the target server running on port 3000 on the local machine. Adjust the proxy_pass directive to point to the appropriate backend server or application.
 
-By using this configuration, Nginx acts as a reverse proxy, forwarding requests from port 443 on your domain to the backend server running on port 3000, while still benefitting from SSL/TLS encryption externally.
+By using this configuration, Nginx acts as a reverse proxy, forwarding requests from port 443 on your domain to the backend server running on port 3000, while still benefitting from [Let's Encrypt](/web-servers/nginx/setting-up-nginx#generating-ssltls-certificates) SSL/TLS encryption for external traffic.

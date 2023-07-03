@@ -1,0 +1,99 @@
+# Getting started with Apache
+
+## Install Apache
+For Debian/Ubuntu:
+```bash
+apt install apache2
+```
+For RHEL/CentOS:
+```bash
+yum install apache2
+```
+
+## Generating SSL/TLS Certificates
+
+### Downloading Certbot
+To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
+```bash
+sudo apt update
+sudo apt install -y certbot
+sudo apt install -y python3-certbot-apache
+```
+
+### Completing the HTTP Challenge
+1) Make sure you have port 80 open on your firewall
+2) Request a certificate from Let's Encrypt, you should replace `example.com` with the domain you would like to generate a certificate for.
+```bash
+certbot certonly --apache -d example.com
+```
+
+### Automatically Renewing SSL/TLS certificates
+1) Install crontab
+For Debian/Ubuntu:
+```bash
+apt install crontab
+```
+For RHEL/CentOS:
+```bash
+yum install crontab
+```
+Create a crontab rule for the automatic renewal:
+```bash
+(crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
+```
+
+## Webserver Configuration
+Remove the default configuration:
+```bash
+a2dissite 000-default.conf
+```
+
+1) Create a new Apache site configuration like `website.conf` in `/etc/apache/sites-available` using a text editor like nano or vim.
+2) Paste the text below into the file, replacing `<domain_here>` with your domain:
+```apache
+<VirtualHost *:80>
+  ServerName <domain_here>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /var/www/whmcs
+  Options -Indexes
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</VirtualHost>
+
+<VirtualHost *:443>
+  ServerName <domain_here>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /var/www/html
+  Options -Indexes
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+  # SSL Configuration
+  SSLEngine on
+  SSLCertificateFile /etc/letsencrypt/live/<domain_here>/fullchain.pem
+  SSLCertificateKeyFile /etc/letsencrypt/live/<domain_here>/privkey.pem
+
+  # Security Headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set X-Robots-Tag "none"
+  Header always set Content-Security-Policy "frame-ancestors 'self'"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "same-origin"
+  Header always set Permissions-Policy "accelerometer=(), camera=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), usb=()"
+</VirtualHost>
+```
+
+Enable your new Apache website configuration and required modules:
+```bash
+sudo ln -s /etc/apache2/sites-available/website.conf /etc/apache2/sites-enabled/website.conf
+sudo a2enmod rewrite
+sudo a2enmod ssl
+sudo systemctl restart apache2
+```
