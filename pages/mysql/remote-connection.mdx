@@ -1,7 +1,7 @@
 # Enabling Remote Connection to MySQL
 
 ## Creating a MySQL user for a remote IP.
-For specifics on how [MySQL users](/mysql/creating-users) work and how [MySQL privileges](/mysql/creating-databases) work, follow the corresponding guides but this example, is using the MySQL shell to allow access to the remote IP `192.168.53.72`.
+For specifics on how [MySQL users](/mysql/setting-up-mysql#creating-a-mysql-user) work and how [MySQL privileges](/mysql/setting-up-mysql#setting-mysql-user-privileges) work, follow the corresponding guides but this example, is using the MySQL shell to allow access to the remote IP `192.168.53.72`.
 ```sql
 # You should change the username and password below to something unique.
 CREATE USER 'your_user'@'192.168.53.72' IDENTIFIED BY 'somePasswordHere';

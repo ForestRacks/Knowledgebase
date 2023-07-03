@@ -1,8 +1,26 @@
-# Setting MySQL User Privileges
+# Setting up MySQL
+
+## Creating a MySQL Database
+
+1) Enter the MySQL shell by typing `mysql` in your terminal
+2) Create a database, the following example is creating a database called `your_database`:
+```sql
+CREATE USER 'your_user'@'192.168.53.72' IDENTIFIED BY 'somePasswordHere';
+```
+
+## Creating a MySQL User
+
+1) Enter the MySQL shell by typing `mysql` in your terminal
+2) Create a user, the following example is creating a user called `your_user`:
+```sql
+CREATE DATABASE your_database;
+```
+
+## Setting MySQL User Privileges
 
 This documentation page aims to provide a user-friendly guide on how to manage user permissions in MySQL.
 
-## Granting All Permissions to a User on a Specific Database
+### Granting All Permissions to a User on a Specific Database
 
 To assign all permissions to the user `your_user` on the `your_database` database, follow these steps:
 ```sql
@@ -10,7 +28,7 @@ GRANT ALL PRIVILEGES ON your_database.* TO 'your_user'@'127.0.0.1' WITH GRANT OP
 ```
 This command grants the user `your_user` full access to perform any operation on the specified database. The "WITH GRANT OPTION" allows this user to grant or revoke privileges for other users.
 
-## Granting All Permissions to a User on All Databases
+### Granting All Permissions to a User on All Databases
 If you want to grant all permissions to the user `your_user` on all databases, use the following command:
 ```sql
 GRANT ALL PRIVILEGES *.* TO 'your_user'@'127.0.0.1';
@@ -18,4 +36,4 @@ GRANT ALL PRIVILEGES *.* TO 'your_user'@'127.0.0.1';
 
 This command assigns the user `your_user` with privileges across all databases. It enables the user to perform any operation on any table within any database.
 
-If you need to allow connection from a remote IP, please follow our [remote connection guide](/mysql/remote-connection).
+If you need to allow connection from a remote IP, please follow our [remote connection guide](/mysql/setting-up-mysql#setting-mysql-user-privileges).
