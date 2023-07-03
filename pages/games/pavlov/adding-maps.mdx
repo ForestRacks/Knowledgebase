@@ -1,0 +1,58 @@
+# Adding Maps to Pavlov
+
+## Configuration
+
+The process of adding maps to your Pavlov server varies whether you use Shack or PC. Before adding a map, you should first select a [Game Mode](/games/pavlov/adding-maps#available-game-modes) and then follow the steps below.
+
+1) First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
+2) Next click the "File Manager" panel tab
+3) Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
+4) At the bottom of the file, add a new map like `MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")`, here's an  example:
+```ini
+...
+LimitedAmmoType=2
+TickRate=90
+TimeLimit=60
+MapRotation=(MapId="sand", GameMode="DM")
+MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")
+```
+
+## Finding Maps to use
+### Pavlov PC
+If you use Standard PC or Beta PC, you can either use maps from [the Steam Workshop](https://steamcommunity.com/workshop/about/?appid=555160) or the new recommended [mod.io](https://mod.io/g/pavlov) site.
+
+If you use maps from the Steam Workshop, The `MapId` should start with "UGC" and look like `UGC######`. Find the map you want in the workshop. For example, notice the URL for Mirage ([https://steamcommunity.com/sharedfiles/filedetails/?id=2670152485](https://steamcommunity.com/sharedfiles/filedetails/?id=2670152485)). The 10 numbers at the end of the URL are what you need, so `UGC2670152485` would be the MapId for Mirage.
+
+If you use maps from mod.io, the method is very similar, you still start the MapId with UGC except rather than getting the ID number from the URL, you will see it listed as the "Resource ID" on the map page.
+
+Here's an example of what the MapId in your Game.ini will look like for PC:
+```ini
+...
+LimitedAmmoType=2
+TickRate=90
+TimeLimit=60
+MapRotation=(MapId="sand", GameMode="DM")
+MapRotation=(MapId="UGC1758245796", GameMode="GUN")
+```
+
+### Pavlov Quest
+If you use Shack RC or Shack Live, using maps is a bit more complicated, you first need to download **an up-to-date version** of the map from a reputable source like the creator, the channel in Horde's discord, or the channel in Arctic's discord. Then you have to upload and extract the map to `Pavlov/Saved/maps/` on your ForestRacks `File Manager` panel tab and finally list the map at the bottom of your `Game.ini` using the method mentioned on [Configuration](/games/pavlov/adding-maps#configuration). 
+
+Note: Outdated maps will not work, make sure the map was updated is from 2023 or newer.
+
+## Available Game Modes
+* Custom - For map creators
+* DM - Death Match
+* KOTH - King of The Hill
+* GUN - Gun Game
+* OITC - One in The Chamber
+* SND - Search and Destroy
+* TANKTDM - WW2 Team Death Match
+* TDM - Team Death Match
+* TTT - Trouble in Terrorist Town
+* WW2GUN - WW2 Gun Game
+* ZWV - Zombie Wave Survival
+* HIDE - The Hidden
+* INFECTION - Hidden Infection
+* PUSH - Push
+* PH - Prophunt
