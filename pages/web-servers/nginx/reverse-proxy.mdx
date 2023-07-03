@@ -1,0 +1,32 @@
+# Using Proxy Passthrough with Nginx
+
+To proxy traffic from port 443 on your domain to port 3000 using Nginx, you can use the following configuration:
+```nginx
+  server {
+    listen 80;
+    server_name <domain_here>;
+    return 301 https://$host$request_uri;
+  }
+  server {
+    listen 443;
+    server_name <domain_here>;
+    ssl_certificate     /etc/letsencrypt/live/<domain_here>/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/<domain_here>/privkey.pem;
+
+    ssl on;
+
+    location / {
+      proxy_pass http://localhost:3000;
+    }
+  }
+```
+
+In this configuration, the first server block listens on port 80 and redirects all incoming HTTP requests to HTTPS. The second server block listens on port 443 and handles HTTPS requests for your `<domain_here>`.
+
+To enable SSL/TLS encryption, you need to specify the paths to your SSL certificate and private key files. Replace `<domain_here>` in the `ssl_certificate` and `ssl_certificate_key` directives with the appropriate path to your certificate and key files.
+
+The `ssl on;` directive enables SSL/TLS for the server block.
+
+The `location /` block specifies the location where requests will be proxied. In this example, all requests will be forwarded to http://localhost:3000, which is the target server running on port 3000 on the local machine. Adjust the proxy_pass directive to point to the appropriate backend server or application.
+
+By using this configuration, Nginx acts as a reverse proxy, forwarding requests from port 443 on your domain to the backend server running on port 3000, while still benefitting from SSL/TLS encryption externally.
