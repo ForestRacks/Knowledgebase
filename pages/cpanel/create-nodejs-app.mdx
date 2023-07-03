@@ -1,0 +1,19 @@
+# Create a Node.js application cPanel's Node.js Selector
+
+## Create the application on the cPanel Selector
+1) Locate the "Software" section and click "Setup Node.js App"
+2) On the Node.js selector page, click "CREATE APPLICATION"
+3) Provide the necessary information in the application setup form:
+* Node.js version: Choose your preferred version from the available options in the drop-down list.
+* Application mode: Select either `Development` or `Production` from the provided list. You may initially choose the `Development` mode and switch to `Production` later, if needed.
+* Application root: Specify the file system location for your application files. This entry will be appended to `/home/username` to form the complete path to the application files in the cPanel home directory.
+4) After setting your desired options, click "CREATE"
+## Upload the Node.js application
+1) Locate the "Files" section and "File Manager"
+2) Upload and extract your Node.js application ensuring that the `package.json` file is in the Application root directory you specified earlier
+## Install the Node.js packages
+1) Navigate back to the "Setup Node.js App" page
+2) In the "Actions" column of the "Web Applications" list, click the pencil icon to edit the application
+3) Click "Run NPM Install"
+
+Please note alternatively, if you use CloudLinux, the ideal way of creating a Node.js application is through the CloudLinux selector.
