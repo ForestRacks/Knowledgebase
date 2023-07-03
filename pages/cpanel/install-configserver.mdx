@@ -1,0 +1,24 @@
+# Install ConfigServer Firewall for cPanel WHM
+
+## Installing ConfigServer
+Change to source directory:
+```bash
+cd /usr/src
+```
+Remove old interfering installations:
+```bash
+rm -fv csf.tgz
+```
+Download, extract, and run ConfigServer
+```bash
+wget https://download.configserver.com/csf.tgz
+tar -xzf csf.tgz
+cd csf
+sh install.sh
+```
+
+## Uninstalling ConfigServer
+```bash
+cd /etc/csf
+sh uninstall.sh
+```
