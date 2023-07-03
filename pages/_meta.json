@@ -1,10 +1,11 @@
 {
   "index": "Introduction",
   "about": "About Us",
-  "mysql": "MySQL Tricks",
+  "pricing": "Pricing",
+  "networking": "Networking",
   "games": "Game Servers",
   "installing": "Install Software",
-  "networking": "Networking",
+  "mysql": "MySQL Tricks",
   "cpanel": "cPanel",
   "contact": {
     "title": "Contact ↗",
