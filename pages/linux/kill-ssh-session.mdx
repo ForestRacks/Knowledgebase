@@ -1,0 +1,27 @@
+Terminate an SSH Session
+To terminate an SSH session, follow the steps below:
+
+List the active SSH sessions by running the following command in the terminal:
+```bash
+who
+```
+This will display the currently active sessions.
+
+Identify the process ID (PID) associated with the SSH session you wish to terminate. Use the netstat command in conjunction with grep to filter the results. Execute the following command:
+```bash
+netstat -tnp | grep '192.168.53.72'
+```
+This will provide output similar to the following:
+
+```shell
+# tcp        0      0 MACHINE_IP:22     192.168.53.72:20500    ESTABLISHED 3368682/sshd: root
+```
+Note down the PID value (e.g., 3368682), as it will be used in the next step.
+
+Terminate the SSH session by killing the process associated with the identified PID. Run the following command:
+```bash
+kill -9 3368682
+```
+This command will forcefully terminate the SSH session.
+
+Please exercise caution when terminating SSH sessions, as this action will immediately disconnect any ongoing connections.
