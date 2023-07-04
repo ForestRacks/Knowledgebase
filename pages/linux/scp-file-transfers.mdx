@@ -1,0 +1,5 @@
+# Transfer files with SCP
+The following is an example of how to transfer `example.txt` to the root directory of the remote host `192.168.53.72`:
+```bash
+scp -P 22 -r /root/example.txt root@192.168.53.72:/root
+```
