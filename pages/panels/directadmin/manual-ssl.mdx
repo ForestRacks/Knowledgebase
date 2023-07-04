@@ -1,0 +1,21 @@
+# Manually Generate a TLS/SSL Certificate
+
+## Locate current certificate
+```bash
+/usr/local/directadmin/directadmin config | egrep "^ssl=|^cacert=|^cakey="
+```
+
+## Generate certificate
+Replace `<domain>` with the FQDN that you are generating a SSL/TLS certificate for.
+```bash
+/usr/local/directadmin/scripts/letsencrypt.sh request <domain> 2048
+```
+## Check new certificate status
+The following is an example of how to check the DirectAdmin dashboard certificate but you may need to replace the path `/usr/local/directadmin/conf/cacert.pem` with the location of your new certificate
+```bash
+openssl x509 -in  /usr/local/directadmin/conf/cacert.pem -text -noout
+```
+## Build DirectAdmin with the new certificate
+```bash
+/usr/local/directadmin/custombuild/build rewrite_confs
+```
