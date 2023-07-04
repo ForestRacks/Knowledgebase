@@ -1,0 +1,23 @@
+# Installing Node Version Manager
+
+## Install NVM on RHEL/Debian
+
+[Node Version Manager](https://github.com/nvm-sh/nvm)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
+
+## Install NVM on AlpineLinux
+Update your packages:
+```bash
+apk upgrade --available
+```
+
+Add required packages:
+```bash
+apk add -U curl bash ca-certificates openssl ncurses coreutils python3 make gcc g++ libgcc linux-headers grep util-linux binutils findutils
+Run installer:
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
