@@ -1,0 +1,40 @@
+# Skip MySQL Password Authentication
+
+For certain software you may need to temporarily disable your MySQL root password authentication.
+
+## Closing MySQL on the firewall
+When disabling authentication, it is highly recommended that your firewall is closed, make sure you read the guide specific to your firewall software to accomplish this and use a port tester to make sure the port is actually closed before starting the next step.
+
+For UFW, check the status of your UFW rules by running the following command:
+```bash
+ufw status numbered
+```
+To delete the rule, use the following command, replacing `<rule_number>` with the actual number of the rule you want to delete:
+```bash
+ufw delete <rule_number>
+```
+For example, if the rule number is 3, the command would be:
+```bash
+sudo ufw delete 3
+```
+
+
+## Disable the service
+For MariaDB:
+```bash
+systemctl stop mariadb
+```
+For MySQL:
+```bash
+systemctl stop mysql
+```
+
+## Turn on MySQLd safe mode
+```bash
+sudo mysqld_safe --skip-grant-tables --skip-networking
+```
+
+## Enter the MySQL Shell
+```bash
+mysql -u root
+```
