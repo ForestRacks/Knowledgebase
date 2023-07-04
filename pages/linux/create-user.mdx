@@ -1,0 +1,13 @@
+# Create a Linux User with a Specific Home Directory
+
+1) Open a terminal or log in to your Linux system.
+2) Run the following command to create a user named `bitwarden`:
+```bash
+useradd -G docker,sudo -s /bin/bash -m -d /srv/bitwarden bitwarden
+```
+This command creates the user `bitwarden`, assigns the primary group as `bitwarden`, and adds the user to the `docker` and `sudo` groups. The `-s /bin/bash flag` sets the default shell for the user, while `-m` creates the home directory if it doesn't exist, and `-d /srv/bitwarden` specifies the desired home directory.
+3) Set the ownership of the home directory to the bitwarden user by executing:
+```bash
+chown -R bitwarden: /srv/bitwarden
+```
+This command ensures that the user `bitwarden` has full ownership of the `/srv/bitwarden` directory and all its contents.
