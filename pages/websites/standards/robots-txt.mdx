@@ -10,7 +10,7 @@ To ensure proper usage of `robots.txt`, it is recommended to follow the standard
 1) Open a text editor or any preferred text editing software.
 2) Start a new file and save it as "robots.txt".
 3) Begin by adding the following lines at the beginning of the file to specify the rules for all web robots:
-```bash
+```bash filename="robots.txt" copy
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 ```
@@ -32,7 +32,7 @@ Make sure to refer to the robotstxt.org website for detailed information on thes
 If you use Cloudflare, disallowing `/cdn-cgi/` is recommended as it can cause issues with various crawlers.
 
 This can be accomplished with:
-```bash
+```bash filename="robots.txt" copy
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /cdn-cgi/

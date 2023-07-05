@@ -8,7 +8,7 @@ The process of adding maps to your Pavlov server varies whether you use Shack or
 2) Next click the "File Manager" panel tab
 3) Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
 4) At the bottom of the file, add a new map like `MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")`, here's an  example:
-```ini
+```ini filename="Game.ini" {6} copy
 ...
 LimitedAmmoType=2
 TickRate=90
@@ -26,7 +26,7 @@ If you use maps from the Steam Workshop, The `MapId` should start with "UGC" and
 If you use maps from mod.io, the method is very similar, you still start the MapId with UGC except rather than getting the ID number from the URL, you will see it listed as the "Resource ID" on the map page.
 
 Here's an example of what the MapId in your Game.ini will look like for PC:
-```ini
+```ini filename="Game.ini" {6} copy
 ...
 LimitedAmmoType=2
 TickRate=90

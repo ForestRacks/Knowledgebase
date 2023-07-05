@@ -50,7 +50,7 @@ rm /etc/nginx/sites-enabled/default
 
 1) Create a new Nginx site configuration like `website.conf` in `/etc/nginx/sites-available` using a text editor like nano or vim.
 2) Paste the text below into the file, replacing `<domain>` with your domain:
-```nginx
+```nginx filename="website.conf" copy
 server_tokens off;
 
 server {

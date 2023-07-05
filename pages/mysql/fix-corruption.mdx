@@ -21,7 +21,7 @@ OPTIMIZE TABLE statements;
 ## Recover a MySQL database
 1) Open the MySQL configuration `my.cnf` file using a text editor like nano or vim.
 2) Add text below to the bottom of the file:
-```ini
+```ini filename="my.cnf" copy
 [mysqld]
 innodb_force_recovery = 1
 ```

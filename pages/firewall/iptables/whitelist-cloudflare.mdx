@@ -1,7 +1,7 @@
 # Only allow traffic from Cloudflare with IPTables
 
 Run the following script:
-```bash
+```bash filename="cffw.sh" copy
 #!/bin/sh
 
 curl -s https://www.cloudflare.com/ips-v4 -o /tmp/cf_ips

@@ -1,7 +1,7 @@
 # Using Proxy Passthrough with Nginx
 
 To proxy traffic from port 443 on your domain to port 3000 using Nginx, you can use the following configuration:
-```nginx
+```nginx filename="website.conf" {15} copy
   server {
     listen 80;
     server_name <domain>;
