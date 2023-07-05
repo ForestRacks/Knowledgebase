@@ -33,3 +33,11 @@ cat /root/selector2.txt
 2) Click the domain that you are adding the DKIM to
 3) Change the "Sign messages for this domain with DKIM signatures" toggle to "Enabled"
 4) Upload the private keys from the `selector1.private` and `selector2.private` files to Office365
+
+## Microsoft Managed DKIM
+Alternatively, you might want to use the managed DKIM provided by Microsoft which can be accomplished by:
+1) Go to your DNS Provider's Portal
+2) Click "Add Record" on the DNS page
+3) Select a `CNAME-Record`
+4) Set the name as `selector1._domainkey`
+5) Set the value as `selector1-example-com._domainkey.examplecom.onmicrosoft.com` replacing `example-com` and `examplecom` with your corrosponding domain
