@@ -49,10 +49,10 @@ a2dissite 000-default.conf
 ```
 
 1) Create a new Apache site configuration like `website.conf` in `/etc/apache/sites-available` using a text editor like nano or vim.
-2) Paste the text below into the file, replacing `<domain_here>` with your domain:
+2) Paste the text below into the file, replacing `<domain>` with your domain:
 ```apache
 <VirtualHost *:80>
-  ServerName <domain_here>
+  ServerName <domain>
   ServerAdmin webmaster@localhost
   DocumentRoot /var/www/whmcs
   Options -Indexes
@@ -66,7 +66,7 @@ a2dissite 000-default.conf
 </VirtualHost>
 
 <VirtualHost *:443>
-  ServerName <domain_here>
+  ServerName <domain>
   ServerAdmin webmaster@localhost
   DocumentRoot /var/www/html
   Options -Indexes
@@ -76,8 +76,8 @@ a2dissite 000-default.conf
 
   # SSL Configuration
   SSLEngine on
-  SSLCertificateFile /etc/letsencrypt/live/<domain_here>/fullchain.pem
-  SSLCertificateKeyFile /etc/letsencrypt/live/<domain_here>/privkey.pem
+  SSLCertificateFile /etc/letsencrypt/live/<domain>/fullchain.pem
+  SSLCertificateKeyFile /etc/letsencrypt/live/<domain>/privkey.pem
 
   # Security Headers
   Header always set X-Content-Type-Options "nosniff"

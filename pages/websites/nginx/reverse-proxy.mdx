@@ -4,14 +4,14 @@ To proxy traffic from port 443 on your domain to port 3000 using Nginx, you can 
 ```nginx
   server {
     listen 80;
-    server_name <domain_here>;
+    server_name <domain>;
     return 301 https://$host$request_uri;
   }
   server {
     listen 443;
-    server_name <domain_here>;
-    ssl_certificate     /etc/letsencrypt/live/<domain_here>/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/<domain_here>/privkey.pem;
+    server_name <domain>;
+    ssl_certificate     /etc/letsencrypt/live/<domain>/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/<domain>/privkey.pem;
 
     ssl on;
 
@@ -21,9 +21,9 @@ To proxy traffic from port 443 on your domain to port 3000 using Nginx, you can 
   }
 ```
 
-In this configuration, the first server block listens on port 80 and redirects all incoming HTTP requests to HTTPS. The second server block listens on port 443 and handles HTTPS requests for your `<domain_here>`.
+In this configuration, the first server block listens on port 80 and redirects all incoming HTTP requests to HTTPS. The second server block listens on port 443 and handles HTTPS requests for your `<domain>`.
 
-To enable SSL/TLS encryption, you need to specify the paths to your SSL certificate and private key files. Replace `<domain_here>` in the `ssl_certificate` and `ssl_certificate_key` directives with the appropriate path to your certificate and key files.
+To enable SSL/TLS encryption, you need to specify the paths to your SSL certificate and private key files. Replace `<domain>` in the `ssl_certificate` and `ssl_certificate_key` directives with the appropriate path to your certificate and key files.
 
 The `ssl on;` directive enables SSL/TLS for the server block.
 
