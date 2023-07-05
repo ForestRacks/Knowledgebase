@@ -1,0 +1,30 @@
+# Blocking IP Access to Docker Container
+
+Step 1: Accessing the Command Line Interface (CLI)
+To begin, open a terminal or SSH into the host machine where the Docker container is running. Ensure that you have administrative privileges to execute the iptables commands.
+
+Step 2: Identify the Docker Container's Network Chain
+The DOCKER chain is created by Docker and used for communication between the host and Docker containers. This chain allows traffic to flow between Docker containers and the host. We will use this chain to block IP access to the Docker container.
+
+Step 3: Block IP Access to Docker Container
+Execute the following command to block the IP address from accessing the Docker container:
+
+```nginx
+iptables -I DOCKER -s 192.168.53.72 -j DROP
+```
+The command above inserts a rule at the beginning of the DOCKER chain, -I DOCKER, to drop any traffic coming from the specified IP address, -s 192.168.53.72.
+
+Step 4: Verify the Rule
+To confirm that the IP address has been blocked successfully, execute the following command:
+
+```bash
+iptables -L -n | grep 192.168.53.72
+```
+This command lists all the active iptables rules and filters the output to display only rules related to the specified IP address.
+
+If the IP address is blocked successfully, you will see an output similar to the following:
+
+```sql
+DROP       all  --  192.168.53.72       0.0.0.0/0
+```
+This indicates that any traffic from the IP address 192.168.53.72 is being dropped.

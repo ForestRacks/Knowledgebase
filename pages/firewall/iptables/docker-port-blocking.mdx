@@ -1,0 +1,32 @@
+# Blocking Ports for Docker Container
+
+Step 1: Accessing the Command Line Interface (CLI)
+Ensure you have administrative privileges and open a terminal or SSH into the host machine where the Docker container is running.
+
+Step 2: Identify the Docker Container's Network Chain
+Similar to the previous guide, we need to identify the DOCKER chain created by Docker for communication between the host and containers.
+
+Step 3: Block Ports for Docker Container
+Execute the following command to block a specific port for the Docker container:
+
+```bash
+iptables -I DOCKER -p tcp --dport <port_number> -j DROP
+```
+Replace `<port_number>` with the actual port number you want to block. For example, to block port 80, the command will be:
+
+```bash
+iptables -I DOCKER -p tcp --dport 80 -j DROP
+```
+This command inserts a rule at the beginning of the DOCKER chain to drop any incoming TCP traffic targeting the specified port.
+
+Step 4: Verify the Rule
+To verify that the port has been successfully blocked, you can use the following command:
+
+```bash
+iptables -L -n --line-numbers | grep DROP
+```
+This command lists all the active iptables rules, including the ones that drop traffic. The --line-numbers option displays line numbers for each rule, making it easier to identify them.
+
+Look for a line that matches the port you blocked, and if found, it means the port is blocked for the Docker container.
+
+Note: Blocking ports can impact the functionality of the Docker container, so make sure to only block the ports necessary for your specific requirements.
