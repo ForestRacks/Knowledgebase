@@ -1,0 +1,40 @@
+# Basics of using security.txt
+
+security.txt is a text file used by website owners to share security disclosure contact information. This short documentation page will guide you through the basics of creating and using a proper security.txt file.
+
+## Understanding security.txt Standards
+To ensure proper usage of `security.txt`, it is recommended to follow the standards provided by [securitytxt.org](https://securitytxt.org/). This website offers guidelines on creating and managing a security.txt file. It is essential to familiarize yourself with these standards to achieve the desired results.
+
+
+## Creating a standard security.txt file
+1) Open a text editor or any preferred text editing software.
+2) Start a new file and save it as "security.txt".
+3) Begin by adding the following lines at the beginning of the file to specify the rules for all web robots:
+```bash
+# Our security address
+Contact: mailto:security@example.com
+
+# Our OpenPGP key
+Encryption: https://example.com/pgp-key.txt
+
+# Our security policy
+Policy: https://example.com/security-policy.htmI
+
+# Our security acknowledgments page
+Acknowledgments: https://example.com/hall-of-fame.html
+```
+
+## Additional Directives
+Apart from the directives exampled above, there are other directives you can use in your security.txt file to provide specific instructions to web robots. Some common directives include:
+
+* **Expires**: The date and time when the content of the security.txt file should be considered stale (so security researchers should then not trust it).
+
+* **Hiring**: A link to any security-related job openings in your organisation.
+
+* **Preferred-Languages**: A comma-separated list of language codes that your security team speaks. You may include more than one language.
+
+Make sure to refer to the securitytxt.org website for detailed information on these directives and their usage.
+
+
+## Deploying your security.txt file
+To make your security.txt file accessible to web robots, you need to upload it at the `.well-known` directory of your website. Once deployed, it should be accessible at the following location: https://example.com/.well-known/security.txt where `example.com` is your sites domain.
