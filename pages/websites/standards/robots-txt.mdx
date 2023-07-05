@@ -1,0 +1,42 @@
+# Basics of using robots.txt
+
+robots.txt is a text file used by website owners to communicate with web robots, such as search engine crawlers, about which parts of their site should not be crawled or indexed. This short documentation page will guide you through the basics of creating and using a proper robots.txt file.
+
+## Understanding robots.txt Standards
+To ensure proper usage of `robots.txt`, it is recommended to follow the standards provided by [robotstxt.org](https://www.robotstxt.org/robotstxt.html). This website offers guidelines on creating and managing a robots.txt file. It is essential to familiarize yourself with these standards to achieve the desired results.
+
+
+## Creating a standard robots.txt file
+1) Open a text editor or any preferred text editing software.
+2) Start a new file and save it as "robots.txt" without any file extension.
+3) Begin by adding the following lines at the beginning of the file to specify the rules for all web robots:
+```bash
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+```
+Note: if you want to disallow search engine and bot indexing all together, simply add a line containing `Disallow: /` at the bottom.
+
+## Additional Directives
+Apart from the "Disallow" directive, there are other directives you can use in your robots.txt file to provide specific instructions to web robots. Some common directives include:
+
+* **User-agent**: This directive specifies the web robots or user agents to which the following rules apply. The asterisk (*) denotes all robots.
+
+* **Allow**: This directive can be used to override a disallow rule for a specific file or directory.
+
+* **Crawl-delay**: This directive specifies the time (in seconds) that should be waited between successive requests by a web robot.
+
+Make sure to refer to the robotstxt.org website for detailed information on these directives and their usage.
+
+## Using Cloudflare
+
+If you use Cloudflare, disallowing `/cdn-cgi/` is recommended as it can cause issues with various crawlers.
+
+This can be accomplished with:
+```bash
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /cdn-cgi/
+```
+
+## Deploying your robots.txt file
+To make your robots.txt file accessible to web robots, you need to upload it at the root level of your website. Once deployed, it should be accessible at the following location: https://example.com/robots.txt where `example.com` is your sites domain.
