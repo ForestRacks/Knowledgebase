@@ -26,7 +26,7 @@ cat /root/selector2.txt
 "v=DKIM1; h=sha256; k=rsa; "p=XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
 6) Click "Save"
-7) Do the same for `selector2`
+7) Repeat the same steps for `selector2`
 
 ## Adding the private key on Office365
 1) Visit the [Office365 Admin Portal](https://security.microsoft.com/dkimv2)
@@ -40,4 +40,5 @@ Alternatively, you might want to use the managed DKIM provided by Microsoft whic
 2) Click "Add Record" on the DNS page
 3) Select a `CNAME-Record`
 4) Set the name as `selector1._domainkey`
-5) Set the value as `selector1-example-com._domainkey.examplecom.onmicrosoft.com` replacing `example-com` and `examplecom` with your corrosponding domain
+5) Set the value as `selector1-example-com._domainkey.examplecom.onmicrosoft.com` replacing `example-com` and `examplecom` with your corrosponding domain.
+6) Repeat the same steps for `selector2`
