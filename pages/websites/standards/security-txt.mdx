@@ -1,3 +1,5 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Basics of using security.txt
 
 security.txt is a text file used by website owners to share security disclosure contact information. This short documentation page will guide you through the basics of creating and using a proper security.txt file.
@@ -7,9 +9,13 @@ To ensure proper usage of `security.txt`, it is recommended to follow the standa
 
 
 ## Creating a standard security.txt file
-1) Open a text editor or any preferred text editing software.
-2) Start a new file and save it as "security.txt".
-3) Begin by adding the following lines to define security policies:
+<Steps>
+### Open a Text Editor
+Open a text editor or any preferred text editing software.
+### Create security.txt file
+Start a new file and save it as "security.txt".
+### Copy default security.txt
+Begin by adding the following lines to define security policies:
 ```bash filename="security.txt" copy
 # Our security address
 Contact: mailto:security@example.com
@@ -23,6 +29,7 @@ Policy: https://example.com/security-policy.htmI
 # Our security acknowledgments page
 Acknowledgments: https://example.com/hall-of-fame.html
 ```
+</Steps>
 
 ## Additional Directives
 Apart from the directives exampled above, there are other directives you can use in your security.txt file to provide specific instructions to web robots. Some common directives include:

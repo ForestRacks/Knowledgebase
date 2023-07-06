@@ -1,37 +1,48 @@
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
 # MySQL Corruption Recovery:
 
 To fix corruption in MySQL databases or tables, here are a couple methods you can try. Please note that data corruption isn't fool proof and won't always work. Here at ForestRacks we generally take daily backups of all customer products so if recovery fails, don't hesitate to [contact us](/about/contact-us) and we will see what we can do.
 
 ## Recover a MySQL table
 In this example, the database is called `billing` and the table is called `statements`.
-
-1) Enter the MySQL shell
+<Steps>
+### Enter the MySQL shell
 ```bash
 mysql
 ```
-2) Select the `billing` database
+### Select the `billing` database
 ```sql
 use billing;
 ```
-3) Run the optimize command on your corrupted table
+### Run the optimize command on your corrupted table
 ```sql
 OPTIMIZE TABLE statements;
 ```
+</Steps>
 
 ## Recover a MySQL database
+<Steps>
+### Enter Recovery Mode
 1) Open the MySQL configuration `my.cnf` file using a text editor like nano or vim.
 2) Add text below to the bottom of the file:
 ```ini filename="my.cnf" copy
 [mysqld]
 innodb_force_recovery = 1
 ```
-3) Restart MySQL
+### Restart MySQL
 
-For MariaDB:
-```bash
-systemctl restart mariadb
-```
-For MySQL:
-```bash
-systemctl restart mysql
-```
+
+<Tabs items={['MariaDB', 'MySQL']}>
+  <Tab>
+    ```bash copy
+    systemctl restart mariadb
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    systemctl restart mysql
+    ```
+  </Tab>
+</Tabs>
+</Steps>

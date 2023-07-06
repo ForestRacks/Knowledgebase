@@ -1,0 +1,79 @@
+import { Steps } from 'nextra-theme-docs'
+
+# Creating a Bastion
+
+This guide will walk you through the process of setting up a bastion server using WireGuard for secure communication and SSH keys for authentication. Additionally, we will use UFW (Uncomplicated Firewall) to specify firewall rules for enhanced security. Follow the steps below to create your bastion server.
+
+### Prerequisites
+Before proceeding with the setup, ensure that you have the following:
+* A Linux server or virtual machine (VM) running a compatible distribution (e.g., Ubuntu, Debian).
+* Root access to the VPS or Dedicated Server.
+
+<Steps>
+### Install WireGuard
+1) Connect to your server/VM via SSH using your preferred terminal emulator or command prompt.
+2) Update the package manager's repositories:
+```bash copy
+apt update
+```
+3) Install WireGuard:
+```bash copy
+apt install wireguard
+```
+4) Verify that WireGuard is installed successfully:
+```bash copy
+wg --version
+```
+### Generate SSH Key Pair
+1) On your local machine, open a terminal or command prompt.
+2) Generate an SSH key pair using the `ssh-keygen` command:
+```bash copy
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/bastion_key
+```
+This command generates a 4096-bit RSA key pair and saves it to ~/.ssh/bastion_key on your local machine.
+3) Copy the public key to the server/VM:
+```bash copy
+ssh-copy-id -i ~/.ssh/bastion_key.pub username@bastion-server
+```
+Replace `username` with your server's username and `bastion-server` with the hostname or IP address of your bastion server. Enter the server's password when prompted.
+```bash copy
+ssh -i ~/.ssh/bastion_key username@bastion-server
+```
+If successful, you should be logged in to the bastion server without entering a password.
+### Configure WireGuard
+1) On the bastion server, create a WireGuard configuration file:
+```bash copy
+nano /etc/wireguard/wg0.conf
+```
+Use the following template as a starting point:
+```ini filename="wg0.conf" copy
+[Interface]
+Address = 10.0.0.1/24
+ListenPort = 51820
+PrivateKey = <BASTION_PRIVATE_KEY>
+
+[Peer]
+PublicKey = <CLIENT_PUBLIC_KEY>
+AllowedIPs = 10.0.0.2/32
+```
+Replace `<BASTION_PRIVATE_KEY>` with the private key generated during WireGuard installation and `<CLIENT_PUBLIC_KEY>` with the public key generated on your local machine.
+2) Save and close the file (Ctrl+O, Enter, Ctrl+X).
+3) Start the WireGuard service:
+```bash copy
+systemctl start wg-quick@wg0
+```
+Enable automatic start on boot:
+```bash copy
+systemctl enable wg-quick@wg0
+```
+```bash copy
+systemctl status wg-quick@wg0
+```
+The status should indicate that the service is active.
+### Configure UFW Firewall
+1) Enable UFW (if not already enabled):
+```bash copy
+ufw enable
+```
+2) Allow incoming SSH connections on the bast
+</Steps>

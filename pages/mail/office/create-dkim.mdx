@@ -1,44 +1,71 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Creating a DKIM for Office365
 
 ## Install OpenDKIM
-```bash
+```bash copy
 apt install opendkim-tools
 ```
 
 ## Generate Selectors
-```bash
+```bash copy
 opendkim-genkey -D /root -d <domain> -s selector1
 opendkim-genkey -D /root -d <domain> -s selector2
 ```
 Then view the DNS record by running:
-```bash
+```bash copy
 cat /root/selector1.txt
 cat /root/selector2.txt
 ```
 
 ## Adding the DKIM to DNS
-1) Go to your DNS Provider's Portal
-2) Click "Add Record" on the DNS page
-3) Select a `TXT-Record`
-4) Set the name as `selector1._domainkey`
-5) Set the value as the DKIM selector value from the `/root/selector1.txt`, it should look similar to:
+<Steps>
+### Navigate to DNS
+Go to your DNS Provider's Portal
+### Create TXT
+1) Click "Add Record" on the DNS page
+2) Select a `TXT-Record`
+3) Set the name as `selector1._domainkey`
+4) Set the value as the DKIM selector value from the `/root/selector1.txt`, it should look similar to:
 ```sql
 "v=DKIM1; h=sha256; k=rsa; "p=XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
-6) Click "Save"
-7) Repeat the same steps for `selector2`
+5) Click "Save"
+### Selector 2
+Repeat the same steps for `selector2`
+</Steps>
 
 ## Adding the private key on Office365
+<Steps>
+### Visit the 365 DKIM Page
 1) Visit the [Office365 Admin Portal](https://security.microsoft.com/dkimv2)
-2) Click the domain that you are adding the DKIM to
+### Select your domain
+2) Click the domain that you want to enable DKIM for.
+### Enable DKIM Signatures
 3) Change the "Sign messages for this domain with DKIM signatures" toggle to "Enabled"
+### Upload Key to 365 Admin
 4) Upload the private keys from the `selector1.private` and `selector2.private` files to Office365
+</Steps>
 
 ## Microsoft Managed DKIM
 Alternatively, you might want to use the managed DKIM provided by Microsoft which can be accomplished by:
-1) Go to your DNS Provider's Portal
-2) Click "Add Record" on the DNS page
-3) Select a `CNAME-Record`
-4) Set the name as `selector1._domainkey`
-5) Set the value as `selector1-example-com._domainkey.examplecom.onmicrosoft.com` replacing `example-com` and `examplecom` with your corrosponding domain.
-6) Repeat the same steps for `selector2`
+<Steps>
+### Navigate to DNS
+Go to your DNS Provider's Portal like [Cloudflare's DNS Page](https://dash.cloudflare.com/?to=/:account/:zone/dns/records)
+### Create CNAME
+1) Click "Add Record" on the DNS page
+2) Select a `CNAME-Record`
+
+4) Set the record like the following with `example-com` and `examplecom` filled in as your domain.
+
+Set the "name" as:
+```js copy
+selector1._domainkey
+```
+Set the "value" as:
+```bash copy
+selector1-example-com._domainkey.examplecom.onmicrosoft.com
+```
+### Selector 2
+Repeat the same steps for `selector2`
+</Steps>

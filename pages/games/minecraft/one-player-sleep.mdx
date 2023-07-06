@@ -1,18 +1,24 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Bed sleep cycle requirements
 
 In Minecraft Java Edition, managing the daylight cycle can be accomplished by adjusting the player sleep requirements. By configuring a specific percentage of players needed to sleep, you can control when the time rolls over to day. This documentation provides instructions on how to set up and customize the player sleep requirements using the gamerule command.
 
-1) Access the server console or in-game command prompt.
-2) Execute the following command to set the required percentage of players to sleep at 1%:
+<Steps>
+### Access Console
+Access the server console or in-game command prompt.
+### Execute GameRule
+Execute the following command to set the required percentage of players to sleep at 1%:
 ```bash copy
 /gamerule playersleepingpercentage 1
 ```
 This means that only 1% of online players need to be sleeping for the time to roll over to day.
 
-
+### Change Required Percentage
 3) Alternatively, you can customize the percentage by adjusting the value in the command. For example, if you want 30% of online players to be sleeping, use the following command:
 ```bash copy
 /gamerule playersleepingpercentage 30
 ```
+</Steps>
 
 By utilizing the gamerule command, you can easily set how many players are required to cycle daylight on Minecraft Java Edition. Experiment with different values to find the optimal setting that suits your gameplay preferences.

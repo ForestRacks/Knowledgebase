@@ -1,22 +1,50 @@
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
 # Install SCP:SL Plugins
 
 ## Finding plugins to use
-1) First open a plugin website like [Exiled's Github](https://github.com/Exiled-Team/).
-2) To find a plugin, you can use the search feature.
-3) Click the "Releases" link on the right-hand sidebar
-4) Make sure that the listed compatible version matches your server version.
-5) Click the "Assets" dropdown for the version you wish to download.
-6) Finally, click the file ending in `.dll` to download it.
+<Steps>
+### Find a Plugin Website
+First open a plugin website like [Exiled's Github](https://github.com/Exiled-Team/).
+### Search For Plugins
+To find a plugin, you can use GitHub's search function and click the plugin you want.
+### Find Releases
+Click the "Releases" link on the right-hand sidebar
+### Confirm Version Compatibility
+Make sure that the listed compatible version matches your server version.
+### Locate Downloadable
+Click the "Assets" dropdown for the version you wish to download.
+### Download Plugin
+Finally, click the file ending in `.dll` to download it.
+</Steps>
 
-## Uploading plugins
-### Using the NorthWood PluginAPI
-1) First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
-2) Next click the "File Manager" panel tab
-3) Navigate to `.config/SCP Secret Laboratory/PluginAPI/plugins/global`
-4) Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
+## Uploading Plugins
 
-### Using Exiled Plugins
-1) First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
-2) Next click the "File Manager" panel tab
-3) Navigate to `.config/EXILED/Plugins`
-4) Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
+<Tabs items={['PluginAPI', 'Exiled']}>
+  <Tab>
+    ### Using the NorthWood PluginAPI
+    <Steps>
+        ### Log into Panel
+        First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
+        ### Locate File Manager
+        Next click the "File Manager" panel tab
+        ### Find Plugins
+        Navigate to `.config/SCP Secret Laboratory/PluginAPI/plugins/global`
+        ### Upload Plugin
+        Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
+    </Steps>
+  </Tab>
+  <Tab>
+    ### Using Exiled Plugins
+    <Steps>
+        ### Log into Panel
+        First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
+        ### Locate File Manager
+        Next click the "File Manager" panel tab
+        ### Find Plugins
+        Navigate to `.config/EXILED/Plugins`
+        ### Upload Plugin
+        Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
+    </Steps>
+  </Tab>
+</Tabs>

@@ -1,9 +1,16 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Changing Server Names
 
-1) First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
-2) Next click the "File Manager" panel tab
-3) Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
-4) Modify `ServerName="[Hosted by ForestRacks.com]"` to your desired name like:
+<Steps>
+### Log into Panel
+First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
+### Locate File Manager
+Next click the "File Manager" panel tab
+### Open the Game.ini
+Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
+### Change the Server Name
+Modify `ServerName="[Hosted by ForestRacks.com]"` to your desired name like:
 ```ini filename="Game.ini" {3} copy
 [/Script/Pavlov.DedicatedServer]
 bEnabled=true
@@ -11,3 +18,4 @@ ServerName="Example's Pavlov Server"
 MaxPlayers=10
 ...
 ```
+</Steps>

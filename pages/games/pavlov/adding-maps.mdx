@@ -1,13 +1,20 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Adding Maps to Pavlov
 
 ## Configuration
 
 The process of adding maps to your Pavlov server varies whether you use Shack or PC. Before adding a map, you should first select a [Game Mode](/games/pavlov/adding-maps#available-game-modes) and then follow the steps below.
 
-1) First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
-2) Next click the "File Manager" panel tab
-3) Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
-4) At the bottom of the file, add a new map like `MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")`, here's an  example:
+<Steps>
+### Log into Panel
+First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
+### Locate File Manager
+Next click the "File Manager" panel tab
+### Open the Game.ini
+Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
+### Add the new map
+At the bottom of the file, add a new map like `MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")`, here's an  example:
 ```ini filename="Game.ini" {6} copy
 ...
 LimitedAmmoType=2
@@ -16,6 +23,7 @@ TimeLimit=60
 MapRotation=(MapId="sand", GameMode="DM")
 MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")
 ```
+</Steps>
 
 ## Finding Maps to use
 ### Pavlov PC

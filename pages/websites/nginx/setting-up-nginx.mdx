@@ -1,6 +1,9 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Getting started with Nginx
 
-## Install Nginx
+<Steps>
+### Install Nginx
 For Debian/Ubuntu:
 ```bash
 apt install nginx
@@ -10,9 +13,8 @@ For RHEL/CentOS:
 yum install nginx
 ```
 
-## Generating SSL/TLS Certificates
-
-### Downloading Certbot
+### Generating SSL/TLS Certificates
+#### Downloading Certbot
 To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
 ```bash
 apt update
@@ -20,7 +22,7 @@ apt install -y certbot
 apt install -y python3-certbot-nginx
 ```
 
-### Completing the HTTP Challenge
+#### Completing the HTTP Challenge
 1) Make sure you have port 80 open on your firewall
 2) Request a certificate from Let's Encrypt, you should replace `example.com` with the domain you would like to generate a certificate for.
 ```bash
@@ -42,7 +44,7 @@ Create a crontab rule for the automatic renewal:
 (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
 ```
 
-## Webserver Configuration
+### Webserver Configuration
 Remove the default configuration:
 ```bash
 rm /etc/nginx/sites-enabled/default
@@ -90,9 +92,11 @@ server {
     add_header Referrer-Policy same-origin;
 }
 ```
+### Link Config and Restart Nginx
 
 Enable your new Nginx website configuration and restart Nginx:
 ```bash
 ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/website.conf
 systemctl restart nginx
 ```
+</Steps>

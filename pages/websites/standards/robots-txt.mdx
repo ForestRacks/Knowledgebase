@@ -1,3 +1,5 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Basics of using robots.txt
 
 robots.txt is a text file used by website owners to communicate with web robots, such as search engine crawlers, about which parts of their site should not be crawled or indexed. This short documentation page will guide you through the basics of creating and using a proper robots.txt file.
@@ -7,15 +9,19 @@ To ensure proper usage of `robots.txt`, it is recommended to follow the standard
 
 
 ## Creating a standard robots.txt file
-1) Open a text editor or any preferred text editing software.
-2) Start a new file and save it as "robots.txt".
-3) Begin by adding the following lines at the beginning of the file to specify the rules for all web robots:
+<Steps>
+### Open a Text Editor
+Open a text editor or any preferred text editing software.
+### Create robots.txt file
+Start a new file and save it as "robots.txt".
+### Copy default robots.txt
+Begin by adding the following lines at the beginning of the file to specify the rules for all web robots:
 ```bash filename="robots.txt" copy
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 ```
 Note: if you want to disallow search engine and bot indexing all together, simply add a line containing `Disallow: /` at the bottom.
-
+</Steps>
 ## Additional Directives
 Apart from the "Disallow" directive, there are other directives you can use in your robots.txt file to provide specific instructions to web robots. Some common directives include:
 

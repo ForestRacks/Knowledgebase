@@ -1,14 +1,21 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Installing Pterodactyl
 This guide walks you through the process of using our a custom Pterodactyl Panel installation bash script to easily setup Pterodactyl Panel. If you encounter any issues during the installation process, our troubleshooting section has some helpful tips.
 
 ## Installation:
-1) To get started, it's important to ensure that your machine is freshly reinstalled if you've made any changes to it beforehand. 
-2) Point a DNS A-Record to your machine's IP address, such as panel.example.com to 192.168.53.72.
-3) To download and run the installer, simply enter the following command into your terminal and follow the prompts:
+<Steps>
+### Fresh Installation
+To get started, it's important to ensure that your machine is freshly reinstalled if you've made any changes to it beforehand. 
+### Create DNS Record
+Point a DNS A-Record to your machine's IP address, such as `panel.example.com` to `192.168.53.72`.
+### Execute Installer
+To download and run the installer, simply enter the following command into your terminal and follow the prompts:
 ```bash
 bash <(curl -Ss https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/ForestRacks/PteroInstaller/Production/install.sh) auto
 ```
 Note: There will be a prompt with three installation modes, "basic mode" is recommended for people who know very little about linux or want to create a test environment since it automates the entire setup process.
+</Steps>
 
 ## Post Installation:
 Please note `<domain>` refers to the panel URL you set during the installation process.

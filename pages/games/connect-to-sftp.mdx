@@ -1,14 +1,22 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Connect to sFTP with FileZilla
 
 In this article we will show you how to connect using the most popular FTP client; Filezilla!
 
-1) First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
-2) Next click the "Settings" panel tab
-3) Download the [Filezilla Client](https://filezilla-project.org/download.php) application from FileZilla's website
-4) Use the information from our web-panel to signin on the quick connect bar:
+<Steps>
+### Login and find server
+First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server.
+### Go to Settings
+Next click the "Settings" panel tab
+### Download FileZilla
+Download the [Filezilla Client](https://filezilla-project.org/download.php) application from FileZilla's website
+### Quick Connect
+Use the information from our web-panel to signin on the quick connect bar:
 * The "Host" input on FileZilla should be the "SERVER ADDRESS" from the ForestRacks "Settings" tab without the port so the Server Address `sftp://node.forestracks.net:2022` should be the FileZilla host `sftp://node.forestracks.net`
 * The username input on FileZilla should be the username listed under the Server Address titled "USERNAME"
 * The sFTP port on FileZilla should be `2022`
 * Your password for FileZilla is your ForestRacks account password
+</Steps>
 
 Don't hesitate to [contact us](/about/contact-us) if you need assistance with this process, we will also post a video tutorial and screenshots here in future.
