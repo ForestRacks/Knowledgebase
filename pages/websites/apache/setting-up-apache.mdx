@@ -15,9 +15,9 @@ yum install apache2
 ### Downloading Certbot
 To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
 ```bash
-sudo apt update
-sudo apt install -y certbot
-sudo apt install -y python3-certbot-apache
+apt update
+apt install -y certbot
+apt install -y python3-certbot-apache
 ```
 
 ### Completing the HTTP Challenge
@@ -92,8 +92,8 @@ a2dissite 000-default.conf
 
 Enable your new Apache website configuration and required modules:
 ```bash
-sudo ln -s /etc/apache2/sites-available/website.conf /etc/apache2/sites-enabled/website.conf
-sudo a2enmod rewrite
-sudo a2enmod ssl
-sudo systemctl restart apache2
+ln -s /etc/apache2/sites-available/website.conf /etc/apache2/sites-enabled/website.conf
+a2enmod rewrite
+a2enmod ssl
+systemctl restart apache2
 ```

@@ -27,5 +27,5 @@ iptables -P OUTPUT DROP
 ## Save the iptables rules
 To ensure that the iptables rules persist across system reboots, we need to save them. Different Linux distributions have different methods for saving iptables rules. Here, we will use the `iptables-persistent` package, which is commonly available on Ubuntu and Debian.
 ```bash
-sudo apt install iptables-persistent
+apt install iptables-persistent
 ```
