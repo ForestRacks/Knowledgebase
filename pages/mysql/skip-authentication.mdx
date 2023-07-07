@@ -6,35 +6,35 @@ For certain software you may need to temporarily disable your MySQL root passwor
 When disabling authentication, it is highly recommended that your firewall is closed, make sure you read the guide specific to your firewall software to accomplish this and use a port tester to make sure the port is actually closed before starting the next step.
 
 For UFW, check the status of your UFW rules by running the following command:
-```bash
+```bash copy
 ufw status numbered
 ```
 To delete the rule, use the following command, replacing `<rule_number>` with the actual number of the rule you want to delete:
-```bash
+```bash copy
 ufw delete <rule_number>
 ```
 For example, if the rule number is 3, the command would be:
-```bash
+```bash copy
 ufw delete 3
 ```
 
 
 ## Disable the service
 For MariaDB:
-```bash
+```bash copy
 systemctl stop mariadb
 ```
 For MySQL:
-```bash
+```bash copy
 systemctl stop mysql
 ```
 
 ## Turn on MySQLd safe mode
-```bash
+```bash copy
 mysqld_safe --skip-grant-tables --skip-networking
 ```
 
 ## Enter the MySQL Shell
-```bash
+```bash copy
 mysql -u root
 ```

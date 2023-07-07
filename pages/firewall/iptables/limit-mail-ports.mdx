@@ -4,28 +4,28 @@ In this article, we will explore how to set up rate limiting for outgoing emails
 
 ## Install IPTables
 Make sure that iptables is installed on your system. To install it, you can use the package manager specific to your Linux distribution. For example, on Ubuntu or Debian, you can run the following command:
-```bash
+```bash copy
 apt install iptables
 ```
 
 ## Create the firewall rules
 Now, let's create the iptables rules to rate limit the mail ports. We will use the iptables command to define the rules. Open a terminal and execute the following commands:
-```bash
+```bash copy
 iptables -A OUTPUT -p tcp -m multiport --dports 25,110,465,587,995,2525 -m limit --limit 10/min --limit-burst 6 -j ACCEPT
 ```
 
 ## Set the default policy
 If you don't already drop all other traffic, you may want to create a default policy which drops traffic that isn't accepted by your firewall. To do this, first check your current firewall:
-```bash
+```bash copy
 iptables -S
 ```
 If you don't already drop all traffic that doesn't align with your firewall policy, you may want to drop it but do so with caution:
-```bash
+```bash copy
 iptables -P OUTPUT DROP
 ```
 
 ## Save the iptables rules
 To ensure that the iptables rules persist across system reboots, we need to save them. Different Linux distributions have different methods for saving iptables rules. Here, we will use the `iptables-persistent` package, which is commonly available on Ubuntu and Debian.
-```bash
+```bash copy
 apt install iptables-persistent
 ```

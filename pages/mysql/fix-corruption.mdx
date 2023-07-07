@@ -8,15 +8,15 @@ To fix corruption in MySQL databases or tables, here are a couple methods you ca
 In this example, the database is called `billing` and the table is called `statements`.
 <Steps>
 ### Enter the MySQL shell
-```bash
+```bash copy
 mysql
 ```
 ### Select the `billing` database
-```sql
+```sql copy
 use billing;
 ```
 ### Run the optimize command on your corrupted table
-```sql
+```sql copy
 OPTIMIZE TABLE statements;
 ```
 </Steps>

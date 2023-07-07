@@ -7,7 +7,7 @@ import { Steps } from 'nextra-theme-docs'
 
 1) Enter the MySQL shell by typing `mysql` in your terminal
 2) Create a database, the following example is creating a database called `your_database`:
-```sql
+```sql copy
 CREATE USER 'your_user'@'192.168.53.72' IDENTIFIED BY 'somePasswordHere';
 ```
 
@@ -15,7 +15,7 @@ CREATE USER 'your_user'@'192.168.53.72' IDENTIFIED BY 'somePasswordHere';
 
 1) Enter the MySQL shell by typing `mysql` in your terminal
 2) Create a user, the following example is creating a user called `your_user`:
-```sql
+```sql copy
 CREATE DATABASE your_database;
 ```
 
@@ -26,14 +26,14 @@ This documentation page aims to provide a user-friendly guide on how to manage u
 #### Granting All Permissions to a User on a Specific Database
 
 To assign all permissions to the user `your_user` on the `your_database` database, follow these steps:
-```sql
+```sql copy
 GRANT ALL PRIVILEGES ON your_database.* TO 'your_user'@'127.0.0.1';
 ```
 This command grants the user `your_user` full access to perform any operation on the specified database.
 
 #### Granting All Permissions to a User on All Databases
 If you want to grant all permissions to the user `your_user` on all databases, use the following command:
-```sql
+```sql copy
 GRANT ALL PRIVILEGES *.* TO 'your_user'@'127.0.0.1' WITH GRANT OPTION;
 ```
 

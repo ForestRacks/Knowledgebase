@@ -1,10 +1,25 @@
-# How to enable keep inventory
+import { Steps } from 'nextra-theme-docs'
 
+# How to enable Keep Inventory
+
+Execute the following GameRule command in every world, generally people just have an overworld, nether, and end.
+
+<Steps>
+### Enable Keep Inventory in The Overworld
+```bash copy
+/world world
+/gamerule keepInventory true
 ```
-world world
-gamerule keepInventory true
-world world_nether
-gamerule keepInventory true
-world world_the_end
-gamerule keepInventory true
+
+### Enable Keep Inventory in The Nether
+```bash copy
+/world world_nether
+/gamerule keepInventory true
 ```
+
+### Enable Keep Inventory in The End
+```bash copy
+/world world_the_end
+/gamerule keepInventory true
+```
+</Steps>

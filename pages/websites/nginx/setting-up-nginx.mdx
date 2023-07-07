@@ -1,20 +1,19 @@
 import { Steps, Tab, Tabs } from 'nextra-theme-docs'
 
 # Getting started with Nginx
-
 <Tabs items={['Debian/Ubuntu', 'RHEL/CentOS']}>
   <Tab>
     <Steps>
     ### Install Nginx
 
-    ```bash
+    ```bash copy
     apt install nginx
     ```
 
     ### Generating SSL/TLS Certificates
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
-    ```bash
+    ```bash copy
     apt update
     apt install -y certbot
     apt install -y python3-certbot-nginx
@@ -23,23 +22,23 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     #### Completing the HTTP Challenge
     1) Make sure you have port 80 open on your firewall
     2) Request a certificate from Let's Encrypt, you should replace `example.com` with the domain you would like to generate a certificate for.
-    ```bash
+    ```bash copy
     certbot certonly --nginx -d example.com
     ```
 
     ### Automatically Renewing SSL/TLS certificates
     1) Install crontab
-    ```bash
+    ```bash copy
     apt install crontab
     ```
     Create a crontab rule for the automatic renewal:
-    ```bash
+    ```bash copy
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
     ```
 
     ### Webserver Configuration
     Remove the default configuration:
-    ```bash
+    ```bash copy
     rm /etc/nginx/sites-enabled/default
     ```
 
@@ -88,7 +87,7 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     ### Link Config and Restart Nginx
 
     Enable your new Nginx website configuration and restart Nginx:
-    ```bash
+    ```bash copy
     ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/website.conf
     systemctl restart nginx
     ```
@@ -97,14 +96,14 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
   <Tab>
     <Steps>
     ### Install Nginx
-    ```bash
+    ```bash copy
     yum install nginx
     ```
 
     ### Generating SSL/TLS Certificates
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
-    ```bash
+    ```bash copy
     apt update
     apt install -y certbot
     apt install -y python3-certbot-nginx
@@ -113,23 +112,23 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     #### Completing the HTTP Challenge
     1) Make sure you have port 80 open on your firewall
     2) Request a certificate from Let's Encrypt, you should replace `example.com` with the domain you would like to generate a certificate for.
-    ```bash
+    ```bash copy
     certbot certonly --nginx -d example.com
     ```
 
     ### Automatically Renewing SSL/TLS certificates
     1) Install crontab
-    ```bash
+    ```bash copy
     yum install crontab
     ```
     Create a crontab rule for the automatic renewal:
-    ```bash
+    ```bash copy
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
     ```
 
     ### Webserver Configuration
     Remove the default configuration:
-    ```bash
+    ```bash copy
     rm /etc/nginx/sites-enabled/default
     ```
 
@@ -176,9 +175,8 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     }
     ```
     ### Link Config and Restart Nginx
-
     Enable your new Nginx website configuration and restart Nginx:
-    ```bash
+    ```bash copy
     ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/website.conf
     systemctl restart nginx
     ```
