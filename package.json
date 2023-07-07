@@ -8,14 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^13.4.8",
+    "next": "^13.4.9",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.3.3",
+    "@types/node": "^20.4.0",
     "pnpm": "^8.6.6",
     "typescript": "^5.1.6"
   }
