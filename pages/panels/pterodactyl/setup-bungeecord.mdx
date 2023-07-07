@@ -3,6 +3,12 @@ import { Steps } from 'nextra-theme-docs'
 # BungeeCord Setup Guide
 This guide will help you set up a BungeeCord network using the provided configuration. BungeeCord is a proxy server that connects multiple Minecraft servers, providing a seamless experience across different game modes. It is crucial to set up BungeeCord correctly to ensure network security. By making subservers listen on local system IPs and forwarding traffic through the proxy, you prevent unauthorized access and ensure proper player authentication.
 <Steps>
+## Creating a BungeeCord Server
+1) Go to Admin > Servers > Create New
+2) Select "Bungeecord" in the "Minecraft" section of the Nest Configuration
+3) Allocate a Public IP address with a port like 19132 if you are using Geyser or 25565 if you are not. For example, let's use the IP address 192.168.53.72.
+4) Set the desired server resources and click "Create Server"
+
 ### Configuring BungeeCord
 1) Open the `config.yml` file in your BungeeCord installation directory.
 2) Locate the servers section in the configuration file.
