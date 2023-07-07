@@ -1,0 +1,52 @@
+import { Steps } from 'nextra-theme-docs'
+
+# BungeeCord Setup Guide
+This guide will help you set up a BungeeCord network using the provided configuration. BungeeCord is a proxy server that connects multiple Minecraft servers, providing a seamless experience across different game modes. It is crucial to set up BungeeCord correctly to ensure network security. By making subservers listen on local system IPs and forwarding traffic through the proxy, you prevent unauthorized access and ensure proper player authentication.
+<Steps>
+### Configuring BungeeCord
+1) Open the `config.yml` file in your BungeeCord installation directory.
+2) Locate the servers section in the configuration file.
+3) Add your servers under the servers section. For example, let's add a server called "Hub" with the IP address 172.18.0.1:30000 and a MOTD of "Pinging...". You can modify the server details as per your requirements.
+```yaml filename="config.yml" copy
+servers:
+  Hub:
+    address: 172.18.0.1:30000
+    motd: Pinging...
+    restricted: false
+  Survival:
+    address: 172.18.0.1:30001
+    motd: Pinging...
+    restricted: false
+```
+4) Define the server priorities under the priorities section. This determines the order in which players are redirected to available servers when connecting to the BungeeCord network. In this case, we only have one server, so the priority will be set to "Hub".
+```yaml filename="config.yml" copy
+priorities:
+  - Hub
+```
+5) To ensure that the "Hub" server is always the default server when players join the network, set the force_default_server option to true.
+```yaml filename="config.yml" copy
+force_default_server: true
+```
+6) Enable IP forwarding by setting the `ip_forward` option to `true`. This allows BungeeCord to forward player connections to the appropriate Minecraft server.
+```yaml filename="config.yml" copy
+ip_forward: true
+```
+7) Save the `config.yml` file.
+### Firewall Configuration
+If you want to forward player connections to the BungeeCord network, you'll need to configure a firewall rule to allow incoming connections to the BungeeCord IP address and port. Here's an example of how to do it using the ufw firewall utility:
+
+1) Open a terminal on your server.
+2) Run the following command to allow incoming connections on ports 30000 to 30010 for the IP address 172.18.0.1:
+```bash code
+ufw allow in on pterodactyl0 to 172.18.0.1 port 30000:30010 proto tcp
+```
+The firewall rule is now set up to allow incoming connections to the BungeeCord IP address and port range.
+### Pterodactyl Subservers Configuration
+To make the Pterodactyl subservers listen on the Docker IP address 172.18.0.1 with any port from 30000 to 30010, you need to make the following changes on the Pterodactyl node allocations page:
+
+1) Log in to your Pterodactyl panel.
+2) Go to the "Node" page and select the appropriate node.
+3) Navigate to the "Allocations" tab.
+4) In the "Assign New Allocations" card, add the IP address `172.18.0.1` and the port range `30000-30010` for each your subservers.
+5) Save the changes.
+</Steps>
