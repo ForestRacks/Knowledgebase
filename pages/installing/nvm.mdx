@@ -5,12 +5,22 @@ import { Tab, Tabs } from 'nextra-theme-docs'
 The [Node Version Manager](https://github.com/nvm-sh/nvm) is a way of managing multiple Node.js versions on one machine.
 <Tabs items={['Debian/Ubuntu', 'RHEL/CentOS', 'AlpineLinux']}>
   <Tab>
+    Update your packages:
+    ```bash copy
+    apt upgrade && apt upgrade
+    ```
+
     Run installer:
     ```bash copy
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     ```
   </Tab>
   <Tab>
+    Update your packages:
+    ```bash copy
+    yum upgrade && yum upgrade
+    ```
+
     Run installer:
     ```bash copy
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
