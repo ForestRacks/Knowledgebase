@@ -1,24 +1,34 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+
 # Installing Node Version Manager
 
-## Install NVM on RHEL/Debian
+The [Node Version Manager](https://github.com/nvm-sh/nvm) is a way of managing multiple Node.js versions on one machine.
+<Tabs items={['Debian/Ubuntu', 'RHEL/CentOS', 'AlpineLinux']}>
+  <Tab>
+    Run installer:
+    ```bash copy
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+  </Tab>
+  <Tab>
+    Run installer:
+    ```bash copy
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+  </Tab>
+  <Tab>
+    Update your packages:
+    ```bash
+    apk upgrade --available
+    ```
 
-[Node Version Manager](https://github.com/nvm-sh/nvm)
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-```
-
-## Install NVM on AlpineLinux
-Update your packages:
-```bash
-apk upgrade --available
-```
-
-Add required packages:
-```bash
-apk add -U curl bash ca-certificates openssl ncurses coreutils python3 make gcc g++ libgcc linux-headers grep util-linux binutils findutils
-```
-Run installer:
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-```
+    Add required packages:
+    ```bash
+    apk add -U curl bash ca-certificates openssl ncurses coreutils python3 make gcc g++ libgcc linux-headers grep util-linux binutils findutils
+    ```
+    Run installer:
+    ```bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+  </Tab>
+</Tabs>

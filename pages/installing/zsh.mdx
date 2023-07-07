@@ -1,6 +1,14 @@
 # How to Install Zsh on Linux
 
-## RHEL
-```bash
-yum install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+<Tabs items={['Debian/Ubuntu', 'RHEL/CentOS']}>
+  <Tab>
+    ```bash
+    apt install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    yum install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  </Tab>
+</Tabs>

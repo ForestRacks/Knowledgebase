@@ -1,37 +1,43 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+
 # Linux Install automatic updates
 
-## Using the automatic updates package
-### Ubuntu/Debian:
-```bash
-apt install unattended-upgrades
-```
+<Tabs items={['Ubuntu/Debian', 'CentOS/RHEL']}>
+  <Tab>
+    ## Using the automatic updates package
+    ```bash
+    apt install unattended-upgrades
+    ```
 
-### CentOS/RHEL:
-First install dnf:
-```bash
-yum install dnf
-```
-Then install the automatic updates package:
-```bash
-dnf install -y dnf-automatic
-```
+    ## Using Cronjobs
+    First install cron:
+    ```bash
+    apt install cron
+    ```
+    Add the cronjob:
+    ```bash
+    (crontab -l ; echo "30 16 * * 1,3,6 apt update && apt upgrade -y")| crontab -
+    ```
+  </Tab>
+  <Tab>
+    ## Using the automatic updates package
+    First install dnf:
+    ```bash
+    yum install dnf
+    ```
+    Then install the automatic updates package:
+    ```bash
+    dnf install -y dnf-automatic
+    ```
 
-## Using Cronjobs
-### Ubuntu/Debian:
-First install cron:
-```bash
-apt install cron
-```
-Add the cronjob:
-```bash
-(crontab -l ; echo "30 16 * * 1,3,6 apt update && apt upgrade -y")| crontab -
-```
-### CentOS/RHEL:
-First install dnf and cron:
-```bash
-yum install dnf cron
-```
-Add the cronjob:
-```bash
-(crontab -l ; echo "30 16 * * 1,3,6 dnf update -y")| crontab -
-```
+    ## Using Cronjobs
+    First install dnf and cron:
+    ```bash
+    yum install dnf cron
+    ```
+    Add the cronjob:
+    ```bash
+    (crontab -l ; echo "30 16 * * 1,3,6 dnf update -y")| crontab -
+    ```
+  </Tab>
+</Tabs>
