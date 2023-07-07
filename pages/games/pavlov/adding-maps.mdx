@@ -1,4 +1,4 @@
-import { Steps } from 'nextra-theme-docs'
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
 
 # Adding Maps to Pavlov VR Servers
 
@@ -26,27 +26,30 @@ MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")
 </Steps>
 
 ## Finding Maps To Use
-### Pavlov PC
-If you use Standard PC or Beta PC, you can either use maps from [the Steam Workshop](https://steamcommunity.com/workshop/about/?appid=555160) or the new recommended [mod.io](https://mod.io/g/pavlov) site.
+<Tabs items={['Pavlov PC', 'Pavlov Quest']}>
+  <Tab>
+    If you use Standard PC or Beta PC, you can either use maps from [the Steam Workshop](https://steamcommunity.com/workshop/about/?appid=555160) or the new recommended [mod.io](https://mod.io/g/pavlov) site.
 
-If you use maps from the Steam Workshop, The `MapId` should start with "UGC" and look like `UGC######`. Find the map you want in the workshop. For example, notice the URL for Mirage ([https://steamcommunity.com/sharedfiles/filedetails/?id=2670152485](https://steamcommunity.com/sharedfiles/filedetails/?id=2670152485)). The 10 numbers at the end of the URL are what you need, so `UGC2670152485` would be the MapId for Mirage.
+    If you use maps from the Steam Workshop, The `MapId` should start with "UGC" and look like `UGC######`. Find the map you want in the workshop. For example, notice the URL for Mirage ([https://steamcommunity.com/sharedfiles/filedetails/?id=2670152485](https://steamcommunity.com/sharedfiles/filedetails/?id=2670152485)). The 10 numbers at the end of the URL are what you need, so `UGC2670152485` would be the MapId for Mirage.
 
-If you use maps from mod.io, the method is very similar, you still start the MapId with UGC except rather than getting the ID number from the URL, you will see it listed as the "Resource ID" on the map page.
+    If you use maps from mod.io, the method is very similar, you still start the MapId with UGC except rather than getting the ID number from the URL, you will see it listed as the "Resource ID" on the map page.
 
-Here's an example of what the MapId in your Game.ini will look like for PC:
-```ini filename="Game.ini" {6} copy
-...
-LimitedAmmoType=2
-TickRate=90
-TimeLimit=60
-MapRotation=(MapId="sand", GameMode="DM")
-MapRotation=(MapId="UGC1758245796", GameMode="GUN")
-```
+    Here's an example of what the MapId in your Game.ini will look like for PC:
+    ```ini filename="Game.ini" {6} copy
+    ...
+    LimitedAmmoType=2
+    TickRate=90
+    TimeLimit=60
+    MapRotation=(MapId="sand", GameMode="DM")
+    MapRotation=(MapId="UGC1758245796", GameMode="GUN")
+    ```
+  </Tab>
+  <Tab>
+    If you use Shack RC or Shack Live, using maps is a bit more complicated, you first need to download **an up-to-date version** of the map from a reputable source like the creator, the channel in Horde's discord, or the channel in Arctic's discord. Then you have to upload and extract the map to `Pavlov/Saved/maps/` on your ForestRacks `File Manager` panel tab and finally list the map at the bottom of your `Game.ini` using the method mentioned on [Configuration](/games/pavlov/adding-maps#configuration). 
 
-### Pavlov Quest
-If you use Shack RC or Shack Live, using maps is a bit more complicated, you first need to download **an up-to-date version** of the map from a reputable source like the creator, the channel in Horde's discord, or the channel in Arctic's discord. Then you have to upload and extract the map to `Pavlov/Saved/maps/` on your ForestRacks `File Manager` panel tab and finally list the map at the bottom of your `Game.ini` using the method mentioned on [Configuration](/games/pavlov/adding-maps#configuration). 
-
-Note: Outdated maps will not work, Shack Live maps are Unreal Engine 4.21 from November 2022 to March 2023 and Shack Live maps are Unreal Engine 4.27 from April 2023 or newer. To confirm you have the correct version, you can open the `metadata.json` file in the map folder and you should see something like `"EngineVersion": "4.27"`. Your server will also default to the "datacenter" map if the map you try is outdated or broken.
+    Note: Outdated maps will not work, Shack Live maps are Unreal Engine 4.21 from November 2022 to March 2023 and Shack Live maps are Unreal Engine 4.27 from April 2023 or newer. To confirm you have the correct version, you can open the `metadata.json` file in the map folder and you should see something like `"EngineVersion": "4.27"`. Your server will also default to the "datacenter" map if the map you try is outdated or broken.
+  </Tab>
+</Tabs>
 
 ## Available Game Modes
 * Custom - For map creators
