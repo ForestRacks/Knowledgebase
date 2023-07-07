@@ -6,9 +6,9 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
 For specifics on how [MySQL users](/mysql/setting-up-mysql#creating-a-mysql-user) work and how [MySQL privileges](/mysql/setting-up-mysql#setting-mysql-user-privileges) work, follow the corresponding guides but this example, is using the MySQL shell to allow access to the remote IP `192.168.53.72`.
 ```bash copy
 # You should change the username and password below to something unique.
-CREATE USER 'your_user'@'192.168.53.72' IDENTIFIED BY 'somePasswordHere';
+CREATE USER 'your_user'@'%' IDENTIFIED BY 'somePasswordHere';
 # Allocate privileges to the user you created
-GRANT ALL PRIVILEGES *.* TO 'your_user'@'192.168.53.72';
+GRANT ALL PRIVILEGES *.* TO 'your_user'@'%' WITH GRANT OPTION;
 ```
 
 ## Changing the MySQL Configuration
