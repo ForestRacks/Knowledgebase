@@ -6,12 +6,12 @@ This guide will walk you through the process of setting up a bastion server usin
 
 ### Prerequisites
 Before proceeding with the setup, ensure that you have the following:
-* A Linux server or virtual machine (VM) running a compatible distribution (e.g., Ubuntu, Debian).
+* A Linux Dedicated Server or VPS running a compatible distribution (e.g., Ubuntu, Debian).
 * Root access to the VPS or Dedicated Server.
 
 <Steps>
 ### Install WireGuard
-1) Connect to your server/VM via SSH using your preferred terminal emulator or command prompt.
+1) Connect to your server/VPS via SSH using your preferred terminal emulator or command prompt.
 2) Update the package manager's repositories:
 ```bash copy
 apt update
@@ -31,7 +31,7 @@ wg --version
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/bastion_key
 ```
 This command generates a 4096-bit RSA key pair and saves it to ~/.ssh/bastion_key on your local machine.
-3) Copy the public key to the server/VM:
+3) Copy the public key to the server/VPS:
 ```bash copy
 ssh-copy-id -i ~/.ssh/bastion_key.pub username@bastion-server
 ```
