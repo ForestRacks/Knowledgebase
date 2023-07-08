@@ -9,7 +9,7 @@ Login to Cloudflare [here](https://dash.cloudflare.com/).
 Go to [Cloudflare's DNS Page](https://dash.cloudflare.com/?to=/:account/:zone/dns/records)
 ### Proxy Subdomain
 Enable Cloudflare's orange cloud proxy symbol for the panel subdomain
-### Proxy to port 443
+### Proxy to Port 443
 4) Visit https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls and add change the flexible SSL option to full. This proxies Cloudflare's traffic to port 443 instead of port 80.
 ### Create Origin SSL
 Go to https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/origin and create an origin SSL for panel.example.com with a 15-year expiration date, then copy the public key into `/etc/ssl/cert.pem` and the private key into `/etc/ssl/key.pem`

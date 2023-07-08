@@ -1,6 +1,6 @@
 {
   "name": "forestracks-knowledgebase",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ForestRacks Knowledgebase",
   "scripts": {
     "dev": "next dev",
@@ -15,7 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.0",
+    "@types/node": "^20.4.1",
     "pnpm": "^8.6.6",
     "typescript": "^5.1.6"
   }
