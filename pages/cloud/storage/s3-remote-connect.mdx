@@ -26,7 +26,7 @@ Create temporary directory:
 ```bash
 mkdir -p /tmp/back/mysqldump /tmp/back/virtual 
 ```
-The following script is an example of how to backup example.txt from /root, all mysql databases, and all virtual machines:
+The following script is an example of how to backup example.txt from /root, all mysql databases, and all virtual machines. Make sure you replace `bucket_name` with the name of your bucket:
 ```bash filename="backup.sh" copy
 #!/bin/bash
 
@@ -34,13 +34,13 @@ tmp_dir="/tmp/back"
 node_id=$(echo "$(hostname)" | awk -F '.' '{print $1}')
 
 # Backup /root/1.txt
-rclone copy --dedupe-mode interleaved --bwlimit 60M "/root/1.txt" storage:files/${node_id}/$(date +%F)/
+rclone copy --dedupe-mode interleaved --bwlimit 60M "/root/1.txt" storage:bucket_name/files/${node_id}/$(date +%F)/
 
 # Backup MySQL database
 if command -v mysqldump &> /dev/null; then
   mysql -s -r -e 'show databases' | grep -vE '^(information_schema|performance_schema|mysql|sys)$' | while read db; do
     mysqldump $db > "$tmp_dir/mysqldump/${db}.sql"
-    rclone copy --dedupe-mode interleaved --bwlimit 60M "$tmp_dir/mysqldump/${db}.sql" storage:mysqldump/${node_id}/$(date +%F)/
+    rclone copy --dedupe-mode interleaved --bwlimit 60M "$tmp_dir/mysqldump/${db}.sql" storage:bucket_name/mysqldump/${node_id}/$(date +%F)/
     rm -f "$tmp_dir/mysqldump/${db}.sql"
   done
 fi
@@ -49,7 +49,7 @@ fi
 if command -v virsh &> /dev/null; then
   virsh list | grep kvm | awk '{print $2}' | while read vm; do
     dd if=/dev/yourvg/${vm}_img | gzip | dd of="$tmp_dir/virtual/${vm}_backup.gz" bs=4096 status=progress
-    rclone copy --dedupe-mode interleaved --bwlimit 60M "$tmp_dir/virtual/${vm}_backup.gz" storage:virtual/${node_id}/$(date +%F)/
+    rclone copy --dedupe-mode interleaved --bwlimit 60M "$tmp_dir/virtual/${vm}_backup.gz" storage:bucket_name/virtual/${node_id}/$(date +%F)/
     rm -f "$tmp_dir/virtual/${vm}_backup.gz"
   done
 fi
