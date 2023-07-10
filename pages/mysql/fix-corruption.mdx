@@ -4,7 +4,9 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
 
 To fix corruption in MySQL databases or tables, here are a couple methods you can try. Please note that data corruption isn't fool proof and won't always work. Here at ForestRacks we generally take daily backups of all customer products so if recovery fails, don't hesitate to [contact us](/about/contact-us) and we will see what we can do.
 
-## Recover a MySQL table
+## Recover a MySQL Table
+
+### Optimize Table
 In this example, the database is called `billing` and the table is called `statements`.
 <Steps>
 ### Enter the MySQL shell
@@ -21,7 +23,21 @@ OPTIMIZE TABLE statements;
 ```
 </Steps>
 
-## Recover a MySQL database
+### Replace Table
+If all else fails, you might have to delete the table and create a new one like it, note this is a last resort and deletes all data from the table, so before you resort to this solution, confirm with ForestRacks support if there is a backup of your database:
+```sql copy
+CREATE TABLE new_statements LIKE statements;
+# Insert the data from the corrupted table into the new table:
+
+INSERT INTO new_statements SELECT * FROM statements;
+# Once the data is successfully copied, you can drop the old statements table and rename the new table:
+
+DROP TABLE statements;
+RENAME TABLE new_statements TO statements;
+# This recreates the statements table with the copied data.
+```
+
+## Recover a MySQL Database
 <Steps>
 ### Enter Recovery Mode
 1) Open the MySQL configuration `my.cnf` file using a text editor like nano or vim.
