@@ -36,7 +36,7 @@ node_id=$(echo "$(hostname)" | awk -F '.' '{print $1}')
 # Backup /root/1.txt
 rclone copy --dedupe-mode interleaved --bwlimit 60M "/root/1.txt" storage:bucket_name/files/${node_id}/$(date +%F)/
 
-# Backup MySQL database
+# Backup MySQL databases
 if command -v mysqldump &> /dev/null; then
   mysql -s -r -e 'show databases' | grep -vE '^(information_schema|performance_schema|mysql|sys)$' | while read db; do
     mysqldump $db > "$tmp_dir/mysqldump/${db}.sql"
