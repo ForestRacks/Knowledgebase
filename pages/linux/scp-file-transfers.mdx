@@ -1,5 +1,11 @@
 # Transfer files with SCP
+## Push To Remove Host
 The following is an example of how to transfer `example.txt` to the root directory of the remote host `192.168.53.72`:
 ```bash copy
 scp -P 22 -r /root/example.txt root@192.168.53.72:/root
+```
+## Pull From Remove Host
+The following is an example of how to transfer `example.txt` from the root directory of the remote host `172.16.16.16`:
+```bash copy
+scp -P 22 root@172.16.16.16:/root/example.txt /root
 ```
