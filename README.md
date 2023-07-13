@@ -6,7 +6,7 @@ Welcome to the [ForestRacks documentation site](https://help.forestracks.com/) r
 
 To make contributions more uniform, please use these commonly used examples:
 
-- IP Address: When referencing a public IP address, please utilize `192.168.53.72` as a placeholder. This example IP address will ensure that code snippets and demonstrations remain consistent throughout the documentation.
+- IP Address: When referencing a public IP address, please utilize `192.168.53.72` or `172.16.16.16` as a placeholder. This example IP address will ensure that code snippets and demonstrations remain consistent throughout the documentation.
 
 - Domain: In cases where a domain name is required, we suggest using `<domain>` or `example.com` as placeholders. These placeholders offer a clear distinction and allow clients to easily substitute them with their desired domain names.
 
