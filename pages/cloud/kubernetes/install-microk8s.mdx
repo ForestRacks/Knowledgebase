@@ -1,0 +1,46 @@
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
+# Installing Kubernetes
+
+<Steps>
+### Installing Snap
+```bash copy
+apt install snap
+```
+### Install MicroK8S
+```bash copy
+sudo snap install microk8s --classic
+```
+
+### Configure Firewall
+```bash copy
+ufw allow in on cni0 && sudo ufw allow out on cni0
+ufw default allow routed
+```
+
+### Addons
+#### Toggle Addons
+<Tabs items={['Enable', 'Disable']}>
+  <Tab>
+    ```bash copy
+    microk8s enable dns
+    microk8s enable storage
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    microk8s disable dns
+    microk8s disable hostpath-storage
+    ```
+  </Tab>
+</Tabs>
+#### Available Addons
+* dns: Deploy DNS. This addon may be required by others, thus we recommend you always enable it.
+* dashboard: Deploy kubernetes dashboard.
+* hostpath-storage: Create a default storage class. This storage class makes use of the hostpath-provisioner pointing to a directory on the host.
+* ingress: Create an ingress controller.
+* gpu: Expose GPU(s) to MicroK8s by enabling the nvidia-docker runtime and nvidia-device-plugin-daemonset. Requires NVIDIA drivers to be already installed on the host system.
+* istio: Deploy the core Istio services. You can use the microk8s istioctl command to manage your deployments.
+* registry: Deploy a docker private registry and expose it on localhost:32000. The storage addon will be enabled as part of this addon.
+
+</Steps>
