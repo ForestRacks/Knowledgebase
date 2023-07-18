@@ -1,6 +1,20 @@
+import { Steps } from 'nextra-theme-docs'
+
 # IPTables Restrict Traffic to Only Cloudflare
 
-Run the following script:
+<Steps>
+### Install IPTables
+```bash copy
+apt install iptables
+```
+
+### Create IPTables Persistent Directory
+```bash copy
+mkdir -p /etc/iptables/
+```
+
+### Save Script
+Paste this Cloudflare Firewall script as `/root/cffw.sh`
 ```bash filename="cffw.sh" copy
 #!/bin/sh
 
@@ -20,3 +34,9 @@ for cfip6 in $(cat /tmp/cf_ip6); do
 done
 ip6tables-save > /etc/iptables/rules.v6
 ```
+
+### Execute Script
+```bash copy
+bash /root/cffw.sh
+```
+</Steps>
