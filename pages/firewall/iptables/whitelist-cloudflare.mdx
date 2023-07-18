@@ -4,16 +4,19 @@ Run the following script:
 ```bash filename="cffw.sh" copy
 #!/bin/sh
 
-curl -s https://www.cloudflare.com/ips-v4 -o /tmp/cf_ips
-echo "" >> /tmp/cf_ips
-curl -s https://www.cloudflare.com/ips-v6 >> /tmp/cf_ips
+curl -s https://www.cloudflare.com/ips-v4 -o /tmp/cf_ip4
+echo "" >> /tmp/cf_ip4
+curl -s https://www.cloudflare.com/ips-v6 >> /tmp/cf_ip6
+echo "" >> /tmp/cf_ip6
 
 # Allow all traffic from Cloudflare IPs (no ports restriction)
-for cfip in $(cat /tmp/cf_ips); do
-  iptables -A INPUT -p tcp -s $cfip --dport 80 -j ACCEPT -m comment --comment "Cloudflare IP"
-  iptables -A INPUT -p tcp -s $cfip --dport 443 -j ACCEPT -m comment --comment "Cloudflare IP"
+for cfip4 in $(cat /tmp/cf_ip4); do
+  iptables -I INPUT -p tcp -m multiport --dports http,https -s $cfip4 -j ACCEPT -m comment --comment "Cloudflare IPv4"
 done
-
 iptables-save > /etc/iptables/rules.v4
+
+for cfip6 in $(cat /tmp/cf_ip6); do
+  ip6tables -I INPUT -p tcp -m multiport --dports http,https -s $cfip6 -j ACCEPT -m comment --comment "Cloudflare IPv6"
+done
 ip6tables-save > /etc/iptables/rules.v6
 ```
