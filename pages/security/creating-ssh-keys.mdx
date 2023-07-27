@@ -1,5 +1,17 @@
 # Creating an SSH Key
+This guide covers how create SSH keys in your home directory. You don't need to spcify the location with `-f` if you want it to save to the default location. You also are not required to specify a comment with `-C` but generally people put their email or name as the comment so its easier to distinguish who's key is whos.
 
+## Creating a ED25519 SSH Key
 ```bash copy
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/id_ed25519
+```
+
+## Creating other types of SSH Keys
+### ECDSA
+```
+ssh-keygen -t ecdsa -f ~/id_ecdsa
+```
+### RSA
+```
+ssh-keygen -t rsa -f ~/id_rsa
 ```
