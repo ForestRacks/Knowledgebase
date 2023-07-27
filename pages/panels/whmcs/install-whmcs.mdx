@@ -1,0 +1,161 @@
+import { Steps } from 'nextra-theme-docs'
+
+# Installing WHMCS
+
+<Steps>
+### Download WHMCS
+Download whmcs from their [Official Website](https://download.whmcs.com/) and extract the zip in `/var/www`.
+
+### Install Apache
+```bash copy
+apt install apache2
+```
+
+### Generating SSL/TLS Certificates
+#### Downloading Certbot
+To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's Official Website](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
+```bash copy
+apt update
+apt install -y certbot
+apt install -y python3-certbot-apache
+```
+
+#### Completing the HTTP Challenge
+1) Make sure you have port 80 open on your firewall
+2) Request a certificate from Let's Encrypt, you should replace `billing.example.com` with the domain you would like to generate a certificate for.
+```bash copy
+certbot certonly --apache -d billing.example.com
+```
+
+### Automatically Renewing SSL/TLS certificates
+1) Install crontab
+```bash copy
+apt install crontab
+```
+Create a crontab rule for the automatic renewal:
+```bash copy
+(crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
+```
+
+### Webserver Configuration
+Remove the default configuration:
+```bash copy
+a2dissite 000-default.conf
+```
+
+1) Create a new Apache site configuration like `whmcs.conf` in `/etc/apache/sites-available` using a text editor like nano or vim.
+2) Paste the text below into the file, replacing `billing.example.com` with your domain:
+```apache filename="whmcs.conf" {2,23,36,37} copy
+<VirtualHost *:80>
+    ServerName billing.example.com
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/whmcs
+    Options -Indexes
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</VirtualHost>
+
+<VirtualHost *:443>
+    <Directory /var/www/>
+        Options -Indexes
+        AllowOverride All
+        Require all granted
+        Order allow,deny
+        allow from all
+    </Directory>
+    ServerName billing.example.com
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/whmcs
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    # PHP Limits
+    php_value upload_max_filesize 100M
+    php_value post_max_size 100M
+
+    # SSL Configuration
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/billing.example.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/billing.example.com/privkey.pem
+
+    # Headers
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set X-Robots-Tag "none"
+    Header always set Content-Security-Policy "frame-ancestors 'self'"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "same-origin"
+    Header always set Permissions-Policy "accelerometer=(), camera=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), usb=()"
+</VirtualHost>
+```
+### Link Config
+Enable your new Apache website configuration and required modules:
+```bash copy
+ln -s /etc/apache2/sites-available/whmcs.conf /etc/apache2/sites-enabled/whmcs.conf
+```
+
+### Install PHP
+```bash copy
+apt-add-repository universe
+apt -y install libapache2-mod-php php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip,bcmath,gmp,intl,mbstring,soap}
+```
+
+### Install IonCube
+```bash copy
+wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
+tar -xzvf ioncube_loaders_lin_x86-64.tar.gz
+
+cp ioncube_loader_lin_8.1.so /usr/lib/php/20210902/
+```
+
+Add IonCube Extension to PHP:
+```bash filename="/etc/php/8.1/cli/php.ini" copy
+zend_extension = "/usr/lib/php/20210902/ioncube_loader_lin_8.1.so"
+```
+
+Check if IonCube was successfully installed:
+```bash copy
+php -v
+```
+
+### Enable Required Modules
+```bash copy
+a2enmod rewrite
+a2enmod headers
+a2enmod ssl
+# List Modules
+apachectl -M
+```
+
+### Restart Apache and PHP
+```bash copy
+systemctl restart apache2
+systemctl restart php8.1-fpm
+```
+
+### Install MariaDB
+```bash copy
+curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
+apt install mariadb-server
+```
+
+### Create Database
+```sql copy
+CREATE DATABASE whmcs;
+CREATE USER 'whmcsuser'@'127.0.0.1' IDENTIFIED BY 'somePasswordHere';
+GRANT ALL PRIVILEGES ON whmcs.* TO 'whmcsuser'@'127.0.0.1';
+```
+
+### Begin Setup
+1) Visit your domain and click "Click here to begin..."
+2) Read and either agree or disagree with the WHMCS EULA
+3) Fix any errors, most commonly are simple file permission errors
+4) Input your database login credentials
+5) Input your license and create an administrator user
+</Steps>
