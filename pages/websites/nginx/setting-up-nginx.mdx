@@ -27,11 +27,11 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     ```
 
     ### Automatically Renewing SSL/TLS certificates
-    1) Install crontab
+    1) Install crontab:
     ```bash copy
     apt install crontab
     ```
-    Create a crontab rule for the automatic renewal:
+    2) Create a crontab rule for the automatic renewal:
     ```bash copy
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
     ```
@@ -117,11 +117,11 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     ```
 
     ### Automatically Renewing SSL/TLS certificates
-    1) Install crontab
+    1) Install crontab:
     ```bash copy
     yum install crontab
     ```
-    Create a crontab rule for the automatic renewal:
+    2) Create a crontab rule for the automatic renewal:
     ```bash copy
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
     ```
