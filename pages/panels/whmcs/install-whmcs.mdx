@@ -152,6 +152,11 @@ CREATE USER 'whmcsuser'@'127.0.0.1' IDENTIFIED BY 'somePasswordHere';
 GRANT ALL PRIVILEGES ON whmcs.* TO 'whmcsuser'@'127.0.0.1';
 ```
 
+### Setting File Permissions
+```bash copy
+chown -R www-data:www-data /var/www/whmcs
+```
+
 ### Begin Setup
 1) Visit your domain and click "Click here to begin..."
 2) Read and either agree or disagree with the WHMCS EULA
