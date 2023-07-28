@@ -8,7 +8,7 @@ docker network prune -f ;
 docker volume prune -f
 ```
 
-## Deleting Old Logs
+## Deleting Old System Logs
 Let's Encrypt:
 ```bash copy
 rm /var/log/letsencrypt/*
@@ -18,7 +18,7 @@ Recursively delete old .gz logs:
 find /var/log -type f -name "*.gz" -exec rm -i {} \;
 ```
 
-## Autoremove old packages
+## Remove Old System Packages
 ```bash copy
 apt autoremove
 ```
