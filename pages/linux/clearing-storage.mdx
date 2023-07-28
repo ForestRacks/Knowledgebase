@@ -1,0 +1,24 @@
+# Finding what to delete on Linux
+
+## Clearing Docker Files
+```bash copy
+docker container prune -f ;
+docker image prune -f ;
+docker network prune -f ;
+docker volume prune -f
+```
+
+## Deleting Old Logs
+Let's Encrypt:
+```bash copy
+rm /var/log/letsencrypt/*
+```
+Recursively delete old .gz logs:
+```bash copy
+find /var/log -type f -name "*.gz" -exec rm -i {} \;
+```
+
+## Autoremove old packages
+```bash copy
+apt autoremove
+```
