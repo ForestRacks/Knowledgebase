@@ -10,8 +10,17 @@ Follow our MicroK8S [Installation Guide](/cloud/kubernetes/install-microk8s).
 ```bash copy
 microk8s enable community
 ```
+
 ### Enable Portainer
 ```bash copy
 microk8s enable portainer
 ```
+
+### Accessing Portainer
+1. Find the IP with `microk8s kubectl get all --all-namespaces` and locate the IP like `172.16.16.16` in this case:
+```
+portainer     service/portainer        NodePort    172.16.16.16   <none>        9000:30777/TCP,9443:30779/TCP,30776:30776/TCP   111s
+```
+2. Visit the website at `https://172.16.16.16:9443` or if its running on a local IP, you can see if it works with `curl -k https://172.16.16.16:9443`.
+
 </Steps>
