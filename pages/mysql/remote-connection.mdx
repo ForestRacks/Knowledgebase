@@ -8,7 +8,7 @@ For specifics on how [MySQL users](/mysql/setting-up-mysql#creating-a-mysql-user
 # You should change the username and password below to something unique.
 CREATE USER 'your_user'@'%' IDENTIFIED BY 'somePasswordHere';
 # Allocate privileges to the user you created
-GRANT ALL PRIVILEGES *.* TO 'your_user'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'your_user'@'%' WITH GRANT OPTION;
 ```
 
 ## Changing the MySQL Configuration
