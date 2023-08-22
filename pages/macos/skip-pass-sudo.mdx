@@ -1,0 +1,17 @@
+import { Steps } from 'nextra-theme-docs'
+
+# Use Biometric Fingerprint Authentication for Sudo
+
+Sometimes typing your password in terminal gets excessive every single time you want to use sudo. You can skip this process and use fingerprint authentication instead by following this guide.
+
+<Steps>
+### Open Pam File
+```
+sudo nano /etc/pam.d/sudo
+```
+
+### Add Line
+```
+auth       sufficient     pam_tid.so
+```
+</Steps>
