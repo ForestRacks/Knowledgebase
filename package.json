@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
-    "pnpm": "^8.6.12",
+    "pnpm": "^8.7.0",
     "typescript": "^5.2.2"
   }
 }
