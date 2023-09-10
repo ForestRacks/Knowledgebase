@@ -4,7 +4,9 @@ import { Steps } from 'nextra-theme-docs'
 
 <Steps>
 ### Download WHMCS
-Download whmcs from their [Official Website](https://download.whmcs.com/) and extract the zip in `/var/www`.
+1) Download WHMCS from their [Official Website](https://download.whmcs.com/)
+2) Install unzip with `apt install unzip`
+3) Extract the zip with `cd /var/www && unzip whmcs_*`
 
 ### Install Apache
 ```bash copy
@@ -143,6 +145,11 @@ systemctl restart php8.1-fpm
 ```bash copy
 curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 apt install mariadb-server
+```
+
+### Enter MySQL Shell
+```bash copy
+mysql
 ```
 
 ### Create Database
