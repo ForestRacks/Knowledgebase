@@ -116,8 +116,12 @@ tar -xzvf ioncube_loaders_lin_x86-64.tar.gz
 cp ioncube/ioncube_loader_lin_8.1.so /usr/lib/php/20210902/
 ```
 
-Add IonCube Extension to PHP:
+Add IonCube Extension to CLI PHP.ini:
 ```bash filename="/etc/php/8.1/cli/php.ini" copy
+zend_extension = "/usr/lib/php/20210902/ioncube_loader_lin_8.1.so"
+```
+Add IonCube Extension to Apache PHP.ini:
+```bash filename="/etc/php/8.1/apache2/php.ini" copy
 zend_extension = "/usr/lib/php/20210902/ioncube_loader_lin_8.1.so"
 ```
 
