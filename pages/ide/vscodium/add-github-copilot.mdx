@@ -1,0 +1,37 @@
+# Install Github Copilot for VSCodium
+
+1) Navigate to the [Github Copilot extension page](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot).
+2) On the right-hand sidebar, click the "Download Extension" button to download the `.vsix` extension file.
+3) Go to the extensions page within VSCodium and click the elipses on the left-hand sidebar.
+4) You should see a dropdown open with an option named "Install from VSIX" at the bottom.
+5) Select the extension file from your computer, it should be named similar to `GitHub.copilot-1.115.434.vsix`.
+6) On VSCodium, select your Github user from the bottom left user icon and click "Manage Trusted Extensions"
+7) Uncheck Github Copilot if its checked so you will be prompted to the login page after restarting VSCodium.
+8) Edit VSCODIUM_FOLDER/resources/app/product.json. Find the `GitHub.copilot` and insert the following permission:
+```json copy
+["inlineCompletions","inlineCompletionsNew","inlineCompletionsAdditions","textDocumentNotebook","interactive","terminalDataWriteEvent"]
+```
+Possible paths for the product.json:
+```
+/opt/vscodium-bin/resources/app/product.json
+/usr/share/codium/resources/app/product.json
+/Applications/VSCodium.app/Contents/Resources/app/
+/snap/codium/current/usr/share/codium/resources/app/product.json
+```
+9) Restart VSCodium and follow the Github Copilot signin prompts.
+## Troubleshooting
+If you have any issues, its posisble that you may need to manually create a access_token or grant account access to the copilot extension. 
+1) Open a terminal and send a request to begin Github authorization
+```bash copy
+curl https://github.com/login/device/code -X POST -d 'client_id=01ab8ac9400c4e429b23&scope=user:email'
+```
+You will see device_code and user_code in the response
+
+2) Go to https://github.com/login/device/ in any browser and enter the user_code
+Return to the terminal and send this (replace YOUR_DEVICE_CODE with the device_code you got in the previous step:
+```bash copy
+curl https://github.com/login/oauth/access_token -X POST -d 'client_id=01ab8ac9400c4e429b23&scope=user:email&device_code=YOUR_DEVICE_CODE&grant_type=urn:ietf:params:oauth:grant-type:device_code'
+```
+
+3) You will see your access_token in the response (gho_...). Paste it in VSCodium when the Copilot extension requires authorization.
+Enjoy your freedom!
