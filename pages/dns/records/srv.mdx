@@ -1,1 +1,39 @@
 # Understanding SRV Records
+
+DNS (Domain Name System) is a crucial part of the internet infrastructure that translates human-readable domain names into IP addresses. While common DNS records like A (Address) and CNAME (Canonical Name) are well-known, SRV (Service) records are a powerful yet lesser-known resource record type. In this documentation article, we'll explore what SRV records are, their role in DNS, and how they can be utilized with a specific focus on the popular online game Minecraft.
+
+## What is an SRV Record?
+An SRV (Service) record is a DNS resource record type that provides detailed information about services or servers available under a specific domain name. Unlike A or CNAME records, SRV records carry information about the service's hostname, port number, protocol, priority, weight, and target server. This makes SRV records a versatile tool for directing network traffic to specific services running on different servers.
+
+## SRV Record Components
+SRV records consist of the following components:
+
+- **Service Name:** A symbolic name representing the desired service, such as "_minecraft" for Minecraft.
+- **Protocol:** The transport protocol used by the service, typically "TCP" or "UDP."
+- **Priority:** A numerical value that helps prioritize multiple SRV records for the same service.
+- **Weight:** Used for load balancing; it determines the likelihood of selecting this SRV record when multiple records have the same priority.
+- **Port:** The port number on which the service is accessible.
+- **Target:** The fully qualified domain name (FQDN) of the server providing the service.
+
+## SRV Records Use Cases
+Many games and applications, like Minecraft Java Edition, often leverage SRV records to specify a custom port.
+
+### SRV Implementation
+In Minecraft, players connect to multiplayer servers to enjoy collaborative gameplay. Many servers use domain names instead of IP addresses for accessibility, and SRV records enable this convenience. Here's an example of how an SRV record might be used for a Minecraft server:
+
+- Service Name: "_minecraft"
+- Protocol: "TCP"
+- Priority: 0
+- Weight: 5
+- Port: 25565
+- Target: "minecraft.example.com."
+
+In this SRV record, players can connect to the Minecraft server "minecraft.example.com" on the default port 25565. This simplifies the connection process, as players only need to know the server's domain name rather than its IP address and port number.
+
+## Managing SRV Records
+The management of SRV records varies depending on your DNS hosting provider. Most modern DNS providers offer tools through which you can create and modify SRV records. You'll need to input the necessary components (service name, protocol, priority, weight, port, and target) to configure the SRV record according to your requirements.
+
+## Conclusion
+SRV (Service) records in DNS are versatile resource records that provide detailed information about services or servers associated with a domain. They are particularly useful in simplifying connections to services, making it easier for players to join games without needing to remember complex IP addresses and ports.
+
+When working with SRV records, understanding their components and how to manage them through your DNS provider's tools is essential. Whether you're an online game server administrator or have other services associated with your domain, SRV records offer a powerful and convenient way to direct network traffic to specific services.
