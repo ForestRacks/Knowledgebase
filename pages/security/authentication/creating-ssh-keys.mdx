@@ -1,17 +1,33 @@
-# Creating an SSH Key
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+# Using SSH Keys
 This guide covers how create SSH keys in your home directory. You don't need to spcify the location with `-f` if you want it to save to the default location. You also are not required to specify a comment with `-C` but generally people put their email or name as the comment so its easier to distinguish who's key is whos.
 
-## Creating a ED25519 SSH Key
+## Creating an SSH Key
 ```bash copy
 ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/id_ed25519
 ```
 
-## Creating other types of SSH Keys
-### ECDSA
-```
-ssh-keygen -t ecdsa -f ~/id_ecdsa
-```
-### RSA
-```
-ssh-keygen -t rsa -f ~/id_rsa
+<Tabs items={['ED25519', 'ECDSA', 'RSA']}>
+  <Tab>
+    ```bash copy
+    ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/id_ed25519
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    ssh-keygen -t ecdsa -f ~/id_ecdsa
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    ssh-keygen -t rsa -f ~/id_rsa
+    ```
+  </Tab>
+</Tabs>
+
+## Add an SSH Key to a node
+```bash copy
+mkdir -p /root/.ssh/
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL9R0dsRT1VV9l+xxs3qKgCpeidln8eZpbTQsWtw2pYL your_email@example.com" | tee -a /root/.ssh/authorized_keys;
 ```
