@@ -3,7 +3,7 @@ import { Tab, Tabs } from 'nextra-theme-docs'
 # Using SSH Keys
 This guide covers how create SSH keys in your home directory. You don't need to spcify the location with `-f` if you want it to save to the default location. You also are not required to specify a comment with `-C` but generally people put their email or name as the comment so its easier to distinguish who's key is whos.
 
-## Creating an SSH Key
+## Creating an SSH key
 ```bash copy
 ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/id_ed25519
 ```
@@ -26,8 +26,23 @@ ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/id_ed25519
   </Tab>
 </Tabs>
 
-## Add an SSH Key to a node
+## Add an SSH key to a node
 ```bash copy
 mkdir -p /root/.ssh/
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL9R0dsRT1VV9l+xxs3qKgCpeidln8eZpbTQsWtw2pYL your_email@example.com" | tee -a /root/.ssh/authorized_keys;
+```
+
+## Require SSH key auth
+After you confirm you can log in with the SSH key, you can modify the SSH config to require ssh key authentication:
+```bash copy
+SSH_CONFIG_FILE="/etc/ssh/sshd_config"
+if [ -f $SSH_CONFIG_FILE ]; then
+  # Replace PermitRootLogin
+  sed -i "s/\(^PermitRootLogin \).*/\1 yes/" $SSH_CONFIG_FILE
+  # Replace PasswordAuthentication
+  sed -i "s/\(^PasswordAuthentication \).*/\1 no/" $SSH_CONFIG_FILE
+else
+  echo "Error: SSH config file not found at $SSH_CONFIG_FILE"
+  exit 1
+fi
 ```
