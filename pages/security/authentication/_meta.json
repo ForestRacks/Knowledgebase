@@ -1,8 +1,5 @@
 {
   "providers": "Identity Providers",
   "ssh-keys": "Using SSH Keys",
-  "oauth": "OAuth 2.0",
-  "oidc": "OpenID Connect",
-  "saml": "SAML",
-  "totp": "Time-based One-Time Password"
+  "signin": "Signin"
 }

@@ -3,5 +3,6 @@
   "pavlov": "Pavlov VR",
   "rust": "Rust",
   "scpsl": "SCP: Secret Laboratory",
-  "troubleshoot": "Troubleshooting"
+  "troubleshoot": "Troubleshooting",
+  "connect-to-sftp": "Connect to SFTP"
 }
