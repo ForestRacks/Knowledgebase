@@ -1,0 +1,39 @@
+# Using DMARC Records
+
+## Introduction
+DMARC, which stands for Domain-based Message Authentication, Reporting, and Conformance, is an email authentication and reporting protocol that helps organizations protect their email domains from spoofing, phishing, and email fraud. This documentation guide will explain what DMARC is, how it works, and how to implement it effectively to enhance email security.
+
+## What is DMARC?
+DMARC is an email authentication protocol that builds upon existing technologies such as SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail) to provide a comprehensive framework for email authentication, reporting, and enforcement. It allows domain owners to specify policies for email receivers (e.g., ISPs and email providers) to follow when receiving email messages from their domains.
+
+## How DMARC Works
+Understanding the operation of DMARC is essential for configuring and deploying it effectively:
+
+1. **Policy Definition**: The domain owner publishes a DMARC policy in their DNS records. This policy specifies what actions email receivers should take when they receive an email message that claims to be from the domain.
+2. **Incoming Email**: When an email receiver receives an email message, it checks the message's alignment with the published DMARC policy. DMARC validates two key elements:
+  - **SPF Alignment**: Checks if the "MAIL FROM" domain matches the domain in the "From" header.
+  - **DKIM Alignment**: Verifies the digital signature in the DKIM header against the "From" domain.
+3. **DMARC Policy Enforcement**: Depending on the outcome of alignment checks, the email receiver enforces the specified DMARC policy:
+  - **Reject**: If the alignment checks fail, the email is rejected.
+  - **Quarantine**: If the alignment checks partially fail or if no DMARC policy is published, the email may be placed in the recipient's spam or quarantine folder.
+  - **None**: No specific action is taken based on DMARC results. The DMARC report is sent to the domain owner.
+4. **Reporting**: DMARC also provides reporting mechanisms, allowing email receivers to send feedback reports (known as DMARC reports or aggregate reports) to the domain owner. These reports contain detailed information about email authentication results, which can be used for monitoring and analysis.
+
+## DMARC Syntax and Policies
+DMARC policies are defined in DNS TXT records for the domain. Common DMARC policies include:
+
+- **p**: Specifies the policy to be applied (none, quarantine, or reject).
+- **sp**: Specifies the policy for subdomains.
+- **rua**: Specifies the email address where aggregate reports should be sent.
+- **ruf**: Specifies the email address where forensic (failure) reports should be sent.
+
+## Implementing DMARC
+To implement DMARC for your domain, follow these steps:
+
+1. **Create a DMARC Record**: Create a DNS TXT record for your domain that defines your DMARC policy. Specify the desired policy action (none, quarantine, or reject) and reporting addresses (rua and ruf).
+2. **Publish the Record**: Publish the DMARC record in your domain's DNS zone. Ensure it is accessible to email receivers.
+3. **Gradual Enforcement**: If you're transitioning to DMARC enforcement, consider starting with a "none" policy to monitor email authentication without impacting email delivery. Gradually increase enforcement as needed.
+4. **Monitor and Analyze**: Regularly monitor DMARC reports and analyze the results. Adjust your policy and authentication practices based on the feedback received.
+
+## Conclusion
+DMARC (Domain-based Message Authentication, Reporting, and Conformance) is a critical email authentication and reporting protocol that helps organizations protect their email domains from spoofing, phishing, and email fraud. Implementing DMARC effectively can significantly enhance email security and protect your domain's reputation. Understanding DMARC syntax, policies, and best practices is essential for organizations seeking to improve email authentication and reduce email-based threats.
