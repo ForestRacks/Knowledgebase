@@ -1,0 +1,60 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+# Using Quad9 9.9.9.9 DNS
+
+Cloudflare's Public DNS Resolver is a project created in collaboration between Cloudflare and APNIC. Cloudflare only keeps 24 hours worth of logs for debugging and only shares generic overall statistics with third-parties.
+
+## Three Resolver Options:
+<Tabs items={['Standard', 'ECS enabled', 'Allow Unsafe']}>
+  <Tab>
+    Recommended: Malware Blocking, DNSSEC Validation (this is the most typical configuration)
+
+    IPv4 Resolvers:
+    9.9.9.9
+    149.112.112.112
+
+    IPv6 Resolvers:
+    2620:fe::fe
+    2620:fe::9
+
+    HTTPS Resolver:
+    https://dns.quad9.net/dns-query
+    
+    TLS Resolver:
+    tls://dns.quad9.net
+  </Tab>
+  <Tab>
+    Secured w/ECS: Malware blocking, DNSSEC Validation, ECS enabled
+
+    IPv4 Resolvers:
+    9.9.9.11
+    149.112.112.11
+
+    IPv6 Resolvers:
+    2620:fe::11
+    2620:fe::fe:11
+
+    HTTPS Resolver:
+    https://dns11.quad9.net/dns-query
+
+    TLS Resolver:
+    tls://dns11.quad9.net
+  </Tab>
+  <Tab>
+    Unsecured: No Malware blocking, no DNSSEC validation (for experts only!)
+
+    IPv4 Resolvers:
+    9.9.9.10
+    149.112.112.10
+
+    IPv6 Resolvers:
+    2620:fe::10
+    2620:fe::fe:10
+
+    HTTPS Resolver:
+    https://dns10.quad9.net/dns-query
+    
+    TLS Resolver:
+    tls://dns10.quad9.net
+  </Tab>
+</Tabs>
