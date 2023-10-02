@@ -1,1 +1,65 @@
+import { Steps } from 'nextra-theme-docs'
+
 # Installing Fiber
+
+<Steps>
+### Install Go
+Get the latest version of Go from [the official Golang website](https://golang.org/dl/) and follow the instructions.
+
+### Create Go Project
+
+#### Initialize App
+```bash copy
+go mod init demo
+```
+
+#### Create main.go
+Now create a file called main.go in the project directory write the following code in it:
+```go filename="main.go" copy
+package main
+
+import (
+    "log"
+
+    "github.com/gofiber/fiber/v2"
+)
+
+func main() {
+    app := fiber.New()
+
+    app.Get("/", func(c *fiber.Ctx) error {
+        return c.SendString("Hello, World 👋!")
+    })
+
+    log.Fatal(app.Listen(":3000"))
+}
+```
+The above code is actually the bare-bones to get the server respond with `Hello, World 👋!`
+
+#### Create go.mod
+Save the file and run the following command to update your `go.mod`
+```bash copy
+go mod tidy
+```
+This will create a go.sum file that ensures that future downloads of these modules retrieve the same bits as the first download, to ensure the modules your project depends on do not change unexpectedly, whether for malicious, accidental, or other reasons
+
+```
+Your project folder should contain the following file structure:
+/ProjectDirectory
+  ├── main.go
+  ├── go.mod
+  └── go.sum
+```
+
+#### Run App
+Let's launch our app by calling the following command:
+```bash copy
+go run main.go
+```
+
+### Explore Fiber
+Fiber has a great community and online documentation that can help you creating fast and secure web apps.
+* https://github.com/gofiber/fiber
+* https://docs.gofiber.io/
+* https://gofiber/discord
+</Steps>

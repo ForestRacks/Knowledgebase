@@ -1,1 +1,18 @@
 # Installing Drogon
+
+# Install Dependencies
+```bash copy
+apt install cmake gcc g++ git libjsoncpp-dev libssl-dev openssl uuid-dev zlib1g-dev
+```
+
+# Initialize Build
+```bash copy
+cd /opt
+git clone https://github.com/drogonframework/drogon
+cd drogon
+git submodule update --init
+mkdir build
+cd build
+cmake ..
+make && sudo make install
+```
