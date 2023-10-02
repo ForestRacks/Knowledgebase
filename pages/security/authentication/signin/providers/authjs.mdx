@@ -1,0 +1,59 @@
+import { Steps } from 'nextra-theme-docs'
+
+# Using Auth.js
+
+## Introduction
+Auth.js, formerly known as NextAuth.js, is a popular authentication library for Node.js and Next.js applications. It simplifies the process of implementing authentication, authorization, and session management in your web applications. This documentation guide will provide an overview of what Auth.js is, its core features, and how to get started with it to enhance the security and user management in your projects.
+
+## What is Auth.js?
+Auth.js is an open-source authentication library designed specifically for Next.js applications, although it can be used with other Node.js frameworks as well. It offers a robust and customizable solution for implementing authentication and session management, allowing developers to add user registration, login, and access control functionalities quickly and efficiently.
+
+## Core Features of Auth.js
+Auth.js provides several key features and capabilities:
+
+<Steps>
+### Authentication
+  - **Passwordless Authentication**: Implement passwordless authentication via email or other methods.
+  - **Social Sign-In**: Allow users to sign in using their social media accounts (e.g., Google, Facebook, Twitter).
+  - **JWT (JSON Web Tokens)**: Securely handle user sessions using JWTs.
+
+### Authorization
+  - **Role-Based Access Control (RBAC)**: Define roles and permissions to control access to specific routes or components.
+  - **Custom Access Rules**: Implement custom access control logic to suit your application's requirements.
+
+### Session Management
+  - **Session Persistence**: Choose how user sessions are persisted, whether in memory, a database, or a custom storage solution.
+  - **Session Expiry**: Set session expiration policies for added security.
+
+### Database Integration
+  - **Database Agnostic**: Auth.js supports various databases, including MongoDB, PostgreSQL, MySQL, and SQLite.
+  - **Custom Database Schemas**: Customize database schemas to store user data.
+
+### Extensibility
+  - **Custom Providers**: Extend Auth.js by creating custom authentication providers to meet unique use cases.
+  - **Hooks and Events**: Implement hooks and events to customize and extend functionality.
+</Steps>
+
+## Getting Started with Auth.js
+To get started with Auth.js, follow these steps:
+
+<Steps>
+### Installation
+  - Install Auth.js in your Next.js project using npm or yarn.
+
+### Configuration
+  - Create a configuration file to define authentication providers, database options, and other settings.
+
+### Integration
+  - Integrate Auth.js into your Next.js application by adding authentication routes and components.
+
+### Customization
+  - Customize the authentication flows, UI components, and access control logic to match your application's requirements.
+
+### Testing and Deployment
+  - Test the authentication and authorization flows thoroughly in a development environment.
+  - Deploy your Next.js application to a production environment, ensuring secure and scalable authentication.
+</Steps>
+
+## Conclusion
+Auth.js is a powerful authentication library for Node.js and Next.js applications, providing a straightforward way to implement secure authentication and authorization features. Whether you are building a small web application or a large-scale project, Auth.js simplifies the process of adding user management functionality, allowing you to focus on building your application's core features.

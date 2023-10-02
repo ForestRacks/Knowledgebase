@@ -1,1 +1,30 @@
 # Understanding ANAME Records
+
+## Introduction
+ANAME-Records, also known as ALIAS-Records, are a DNS record type that serves as a DNS-level alias, providing a way to point a domain or subdomain to another domain without using a traditional CNAME (Canonical Name) record. ANAME-Records are particularly useful when you want to route traffic to a domain's root (apex) or when CNAMEs are not allowed at the root domain. This documentation guide will provide an explanation of what ANAME-Records are, how they work, and how they differ from traditional CNAME records.
+
+## What are ANAME-Records?
+ANAME-Records (ALIAS-Records) are DNS resource records that function as a DNS-level alias. They allow you to map a domain or subdomain to another domain or hostname, effectively redirecting traffic to the specified target. ANAME-Records are commonly used when you want to point the root (apex) domain to a target or when CNAMEs cannot be used at the root of a domain.
+
+## How ANAME-Records Work
+Understanding how ANAME-Records function is essential to harness their capabilities:
+
+1. **DNS Query**: When a user or device queries the DNS for a domain or subdomain configured with an ANAME-Record, the DNS resolver initiates a query to the authoritative DNS server.
+2. **ANAME-Record Resolution**: The authoritative DNS server processes the ANAME-Record. It resolves the target domain or hostname associated with the ANAME-Record.
+3. **Target IP Resolution**: After resolving the target domain or hostname, the DNS server returns the corresponding IP address to the DNS resolver.
+4. **Traffic Routing**: The DNS resolver directs the user's request to the IP address obtained from the ANAME-Record resolution, effectively routing traffic to the specified target.
+5. **User Access**: The user's request reaches the target server, which serves the requested content.
+
+## ANAME-Records vs. CNAME Records
+ANAME-Records offer similar functionality to CNAME records but with some notable differences:
+
+- **Apex Domain**: ANAME-Records can be used at the root (apex) domain, whereas CNAMEs cannot be used at the apex due to DNS standards.
+- **No Additional Queries**: ANAME-Records resolve directly to an IP address without an additional DNS query, which can improve performance compared to CNAMEs.
+- **Target Flexibility**: ANAME-Records allow you to point to domains or hostnames directly, including external services or load balancers.
+- **Provider Support**: Many DNS providers do not offer ANAME-Records. However, providers like Cloudflare and GCore offer a feature called CNAME flattening, which allows you to use a CNAME record at the root domain to achieve similar functionality to ANAME-Records.
+
+## Using ANAME-Records (or CNAME Flattening)
+To use ANAME-Records, check with your DNS provider to see if they offer this record type. If your DNS provider does not support ANAME-Records, consider using a CNAME record at the apex domain if they support CNAME flattening. For providers like Cloudflare and GCore that offer CNAME flattening, you can create a CNAME record at the root domain, and it will behave similarly to an ANAME-Record.
+
+## Conclusion
+ANAME-Records (ALIAS-Records) provide a versatile way to alias domains and subdomains in DNS, especially when working with root domains or domains that do not support traditional CNAME records. While not all DNS providers offer ANAME-Records, some providers offer CNAME flattening, which can achieve similar functionality. Understanding how to use ANAME-Records or leverage CNAME flattening can be valuable for managing DNS configurations and routing traffic effectively.```
