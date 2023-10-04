@@ -1,1 +1,22 @@
 # Installing Grafana Analytics
+
+Grafana is an open source analytics and system health monitoring solution. It is a highly customizable and pluggable dashboard that can be used to monitor metrics, logs, and other data. It is a web-based tool with a user-friendly interface that can be used to create dashboards and graphs.
+
+```yml filename="docker-compose.yml" copy
+version: '3'
+services:
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      - grafana_data:/var/lib/grafana
+volumes:
+  grafana_data: {}
+```
+
+```bash copy
+docker compose up -d
+```

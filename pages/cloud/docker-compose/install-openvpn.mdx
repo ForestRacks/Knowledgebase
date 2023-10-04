@@ -1,0 +1,38 @@
+# Installing OpenVPN
+
+``docker filename="Dockerfile" copy
+FROM ubuntu:latest
+
+WORKDIR /root
+
+RUN apt update && apt install -y curl
+
+# Download the installer
+RUN curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh && \
+  chmod +x openvpn-install.sh
+
+# Set environment variables
+ENV AUTO_INSTALL=y
+ENV APPROVE_INSTALL=y
+ENV APPROVE_IP=y
+ENV MENU_OPTION='1'
+ENV CLIENT='{{ client }}'
+ENV PASS='1'
+
+# Run installation installer
+RUN ./openvpn-install.sh
+RUN rm -f openvpn-install.sh
+RUN echo "Done, please download your profile"
+```
+
+```yml filename="docker-compose.yml" copy
+version: '3'
+
+services:
+  openvpn:
+    build: .
+```
+
+```bash copy
+docker compose up -d
+```
