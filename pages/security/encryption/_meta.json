@@ -1,5 +1,5 @@
 {
+  "certbot": "Certbot/Let's Encrypt",
   "google": "Google Trust Services",
-  "letsencrypt": "Let's Encrypt",
   "zerossl": "ZeroSSL"
 }

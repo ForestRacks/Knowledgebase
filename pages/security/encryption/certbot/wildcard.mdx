@@ -1,0 +1,40 @@
+# Creating Wildcard SSL Certificates with Certbot
+
+The process varies slightly depending on which DNS verification provider you use. For this guide we will focus on Cloudflare but if you use another DNS provider like GCore, your certbot generation may require a few extra flags like `--rsa-key-size 2048`.
+
+## Creating DNS API Token
+Cloudflare’s [API Tokens](https://dash.cloudflare.com/profile/api-tokens) provide restricted access controls for specific domains and operations, and are therefore the recommended authentication option.
+
+The Token needed by Certbot requires `Zone:DNS:Edit` permissions for only the zones you need certificates for.
+
+Then add the token to a config file:
+```ini filename="/root/cloudflare.ini" copy
+# Cloudflare API token used by Certbot
+dns_cloudflare_api_token = YOUR_CLOUDFLARE_API_TOKEN
+```
+
+## Install Required Dependencies
+```bash copy
+apt install -y certbot python3-certbot-nginx python3-pip
+pip3 install certbot-dns-cloudflare
+```
+
+## Generate Certificate
+```bash copy
+certbot certonly \
+  --dns-cloudflare \
+  --dns-cloudflare-credentials /root/cloudflare.ini \
+  --dns-cloudflare-propagation-seconds 60 \
+  -d example.com \
+  -d *.example.com
+```
+
+## Automatic Renewal
+1) Install crontab:
+```bash copy
+apt install cron
+```
+2) Create a crontab rule for the automatic renewal:
+```bash copy
+(crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
+```
