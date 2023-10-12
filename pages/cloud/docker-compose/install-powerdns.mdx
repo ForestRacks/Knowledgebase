@@ -2,6 +2,22 @@
 
 PowerDNS is an easy to use DNS Server with support for both recursive and authoritative queries.
 
+## Checking Port 53 Availability
+Usually systemd uses port 53 for local dns queries. You can check what services are using port 53 with the following command:
+```bash copy
+lsof -i :53
+```
+You may need to disable this service but proceed with caution since this will break DNS queries if you don't handle DNS elsewhere.
+```
+systemctl disable systemd-resolved
+```
+
+Make sure DNS requests still work after disabling systemd:
+```bash copy
+ping example.com
+```
+If you get a resolution error, make sure you set DNS resolvers in `/etc/resolv.conf` or your network config.
+
 ## Authoritative PowerDNS Configuration
 Replace `PASSWORD_HERE` with a password and `192.168.53.72` with your public IP address
 
