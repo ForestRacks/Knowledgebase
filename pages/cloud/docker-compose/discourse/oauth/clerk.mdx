@@ -1,0 +1,47 @@
+# Setup Clerk Oauth on Discourse
+
+## Install Discourse Oauth2 Basic Plugin
+Add plugin to `app.yml`:
+```yml filename="/var/discourse/containers/app.yml" copy
+hooks:
+  after_code:
+    - exec:
+        cd: $home/plugins
+        cmd:
+          - git clone https://github.com/discourse/discourse-oauth2-basic.git
+```
+Rebuild Discourse:
+```bash copy
+cd /var/discourse
+./launcher rebuild app
+```
+
+## Enable Oauth
+Go to `Admin > Plugins and toggle on `discourse-oauth2-basic`.
+
+## Get Cient ID and Secret
+Visit Developers > API Keys on (Clerk's Dashboard)[https://dashboard.clerk.com/] and create a new API Key. You will need to copy the `CLERK_SECRET_KEY` to generate the credentials for the next step.
+
+Run the following curl API request to Clerk replacing `CLERK_SECRET_KEY` with your secret key from the previous step.
+```bash copy
+curl -X POST https://api.clerk.com/v1/oauth_applications \
+ -H "Authorization: Bearer CLERK_SECRET_KEY"  \
+  -H "Content-Type: application/json" \
+  -d '{"callback_url":"https://discourse.example.com/auth/oauth2_basic/callback", "name": "discourse-forum"}'
+
+```
+
+## Configuring Discourse
+Visit the Oauth settings page on the Discourse Admin page and input the following options, replacing example.com with the domain you are using for Clerk:
+* oauth2 client id: `client_id` from the curl output
+* oauth2 client secret: `client_secret` from the curl output
+* oauth2 authorize url: `https://clerk.example.com/oauth/authorize`
+* oauth2 token url: `https://clerk.example.com/oauth/token`
+* oauth2 user json url: `https://clerk.example.com/oauth/userinfo`
+* oauth2 json user id path: `user_id`
+* oauth2 json username path: `username`
+* oauth2 json name path: `name`
+* oauth2 json email path: `email`
+* oauth2 json email verified path: `email_verified`
+* oauth2 json avatar path: `picture`
+* oauth2 scope: `profile email` 
