@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^20.8.7
     version: 20.8.7
   pnpm:
-    specifier: ^8.9.2
-    version: 8.9.2
+    specifier: ^8.10.0
+    version: 8.10.0
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -2274,8 +2274,8 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: false
 
-  /pnpm@8.9.2:
-    resolution: {integrity: sha512-udNf6RsqWFTa3EMDSj57LmdfpLVuIOjgnvB4+lU8GPiu1EBR57Nui43UNfl+sMRMT/O0T8fG+n0h4frBe75mHg==}
+  /pnpm@8.10.0:
+    resolution: {integrity: sha512-nCy4Pyts9qJdjFgwC/mRl8fvO+hM8+dm8pBUtAuDtC+Kq6b8wxSp7PJ8APfOgKdXu0xgiADnrb4tKdxccFb1vg==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
