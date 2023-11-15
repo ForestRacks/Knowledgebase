@@ -1,8 +1,6 @@
 {
   "standards": "Standards",
   "frameworks": "Frameworks",
-  "apache": "Apache",
-  "nginx": "Nginx",
   "html": "HTML",
   "javascript": "JavaScript"
 }
