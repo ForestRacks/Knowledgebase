@@ -1,0 +1,37 @@
+# Use SvelteKit with Direct Admin
+
+### This is assuming you've already created a SvelteKit app.
+
+## Build SvelteKit using the node-adapter.
+```js
+// svelte.config.js
+import adapter from '@sveltejs/adapter-node';
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: adapter({
+			out: ".dist",
+		})
+	}
+};
+
+export default config;
+```
+
+## Setup files for deployment
+In your SvelteKit directory, run ```npm run build```, which, after completion, creates a ```.dist``` folder. Now, create a new folder and add your ```.dist``` folder, ```package.json```, and ```package-lock.json``` files to it.
+Next, navigate to this folder in the command line and type ```npm ci --omit dev```, which generates a node_modules folder with just the needed files. Archive these files and upload them to your DirectAdmin webserver, then unarchive them.
+Now, create a file in the same folder as where you uploaded your archive called ```run.cjs```. This file will contain the following:
+```js
+// run.cjs
+(() => import("./.dist/index.js"))();
+```
+
+## Setting up the server
+Head to [Node.js Server](https://web.forestracks.com/evo/user/plugins/nodejs_selector#/) setup, and create your Node.js server. Choose ```16.20.2``` from the Node.js drop-down and select ```Production``` in the Application Mode drop-down.
+In the Application Root text box, type in the location on the webserver where you uploaded your files. This already has the ```/home/example``` inputted by default, so you only need to put the folder's location after that.
+In the Application URL drop-down, select the domain you'd like to use. Finally, type the application's startup file, which is the ```run.cjs``` we created earlier. Press create.
+
+## Verify it's working
+To verify it's working, visit the domain you selected and wait for it to load. If it displays an error, please contact support.
