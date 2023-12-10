@@ -1,0 +1,14 @@
+# Using Free Google Maps in Android
+
+To use Google Map's free API in an Android App, you can load it as a WebView iframe:
+```java copy
+    WebView myWebView = (WebView) findViewById(R.id.displaymap);
+    WebSettings webSettings = myWebView.getSettings();
+    webSettings.setJavaScriptEnabled(true);
+    myWebView.setWebViewClient(new WebViewClient());
+
+    String html = "<iframe style=\"width:100%;height:100%;border:none;border-radius:.5rem;\" " +
+        "src=\"https://maps.google.com/maps?q=Chicago,Illinois,US&z=13&t=&ie=UTF8&iwloc=&output=embed\" ></iframe>";
+
+    myWebView.loadData(html, "text/html", null);
+```
