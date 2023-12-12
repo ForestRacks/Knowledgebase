@@ -22,3 +22,22 @@ find /var/log -type f -name "*.gz" -exec rm -i {} \;
 ```bash copy
 apt autoremove
 ```
+
+## Deleting old Kernels
+```
+apt -y install byobu
+purge-old-kernels
+```
+### Or Manually:
+Check what Kernel you are currently using so you can make sure you don't delete it:
+```bash copy
+uname -r
+```
+List installed Kernels
+```bash copy
+dpkg --list | grep linux-image
+```
+Delete specific kernel versions:
+```bash copy
+apt purge linux-image-<version>-generic
+```
