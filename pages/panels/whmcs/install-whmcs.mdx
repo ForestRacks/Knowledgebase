@@ -44,7 +44,7 @@ Remove the default configuration:
 a2dissite 000-default.conf
 ```
 
-1) Create a new Apache site configuration like `whmcs.conf` in `/etc/apache2/sitesites-available` using a text editor like nano or vim.
+1) Create a new Apache site configuration like `whmcs.conf` in `/etc/apache2/sites-available` using a text editor like nano or vim.
 2) Paste the text below into the file, replacing `billing.example.com` with your domain:
 ```apache filename="whmcs.conf" {2,23,36,37} copy
 <VirtualHost *:80>
