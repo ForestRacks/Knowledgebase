@@ -169,6 +169,11 @@ chown -R www-data:www-data /var/www/uploads
 chown -R www-data:www-data /var/www/logs_blesta
 ```
 
+### Create Blesta Cronjob
+```bash copy
+(crontab -l ; echo "*/5 * * * * php /var/www/html/index.php cron > /dev/null 2>&1")| crontab -
+```
+
 ### Begin Setup
 1) Visit your domain and click "Click here to begin..."
 2) Read and either agree or disagree with the Blesta EULA

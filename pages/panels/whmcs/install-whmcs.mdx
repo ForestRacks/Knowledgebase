@@ -182,6 +182,11 @@ For day-to-day use, only the following database privileges are required:
 chown -R www-data:www-data /var/www/whmcs
 ```
 
+### Create Blesta Cronjob
+```bash copy
+(crontab -l ; echo "*/5 * * * * /usr/bin/php -q /var/www/crons/cron.php")| crontab -
+```
+
 ### Begin Setup
 1) Visit your domain and click "Click here to begin..."
 2) Read and either agree or disagree with the WHMCS EULA
