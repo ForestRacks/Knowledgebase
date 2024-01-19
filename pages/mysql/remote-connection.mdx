@@ -25,6 +25,8 @@ Add text below to the bottom of the file:
 bind-address=0.0.0.0
 ```
 Note: The IP address 0.0.0.0 is not a placeholder but rather the actual IP address you should bind to. Setting the `bind-address` to 0.0.0.0 instructs the MySQL server to bind to all available IP addresses.
+### Restart Service
+Restart the MySQL service, this is typically `systemctl restart mariadb` for MariaDB or `systemctl restart mysql` for MySQL.
 ### Save
 Save the changes and exit the text editor.
 
