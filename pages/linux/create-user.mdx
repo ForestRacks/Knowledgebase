@@ -5,15 +5,15 @@ import { Steps } from 'nextra-theme-docs'
 ### Open Terminal
 Open a terminal or log in to your Linux system.
 ### Create User
-Run the following command to create a user named `bitwarden`:
+Run the following command to create a user named `linuxuser`:
 ```bash copy
-useradd -G docker,sudo -s /bin/bash -m -d /srv/bitwarden bitwarden
+useradd -G sudo -s /bin/bash -m -d /srv/linuxuser linuxuser
 ```
-This command creates the user `bitwarden`, assigns the primary group as `bitwarden`, and adds the user to the `docker` and `sudo` groups. The `-s /bin/bash flag` sets the default shell for the user, while `-m` creates the home directory if it doesn't exist, and `-d /srv/bitwarden` specifies the desired home directory.
+This command creates the user `linuxuser`, assigns the primary group as `linuxuser`, and adds the user to the `docker` and `sudo` groups. The `-s /bin/bash flag` sets the default shell for the user, while `-m` creates the home directory if it doesn't exist, and `-d /srv/bitwarden` specifies the desired home directory.
 ### Grant File Access
-Set the ownership of the home directory to the bitwarden user by executing:
+Set the ownership of the home directory to the linuxuser user by executing:
 ```bash copy
-chown -R bitwarden: /srv/bitwarden
+chown -R linuxuser: /srv/linuxuser
 ```
-This command ensures that the user `bitwarden` has full ownership of the `/srv/bitwarden` directory and all its contents.
+This command ensures that the user `linuxuser` has full ownership of the `/srv/linuxuser` directory and all its contents.
 </Steps>
