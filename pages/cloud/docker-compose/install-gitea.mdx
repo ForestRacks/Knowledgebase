@@ -2,6 +2,12 @@
 
 Gitea is a good self-hosted git registry option. Gitea is very lightweight, often using under 1GB ram. Other options like Gitlab Community Edution often use over 5GB ram.
 
+## 1) Generate Runner Config File
+```bash
+docker run --entrypoint="" --rm -it gitea/act_runner:latest act_runner generate-config > config.yaml
+```
+
+## 2) Create Docker Compose File
 Note: For the runner, get the key from `example.com/admin/actions/runners`
 
 ```yml filename="docker-compose.yml" copy
