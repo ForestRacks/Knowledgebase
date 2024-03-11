@@ -1,0 +1,61 @@
+# Installing Gitea Git Registry
+
+Gitea is a good self-hosted git registry option. Gitea is very lightweight, often taking using under 1GB ram. Other options like Gitlab Community Edution often use over 5GB ram.
+
+Note: For the runner, get the key from `example.com/admin/actions/runners`
+
+```yml filename="docker-compose.yml" copy
+version: "3"
+
+services:
+  gitserver:
+    image: gitea/gitea:nightly
+    restart: always
+    ports:
+      - "3000:3000"
+      - "222:22"
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    volumes:
+      - ./git-data:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - proxy_network
+
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: 'pguser'
+      POSTGRES_PASSWORD: 'somePassword'
+      POSTGRES_DB: 'gitea'
+    networks:
+      - proxy_network
+
+  gitrunner:
+    image: gitea/act_runner:nightly
+    environment:
+      CONFIG_FILE: /config.yaml
+      GITEA_INSTANCE_URL: "http://git.example.com"
+      GITEA_RUNNER_REGISTRATION_TOKEN: "yourRegistrationKey"
+      GITEA_RUNNER_NAME: "Runner1"
+      GITEA_RUNNER_LABELS: "self-hosted"
+    volumes:
+      - ./config.yaml:/config.yaml
+      - ./run-data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - proxy_network
+
+networks:
+  proxy_network:
+```
+
+```bash copy
+docker compose up -d
+```
