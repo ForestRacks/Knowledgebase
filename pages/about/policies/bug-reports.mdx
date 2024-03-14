@@ -30,11 +30,34 @@ The following are in scope for our bug bounty program:
 ### Out of Scope
 The following are out of scope for our bug bounty program:
 
-- **Customer Data**: You must not access, attempt to access, or disclose any customer data during your testing. This includes personal information, payment data, and any other sensitive customer information.
-- **Third-Party Vulnerabilities**: Vulnerabilities in third-parties are out of scope, whether or whether not we use them. This includes externally maintained software, libraries, and frameworks.
-- **Denial of Service (DoS) Attacks**: Any form of DoS attacks or resource exhaustion attacks.
-- **Social Engineering**: Activities that involve social engineering or phishing.
-- **Physical Attacks**: Physical security or hardware vulnerabilities.
+- Customer data (Personal information, payment data, and any other sensitive customer information)
+- Third-Party vulnerabilities (Whether or not we use them)
+- MFA issues
+- WAF bypass
+- Open redirects / Lack of security speedbump when leaving the site
+- Internal IP address disclosure
+- Accessible Non-sensitive files and directories (e.g. README.md, CHANGES.md, robots.txt, .gitignore, WSDL, pprof, etc.)
+- Social engineering / phishing attacks
+- Self XSS
+- Text injection
+- Email spoofing (including SPF, DKIM, DMARC, From: spoofing, and visually similar, and related issues)
+- Descriptive error messages (e.g. stack traces, application or server errors, path disclosure)
+- Fingerprinting/banner disclosure on common/public services
+- Clickjacking and issues only exploitable through clickjacking
+- CSRF issues that don't impact the integrity of an account (e.g. log in or out, contact forms and other publicly accessible forms)
+- Lack of Secure and HTTPOnly cookie flags (critical systems may still be in scope)
+- Lack of rate limiting
+- Login or Forgot Password page brute force, account lockout not enforced, or insufficient password strength requirements
+- HTTPS mixed content scripts
+- Username / email enumeration by brute forcing / error messages (e.g. login / signup / forgotten password)
+- Missing HTTP security headers
+- TLS/SSL issues, including BEAST BREACH, insecure renegotiation, bad cipher suite, expired certificates, etc.
+- Denial of Service attacks
+- Out-of-date software or protocols
+- Use of a known-vulnerable component (exceptional cases, such as where you are able to provide proof of exploitation, may still be in scope)
+- Physical attacks against ForestRacks's Facilities / Property
+- Hardware vulnerabilities
+- Forgotten domains/subdomains
 
 ## Responsible Disclosure
 We expect all researchers to follow responsible disclosure practices. This means you should:
