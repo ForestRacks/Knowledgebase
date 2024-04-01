@@ -1,0 +1,17 @@
+{
+  "extends": [ "config:base", "default:pinDigestsDisabled" ],
+  "statusCheckVerify": true,
+  "rangeStrategy": "bump",
+  "ignoreDeps": [ "python" ],
+  "labels": [ "Framework", "[Type] Task" ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "every weekday"
+  },
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 20,
+  "semanticCommits": true,
+  "semanticCommitType": "chore",
+  "masterIssue": false,
+  "reviewers": [ "Zinidia" ]
+}
