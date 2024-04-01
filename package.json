@@ -15,7 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.2",
     "pnpm": "^8.15.5",
     "typescript": "^5.4.3"
   }
