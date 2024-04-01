@@ -23,7 +23,7 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^20.11.30
+    specifier: ^20.12.2
     version: 20.12.2
   pnpm:
     specifier: ^8.15.5
