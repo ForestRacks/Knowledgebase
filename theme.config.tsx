@@ -23,7 +23,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/ForestRacks/Knowledgebase/blob/Production',
   footer: {
-    text: '© 2023 Forest Racks LLC',
+    text: '© 2024 Forest Racks LLC',
   },
 }
 
