@@ -28,8 +28,8 @@ importers:
         specifier: ^22.5.5
         version: 22.5.5
       pnpm:
-        specifier: ^9.10.0
-        version: 9.10.0
+        specifier: ^9.11.0
+        version: 9.11.0
       typescript:
         specifier: ^5.6.2
         version: 5.6.2
@@ -1099,8 +1099,8 @@ packages:
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
-  pnpm@9.10.0:
-    resolution: {integrity: sha512-c6Ka+jag0JLs5Scd5Rd+y/gxjUVOzXATQxMbjrwMGpHEh9pGq3fI5ZbWrPFGHjWUztS+zt+JIbB0+9hlPtcFHA==}
+  pnpm@9.11.0:
+    resolution: {integrity: sha512-CiA/+u1aP2MkLNBkyPtYkjZsED4ygHkxj3gGLyTqjJ1QvGpHqjVnyr79gk0XDnj6J0XtHxaxMuFkNhRrdojxmw==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -2840,7 +2840,7 @@ snapshots:
 
   picocolors@1.0.1: {}
 
-  pnpm@9.10.0: {}
+  pnpm@9.11.0: {}
 
   postcss@8.4.31:
     dependencies:
