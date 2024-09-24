@@ -182,7 +182,7 @@ For day-to-day use, only the following database privileges are required:
 chown -R www-data:www-data /var/www/whmcs
 ```
 
-### Create Blesta Cronjob
+### Create Cron Schedule
 ```bash copy
 (crontab -l ; echo "*/5 * * * * /usr/bin/php -q /var/www/crons/cron.php")| crontab -
 ```
