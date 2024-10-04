@@ -1,0 +1,38 @@
+:root {
+  --shiki-color-text: #414141;
+  --shiki-color-background: transparent;
+  --shiki-token-constant: #1976d2;
+  --shiki-token-string: #22863a;
+  --shiki-token-comment: #aaa;
+  --shiki-token-keyword: #d32f2f;
+  --shiki-token-parameter: #ff9800;
+  --shiki-token-function: #6f42c1;
+  --shiki-token-string-expression: #22863a;
+  --shiki-token-punctuation: #212121;
+  --shiki-token-link: #22863a;
+}
+
+.dark {
+  --shiki-color-text: #abb2bf;
+  --shiki-token-constant: #79b8ff;
+  --shiki-token-string: #ffab70;
+  --shiki-token-comment: #5c6370;
+  --shiki-token-keyword: #e06c75;
+  --shiki-token-parameter: #e6c07b;
+  --shiki-token-function: #c678dd;
+  --shiki-token-string-expression: #98c379;
+  --shiki-token-punctuation: #bbbbbb;
+  --shiki-token-link: #ffab70;
+}
+
+.nx-text-current svg {
+  color: #92A0B3;
+}
+
+.light .nx-text-primary-800 {
+  color: #1b6dff !important;
+}
+
+.light .nx-bg-primary-100 {
+  background-color: #f0f6ff !important;
+}
