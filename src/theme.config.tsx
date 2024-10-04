@@ -19,7 +19,6 @@ const config: DocsThemeConfig = {
   footer: {
     content: '© 2024 Forest Racks LLC',
   },
-  // faviconGlyph: '✦',
   head: function useHead() {
     const config = useConfig()
     const title = `${config.title} – ForestRacks`
