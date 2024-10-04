@@ -1,5 +1,5 @@
 export default {
-  "providers": "Providers",
-  "records": "Records",
-  "misc": "Miscellaneous"
+  providers: 'Providers',
+  records: 'Records',
+  misc: 'Miscellaneous'
 }

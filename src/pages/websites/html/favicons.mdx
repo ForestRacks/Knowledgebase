@@ -1,25 +1,25 @@
-import { Tab, Tabs } from 'nextra-theme-docs'
+import { Tabs } from 'nextra/components'
 
 <Tabs items={['Standard Favicons', 'Custom Sizes', 'Using PNGs']}>
-  <Tab>
+  <Tabs.Tab>
     Upload a 32x32 ICO file to your website's root directory named `favicon.ico`.
 
     Optionally, you could specify a custom file name for the favicon in the html head
     ```html copy
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```html copy
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```html copy
     <link rel="icon" href="favicon.png" />
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

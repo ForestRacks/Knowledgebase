@@ -1,3 +1,3 @@
 export default {
-  "install-whmcs": "Installing Blesta"
+  'install-blesta': 'Installing Blesta'
 }

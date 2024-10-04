@@ -1,4 +1,4 @@
 export default {
-  "authoritative": "Authoritative",
-  "resolvers": "Resolvers"
+  authoritative: 'Authoritative',
+  resolvers: 'Resolvers'
 }

@@ -1,4 +1,4 @@
 export default {
-  "manual-ssl": "Creating SSLs Manually",
-  "sveltekit": "Deploying SvelteKit"
+  'manual-ssl': 'Creating SSLs Manually',
+  sveltekit: 'Deploying SvelteKit'
 }

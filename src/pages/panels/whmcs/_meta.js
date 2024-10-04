@@ -1,3 +1,3 @@
 export default {
-  "install-whmcs": "Installing WHMCS"
+  'install-whmcs': 'Installing WHMCS'
 }

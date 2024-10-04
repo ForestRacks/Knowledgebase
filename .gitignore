@@ -1,5 +1,5 @@
-.next
 node_modules
-yarn.lock
+.next
+dist
 package-lock.json
 .DS_Store

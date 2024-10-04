@@ -1,3 +1,3 @@
 export default {
-  "find-ip": "Find Your IP"
+  'find-ip': 'Find Your IP'
 }

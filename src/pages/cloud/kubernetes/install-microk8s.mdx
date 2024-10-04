@@ -1,4 +1,4 @@
-import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+import { Steps, Tabs } from 'nextra/components'
 
 # Installing Kubernetes
 
@@ -21,18 +21,18 @@ ufw default allow routed
 ### Addons
 #### Toggle Addons
 <Tabs items={['Enable', 'Disable']}>
-  <Tab>
+  <Tabs.Tab>
     ```bash copy
     microk8s enable dns
     microk8s enable storage
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```bash copy
     microk8s disable dns
     microk8s disable hostpath-storage
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>
 #### Available Addons
 * dns: Deploy DNS. This addon may be required by others, thus we recommend you always enable it.

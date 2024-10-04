@@ -1,4 +1,4 @@
 export default {
-  "letsencrypt": "Let's Encrypt",
-  "wildcard": "Wildcard SSL Certificates"
+  letsencrypt: 'Lets Encrypt',
+  wildcard: 'Wildcard SSL Certificates'
 }

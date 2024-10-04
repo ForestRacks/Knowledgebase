@@ -1,5 +1,5 @@
 export default {
-  "ddos": "DDoS Protection",
-  "iptables": "IPTables",
-  "ufw": "UFW"
+  ddos: 'DDoS Protection',
+  iptables: 'IPTables',
+  ufw: 'UFW'
 }

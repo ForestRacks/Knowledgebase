@@ -1,4 +1,4 @@
-import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+import { Steps, Tabs } from 'nextra/components'
 
 # Enable or Disable Spawner Mob AI
 Often servers will disable spawner animal or monster artificial intelligence since large spawner farms can cause massive server performance impacts.
@@ -15,15 +15,15 @@ Locate and open the `spigot.yml` config file.
 ### Change Mob AI Status
 Use the panel search function to find `nerf-spawner-mobs` and set it to true if you want to disable spawner mob AI or false to enable spawner mob AI.
 <Tabs items={['Enable AI', 'Disable AI']}>
-  <Tab>
+  <Tabs.Tab>
     ```yml copy
     nerf-spawner-mobs: false
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```yml copy
     nerf-spawner-mobs: true
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>
 </Steps>

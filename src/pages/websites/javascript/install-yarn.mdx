@@ -1,16 +1,16 @@
-import { Tab, Tabs } from 'nextra-theme-docs'
+import { Tabs } from 'nextra/components'
 
 # Install Yarn Globally
 
 <Tabs items={['With NPM', 'With Corepack']}>
-  <Tab>
+  <Tabs.Tab>
     ```bash copy
     npm install -g yarn
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```bash copy
     corepack prepare --all && corepack enable yarn
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

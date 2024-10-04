@@ -1,4 +1,4 @@
-import { Tab, Tabs } from 'nextra-theme-docs'
+import { Tabs } from 'nextra/components'
 
 # Using Quad9 9.9.9.9 DNS
 
@@ -6,7 +6,7 @@ Cloudflare's Public DNS Resolver is a project created in collaboration between C
 
 ## Three Resolver Options:
 <Tabs items={['Standard', 'ECS enabled', 'Allow Unsafe']}>
-  <Tab>
+  <Tabs.Tab>
     Recommended: Malware Blocking, DNSSEC Validation (this is the most typical configuration)
 
     IPv4 Resolvers:
@@ -22,8 +22,8 @@ Cloudflare's Public DNS Resolver is a project created in collaboration between C
     
     TLS Resolver:
     tls://dns.quad9.net
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     Secured w/ECS: Malware blocking, DNSSEC Validation, ECS enabled
 
     IPv4 Resolvers:
@@ -39,8 +39,8 @@ Cloudflare's Public DNS Resolver is a project created in collaboration between C
 
     TLS Resolver:
     tls://dns11.quad9.net
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     Unsecured: No Malware blocking, no DNSSEC validation (for experts only!)
 
     IPv4 Resolvers:
@@ -56,5 +56,5 @@ Cloudflare's Public DNS Resolver is a project created in collaboration between C
     
     TLS Resolver:
     tls://dns10.quad9.net
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

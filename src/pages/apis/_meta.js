@@ -1,3 +1,3 @@
 export default {
-  "discord": "Discord"
+  discord: 'Discord'
 }

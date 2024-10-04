@@ -1,9 +1,9 @@
-import { Tab, Tabs } from 'nextra-theme-docs'
+import { Tabs } from 'nextra/components'
 
 # Linux Enable Automatic Updates
 
 <Tabs items={['Ubuntu/Debian', 'CentOS/RHEL']}>
-  <Tab>
+  <Tabs.Tab>
     ## Using the automatic updates package
     ```bash copy
     apt install unattended-upgrades
@@ -18,8 +18,8 @@ import { Tab, Tabs } from 'nextra-theme-docs'
     ```bash copy
     (crontab -l ; echo "30 16 * * 1,3,6 apt update && apt upgrade -y")| crontab -
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ## Using the automatic updates package
     First install dnf:
     ```bash copy
@@ -39,5 +39,5 @@ import { Tab, Tabs } from 'nextra-theme-docs'
     ```bash copy
     (crontab -l ; echo "30 16 * * 1,3,6 dnf update -y")| crontab -
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

@@ -1,4 +1,4 @@
-import { Tab, Tabs } from 'nextra-theme-docs'
+import { Tabs } from 'nextra/components'
 
 # Using Let's Encrypt
 
@@ -6,7 +6,7 @@ Let's Encrypt is a certificate authority that provides free SSL certificates. Th
 
 ## Install Certbot
 <Tabs items={['Nginx', 'Apache']}>
-  <Tab>
+  <Tabs.Tab>
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
     ```bash copy
@@ -30,8 +30,8 @@ Let's Encrypt is a certificate authority that provides free SSL certificates. Th
     ```bash copy
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's Official Website](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
     ```bash copy
@@ -55,5 +55,5 @@ Let's Encrypt is a certificate authority that provides free SSL certificates. Th
     ```bash copy
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

@@ -1,3 +1,3 @@
 export default {
-  "networking": "Networking"
+  networking: 'Networking'
 }

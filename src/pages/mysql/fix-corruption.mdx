@@ -1,4 +1,4 @@
-import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+import { Steps, Tabs } from 'nextra/components'
 
 # MySQL Corruption Recovery:
 
@@ -48,15 +48,15 @@ innodb_force_recovery = 1
 ```
 ### Restart MySQL
 <Tabs items={['MariaDB', 'MySQL']}>
-  <Tab>
+  <Tabs.Tab>
     ```bash copy
     systemctl restart mariadb
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```bash copy
     systemctl restart mysql
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>
 </Steps>

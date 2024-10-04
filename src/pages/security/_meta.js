@@ -1,5 +1,5 @@
 export default {
-  "authentication": "Authentication",
-  "compliance": "Compliance",
-  "encryption": "Encryption"
+  authentication: 'Authentication',
+  compliance: 'Compliance',
+  encryption: 'Encryption'
 }

@@ -1,3 +1,3 @@
 export default {
-  "whitelist-cloudflare": "Whitelisting Cloudflare"
+  'whitelist-cloudflare': 'Whitelisting Cloudflare'
 }

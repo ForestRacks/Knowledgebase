@@ -1,4 +1,4 @@
-import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+import { Steps, Tabs } from 'nextra/components'
 
 # Enabling Remote Connection to MySQL
 
@@ -36,7 +36,7 @@ Save the changes and exit the text editor.
 When modifying firewall rules, exercise caution and consider the security implications of allowing remote access to your MySQL server. It is recommended to restrict connections to trusted IP addresses and use secure authentication mechanisms.
 
 <Tabs items={['UFW', 'IPTables', 'NFTables']}>
-  <Tab>
+  <Tabs.Tab>
     If you are using the Uncomplicated Firewall (UFW) on your server, you can configure it to allow MySQL connections from specific IP addresses. Follow the instructions below:
 
     1) Open a terminal or SSH session to your server.
@@ -49,15 +49,15 @@ When modifying firewall rules, exercise caution and consider the security implic
     ```bash copy
     ufw allow 3306/tcp
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```bash copy
     iptables -A INPUT -p tcp --dport 3306 -j ACCEPT
     ```
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ```bash copy
     nft add rule ip filter input tcp dport 3306 accept
     ```
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

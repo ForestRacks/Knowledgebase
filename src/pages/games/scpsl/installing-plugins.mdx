@@ -1,4 +1,4 @@
-import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+import { Steps, Tabs } from 'nextra/components'
 
 # Install SCP:SL Plugins
 
@@ -21,7 +21,7 @@ Finally, click the file ending in `.dll` to download it.
 ## Uploading Plugins
 
 <Tabs items={['PluginAPI', 'Exiled']}>
-  <Tab>
+  <Tabs.Tab>
     ### Using the NorthWood PluginAPI
     <Steps>
         ### Log into Panel
@@ -33,8 +33,8 @@ Finally, click the file ending in `.dll` to download it.
         ### Upload Plugin
         Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
     </Steps>
-  </Tab>
-  <Tab>
+  </Tabs.Tab>
+  <Tabs.Tab>
     ### Using Exiled Plugins
     <Steps>
         ### Log into Panel
@@ -46,5 +46,5 @@ Finally, click the file ending in `.dll` to download it.
         ### Upload Plugin
         Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
     </Steps>
-  </Tab>
+  </Tabs.Tab>
 </Tabs>

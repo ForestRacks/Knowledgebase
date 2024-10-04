@@ -1,5 +1,5 @@
 export default {
-  "certbot": "Certbot/Let's Encrypt",
-  "google": "Google Trust Services",
-  "zerossl": "ZeroSSL"
+  certbot: 'Certbot/Lets Encrypt',
+  google: 'Google Trust Services',
+  zerossl: 'ZeroSSL'
 }
