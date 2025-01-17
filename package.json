@@ -9,7 +9,7 @@
     "clean": "rimraf .next .turbo"
   },
   "dependencies": {
-    "next": "15.1.4",
+    "next": "15.1.5",
     "nextra": "^4.0.3",
     "nextra-theme-docs": "^4.0.3",
     "react": "^19.0.0",
