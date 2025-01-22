@@ -12,11 +12,11 @@ importers:
         specifier: 15.1.5
         version: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       nextra:
-        specifier: ^4.0.4
-        version: 4.0.4(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+        specifier: ^4.0.5
+        version: 4.0.5(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       nextra-theme-docs:
-        specifier: ^4.0.4
-        version: 4.0.4(@types/react@18.3.11)(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.0.4(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^4.0.5
+        version: 4.0.5(@types/react@18.3.11)(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.0.5(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -1286,16 +1286,16 @@ packages:
       sass:
         optional: true
 
-  nextra-theme-docs@4.0.4:
-    resolution: {integrity: sha512-AI6B+0ezFgMPQ8/KNg7IlCX2NHY0VP1ceAUt/CUUDEP2rsR9StaPI+YCe0NZJkq0F9seLcWOKa5yGvYwK7/+jg==}
+  nextra-theme-docs@4.0.5:
+    resolution: {integrity: sha512-aF4HRjbVZvd+VWTssaieXFyJ7xVnGiKlJZ+WfxCG95izoHuYdY3dwibQTc32ERMXWAg//h/t7en5QggF3hKVaA==}
     peerDependencies:
       next: '>=14'
-      nextra: 4.0.4
+      nextra: 4.0.5
       react: '>=18'
       react-dom: '>=18'
 
-  nextra@4.0.4:
-    resolution: {integrity: sha512-UqfBlbc+Is7dNjMnpv0Hd7tXn7yX2wiISNPzp+zhqSO7vUsLtFFeib7G8AdXYR8l1MrJZpw7MBrGXa4u9kacNg==}
+  nextra@4.0.5:
+    resolution: {integrity: sha512-wv1rzzQJtREGZDjdR7G41z3d7NewHvpmgNmPwEABIlEfgsmyEdMSZbrkn5jna8/2SUBsSio/lcBIGemkvuBtSA==}
     engines: {node: '>=18'}
     peerDependencies:
       next: '>=14'
@@ -3400,13 +3400,13 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextra-theme-docs@4.0.4(@types/react@18.3.11)(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.0.4(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  nextra-theme-docs@4.0.5(@types/react@18.3.11)(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.0.5(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@headlessui/react': 2.1.9(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx: 2.1.1
       next: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       next-themes: 0.4.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      nextra: 4.0.4(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+      nextra: 4.0.5(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       react: 19.0.0
       react-compiler-runtime: 0.0.0-experimental-22c6e49-20241219(react@19.0.0)
       react-dom: 19.0.0(react@19.0.0)
@@ -3419,7 +3419,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  nextra@4.0.4(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3):
+  nextra@4.0.5(next@15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.5.5
       '@headlessui/react': 2.1.9(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
