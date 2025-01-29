@@ -1,0 +1,80 @@
+# Alternate Data Streams (ADS) in Windows
+
+Alternate Data Streams (ADS) is a relatively obscure but powerful feature in the Windows file system. ADS allows you to attach hidden streams of data to files and folders. This can be useful for various purposes, including adding metadata, custom icons, or even hiding malicious data. In this article, we'll explore how to create and manage ADS.
+
+## Creating an Alternate Data Stream
+Creating an ADS is relatively straightforward, and you can do it using the `type` command or PowerShell. To create an ADS, follow these steps:
+
+### Using the `type` Command
+1. Open Command Prompt.
+
+2. Use the `type` command to create an ADS. The syntax is as follows:
+
+```
+type [data] > [file]:[stream]
+```
+
+- `[data]`: The data you want to add to the stream.
+- `[file]`: The path to the target file.
+- `[stream]`: The name of the alternate data stream (without spaces).
+
+For example, to create an ADS named "hidden_info" for a file named "document.txt" with the content "This is a hidden stream of data," you would use:
+
+```
+type "This is a hidden stream of data" > document.txt:hidden_info
+```
+
+### Using PowerShell
+1. Open PowerShell.
+
+2. To create an ADS, you can use the `Add-Content` cmdlet. The syntax is as follows:
+
+```
+Add-Content -Path [file] -Value [data] -Stream [stream]
+```
+
+- `[file]`: The path to the target file.
+- `[data]`: The data you want to add to the stream.
+- `[stream]`: The name of the alternate data stream (without spaces).
+
+For example, to create the same "hidden_info" ADS for "document.txt," you would use:
+
+```
+Add-Content -Path document.txt -Value "This is a hidden stream of data" -Stream hidden_info
+```
+
+## Viewing Alternate Data Streams
+To view the ADS associated with a file, you can use the `more` command or PowerShell. Here's how:
+
+### Using the `more` Command
+1. Open Command Prompt.
+
+2. To view the content of an ADS, use the `more` command with the `:stream` syntax:
+
+```
+more < [file]:[stream]
+```
+
+For example, to view the content of the "hidden_info" ADS in "document.txt," you would use:
+
+```
+more < document.txt:hidden_info
+```
+
+### Using PowerShell
+1. Open PowerShell.
+
+2. To view the content of an ADS, you can use the `Get-Content` cmdlet with the `-Stream` parameter:
+
+```
+Get-Content -Path [file] -Stream [stream]
+```
+
+For example, to view the content of the "hidden_info" ADS in "document.txt," you would use:
+
+```
+Get-Content -Path document.txt -Stream hidden_info
+```
+
+## Conclusion
+Alternate Data Streams provide a hidden and versatile way to store additional data associated with files and folders on Windows. While they have legitimate use cases, they can also be exploited for malicious purposes, so it's essential to be aware of their presence and use them responsibly.

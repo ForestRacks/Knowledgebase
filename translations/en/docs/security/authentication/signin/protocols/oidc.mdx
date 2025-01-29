@@ -1,0 +1,32 @@
+# Using OpenID Connect (OIDC)
+
+## What is OpenID Connect (OIDC)?
+OpenID Connect (OIDC) is an identity layer on top of the OAuth 2.0 protocol. It provides a standardized way for applications to authenticate users and obtain basic profile information about them. OIDC is commonly used for single sign-on (SSO) and user identity verification in web and mobile applications. It builds upon OAuth 2.0 to provide identity-related features, making it easier for developers to implement secure authentication and authorization.
+
+## How OIDC Works
+OIDC extends OAuth 2.0 with the following key components:
+1. **Authentication:** OIDC introduces an authentication layer that allows users to log in using their identity provider (IdP) credentials, such as username and password. This authentication layer is built on top of OAuth's authorization flow.
+2. **ID Tokens:** After successful authentication, OIDC provides ID tokens, which are JSON Web Tokens (JWTs) containing user information, including the user's unique identifier and, optionally, profile information. These tokens allow applications to verify the user's identity.
+3. **UserInfo Endpoint:** OIDC includes a UserInfo Endpoint, which applications can use to request additional user information, such as name, email, and profile picture, after obtaining an ID token.
+4. **Standardized Scopes:** OIDC defines standardized scopes like `openid`, `profile`, and `email` that applications can request to access specific user information.
+5. **Discovery:** OIDC providers expose a well-known discovery endpoint that applications can use to obtain information about the OIDC endpoints and configuration details.
+
+OIDC flows typically involve the following steps:
+- The user initiates login through an OIDC-enabled application.
+- The application redirects the user to their OIDC provider (e.g., Google, Facebook, or an enterprise IdP).
+- The user authenticates with the IdP and grants permissions.
+- The IdP issues an ID token and optionally an access token.
+- The user is redirected back to the application with the ID token.
+- The application validates the ID token, obtains user information, and establishes a session for the user.
+
+## Why OIDC is Important
+OpenID Connect (OIDC) is essential for modern identity and access management in the following ways:
+1. **User-Centric Identity:** OIDC focuses on user-centric identity, allowing users to have control over their identity information and how it's shared with applications.
+2. **Standardization:** OIDC is a widely accepted standard for identity and authentication, making it easier for developers to integrate with various identity providers and libraries.
+3. **Security:** OIDC enhances security by providing an additional layer of authentication and authorization on top of OAuth 2.0, reducing the risk of unauthorized access.
+4. **Single Sign-On (SSO):** OIDC enables SSO, allowing users to log in once and access multiple applications without the need to re-enter their credentials.
+5. **Profile Information:** OIDC provides standardized mechanisms for obtaining user profile information, simplifying user account management and personalization.
+6. **Interoperability:** OIDC is designed to work across different platforms, frameworks, and identity providers, making it suitable for a wide range of applications and use cases.
+7. **Scalability:** OIDC is built to handle large-scale authentication and identity management requirements, making it suitable for both small and large organizations.
+
+In summary, OpenID Connect (OIDC) is a critical component of modern identity and authentication systems. It provides standardized mechanisms for secure authentication, user-centric identity management, and interoperability, making it an essential technology for developers and organizations looking to build secure and user-friendly applications.

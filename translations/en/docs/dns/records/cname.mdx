@@ -1,0 +1,40 @@
+# Understanding CNAME Records
+
+DNS (Domain Name System) CNAME (Canonical Name) records play a crucial role in managing domain names and routing traffic.
+
+## What is a DNS CNAME?
+
+A CNAME (Canonical Name) record is a type of DNS record that allows you to map one domain name (or subdomain) to another. It is often used to create aliases for domain names. When you set up a CNAME record for a domain or subdomain, it essentially points that domain or subdomain to the target domain's DNS settings.
+
+Here's how a CNAME record works:
+- You have a domain or subdomain, let's say "subdomain.example.org."
+- You want "subdomain.example.org" to point to "targetdomain.example.com."
+- You create a CNAME record that associates "subdomain.example.org" with "targetdomain.example.com."
+
+Whenever someone accesses "subdomain.example.org," the DNS resolver looks up the CNAME record and redirects the user to "targetdomain.example.com." This is particularly useful when you need to point multiple domains or subdomains to a single location without changing their DNS settings individually.
+
+## CNAME Flattening
+
+CNAME flattening is a technique used to handle CNAME records at the root of a domain (zone apex). Typically, DNS standards prohibit using CNAME records at the root of a domain due to issues with other record types like MX, NS, and SOA. However, some DNS providers have implemented CNAME flattening as a workaround.
+
+Here's how CNAME flattening works:
+
+- Suppose you have a CNAME record at the root of your domain, like "example.com" pointing to "targetdomain.example.com."
+- CNAME flattening resolves the root CNAME to its target, effectively flattening it to an A (IPv4) or AAAA (IPv6) record.
+- This allows you to use CNAME records at the root while preserving other necessary DNS records like MX and NS.
+
+## CNAME Flattening Practices with DNS Providers
+
+1. **[Cloudflare](/dns/providers/cloudflare):**
+- Cloudflare uses CNAME flattening by default for the zone apex and subdomains.
+- CNAME flattening is enabled both with or without the Cloudflare proxy enabled.
+- This practice aligns with RFC1033 standards that discourage CNAME use at the root but allows it through flattening.
+
+2. **[Gcore](/dns/providers/gcore):**
+- Gcore includes CNAME flattening by default for the zone apex.
+- This means that you can use CNAME records at the root without any special configuration.
+- This practice aligns with RFC1033 standards that discourage CNAME use at the root but allows it through flattening.
+
+Remember that while CNAME flattening can be convenient, it's essential to understand its implications and use it judiciously, especially when managing DNS records for your domains.
+
+For more information about setting up CNAME records or other specific instructions, please refer to the documentation provided by your DNS provider.

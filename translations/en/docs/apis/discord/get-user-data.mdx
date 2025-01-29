@@ -1,0 +1,18 @@
+# Retrieve user data from Discord's API
+
+Create a bot on [Discord's Developer Application Portal](https://discord.com/developers/applications) and retrieve a bot token.
+
+Below is an example of how to use Discord's API with curl but it may be different depending on how you send the HTTP GET request. Replace `BOT_TOKEN_HERE` with the bot token you just created and fill in the user ID:
+```bash copy
+curl -H "Authorization: Bot BOT_TOKEN_HERE" https://discord.com/api/v10/users/USER_ID_HERE
+```
+
+Successful response example:
+```
+{"id":"276497429396979713","username":"zinidia","avatar":"a_c83937661373d4c411e484a7a41c693b","discriminator":"0","public_flags":4194432,"flags":4194432,"banner":"8dea04078246aa7e3e2be2182cbd2a33","accent_color":null,"global_name":"Mortal","avatar_decoration_data":null,"banner_color":null}
+```
+
+Error response example:
+```
+{"message": "Unknown User", "code": 10013}
+```

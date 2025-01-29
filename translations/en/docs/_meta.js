@@ -1,0 +1,21 @@
+export default {
+  index: 'Introduction',
+  about: 'About Us',
+  apis: 'API',
+  browsers: 'Browsers',
+  cloud: 'Cloud',
+  dns: 'DNS',
+  firewall: 'Firewall',
+  games: 'Game Servers',
+  ide: 'IDE',
+  installing: 'Install Software',
+  linux: 'Linux',
+  macos: 'MacOS',
+  mail: 'E-Mail',
+  mysql: 'MySQL Tricks',
+  panels: 'Panel Software',
+  security: 'Security',
+  tools: 'Tools',
+  websites: 'Websites',
+  windows: 'Windows'
+}

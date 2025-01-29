@@ -1,0 +1,37 @@
+# Using BIMI Records
+
+## Introduction
+BIMI, or Brand Indicators for Message Identification, is an email authentication standard that allows organizations to display their brand logos alongside their emails in recipient email clients. BIMI helps improve email trust and brand recognition by providing a visual indicator of a legitimate sender. This documentation guide will explain what BIMI is, how it works, and considerations for its implementation.
+
+## What is BIMI?
+BIMI is an email authentication and branding standard that enables senders to display their organization's logo directly within the email client's user interface. This visual indicator serves as a strong authentication and brand recognition mechanism, helping recipients identify legitimate emails and reduce phishing risks.
+
+## How BIMI Works
+Understanding the operation of BIMI is essential for configuring and deploying it effectively:
+
+1. **DNS Record Creation**: The domain owner creates a DNS TXT record containing BIMI information for their domain. This record references the location of the organization's logo image and includes a VMC (Verified Mark Certificate) reference.
+2. **Logo Verification**: To ensure the legitimacy of the logo, BIMI requires the organization to obtain a VMC from a trusted Certificate Authority (CA) like Digicert or Entrust. This process involves verifying the ownership of the trademark for the logo and brand name.
+3. **Email Sending**: When the organization sends an email, it includes a BIMI header that points to the DNS location of the logo image.
+4. **Recipient Email Client**: The recipient's email client checks for the presence of a BIMI record in the sender's domain DNS. It verifies the VMC reference and retrieves the logo image from the specified location.
+5. **Logo Display**: If all checks pass successfully, the email client displays the sender's logo next to the email in the recipient's inbox.
+
+## BIMI Considerations
+Here are some important considerations when implementing BIMI:
+
+- **VMC Requirement**: As of now, BIMI requires organizations to obtain a Verified Mark Certificate (VMC) from a trusted CA. This process involves trademark verification and can be costly, typically around $1,500 per year, depending on the CA.
+- **Brand Recognition**: BIMI enhances brand recognition and trustworthiness by displaying the organization's logo alongside emails. It can lead to increased open rates and engagement.
+- **Email Security**: While BIMI improves email trust, it should not replace other email security measures like SPF, DKIM, and DMARC, which are crucial for mitigating email spoofing and phishing attacks.
+- **Future Expansions**: BIMI is actively working on expanding its capabilities to allow the use of logos without the VMC requirement. In the future, this may provide more flexibility and reduce costs for organizations.
+
+## Implementing BIMI
+To implement BIMI for your domain, follow these steps:
+
+1. **Prepare Logo**: Ensure you have a high-resolution logo image ready for use.
+2. **Create BIMI Record**: Create a DNS TXT record for your domain that specifies the location of your logo image and references your VMC.
+3. **Obtain VMC**: Contact a trusted CA like Digicert or Entrust to obtain a Verified Mark Certificate.
+4. **Configure Email Server**: Modify your email sending infrastructure to include the BIMI header in outgoing emails.
+5. **Testing**: Send test emails and verify that the logo is displayed correctly in recipient email clients.
+6. **Monitor and Maintain**: Regularly monitor BIMI implementation and ensure that the VMC remains valid.
+
+## Conclusion
+BIMI (Brand Indicators for Message Identification) is a powerful email authentication and branding standard that enhances email trust and brand recognition by displaying an organization's logo alongside emails. While there are currently VMC requirements, BIMI is actively working on expanding its capabilities to make logo display more accessible in the future. Implementing BIMI can contribute to improved email engagement and better brand visibility. Understanding BIMI's requirements and best practices is essential for organizations looking to leverage this standard for email authentication and brand enhancement.```

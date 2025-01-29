@@ -1,0 +1,37 @@
+# Setup Auth0 Oauth on Discourse
+
+## Install Discourse Oauth2 Basic Plugin
+Add plugin to `app.yml`:
+```yml filename="/var/discourse/containers/app.yml" copy
+hooks:
+  after_code:
+    - exec:
+        cd: $home/plugins
+        cmd:
+          - git clone https://github.com/discourse/discourse-oauth2-basic.git
+```
+Rebuild Discourse:
+```bash copy
+cd /var/discourse
+./launcher rebuild app
+```
+
+## Enable Oauth
+Go to `Admin > Plugins and toggle on `discourse-oauth2-basic`.
+
+## Get Cient ID and Secret
+Visit the Auth0 dashboard and select the application you want to use for Discourse. Copy the `client_id` and `client_secret` from the settings page.
+
+## Configuring Discourse
+Visit the Oauth settings page on the Discourse Admin page and input the following options, replacing `YOURCOMPANY` with the information you use on Auth0:
+* oauth2 client id: `client_id` from the previous step
+* oauth2 client secret: `client_secret` from the previous step
+* oauth2 authorize url: `https://YOURCOMPANY.us.auth0.com/authorize`
+* oauth2 token url: `https://YOURCOMPANY.us.auth0.com/oauth/token`
+* oauth2 user json url: `https://YOURCOMPANY.us.auth0.com/userinfo`
+* oauth2 json user id path: `sub`
+* oauth2 json username path: `nickname`
+* oauth2 json name path: `name`
+* oauth2 json email path: `email`
+* oauth2 json avatar path: `picture`
+* oauth2 scope: `openid profile email`

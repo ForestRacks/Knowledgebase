@@ -1,0 +1,16 @@
+import { Tabs } from 'nextra/components'
+
+# Installing Zsh on Linux
+
+<Tabs items={['Debian/Ubuntu', 'RHEL/CentOS']}>
+  <Tabs.Tab>
+    ```bash copy
+    apt install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    yum install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  </Tabs.Tab>
+</Tabs>

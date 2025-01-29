@@ -1,0 +1,43 @@
+import { Tabs } from 'nextra/components'
+
+# Linux Enable Automatic Updates
+
+<Tabs items={['Ubuntu/Debian', 'CentOS/RHEL']}>
+  <Tabs.Tab>
+    ## Using the automatic updates package
+    ```bash copy
+    apt install unattended-upgrades
+    ```
+
+    ## Using Cronjobs
+    First install cron:
+    ```bash copy
+    apt install cron
+    ```
+    Add the cronjob:
+    ```bash copy
+    (crontab -l ; echo "30 16 * * 1,3,6 apt update && apt upgrade -y")| crontab -
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ## Using the automatic updates package
+    First install dnf:
+    ```bash copy
+    yum install dnf
+    ```
+    Then install the automatic updates package:
+    ```bash copy
+    dnf install -y dnf-automatic
+    ```
+
+    ## Using Cronjobs
+    First install dnf and cron:
+    ```bash copy
+    yum install dnf cron
+    ```
+    Add the cronjob:
+    ```bash copy
+    (crontab -l ; echo "30 16 * * 1,3,6 dnf update -y")| crontab -
+    ```
+  </Tabs.Tab>
+</Tabs>
