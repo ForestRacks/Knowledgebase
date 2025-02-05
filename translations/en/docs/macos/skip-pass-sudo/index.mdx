@@ -1,0 +1,20 @@
+---
+title: Use Biometric Fingerprint Authentication for Sudo
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+Sometimes typing your password in terminal gets excessive every single time you want to use sudo. You can skip this process and use fingerprint authentication instead by following this guide.
+
+<Stepper>
+<StepperItem title="Open Pam File">
+```
+sudo nano /etc/pam.d/sudo
+```
+
+</StepperItem>
+<StepperItem title="Add Line">
+```
+auth       sufficient     pam_tid.so
+```
+</StepperItem>
+</Stepper>

@@ -1,0 +1,28 @@
+---
+title: Installing MinIO S3
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+```yml filename="docker-compose.yml" copy
+version: "3"
+
+services:
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=your_access_key_here
+      - MINIO_ROOT_PASSWORD=your_secret_key_here
+    volumes:
+      - ./data:/data
+    ports:
+      - 9000:9000
+      - 9001:9001
+
+volumes:
+  minio_data:
+```
+
+```bash copy
+docker compose up -d
+```

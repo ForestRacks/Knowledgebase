@@ -1,0 +1,48 @@
+---
+title: Linux Enable Automatic Updates
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+<Tabs defaultValue="debian" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="debian">Ubuntu/Debian</TabsTrigger>
+    <TabsTrigger value="rhel">CentOS/RHEL</TabsTrigger>
+  </TabsList>
+  <TabsContent value="debian">
+    ## Using the automatic updates package
+    ```bash copy
+    apt install unattended-upgrades
+    ```
+
+    ## Using Cronjobs
+    First install cron:
+    ```bash copy
+    apt install cron
+    ```
+    Add the cronjob:
+    ```bash copy
+    (crontab -l ; echo "30 16 * * 1,3,6 apt update && apt upgrade -y")| crontab -
+    ```
+  </TabsContent>
+  <TabsContent value="rhel">
+    ## Using the automatic updates package
+    First install dnf:
+    ```bash copy
+    yum install dnf
+    ```
+    Then install the automatic updates package:
+    ```bash copy
+    dnf install -y dnf-automatic
+    ```
+
+    ## Using Cronjobs
+    First install dnf and cron:
+    ```bash copy
+    yum install dnf cron
+    ```
+    Add the cronjob:
+    ```bash copy
+    (crontab -l ; echo "30 16 * * 1,3,6 dnf update -y")| crontab -
+    ```
+  </TabsContent>
+</Tabs>

@@ -1,0 +1,50 @@
+---
+title: Installing Node Version Manager
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+The [Node Version Manager](https://github.com/nvm-sh/nvm) is a way of managing multiple Node.js versions on one machine.
+<Tabs defaultValue="debian" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="debian">Debian/Ubuntu</TabsTrigger>
+    <TabsTrigger value="rhel">RHEL/CentOS</TabsTrigger>
+    <TabsTrigger value="alpine">AlpineLinux</TabsTrigger>
+  </TabsList>
+  <TabsContent value="debian">
+    Update your packages:
+    ```bash copy
+    apt upgrade && apt upgrade
+    ```
+
+    Run installer:
+    ```bash copy
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+  </TabsContent>
+  <TabsContent value="rhel">
+    Update your packages:
+    ```bash copy
+    yum upgrade && yum upgrade
+    ```
+
+    Run installer:
+    ```bash copy
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+  </TabsContent>
+  <TabsContent value="alpine">
+    Update your packages:
+    ```bash copy
+    apk upgrade --available
+    ```
+
+    Add required packages:
+    ```bash copy
+    apk add -U curl bash ca-certificates openssl ncurses coreutils python3 make gcc g++ libgcc linux-headers grep util-linux binutils findutils
+    ```
+    Run installer:
+    ```bash copy
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+  </TabsContent>
+</Tabs>

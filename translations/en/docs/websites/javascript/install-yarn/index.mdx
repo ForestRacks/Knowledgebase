@@ -1,0 +1,21 @@
+---
+title: Install Yarn Globally
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+<Tabs defaultValue="npm" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="npm">NPM</TabsTrigger>
+    <TabsTrigger value="corepack">Corepack</TabsTrigger>
+  </TabsList>
+  <TabsContent value="npm">
+    ```bash copy
+    npm install -g yarn
+    ```
+  </TabsContent>
+  <TabsContent value="corepack">
+    ```bash copy
+    corepack prepare --all && corepack enable yarn
+    ```
+  </TabsContent>
+</Tabs>

@@ -1,0 +1,27 @@
+---
+title: Install ConfigServer Firewall for cPanel WHM
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+## Installing ConfigServer
+Change to source directory:
+```bash copy
+cd /usr/src
+```
+Remove old interfering installations:
+```bash copy
+rm -fv csf.tgz
+```
+Download, extract, and run ConfigServer
+```bash copy
+wget https://download.configserver.com/csf.tgz
+tar -xzf csf.tgz
+cd csf
+sh install.sh
+```
+
+## Uninstalling ConfigServer
+```bash copy
+cd /etc/csf
+sh uninstall.sh
+```

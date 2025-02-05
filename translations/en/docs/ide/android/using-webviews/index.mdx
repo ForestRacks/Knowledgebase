@@ -1,0 +1,25 @@
+---
+title: To use WebViews in Android Apps
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+Add permission intents to manifest:
+```xml filename="AndroidManifest.xml" copy
+    <uses-permission
+        android:name="android.permission.INTERNET"
+    />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+    />
+```
+
+```java copy
+    ConstraintLayout myScreen = (ConstraintLayout) findViewById(R.id.screen);
+    WebView myWebView = (WebView) myScreen.findViewById(R.id.displayweb);
+    WebSettings webSettings = myWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        myWebView.setWebViewClient(new WebViewClient());
+        myWebView.loadUrl("https://example.com");
+        return myWebView;
+```

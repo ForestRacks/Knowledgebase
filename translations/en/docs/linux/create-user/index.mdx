@@ -1,0 +1,23 @@
+---
+title: Create a Linux User with a Specific Home Directory
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+<Stepper>
+<StepperItem title="Open Terminal">
+Open a terminal or log in to your Linux system.
+</StepperItem>
+<StepperItem title="Create User">
+Run the following command to create a user named `linuxuser`:
+```bash copy
+useradd -G sudo -s /bin/bash -m -d /srv/linuxuser linuxuser
+```
+This command creates the user `linuxuser`, assigns the primary group as `linuxuser`, and adds the user to the `docker` and `sudo` groups. The `-s /bin/bash flag` sets the default shell for the user, while `-m` creates the home directory if it doesn't exist, and `-d /srv/bitwarden` specifies the desired home directory.
+</StepperItem>
+<StepperItem title="Grant File Access">
+Set the ownership of the home directory to the linuxuser user by executing:
+```bash copy
+chown -R linuxuser: /srv/linuxuser
+```
+This command ensures that the user `linuxuser` has full ownership of the `/srv/linuxuser` directory and all its contents.
+</StepperItem>
+</Stepper>

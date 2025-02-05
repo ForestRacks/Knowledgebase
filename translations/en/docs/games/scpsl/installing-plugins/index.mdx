@@ -1,0 +1,61 @@
+---
+title: Install SCP:SL Plugins
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+## Finding plugins to use
+<Stepper>
+<StepperItem title="Find a Plugin Website">
+First open a plugin website like [Exiled's Github](https://github.com/ExMod-Team/Exiled).
+</StepperItem>
+<StepperItem title="Search For Plugins">
+To find a plugin, you can use GitHub's search function and click the plugin you want.
+</StepperItem>
+<StepperItem title="Find Releases">
+Click the "Releases" link on the right-hand sidebar
+</StepperItem>
+<StepperItem title="Confirm Version Compatibility">
+Make sure that the listed compatible version matches your server version.
+</StepperItem>
+<StepperItem title="Locate Downloadable">
+Click the "Assets" dropdown for the version you wish to download.
+</StepperItem>
+<StepperItem title="Download Plugin">
+Finally, click the file ending in `.dll` to download it.
+</StepperItem>
+</Stepper>
+
+## Uploading Plugins
+
+<Tabs defaultValue="pluginapi" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="pluginapi">PluginAPI</TabsTrigger>
+    <TabsTrigger value="exiled">Exiled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="pluginapi">
+    ### Using the NorthWood PluginAPI
+    <Stepper>
+        ### Log into Panel
+        First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/games/troubleshoot/invalid-login).
+        ### Locate File Manager
+        Next click the "File Manager" panel tab
+        ### Find Plugins
+        Navigate to `.config/SCP Secret Laboratory/PluginAPI/plugins/global`
+        ### Upload Plugin
+        Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
+    </Stepper>
+  </TabsContent>
+  <TabsContent value="exiled">
+    ### Using Exiled Plugins
+    <Stepper>
+        ### Log into Panel
+        First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/games/troubleshoot/invalid-login).
+        ### Locate File Manager
+        Next click the "File Manager" panel tab
+        ### Find Plugins
+        Navigate to `.config/EXILED/Plugins`
+        ### Upload Plugin
+        Click the upload button and select the plugin `.dll` file from your computer or drag and drop it.
+    </Stepper>
+  </TabsContent>
+</Tabs>

@@ -1,0 +1,9 @@
+---
+title: Find Large Files on the Linux File System
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+To find big 100MB+ files on your Linux installation, run the following command:
+```bash copy
+find / -xdev -type f -size +100M
+```

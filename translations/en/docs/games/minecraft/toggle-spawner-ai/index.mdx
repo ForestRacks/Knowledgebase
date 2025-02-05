@@ -1,0 +1,38 @@
+---
+title: Enable or Disable Spawner Mob AI
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+Often servers will disable spawner animal or monster artificial intelligence since large spawner farms can cause massive server performance impacts.
+
+<Stepper>
+<StepperItem title="Login to Panel">
+First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/games/troubleshoot/invalid-login).
+</StepperItem>
+<StepperItem title="Navigate to Files">
+Click the "File Manager" tab
+
+</StepperItem>
+<StepperItem title="Find Spigot Config">
+Locate and open the `spigot.yml` config file.
+
+</StepperItem>
+<StepperItem title="Change Mob AI Status">
+Use the panel search function to find `nerf-spawner-mobs` and set it to true if you want to disable spawner mob AI or false to enable spawner mob AI.
+<Tabs defaultValue="enable" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="enable">Enable AI</TabsTrigger>
+    <TabsTrigger value="disable">Disable AI</TabsTrigger>
+  </TabsList>
+  <TabsContent value="enable">
+    ```yml copy
+    nerf-spawner-mobs: false
+    ```
+  </TabsContent>
+  <TabsContent value="disable">
+    ```yml copy
+    nerf-spawner-mobs: true
+    ```
+  </TabsContent>
+</Tabs>
+</StepperItem>
+</Stepper>

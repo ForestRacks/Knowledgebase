@@ -1,0 +1,44 @@
+---
+title: Generate a Password on Linux
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+<Tabs defaultValue="nginx" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="openssl">OpenSSL</TabsTrigger>
+    <TabsTrigger value="urandom">/dev/urandom</TabsTrigger>
+    <TabsTrigger value="pwgen">Password Gen</TabsTrigger>
+  </TabsList>
+  <TabsContent value="openssl">
+    <Stepper>
+    ### Install OpenSSL
+    ```bash copy
+    apt install openssl
+    ```
+    ### Generate Password
+    ```bash copy
+    openssl rand 60 | openssl base64 -A
+    ```
+    </Stepper>
+  </TabsContent>
+  <TabsContent value="urandom">
+    <Stepper>
+    ### Generate Password
+    ```bash copy
+    echo "$(head -c 100 /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9!"#%&()*+,-./:;<=>?@[\]^_`{|}~')" | fold -w 32 | head -n 1
+    ```
+    </Stepper>
+  </TabsContent>
+  <TabsContent value="pwgen">
+    <Stepper>
+    ### Install Pwgen
+    ```bash copy
+    apt install pwgen
+    ```
+    ### Generate Password
+    ```bash copy
+    pwgen -s 64 1
+    ```
+    </Stepper>
+  </TabsContent>
+</Tabs>

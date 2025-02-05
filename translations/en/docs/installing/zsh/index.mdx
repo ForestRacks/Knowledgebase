@@ -1,0 +1,21 @@
+---
+title: Installing Zsh on Linux
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+<Tabs defaultValue="debian" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="debian">Debian/Ubuntu</TabsTrigger>
+    <TabsTrigger value="rhel">RHEL/CentOS</TabsTrigger>
+  </TabsList>
+  <TabsContent value="debian">
+    ```bash copy
+    apt install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  </TabsContent>
+  <TabsContent value="rhel">
+    ```bash copy
+    yum install -y zsh git && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  </TabsContent>
+</Tabs>

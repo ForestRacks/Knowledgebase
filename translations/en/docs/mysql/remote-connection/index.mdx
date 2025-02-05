@@ -1,0 +1,74 @@
+---
+title: Enabling Remote Connection to MySQL
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+## Creating a MySQL user for a remote IP.
+For specifics on how [MySQL users](/mysql/setting-up-mysql#creating-a-mysql-user) work and how [MySQL privileges](/mysql/setting-up-mysql#setting-mysql-user-privileges) work, follow the corresponding guides but this example, is using the MySQL shell to allow access to the remote IP `192.168.53.72`.
+```bash copy
+# You should change the username and password below to something unique.
+CREATE USER 'your_user'@'%' IDENTIFIED BY 'somePasswordHere';
+# Allocate privileges to the user you created
+GRANT ALL PRIVILEGES ON *.* TO 'your_user'@'%' WITH GRANT OPTION;
+```
+
+## Changing the MySQL Configuration
+
+<Stepper>
+<StepperItem title="Find Config">
+The MySQL configuration file usually located at `/etc/my.cnf` but if not, it could be `/etc/mysq/my.cnf` or type `find /etc -iname my.cnf` to locate it.
+</StepperItem>
+<StepperItem title="Open Config">
+Open the MySQL configuration `my.cnf` file using a text editor like nano or vim.
+</StepperItem>
+<StepperItem title="Add IP Bind">
+Add text below to the bottom of the file:
+```ini filename="my.cnf" copy
+[mysqld]
+bind-address=0.0.0.0
+```
+Note: The IP address 0.0.0.0 is not a placeholder but rather the actual IP address you should bind to. Setting the `bind-address` to 0.0.0.0 instructs the MySQL server to bind to all available IP addresses.
+</StepperItem>
+<StepperItem title="Restart Service">
+Restart the MySQL service, this is typically `systemctl restart mariadb` for MariaDB or `systemctl restart mysql` for MySQL.
+</StepperItem>
+<StepperItem title="Save">
+Save the changes and exit the text editor.
+
+</StepperItem>
+</Stepper>
+
+## Firewall Setup
+When modifying firewall rules, exercise caution and consider the security implications of allowing remote access to your MySQL server. It is recommended to restrict connections to trusted IP addresses and use secure authentication mechanisms.
+
+<Tabs defaultValue="ufw" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="ufw">UFW</TabsTrigger>
+    <TabsTrigger value="iptables">IPTables</TabsTrigger>
+    <TabsTrigger value="nftables">NFTables</TabsTrigger>
+  </TabsList>
+  <TabsContent value="ufw">
+    If you are using the Uncomplicated Firewall (UFW) on your server, you can configure it to allow MySQL connections from specific IP addresses. Follow the instructions below:
+
+    1) Open a terminal or SSH session to your server.
+    2) Run the following command to allow MySQL connections from a specific IP address, replacing `192.168.53.72` with the desired IP:
+
+    ```bash copy
+    ufw allow from 192.168.53.72 to any port 3306 proto tcp
+    ```
+    Alternatively, to allow connections from all remote IP addresses, use the following command:
+    ```bash copy
+    ufw allow 3306/tcp
+    ```
+  </TabsContent>
+  <TabsContent value="iptables">
+    ```bash copy
+    iptables -A INPUT -p tcp --dport 3306 -j ACCEPT
+    ```
+  </TabsContent>
+  <TabsContent value="nftables">
+    ```bash copy
+    nft add rule ip filter input tcp dport 3306 accept
+    ```
+  </TabsContent>
+</Tabs>

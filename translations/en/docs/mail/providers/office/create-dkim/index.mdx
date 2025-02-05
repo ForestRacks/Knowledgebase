@@ -1,0 +1,82 @@
+---
+title: Creating a DKIM for Office365
+description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+---
+
+## Install OpenDKIM
+```bash copy
+apt install opendkim-tools
+```
+
+## Generate Selectors
+```bash copy
+opendkim-genkey -D /root -d <domain> -s selector1
+opendkim-genkey -D /root -d <domain> -s selector2
+```
+Then view the DNS record by running:
+```bash copy
+cat /root/selector1.txt
+cat /root/selector2.txt
+```
+
+## Adding the DKIM to DNS
+<Stepper>
+<StepperItem title="Navigate to DNS">
+Go to your DNS Provider's Portal
+</StepperItem>
+<StepperItem title="Create TXT">
+1) Click "Add Record" on the DNS page
+2) Select a `TXT-Record`
+3) Set the name as `selector1._domainkey`
+4) Set the value as the DKIM selector value from the `/root/selector1.txt`, it should look similar to:
+```sql
+"v=DKIM1; h=sha256; k=rsa; "p=XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+```
+5) Click "Save"
+</StepperItem>
+<StepperItem title="Selector 2">
+Repeat the same steps for `selector2`
+</StepperItem>
+</Stepper>
+
+## Adding the private key on Office365
+<Stepper>
+<StepperItem title="Visit the 365 DKIM Page">
+1) Visit the [Office365 Admin Portal](https://security.microsoft.com/dkimv2)
+</StepperItem>
+<StepperItem title="Select your domain">
+2) Click the domain that you want to enable DKIM for.
+</StepperItem>
+<StepperItem title="Enable DKIM Signatures">
+3) Change the "Sign messages for this domain with DKIM signatures" toggle to "Enabled"
+</StepperItem>
+<StepperItem title="Upload Key to 365 Admin">
+4) Upload the private keys from the `selector1.private` and `selector2.private` files to Office365
+</StepperItem>
+</Stepper>
+
+## Microsoft Managed DKIM
+Alternatively, you might want to use the managed DKIM provided by Microsoft which can be accomplished by:
+<Stepper>
+<StepperItem title="Navigate to DNS">
+Go to your DNS Provider's Portal like [Cloudflare's DNS Page](https://dash.cloudflare.com/?to=/:account/:zone/dns/records)
+</StepperItem>
+<StepperItem title="Create CNAME">
+1) Click "Add Record" on the DNS page
+2) Select a `CNAME-Record`
+
+4) Set the record like the following with `example-com` and `examplecom` filled in as your domain.
+
+Set the "name" as:
+```js copy
+selector1._domainkey
+```
+Set the "value" as:
+```bash copy
+selector1-example-com._domainkey.examplecom.onmicrosoft.com
+```
+</StepperItem>
+<StepperItem title="Selector 2">
+Repeat the same steps for `selector2`
+</StepperItem>
+</Stepper>
