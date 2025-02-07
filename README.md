@@ -172,6 +172,23 @@ Example Tab:
 </Tabs>
 ```
 
+7. **Icons**
+
+The `Icon` component allows you to embed custom icons from [popular icon libraries](https://icon-sets.iconify.design/).
+
+Example Icons:
+```html
+<Icon src="lucide/bell" />
+```
+This component also supports icons that utilize multiple colors like flags or brand logos:
+```html
+<Icon src="logos/google-icon" multiColor />
+```
+Additionally, you can utilize tailwind classes:
+```html
+<Icon src="fa6-brands/discord" className="mr-2 text-indigo-600" />
+```
+
 ### Submit a Pull Request
 Once you're satisfied with your updates, submit a pull request. It will walk you through out CLA process, our team will review your contribution and merge it into the repository if everything looks good.
 
