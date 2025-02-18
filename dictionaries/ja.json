@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "ForestRacks » Reliability at a Low Cost",
+    "description": "High-quality servers, industry-leading support, and unique server locations all for an affordable price. Fed up with overpaying for servers? Turn to us!"
+  },
+  "navbar": {
+    "links": {
+      "documentation": "ドキュメント",
+      "blog": "ブログ",
+      "community": "コミュニティ"
+    },
+    "search": {
+      "search_documentation": "ドキュメントを検索...",
+      "no_results_found": "該当する結果が見つかりません",
+      "type_something": "検索する内容を入力..."
+    },
+    "theme": {
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    }
+  },
+  "not_found": {
+    "404": "404",
+    "page_not_found": "ページが見つかりません",
+    "sub_text": "おっと！お探しのページは存在しません。",
+    "back_to_homepage": "ホームページへ戻る"
+  },
+  "error": {
+    "oops": "おっと！",
+    "something_went_wrong": "何かがうまくいきませんでした。",
+    "sub_text": "申し訳ありませんが、リクエストの処理中にエラーが発生しました。",
+    "reload_page": "ページを再読み込み",
+    "back_to_homepage": "ホームページへ戻る"
+  }
+}
