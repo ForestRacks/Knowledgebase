@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "ForestRacks » Reliability at a Low Cost",
+    "description": "High-quality servers, industry-leading support, and unique server locations all for an affordable price. Fed up with overpaying for servers? Turn to us!"
+  },
+  "navbar": {
+    "links": {
+      "documentation": "Documentation",
+      "blog": "Blog",
+      "community": "Community"
+    },
+    "search": {
+      "search_documentation": "Search documentation...",
+      "no_results_found": " No results found for",
+      "type_something": "Type something to search..."
+    },
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "footer": {
+    "join_our_discord": "Join our Discord"
+  },
+  "home": {
+    "get_started": "Get Started"
+  },
+  "docs": {
+    "on_this_page": "On this page",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "blog": {
+    "title": "The latest ForestRacks Blogs",
+    "sub_title": "All the latest blogs and news, straight from the team.",
+    "published_on": "Published on",
+    "back_to_blog": "Back to blog",
+    "posted_by": "Posted by"
+  },
+  "leftbar": {
+    "getting_started": "Getting Started",
+    "introduction": "Introduction",
+    "installation": "Installation"
+  },
+  "not_found": {
+    "404": "404",
+    "page_not_found": "Page not found",
+    "sub_text": "Oops! The page you're looking for doesn't exist.",
+    "back_to_homepage": "Back to homepage"
+  },
+  "error": {
+    "oops": "Oops!",
+    "something_went_wrong": "Something went wrong.",
+    "sub_text": "We're sorry, but an error occurred while processing your request.",
+    "reload_page": "Reload Page",
+    "back_to_homepage": "Back to homepage"
+  }
+}
