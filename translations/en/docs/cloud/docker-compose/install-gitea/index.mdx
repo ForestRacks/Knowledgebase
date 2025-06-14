@@ -14,8 +14,6 @@ docker run --entrypoint="" --rm -it gitea/act_runner:latest act_runner generate-
 Note: For the runner, get the key from `example.com/admin/actions/runners`
 
 ```yml filename="docker-compose.yml" copy
-version: "3"
-
 services:
   gitserver:
     image: gitea/gitea:nightly
