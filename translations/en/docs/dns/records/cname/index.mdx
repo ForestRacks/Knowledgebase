@@ -28,12 +28,12 @@ Here's how CNAME flattening works:
 
 ## CNAME Flattening Practices with DNS Providers
 
-1. **[Cloudflare](/dns/providers/cloudflare):**
+1. **[Cloudflare](/docs/dns/providers/cloudflare):**
 - Cloudflare uses CNAME flattening by default for the zone apex and subdomains.
 - CNAME flattening is enabled both with or without the Cloudflare proxy enabled.
 - This practice aligns with RFC1033 standards that discourage CNAME use at the root but allows it through flattening.
 
-2. **[Gcore](/dns/providers/gcore):**
+2. **[Gcore](/docs/dns/providers/gcore):**
 - Gcore includes CNAME flattening by default for the zone apex.
 - This means that you can use CNAME records at the root without any special configuration.
 - This practice aligns with RFC1033 standards that discourage CNAME use at the root but allows it through flattening.

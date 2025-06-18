@@ -27,8 +27,14 @@ If you don't already drop all traffic that doesn't align with your firewall poli
 iptables -P OUTPUT DROP
 ```
 
-## Save the iptables rules
+## Save the IPTables rules
 To ensure that the iptables rules persist across system reboots, we need to save them. Different Linux distributions have different methods for saving iptables rules. Here, we will use the `iptables-persistent` package, which is commonly available on Ubuntu and Debian.
+### Install package
 ```bash copy
 apt install iptables-persistent
+```
+### Save rules
+```
+sudo iptables-save > /etc/iptables/rules.v4
+sudo ip6tables-save > /etc/iptables/rules.v6
 ```

@@ -15,52 +15,70 @@ Cloudflare's Public DNS Resolver is a project created in collaboration between C
   <TabsContent value="standard">
     Recommended: Malware Blocking, DNSSEC Validation (this is the most typical configuration)
 
-    IPv4 Resolvers:
+    **IPv4 Resolvers:**
+
     9.9.9.9
+
     149.112.112.112
 
-    IPv6 Resolvers:
+    **IPv6 Resolvers:**
+
     2620:fe::fe
+
     2620:fe::9
 
-    HTTPS Resolver:
+    **HTTPS Resolver:**
+
     https://dns.quad9.net/dns-query
     
-    TLS Resolver:
+    **TLS Resolver:**
+
     tls://dns.quad9.net
   </TabsContent>
   <TabsContent value="ecs">
     Secured w/ECS: Malware blocking, DNSSEC Validation, ECS enabled
 
-    IPv4 Resolvers:
+    **IPv4 Resolvers:**
+
     9.9.9.11
+
     149.112.112.11
 
-    IPv6 Resolvers:
+    **IPv6 Resolvers:**
+
     2620:fe::11
+
     2620:fe::fe:11
 
-    HTTPS Resolver:
+    **HTTPS Resolver:**
+
     https://dns11.quad9.net/dns-query
 
-    TLS Resolver:
+    **TLS Resolver:**
+
     tls://dns11.quad9.net
   </TabsContent>
   <TabsContent value="unsafe">
     Unsecured: No Malware blocking, no DNSSEC validation (for experts only!)
 
-    IPv4 Resolvers:
+    **IPv4 Resolvers:**
+
     9.9.9.10
+
     149.112.112.10
 
-    IPv6 Resolvers:
+    **IPv6 Resolvers:**
+
     2620:fe::10
+
     2620:fe::fe:10
 
-    HTTPS Resolver:
+    **HTTPS Resolver:**
+
     https://dns10.quad9.net/dns-query
     
-    TLS Resolver:
+    **TLS Resolver:**
+
     tls://dns10.quad9.net
   </TabsContent>
 </Tabs>

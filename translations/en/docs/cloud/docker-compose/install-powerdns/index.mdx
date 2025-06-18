@@ -1,11 +1,11 @@
 ---
 title: Installing PowerDNS
-description: Learn how to install PowerDNS on your server using Docker Compose.
+description: Install PowerDNS on your server using Docker Compose.
 ---
 
 PowerDNS is an easy to use DNS Server with support for both recursive and authoritative queries.
 
-## Checking Port 53 Availability
+## Check Port 53 Availability
 Usually systemd uses port 53 for local dns queries. You can check what services are using port 53 with the following command:
 ```bash copy
 lsof -i :53
@@ -93,6 +93,7 @@ services:
       - GUNICORN_LOGLEVEL=DEBUG
 ```
 
+### Start Docker Compose
 ```bash copy
 docker compose up -d
 ```

@@ -3,7 +3,7 @@ title: Generate a Password on Linux
 description: Learn how to generate a password on Linux using OpenSSL, /dev/urandom, and pwgen.
 ---
 
-<Tabs defaultValue="nginx" className="pt-5 pb-1">
+<Tabs defaultValue="openssl" className="pt-5 pb-1">
   <TabsList>
     <TabsTrigger value="openssl">OpenSSL</TabsTrigger>
     <TabsTrigger value="urandom">/dev/urandom</TabsTrigger>
@@ -11,34 +11,35 @@ description: Learn how to generate a password on Linux using OpenSSL, /dev/urand
   </TabsList>
   <TabsContent value="openssl">
     <Stepper>
-    ### Install OpenSSL
-    ```bash copy
-    apt install openssl
-    ```
-    ### Generate Password
-    ```bash copy
-    openssl rand 60 | openssl base64 -A
-    ```
+      <StepperItem title="Install OpenSSL">
+        ```bash copy
+        apt install openssl
+        ```
+      </StepperItem>
+      <StepperItem title="Generate Password">
+        ```bash copy
+        openssl rand 60 | openssl base64 -A
+        ```
+      </StepperItem>
     </Stepper>
   </TabsContent>
   <TabsContent value="urandom">
-    <Stepper>
-    ### Generate Password
     ```bash copy
-    echo "$(head -c 100 /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9!"#%&()*+,-./:;<=>?@[\]^_`{|}~')" | fold -w 32 | head -n 1
+    head -c 100 /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9!"#%&()*+,-./:;<=>?@[\]^_`{|}~' | fold -w 32 | head -n 1
     ```
-    </Stepper>
   </TabsContent>
   <TabsContent value="pwgen">
     <Stepper>
-    ### Install Pwgen
-    ```bash copy
-    apt install pwgen
-    ```
-    ### Generate Password
-    ```bash copy
-    pwgen -s 64 1
-    ```
+      <StepperItem title="Install Pwgen">
+        ```bash copy
+        apt install pwgen
+        ```
+      </StepperItem>
+      <StepperItem title="Generate Password">
+        ```bash copy
+        pwgen -s 64 1
+        ```
+      </StepperItem>
     </Stepper>
   </TabsContent>
 </Tabs>

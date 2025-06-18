@@ -10,10 +10,14 @@ DNSSEC is a suite of extensions to DNS that adds an additional layer of security
 
 ## Key Components of DNSSEC
 Understanding DNSSEC requires knowledge of its key components:
-### 1. **Key Pair**: DNSSEC uses asymmetric encryption, involving a key pair: the Private Key (used to sign DNS records) and the Public Key (used for verification).
-### 2. **Zone Signing**: The process of digitally signing all the DNS records within a DNS zone using the Private Key.
-### 3. **Key Signing**: The process of signing the Zone Signing Key (ZSK) with a Key Signing Key (KSK) to establish a chain of trust.
-### 4. **DS Record**: The Delegation Signer (DS) record is used to secure the delegation of a zone from a parent zone.
+### 1. **Key Pair**:
+DNSSEC uses asymmetric encryption, involving a key pair: the Private Key (used to sign DNS records) and the Public Key (used for verification).
+### 2. **Zone Signing**:
+The process of digitally signing all the DNS records within a DNS zone using the Private Key.
+### 3. **Key Signing**:
+The process of signing the Zone Signing Key (ZSK) with a Key Signing Key (KSK) to establish a chain of trust.
+### 4. **DS Record**:
+The Delegation Signer (DS) record is used to secure the delegation of a zone from a parent zone.
 
 ## Benefits of DNSSEC
 DNSSEC offers several benefits, including:
