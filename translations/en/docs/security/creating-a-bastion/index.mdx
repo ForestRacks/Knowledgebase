@@ -14,42 +14,42 @@ Before proceeding with the setup, ensure that you have the following:
 <StepperItem title="Install WireGuard">
 1) Connect to your server/VPS via SSH using your preferred terminal emulator or command prompt.
 2) Update the package manager's repositories:
-```bash copy
+```bash
 apt update
 ```
 3) Install WireGuard:
-```bash copy
+```bash
 apt install wireguard
 ```
 4) Verify that WireGuard is installed successfully:
-```bash copy
+```bash
 wg --version
 ```
 </StepperItem>
 <StepperItem title="Generate SSH Key Pair">
 1) On your local machine, open a terminal or command prompt.
 2) Generate an SSH key pair using the `ssh-keygen` command:
-```bash copy
+```bash
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/bastion_key
 ```
 This command generates a 4096-bit RSA key pair and saves it to ~/.ssh/bastion_key on your local machine.
 3) Copy the public key to the server/VPS:
-```bash copy
+```bash
 ssh-copy-id -i ~/.ssh/bastion_key.pub username@bastion-server
 ```
 Replace `username` with your server's username and `bastion-server` with the hostname or IP address of your bastion server. Enter the server's password when prompted.
-```bash copy
+```bash
 ssh -i ~/.ssh/bastion_key username@bastion-server
 ```
 If successful, you should be logged in to the bastion server without entering a password.
 </StepperItem>
 <StepperItem title="Configure WireGuard">
 1) On the bastion server, create a WireGuard configuration file:
-```bash copy
+```bash
 nano /etc/wireguard/wg0.conf
 ```
 Use the following template as a starting point:
-```ini filename="wg0.conf" copy
+```ini:wg0.conf
 [Interface]
 Address = 10.0.0.1/24
 ListenPort = 51820
@@ -62,21 +62,21 @@ AllowedIPs = 10.0.0.2/32
 Replace `<BASTION_PRIVATE_KEY>` with the private key generated during WireGuard installation and `<CLIENT_PUBLIC_KEY>` with the public key generated on your local machine.
 2) Save and close the file (Ctrl+O, Enter, Ctrl+X).
 3) Start the WireGuard service:
-```bash copy
+```bash
 systemctl start wg-quick@wg0
 ```
 Enable automatic start on boot:
-```bash copy
+```bash
 systemctl enable wg-quick@wg0
 ```
-```bash copy
+```bash
 systemctl status wg-quick@wg0
 ```
 The status should indicate that the service is active.
 </StepperItem>
 <StepperItem title="Configure UFW Firewall">
 1) Enable UFW (if not already enabled):
-```bash copy
+```bash
 ufw enable
 ```
 2) Allow incoming SSH connections on the bast

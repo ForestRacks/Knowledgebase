@@ -19,7 +19,7 @@ Start a new file and save it as "robots.txt".
 </StepperItem>
 <StepperItem title="Copy default robots.txt">
 Begin by adding the following lines at the beginning of the file to specify the rules for all web robots:
-```bash filename="robots.txt" copy
+```bash:robots.txt
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 ```
@@ -42,7 +42,7 @@ Make sure to refer to the robotstxt.org website for detailed information on thes
 If you use Cloudflare, disallowing `/cdn-cgi/` is recommended as it can cause issues with various crawlers.
 
 This can be accomplished with:
-```bash filename="robots.txt" copy
+```bash:robots.txt
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /cdn-cgi/

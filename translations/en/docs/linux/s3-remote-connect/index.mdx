@@ -6,12 +6,12 @@ description: Learn how to connect to ForestRacks S3 storage.
 <Stepper>
 <StepperItem title="Setup Rclone">
 Install Rclone:
-```bash copy
+```bash
 apt install rclone
 ```
 Configure Rclone:
 Use this file as a base in `.config/rclone/rclone.conf`, replacing `username_here` with your username and `password_here` with your password from the ForestRacks product portal:
-```ini filename=".config/rclone/rclone.conf" copy
+```ini:.config/rclone/rclone.conf
 [storage]
 type = s3
 provider = Minio
@@ -28,7 +28,7 @@ Create temporary directory:
 mkdir -p /tmp/back/mysqldump /tmp/back/virtual 
 ```
 The following script is an example of how to backup example.txt from /root, all mysql databases, and all virtual machines. Make sure you replace `bucket_name` with the name of your bucket:
-```bash filename="backup.sh" copy
+```bash:backup.sh
 #!/bin/bash
 
 tmp_dir="/tmp/back"
@@ -59,11 +59,11 @@ fi
 </StepperItem>
 <StepperItem title="Using Cronjobs">
 First install cron:
-```bash copy
+```bash
 apt install cron
 ```
 Add the cronjob:
-```bash copy
+```bash
 (crontab -l ; echo "35 17 * * 1 /root/backup.sh")| crontab -
 ```
 </StepperItem>

@@ -13,7 +13,7 @@ docker run --entrypoint="" --rm -it gitea/act_runner:latest act_runner generate-
 ## 2) Create Docker Compose File
 Note: For the runner, get the key from `example.com/admin/actions/runners`
 
-```yml filename="docker-compose.yml" copy
+```yml:docker-compose.yml
 services:
   gitserver:
     image: gitea/gitea:nightly
@@ -64,6 +64,6 @@ networks:
 ```
 
 ### 3) Start Docker Compose
-```bash copy
+```bash
 docker compose up -d
 ```

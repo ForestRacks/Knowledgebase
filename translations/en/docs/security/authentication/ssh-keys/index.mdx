@@ -12,31 +12,31 @@ This guide covers how create SSH keys in your home directory. You don't need to 
     <TabsTrigger value="rsa">RSA</TabsTrigger>
   </TabsList>
   <TabsContent value="ed25519">
-    ```bash copy
+    ```bash
     ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/id_ed25519
     ```
   </TabsContent>
   <TabsContent value="ecdsa">
-    ```bash copy
+    ```bash
     ssh-keygen -t ecdsa -C "your_email@example.com" -f ~/id_ecdsa
     ```
   </TabsContent>
   <TabsContent value="rsa">
-    ```bash copy
+    ```bash
     ssh-keygen -t rsa -C "your_email@example.com" -f ~/id_rsa
     ```
   </TabsContent>
 </Tabs>
 
 ## Add an SSH key to a node
-```bash copy
+```bash
 mkdir -p /root/.ssh/
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL9R0dsRT1VV9l+xxs3qKgCpeidln8eZpbTQsWtw2pYL your_email@example.com" | tee -a /root/.ssh/authorized_keys;
 ```
 
 ## Require SSH key auth
 After you confirm you can log in with the SSH key, you can modify the SSH config to require ssh key authentication:
-```bash copy
+```bash
 SSH_CONFIG_FILE="/etc/ssh/sshd_config"
 if [ -f $SSH_CONFIG_FILE ]; then
   # Replace PermitRootLogin

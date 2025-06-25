@@ -3,7 +3,7 @@ title: Installing OpenVPN
 description: Install OpenVPN on your server using Docker Compose.
 ---
 
-```docker filename="Dockerfile" copy
+```docker:Dockerfile
 FROM ubuntu:latest
 
 WORKDIR /root
@@ -28,13 +28,13 @@ RUN rm -f openvpn-install.sh
 RUN echo "Done, please download your profile"
 ```
 
-```yml filename="docker-compose.yml" copy
+```yml:docker-compose.yml"
 services:
   openvpn:
     build: .
 ```
 
 ### Start Docker Compose
-```bash copy
+```bash
 docker compose up -d
 ```

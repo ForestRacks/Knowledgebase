@@ -24,7 +24,7 @@ Go to https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/origin and enable 
 </StepperItem>
 <StepperItem title="Modify the Nginx Config">
 Replace your existing webserver configuration at `/etc/nginx/sites-enabled/pterodactyl.conf` with:
-```nginx filename="pterodactyl.conf" copy
+```nginx:pterodactyl.conf
 server_tokens off;
 
 server {

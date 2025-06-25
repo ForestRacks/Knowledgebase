@@ -5,7 +5,7 @@ description: Learn how to setup Clerk Oauth on Discourse.
 
 ## Install Discourse Oauth2 Basic Plugin
 Add plugin to `app.yml`:
-```yml filename="/var/discourse/containers/app.yml" copy
+```yml:/var/discourse/containers/app.yml
 hooks:
   after_code:
     - exec:
@@ -14,7 +14,7 @@ hooks:
           - git clone https://github.com/discourse/discourse-oauth2-basic.git
 ```
 Rebuild Discourse:
-```bash copy
+```bash
 cd /var/discourse
 ./launcher rebuild app
 ```
@@ -26,7 +26,7 @@ Go to `Admin > Plugins and toggle on `discourse-oauth2-basic`.
 Visit Developers > API Keys on (Clerk's Dashboard)[https://dashboard.clerk.com/] and create a new API Key. You will need to copy the `CLERK_SECRET_KEY` to generate the credentials for the next step.
 
 Run the following curl API request to Clerk replacing `CLERK_SECRET_KEY` with your secret key from the previous step.
-```bash copy
+```bash
 curl -X POST https://api.clerk.com/v1/oauth_applications \
  -H "Authorization: Bearer CLERK_SECRET_KEY"  \
   -H "Content-Type: application/json" \

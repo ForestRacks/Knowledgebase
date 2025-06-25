@@ -5,7 +5,7 @@ description: Learn how to enable remote connections to a MySQL server.
 
 ## Creating a MySQL user for a remote IP
 For specifics on how [MySQL users](/docs/mysql/setting-up-mysql#creating-a-mysql-user) work and how [MySQL privileges](/docs/mysql/setting-up-mysql#setting-mysql-user-privileges) work, follow the corresponding guides but this example, is using the MySQL shell to allow access to the remote IP `192.168.53.72`.
-```bash copy
+```bash
 # You should change the username and password below to something unique.
 CREATE USER 'your_user'@'%' IDENTIFIED BY 'somePasswordHere';
 # Allocate privileges to the user you created
@@ -23,7 +23,7 @@ Open the MySQL configuration `my.cnf` file using a text editor like nano or vim.
 </StepperItem>
 <StepperItem title="Add IP Bind">
 Add text below to the bottom of the file:
-```ini filename="my.cnf" copy
+```ini:my.cnf
 [mysqld]
 bind-address=0.0.0.0
 ```
@@ -53,21 +53,21 @@ When modifying firewall rules, exercise caution and consider the security implic
     1) Open a terminal or SSH session to your server.
     2) Run the following command to allow MySQL connections from a specific IP address, replacing `192.168.53.72` with the desired IP:
 
-    ```bash copy
+    ```bash
     ufw allow from 192.168.53.72 to any port 3306 proto tcp
     ```
     Alternatively, to allow connections from all remote IP addresses, use the following command:
-    ```bash copy
+    ```bash
     ufw allow 3306/tcp
     ```
   </TabsContent>
   <TabsContent value="iptables">
-    ```bash copy
+    ```bash
     iptables -A INPUT -p tcp --dport 3306 -j ACCEPT
     ```
   </TabsContent>
   <TabsContent value="nftables">
-    ```bash copy
+    ```bash
     nft add rule ip filter input tcp dport 3306 accept
     ```
   </TabsContent>

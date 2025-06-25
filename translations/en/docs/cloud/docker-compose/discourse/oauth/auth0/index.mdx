@@ -5,7 +5,7 @@ description: Learn how to setup Auth0 Oauth on Discourse.
 
 ## Install Discourse Oauth2 Basic Plugin
 Add plugin to `app.yml`:
-```yml filename="/var/discourse/containers/app.yml" copy
+```yml:/var/discourse/containers/app.yml
 hooks:
   after_code:
     - exec:
@@ -14,7 +14,7 @@ hooks:
           - git clone https://github.com/discourse/discourse-oauth2-basic.git
 ```
 Rebuild Discourse:
-```bash copy
+```bash
 cd /var/discourse
 ./launcher rebuild app
 ```

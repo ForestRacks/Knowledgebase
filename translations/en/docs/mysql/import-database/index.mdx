@@ -8,12 +8,12 @@ After entering the MySQL shell with the `mysql` command, you can use the "source
 
 First make sure that you change directories to where your .sql dump is located like `cd /root`
 
-```sql copy
+```sql
 use db_name;
 SET autocommit=0 ; source your_sql_file.sql ; COMMIT ;
 ```
 ## Import a .sql file from bash
 Alternatively, you can import a .sql file from bash:
-```bash copy
+```bash
 mysql -p db_name < your_sql_file.sql
 ```

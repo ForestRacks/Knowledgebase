@@ -4,7 +4,7 @@ description: Learn how to find what to delete on Linux to free up storage space.
 ---
 
 ## Clearing Docker Files
-```bash copy
+```bash
 docker container prune -f ;
 docker image prune -f ;
 docker network prune -f ;
@@ -13,16 +13,16 @@ docker volume prune -f
 
 ## Deleting Old System Logs
 Let's Encrypt:
-```bash copy
+```bash
 rm /var/log/letsencrypt/*
 ```
 Recursively delete old .gz logs:
-```bash copy
+```bash
 find /var/log -type f -name "*.gz" -exec rm -i {} \;
 ```
 
 ## Remove Old System Packages
-```bash copy
+```bash
 apt autoremove
 ```
 
@@ -33,14 +33,14 @@ purge-old-kernels
 ```
 ### Or Manually:
 Check what Kernel you are currently using so you can make sure you don't delete it:
-```bash copy
+```bash
 uname -r
 ```
 List installed Kernels
-```bash copy
+```bash
 dpkg --list | grep linux-image
 ```
 Delete specific kernel versions:
-```bash copy
+```bash
 apt purge linux-image-<version>-generic
 ```

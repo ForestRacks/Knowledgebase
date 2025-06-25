@@ -4,7 +4,7 @@ description: Learn how to use WebViews in Android Apps.
 ---
 
 Add permission intents to manifest:
-```xml filename="AndroidManifest.xml" copy
+```xml:AndroidManifest.xml
 <uses-permission
     android:name="android.permission.INTERNET"
 />
@@ -14,7 +14,7 @@ Add permission intents to manifest:
 />
 ```
 
-```java copy
+```java
 ConstraintLayout myScreen = (ConstraintLayout) findViewById(R.id.screen);
 WebView myWebView = (WebView) myScreen.findViewById(R.id.displayweb);
 WebSettings webSettings = myWebView.getSettings();

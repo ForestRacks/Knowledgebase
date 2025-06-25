@@ -5,18 +5,18 @@ description: Install Kubernetes on your device.
 
 <Stepper>
 <StepperItem title="Installing Snap">
-```bash copy
+```bash
 apt install snapd
 ```
 </StepperItem>
 <StepperItem title="Install MicroK8s">
-```bash copy
+```bash
 sudo snap install microk8s --classic
 ```
 
 </StepperItem>
 <StepperItem title="Configure Firewall">
-```bash copy
+```bash
 ufw allow in on cni0 && sudo ufw allow out on cni0
 ufw default allow routed
 ```
@@ -30,13 +30,13 @@ ufw default allow routed
     <TabsTrigger value="disable">Disable</TabsTrigger>
   </TabsList>
   <TabsContent value="enable">
-    ```bash copy
+    ```bash
     microk8s enable dns
     microk8s enable storage
     ```
   </TabsContent>
   <TabsContent value="disable">
-    ```bash copy
+    ```bash
     microk8s disable dns
     microk8s disable hostpath-storage
     ```

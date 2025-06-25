@@ -12,31 +12,31 @@ description: Learn how to generate a password on Linux using OpenSSL, /dev/urand
   <TabsContent value="openssl">
     <Stepper>
       <StepperItem title="Install OpenSSL">
-        ```bash copy
+        ```bash
         apt install openssl
         ```
       </StepperItem>
       <StepperItem title="Generate Password">
-        ```bash copy
+        ```bash
         openssl rand 60 | openssl base64 -A
         ```
       </StepperItem>
     </Stepper>
   </TabsContent>
   <TabsContent value="urandom">
-    ```bash copy
+    ```bash
     head -c 100 /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9!"#%&()*+,-./:;<=>?@[\]^_`{|}~' | fold -w 32 | head -n 1
     ```
   </TabsContent>
   <TabsContent value="pwgen">
     <Stepper>
       <StepperItem title="Install Pwgen">
-        ```bash copy
+        ```bash
         apt install pwgen
         ```
       </StepperItem>
       <StepperItem title="Generate Password">
-        ```bash copy
+        ```bash
         pwgen -s 64 1
         ```
       </StepperItem>

@@ -12,38 +12,38 @@ The [Node Version Manager](https://github.com/nvm-sh/nvm) is a way of managing m
   </TabsList>
   <TabsContent value="debian">
     Update your packages:
-    ```bash copy
+    ```bash
     apt upgrade && apt upgrade
     ```
 
     Run installer:
-    ```bash copy
+    ```bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     ```
   </TabsContent>
   <TabsContent value="rhel">
     Update your packages:
-    ```bash copy
+    ```bash
     yum upgrade && yum upgrade
     ```
 
     Run installer:
-    ```bash copy
+    ```bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     ```
   </TabsContent>
   <TabsContent value="alpine">
     Update your packages:
-    ```bash copy
+    ```bash
     apk upgrade --available
     ```
 
     Add required packages:
-    ```bash copy
+    ```bash
     apk add -U curl bash ca-certificates openssl ncurses coreutils python3 make gcc g++ libgcc linux-headers grep util-linux binutils findutils
     ```
     Run installer:
-    ```bash copy
+    ```bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     ```
   </TabsContent>

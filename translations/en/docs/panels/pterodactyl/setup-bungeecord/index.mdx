@@ -15,7 +15,7 @@ This guide will help you set up a BungeeCord network using the provided configur
 1) Open the `config.yml` file in your BungeeCord installation directory.
 2) Locate the servers section in the configuration file.
 3) Add your servers under the servers section. For example, let's add a server called "Hub" with the IP address 172.18.0.1:30000 and a MOTD of your choice. You can modify the server details as per your requirements.
-```yaml filename="config.yml" copy
+```yaml:config.yml
 servers:
   Hub:
     address: 172.18.0.1:30000
@@ -27,16 +27,16 @@ servers:
     restricted: false
 ```
 4) Define the server priorities under the priorities section. This determines the order in which players are redirected to available servers when connecting to the BungeeCord network. In this case, we only have one server, so the priority will be set to "Hub".
-```yaml filename="config.yml" copy
+```yaml:config.yml
 priorities:
   - Hub
 ```
 5) To ensure that the "Hub" server is always the default server when players join the network, set the `force_default_server` option to true.
-```yaml filename="config.yml" copy
+```yaml:config.yml
 force_default_server: true
 ```
 6) Enable IP forwarding by setting the `ip_forward` option to `true`. This allows BungeeCord to forward player connections to local IP addresses.
-```yaml filename="config.yml" copy
+```yaml:config.yml
 ip_forward: true
 ```
 7) Save the `config.yml` file.

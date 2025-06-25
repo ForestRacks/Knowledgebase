@@ -11,19 +11,19 @@ Cloudflare’s [API Tokens](https://dash.cloudflare.com/profile/api-tokens) prov
 The Token needed by Certbot requires `Zone:DNS:Edit` permissions for only the zones you need certificates for.
 
 Then add the token to a config file:
-```ini filename="/root/cloudflare.ini" copy
+```ini:/root/cloudflare.ini
 # Cloudflare API token used by Certbot
 dns_cloudflare_api_token = YOUR_CLOUDFLARE_API_TOKEN
 ```
 
 ## Install Required Dependencies
-```bash copy
+```bash
 apt install -y certbot python3-certbot-nginx python3-pip
 pip3 install certbot-dns-cloudflare
 ```
 
 ## Generate Certificate
-```bash copy
+```bash
 certbot certonly \
   --dns-cloudflare \
   --dns-cloudflare-credentials /root/cloudflare.ini \
@@ -34,10 +34,10 @@ certbot certonly \
 
 ## Automatic Renewal
 1) Install crontab:
-```bash copy
+```bash
 apt install cron
 ```
 2) Create a crontab rule for the automatic renewal:
-```bash copy
+```bash
 (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart nginx\"")| crontab -
 ```

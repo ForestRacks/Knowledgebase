@@ -11,13 +11,13 @@ Get the latest version of Go from [the official Golang website](https://golang.o
 <StepperItem title="Create Go Project">
 
 #### Initialize App
-```bash copy
+```bash
 go mod init demo
 ```
 
 #### Create main.go
 Now create a file called main.go in the project directory write the following code in it:
-```go filename="main.go" copy
+```go:main.go
 package main
 
 import (
@@ -40,7 +40,7 @@ The above code is actually the bare-bones to get the server respond with `Hello,
 
 #### Create go.mod
 Save the file and run the following command to update your `go.mod`
-```bash copy
+```bash
 go mod tidy
 ```
 This will create a go.sum file that ensures that future downloads of these modules retrieve the same bits as the first download, to ensure the modules your project depends on do not change unexpectedly, whether for malicious, accidental, or other reasons
@@ -55,7 +55,7 @@ Your project folder should contain the following file structure:
 
 #### Run App
 Let's launch our app by calling the following command:
-```bash copy
+```bash
 go run main.go
 ```
 
