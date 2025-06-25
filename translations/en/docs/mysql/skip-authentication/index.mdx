@@ -23,14 +23,22 @@ ufw delete 3
 
 
 ## Disable the service
-For MariaDB:
-```bash
-systemctl stop mariadb
-```
-For MySQL:
-```bash
-systemctl stop mysql
-```
+<Tabs defaultValue="mariadb" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="mariadb">MariaDB</TabsTrigger>
+    <TabsTrigger value="mysql">MySQL</TabsTrigger>
+  </TabsList>
+  <TabsContent value="mariadb">
+    ```bash
+    systemctl restart mariadb
+    ```
+  </TabsContent>
+  <TabsContent value="mysql">
+    ```bash
+    systemctl restart mysql
+    ```
+  </TabsContent>
+</Tabs>
 
 ## Turn on MySQLd safe mode
 ```bash
