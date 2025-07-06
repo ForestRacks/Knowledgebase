@@ -1,6 +1,6 @@
 ---
 title: Understanding DNSSEC
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn about DNS Security Extensions (DNSSEC) and how they enhance the security of the Domain Name System (DNS).
 ---
 
 DNS Security Extensions (DNSSEC) is a critical technology that enhances the security of the Domain Name System (DNS). DNSSEC helps prevent various forms of cyberattacks, including DNS cache poisoning and man-in-the-middle attacks. In this comprehensive guide, we will delve into the concepts, benefits, and implementation of DNSSEC.
@@ -10,10 +10,14 @@ DNSSEC is a suite of extensions to DNS that adds an additional layer of security
 
 ## Key Components of DNSSEC
 Understanding DNSSEC requires knowledge of its key components:
-### 1. **Key Pair**: DNSSEC uses asymmetric encryption, involving a key pair: the Private Key (used to sign DNS records) and the Public Key (used for verification).
-### 2. **Zone Signing**: The process of digitally signing all the DNS records within a DNS zone using the Private Key.
-### 3. **Key Signing**: The process of signing the Zone Signing Key (ZSK) with a Key Signing Key (KSK) to establish a chain of trust.
-### 4. **DS Record**: The Delegation Signer (DS) record is used to secure the delegation of a zone from a parent zone.
+### 1. **Key Pair**:
+DNSSEC uses asymmetric encryption, involving a key pair: the Private Key (used to sign DNS records) and the Public Key (used for verification).
+### 2. **Zone Signing**:
+The process of digitally signing all the DNS records within a DNS zone using the Private Key.
+### 3. **Key Signing**:
+The process of signing the Zone Signing Key (ZSK) with a Key Signing Key (KSK) to establish a chain of trust.
+### 4. **DS Record**:
+The Delegation Signer (DS) record is used to secure the delegation of a zone from a parent zone.
 
 ## Benefits of DNSSEC
 DNSSEC offers several benefits, including:

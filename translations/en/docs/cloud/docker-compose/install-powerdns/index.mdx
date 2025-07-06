@@ -1,13 +1,13 @@
 ---
 title: Installing PowerDNS
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Install PowerDNS on your server using Docker Compose.
 ---
 
 PowerDNS is an easy to use DNS Server with support for both recursive and authoritative queries.
 
-## Checking Port 53 Availability
+## Check Port 53 Availability
 Usually systemd uses port 53 for local dns queries. You can check what services are using port 53 with the following command:
-```bash copy
+```bash
 lsof -i :53
 ```
 You may need to disable this service but proceed with caution since this will break DNS queries if you don't handle DNS elsewhere.
@@ -16,7 +16,7 @@ systemctl disable systemd-resolved
 ```
 
 Make sure DNS requests still work after disabling systemd:
-```bash copy
+```bash
 ping example.com
 ```
 If you get a resolution error, make sure you set DNS resolvers in `/etc/resolv.conf` or your network config.
@@ -24,9 +24,7 @@ If you get a resolution error, make sure you set DNS resolvers in `/etc/resolv.c
 ## Authoritative PowerDNS Configuration
 Replace `PASSWORD_HERE` with a password and `192.168.53.72` with your public IP address
 
-```yml filename="docker-compose.yml" copy
-version: '3'
-
+```yml:docker-compose.yml
 services:
   db:
     image: mariadb:latest
@@ -95,6 +93,7 @@ services:
       - GUNICORN_LOGLEVEL=DEBUG
 ```
 
-```bash copy
+### Start Docker Compose
+```bash
 docker compose up -d
 ```

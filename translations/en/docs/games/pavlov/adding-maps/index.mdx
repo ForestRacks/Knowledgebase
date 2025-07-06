@@ -1,15 +1,15 @@
 ---
 title: Adding Maps to Pavlov VR Servers
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn how to add maps to your Pavlov VR server.
 ---
 
 ## Configuration
 
-The process of adding maps to your Pavlov server varies whether you use Shack or PC. Before adding a map, you should first select a [Game Mode](/games/pavlov/adding-maps#available-game-modes) and then follow the steps below.
+The process of adding maps to your Pavlov server varies whether you use Shack or PC. Before adding a map, you should first select a [Game Mode](/docs/games/pavlov/adding-maps#available-game-modes) and then follow the steps below.
 
 <Stepper>
 <StepperItem title="Log Into The Panel">
-First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/games/troubleshoot/invalid-login).
+First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/docs/games/troubleshoot/invalid-login).
 </StepperItem>
 <StepperItem title="Locate File Manager">
 Next click the "File Manager" panel tab
@@ -19,7 +19,7 @@ Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
 </StepperItem>
 <StepperItem title="Add The New Map">
 At the bottom of the file, add a new map like `MapRotation=(MapId="SVR_John_Bestbuy", GameMode="SND")`, here's an  example:
-```ini filename="Game.ini" {6} copy
+```ini:Game.ini showLineNumbers {6}
 ...
 LimitedAmmoType=2
 TickRate=90
@@ -34,7 +34,7 @@ Click the "Reboot" button on the "Console" panel tab
 </StepperItem>
 </Stepper>
 
-## Finding Maps To Use
+## Downloading Maps
 <Tabs defaultValue="pc" className="pt-5 pb-1">
   <TabsList>
     <TabsTrigger value="pc">Pavlov PC</TabsTrigger>
@@ -48,7 +48,7 @@ Click the "Reboot" button on the "Console" panel tab
     If you use maps from mod.io, the method is very similar, you still start the MapId with UGC except rather than getting the ID number from the URL, you will see it listed as the "Resource ID" on the map page.
 
     Here's an example of what the MapId in your Game.ini will look like for PC:
-    ```ini filename="Game.ini" {6} copy
+    ```ini:Game.ini showLineNumbers {6}
     ...
     LimitedAmmoType=2
     TickRate=90
@@ -58,7 +58,7 @@ Click the "Reboot" button on the "Console" panel tab
     ```
   </TabsContent>
   <TabsContent value="shack">
-    If you use Shack RC or Shack Live, using maps is a bit more complicated, you first need to download **an up-to-date version** of the map from a reputable source like the creator, the channel in Horde's discord, or the channel in Arctic's discord. Then you have to upload and extract the map to `Pavlov/Saved/maps/` on your ForestRacks `File Manager` panel tab and finally list the map at the bottom of your `Game.ini` using the method mentioned on [Configuration](/games/pavlov/adding-maps#configuration). 
+    If you use Shack RC or Shack Live, using maps is a bit more complicated, you first need to download **an up-to-date version** of the map from a reputable source like the creator, the channel in Horde's discord, or the channel in Arctic's discord. Then you have to upload and extract the map to `Pavlov/Saved/maps/` on your ForestRacks `File Manager` panel tab and finally list the map at the bottom of your `Game.ini` using the method mentioned on [Configuration](/docs/games/pavlov/adding-maps#configuration). 
 
     Note: Outdated maps will not work, Shack Live maps are Unreal Engine 4.21 from November 2022 to March 2023 and Shack Live maps are Unreal Engine 4.27 from April 2023 or newer. To confirm you have the correct version, you can open the `metadata.json` file in the map folder and you should see something like `"EngineVersion": "4.27"`. Your server will also default to the "datacenter" map if the map you try is outdated or broken.
   </TabsContent>

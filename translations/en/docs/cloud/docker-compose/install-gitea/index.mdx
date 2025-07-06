@@ -1,21 +1,19 @@
 ---
 title: Installing Gitea Git Registry
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Install Gitea Git Registry on your server using Docker Compose.
 ---
 
 Gitea is a good self-hosted git registry option. Gitea is very lightweight, often using under 1GB ram. Other options like Gitlab Community Edution often use over 5GB ram.
 
-## 1) Generate Runner Config File
+## Generate Runner Config File
 ```bash
 docker run --entrypoint="" --rm -it gitea/act_runner:latest act_runner generate-config > config.yaml
 ```
 
-## 2) Create Docker Compose File
+## Create Docker Compose File
 Note: For the runner, get the key from `example.com/admin/actions/runners`
 
-```yml filename="docker-compose.yml" copy
-version: "3"
-
+```yml:docker-compose.yml
 services:
   gitserver:
     image: gitea/gitea:nightly
@@ -65,6 +63,7 @@ networks:
   proxy_network:
 ```
 
-```bash copy
+### Start Docker Compose
+```bash
 docker compose up -d
 ```

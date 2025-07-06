@@ -1,6 +1,6 @@
 ---
 title: Blocking IP Access to Docker Container
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn how to block IP access to a Docker container using iptables.
 ---
 
 <Stepper>
@@ -15,7 +15,7 @@ The DOCKER chain is created by Docker and used for communication between the hos
 <StepperItem title="Block IP Access to Docker Container">
 Execute the following command to block the IP address from accessing the Docker container:
 
-```nginx copy
+```nginx
 iptables -I DOCKER -s 192.168.53.72 -j DROP
 ```
 The command above inserts a rule at the beginning of the DOCKER chain, -I DOCKER, to drop any traffic coming from the specified IP address, -s 192.168.53.72.
@@ -24,7 +24,7 @@ The command above inserts a rule at the beginning of the DOCKER chain, -I DOCKER
 <StepperItem title="Verify the Rule">
 To confirm that the IP address has been blocked successfully, execute the following command:
 
-```bash copy
+```bash
 iptables -L -n | grep 192.168.53.72
 ```
 This command lists all the active iptables rules and filters the output to display only rules related to the specified IP address.

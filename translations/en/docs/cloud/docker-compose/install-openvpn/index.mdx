@@ -1,9 +1,9 @@
 ---
 title: Installing OpenVPN
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Install OpenVPN on your server using Docker Compose.
 ---
 
-```docker filename="Dockerfile" copy
+```docker:Dockerfile
 FROM ubuntu:latest
 
 WORKDIR /root
@@ -28,14 +28,13 @@ RUN rm -f openvpn-install.sh
 RUN echo "Done, please download your profile"
 ```
 
-```yml filename="docker-compose.yml" copy
-version: '3'
-
+```yml:docker-compose.yml
 services:
   openvpn:
     build: .
 ```
 
-```bash copy
+### Start Docker Compose
+```bash
 docker compose up -d
 ```

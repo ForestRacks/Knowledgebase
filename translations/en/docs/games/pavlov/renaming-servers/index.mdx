@@ -1,11 +1,11 @@
 ---
 title: Changing Server Names
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn how to change the name of your Pavlov server.
 ---
 
 <Stepper>
 <StepperItem title="Log into Panel">
-First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/games/troubleshoot/invalid-login).
+First login on [https://panel.forestracks.com](https://panel.forestracks.com) and click on your server. If you cannot login, follow the [Troubleshooting Guide](/docs/games/troubleshoot/invalid-login).
 </StepperItem>
 <StepperItem title="Locate File Manager">
 Next click the "File Manager" panel tab
@@ -15,7 +15,7 @@ Open your `Game.ini` configuration file in `Pavlov/Saved/Config/LinuxServer/`
 </StepperItem>
 <StepperItem title="Change the Server Name">
 Modify `ServerName="[Hosted by ForestRacks.com]"` to your desired name like:
-```ini filename="Game.ini" {3} copy
+```ini:Game.ini showLineNumbers {3}
 [/Script/Pavlov.DedicatedServer]
 bEnabled=true
 ServerName="Example's Pavlov Server"

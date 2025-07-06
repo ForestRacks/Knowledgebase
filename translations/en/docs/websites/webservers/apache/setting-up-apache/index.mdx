@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Apache
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Install and configure Apache on your server.
 ---
 <Tabs defaultValue="debian" className="pt-5 pb-1">
   <TabsList>
@@ -10,14 +10,14 @@ description: Welcome to the ForestRacks help center! Here, you will find compreh
   <TabsContent value="debian">
     <Stepper>
     ### Install Apache
-    ```bash copy
+    ```bash
     apt install apache2
     ```
 
     ### Generating SSL/TLS Certificates
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's Official Website](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
-    ```bash copy
+    ```bash
     apt update
     apt install -y certbot python3-certbot-apache
     ```
@@ -25,29 +25,29 @@ description: Welcome to the ForestRacks help center! Here, you will find compreh
     #### Completing the HTTP Challenge
     1) Make sure you have port 80 open on your firewall
     2) Request a certificate from Let's Encrypt, you should replace `example.com` with the domain you would like to generate a certificate for.
-    ```bash copy
+    ```bash
     certbot certonly --apache -d example.com
     ```
 
     ### Automatically Renewing SSL/TLS certificates
     1) Install crontab:
-    ```bash copy
+    ```bash
     apt install cron
     ```
     2) Create a crontab rule for the automatic renewal:
-    ```bash copy
+    ```bash
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
     ```
 
     ### Webserver Configuration
     Remove the default configuration:
-    ```bash copy
+    ```bash
     a2dissite 000-default.conf
     ```
 
     1) Create a new Apache site configuration like `website.conf` in `/etc/apache2/sitesites-available` using a text editor like nano or vim.
     2) Paste the text below into the file, replacing `<domain>` with your domain:
-    ```apache filename="website.conf" copy
+    ```apache:website.conf
     <VirtualHost *:80>
       ServerName <domain>
       ServerAdmin webmaster@localhost
@@ -89,7 +89,7 @@ description: Welcome to the ForestRacks help center! Here, you will find compreh
     ### Link Config and Restart Apache
 
     Enable your new Apache website configuration and required modules:
-    ```bash copy
+    ```bash
     ln -s /etc/apache2/sites-available/website.conf /etc/apache2/sites-enabled/website.conf
     a2enmod rewrite
     a2enmod ssl
@@ -100,14 +100,14 @@ description: Welcome to the ForestRacks help center! Here, you will find compreh
   <TabsContent value="rhel">
     <Stepper>
     ### Install Apache
-    ```bash copy
+    ```bash
     yum install apache2
     ```
 
     ### Generating SSL/TLS Certificates
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's Official Website](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
-    ```bash copy
+    ```bash
     apt update
     apt install -y certbot python3-certbot-apache
     ```
@@ -115,29 +115,29 @@ description: Welcome to the ForestRacks help center! Here, you will find compreh
     #### Completing the HTTP Challenge
     1) Make sure you have port 80 open on your firewall
     2) Request a certificate from Let's Encrypt, you should replace `example.com` with the domain you would like to generate a certificate for.
-    ```bash copy
+    ```bash
     certbot certonly --apache -d example.com
     ```
 
     ### Automatically Renewing SSL/TLS certificates
     1) Install crontab:
-    ```bash copy
+    ```bash
     yum install crontab
     ```
     2) Create a crontab rule for the automatic renewal:
-    ```bash copy
+    ```bash
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
     ```
 
     ### Webserver Configuration
     Remove the default configuration:
-    ```bash copy
+    ```bash
     a2dissite 000-default.conf
     ```
 
     1) Create a new Apache site configuration like `website.conf` in `/etc/apache2/sitesites-available` using a text editor like nano or vim.
     2) Paste the text below into the file, replacing `<domain>` with your domain:
-    ```apache filename="website.conf" copy
+    ```apache:website.conf
     <VirtualHost *:80>
       ServerName <domain>
       ServerAdmin webmaster@localhost
@@ -179,7 +179,7 @@ description: Welcome to the ForestRacks help center! Here, you will find compreh
     ### Link Config and Restart Apache
 
     Enable your new Apache website configuration and required modules:
-    ```bash copy
+    ```bash
     ln -s /etc/apache2/sites-available/website.conf /etc/apache2/sites-enabled/website.conf
     a2enmod rewrite
     a2enmod ssl

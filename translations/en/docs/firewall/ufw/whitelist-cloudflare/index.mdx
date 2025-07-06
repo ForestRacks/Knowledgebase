@@ -1,10 +1,10 @@
 ---
 title: UFW Restrict Traffic to Only Cloudflare
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn how to restrict traffic to only Cloudflare IPs using UFW.
 ---
 
 Run the following script:
-```bash filename="cffw.sh" copy
+```bash:cffw.sh
 #!/bin/sh
 
 curl -s https://www.cloudflare.com/ips-v4 -o /tmp/cf_ips

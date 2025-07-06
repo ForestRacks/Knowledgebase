@@ -1,20 +1,20 @@
 ---
 title: Creating a DKIM for Office365
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn how to create a DKIM for Office365 to improve email security and deliverability.
 ---
 
 ## Install OpenDKIM
-```bash copy
+```bash
 apt install opendkim-tools
 ```
 
 ## Generate Selectors
-```bash copy
+```bash
 opendkim-genkey -D /root -d <domain> -s selector1
 opendkim-genkey -D /root -d <domain> -s selector2
 ```
 Then view the DNS record by running:
-```bash copy
+```bash
 cat /root/selector1.txt
 cat /root/selector2.txt
 ```
@@ -68,11 +68,11 @@ Go to your DNS Provider's Portal like [Cloudflare's DNS Page](https://dash.cloud
 4) Set the record like the following with `example-com` and `examplecom` filled in as your domain.
 
 Set the "name" as:
-```js copy
+```js
 selector1._domainkey
 ```
 Set the "value" as:
-```bash copy
+```bash
 selector1-example-com._domainkey.examplecom.onmicrosoft.com
 ```
 </StepperItem>

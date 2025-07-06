@@ -1,11 +1,9 @@
 ---
 title: Installing MinIO S3
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Install MinIO S3 on your server using Docker Compose.
 ---
 
-```yml filename="docker-compose.yml" copy
-version: "3"
-
+```yml:docker-compose.yml
 services:
   minio:
     image: minio/minio
@@ -23,6 +21,7 @@ volumes:
   minio_data:
 ```
 
-```bash copy
+### Start Docker Compose
+```bash
 docker compose up -d
 ```

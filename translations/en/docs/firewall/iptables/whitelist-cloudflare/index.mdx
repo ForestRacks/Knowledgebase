@@ -1,24 +1,24 @@
 ---
 title: IPTables Restrict Traffic to Only Cloudflare
-description: Welcome to the ForestRacks help center! Here, you will find comprehensive guides, tutorials, and reference materials to effectively utilize ForestRacks services.
+description: Learn how to restrict traffic to only Cloudflare IPs using IPTables.
 ---
 
 <Stepper>
 <StepperItem title="Install IPTables">
-```bash copy
+```bash
 apt install iptables
 ```
 
 </StepperItem>
 <StepperItem title="Create IPTables Persistent Directory">
-```bash copy
+```bash
 mkdir -p /etc/iptables/
 ```
 
 </StepperItem>
 <StepperItem title="Save Script">
 Paste this Cloudflare Firewall script as `/root/cffw.sh`
-```bash filename="cffw.sh" copy
+```bash:cffw.sh
 #!/bin/sh
 
 curl -s https://www.cloudflare.com/ips-v4 -o /tmp/cf_ip4
@@ -40,7 +40,7 @@ ip6tables-save > /etc/iptables/rules.v6
 
 </StepperItem>
 <StepperItem title="Execute Script">
-```bash copy
+```bash
 bash /root/cffw.sh
 ```
 </StepperItem>
