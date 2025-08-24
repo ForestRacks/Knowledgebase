@@ -18,7 +18,7 @@ Reverse DNS, facilitated by PTR records, has several important uses:
 ## PTR Record Format
 A PTR record contains a single piece of information: the domain name associated with an IP address. The format of a PTR record is as follows:
 
-```copy
+```text
 <IP Address>.in-addr.arpa. PTR <Domain Name>.
 ```
 
@@ -28,7 +28,7 @@ For IPv4 addresses, "in-addr.arpa." is used, and for IPv6 addresses, "ip6.arpa."
 ### IPv4 PTR Record Example
 Suppose we have the IPv4 address `192.168.1.10` reverse-mapped to the domain `host.example.com.`. The corresponding PTR record would look like this:
 
-```copy
+```text
 10.1.168.192.in-addr.arpa. PTR host.example.com.
 ```
 
@@ -36,7 +36,7 @@ Suppose we have the IPv4 address `192.168.1.10` reverse-mapped to the domain `ho
 
 For IPv6 addresses, let's consider `2001:0db8:85a3:0000:0000:8a2e:0370:7334` reverse-mapped to the domain `ipv6.example.com.`. The PTR record would appear as follows:
 
-```copy
+```text
 4.3.3.7.0.7.3.0.e.2.a.8.0.0.0.0.0.0.0.0.3.5.a.8.5.3.8.b.d.0.1.0.0.2.ip6.arpa. PTR ipv6.example.com.
 ```
 

@@ -9,12 +9,12 @@ description: Install and configure Apache on your server.
   </TabsList>
   <TabsContent value="debian">
     <Stepper>
-    ### Install Apache
+    <StepperItem title="Install Apache">
     ```bash
     apt install apache2
     ```
-
-    ### Generating SSL/TLS Certificates
+    </StepperItem>
+    <StepperItem title="Generating SSL/TLS Certificates">
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's Official Website](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
     ```bash
@@ -28,8 +28,8 @@ description: Install and configure Apache on your server.
     ```bash
     certbot certonly --apache -d example.com
     ```
-
-    ### Automatically Renewing SSL/TLS certificates
+    </StepperItem>
+    <StepperItem title="Automatically Renewing SSL/TLS certificates">
     1) Install crontab:
     ```bash
     apt install cron
@@ -38,16 +38,16 @@ description: Install and configure Apache on your server.
     ```bash
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
     ```
-
-    ### Webserver Configuration
+    </StepperItem>
+    <StepperItem title="Webserver Configuration">
     Remove the default configuration:
     ```bash
     a2dissite 000-default.conf
     ```
 
-    1) Create a new Apache site configuration like `website.conf` in `/etc/apache2/sitesites-available` using a text editor like nano or vim.
+    1) Create a new Apache site configuration like `website.conf` in `/etc/apache2/sites-available` using a text editor like nano or vim.
     2) Paste the text below into the file, replacing `<domain>` with your domain:
-    ```apache:website.conf
+    ```apacheconf:website.conf
     <VirtualHost *:80>
       ServerName <domain>
       ServerAdmin webmaster@localhost
@@ -86,7 +86,8 @@ description: Install and configure Apache on your server.
       Header always set Permissions-Policy "accelerometer=(), camera=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), usb=()"
     </VirtualHost>
     ```
-    ### Link Config and Restart Apache
+    </StepperItem>
+    <StepperItem title="Link Config and Restart Apache">
 
     Enable your new Apache website configuration and required modules:
     ```bash
@@ -95,16 +96,17 @@ description: Install and configure Apache on your server.
     a2enmod ssl
     systemctl restart apache2
     ```
+    </StepperItem>
     </Stepper>
   </TabsContent>
   <TabsContent value="rhel">
     <Stepper>
-    ### Install Apache
+    <StepperItem title="Install Apache">
     ```bash
     yum install apache2
     ```
-
-    ### Generating SSL/TLS Certificates
+    </StepperItem>
+    <StepperItem title="Generating SSL/TLS Certificates">
     #### Downloading Certbot
     To begin, we will install certbot, a simple script that automatically renews our certificates and allows much easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's Official Website](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's Apache plugin so you won't have to stop your webserver.
     ```bash
@@ -118,8 +120,8 @@ description: Install and configure Apache on your server.
     ```bash
     certbot certonly --apache -d example.com
     ```
-
-    ### Automatically Renewing SSL/TLS certificates
+    </StepperItem>
+    <StepperItem title="Automatically Renewing SSL/TLS certificates">
     1) Install crontab:
     ```bash
     yum install crontab
@@ -128,16 +130,16 @@ description: Install and configure Apache on your server.
     ```bash
     (crontab -l ; echo "0 23 * * * certbot renew --quiet --deploy-hook \"systemctl restart apache2\"")| crontab -
     ```
-
-    ### Webserver Configuration
+    </StepperItem>
+    <StepperItem title="Webserver Configuration">
     Remove the default configuration:
     ```bash
     a2dissite 000-default.conf
     ```
 
-    1) Create a new Apache site configuration like `website.conf` in `/etc/apache2/sitesites-available` using a text editor like nano or vim.
+    1) Create a new Apache site configuration like `website.conf` in `/etc/apache2/sites-available` using a text editor like nano or vim.
     2) Paste the text below into the file, replacing `<domain>` with your domain:
-    ```apache:website.conf
+    ```apacheconf:website.conf
     <VirtualHost *:80>
       ServerName <domain>
       ServerAdmin webmaster@localhost
@@ -176,7 +178,8 @@ description: Install and configure Apache on your server.
       Header always set Permissions-Policy "accelerometer=(), camera=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), usb=()"
     </VirtualHost>
     ```
-    ### Link Config and Restart Apache
+    </StepperItem>
+    <StepperItem title="Link Config and Restart Apache">
 
     Enable your new Apache website configuration and required modules:
     ```bash
@@ -185,6 +188,7 @@ description: Install and configure Apache on your server.
     a2enmod ssl
     systemctl restart apache2
     ```
+    </StepperItem>
     </Stepper>
   </TabsContent>
 </Tabs>
