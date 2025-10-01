@@ -1,11 +1,52 @@
 ---
-title: Adding Maps to Pavlov VR Servers
-description: Learn how to add maps to your Pavlov VR server.
+title: Adding Maps and Mods to Pavlov VR Servers
+description: Learn how to add maps and mods to your Pavlov VR server using the new mod system.
 ---
 
-## Configuration
+## New Mod System (As of January 29, 2025)
 
-The process of adding maps to your Pavlov server varies whether you use Shack or PC. Before adding a map, you should first select a [Game Mode](/docs/games/pavlov/adding-maps#available-game-modes) and then follow the steps below.
+The recommended way to manage maps and mods is now through Pavlov RCON, which provides a user-friendly interface for server management.
+
+### Using Pavlov RCON
+
+<Stepper>
+<StepperItem title="Access Pavlov RCON">
+Go to [Pavlov RCON](https://pavlovrcon.com/login) and log in with your server credentials.
+</StepperItem>
+<StepperItem title="Navigate to Server Config">
+Click on the "Server Config" tab after logging in.
+</StepperItem>
+<StepperItem title="Add Map Rotation">
+Enter your UGC ID (format: UGC123456) and click "Rotate Map".
+</StepperItem>
+<StepperItem title="Remove Standard Maps">
+Important: Remove the standard map from rotation to prevent it from defaulting back to SND (Search and Destroy).
+</StepperItem>
+<StepperItem title="Install RCON Plus (Recommended)">
+Navigate to the Menu tab and install RCON Plus to give moderators enhanced control capabilities.
+</StepperItem>
+</Stepper>
+
+### Using Custom Commands
+
+Alternatively, you can use RCON commands directly:
+
+**For Mods:**
+```
+UGCAddMod <UGC-ID>
+UGCRemoveMod <UGC-ID>
+```
+
+**For Maps:**
+```
+AddMapRotation <UGC-ID>
+```
+
+For a complete list of RCON commands, visit the [Pavlov Wiki RCON Overview](https://pavlovwiki.com/index.php/Rcon_Overview_and_Commands).
+
+## Legacy Map Configuration
+
+The legacy method involves editing the Game.ini file directly. This method still works but the Pavlov RCON method above is now preferred.
 
 <Stepper>
 <StepperItem title="Log Into The Panel">

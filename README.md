@@ -1,6 +1,6 @@
 # ForestRacks Translations
 
-Welcome to the repository for markdown translations for the ForestRacks [blog](https://forestracks.com/blog) and [documentation](https://forestracks.com/docs)! Here, you will find comprehensive guides, tutorials, and reference materials to help you navigate through our system effortlessly. Whether you're a beginner or an experienced user, this documentation is made for providing ForestRacks services with the necessary information to maximize client experience.
+Welcome to the repository for markdown translations for the ForestRacks [blog](https://forestracks.com/blog) and [documentation](https://forestracks.com/docs)! Here, you will find our tutorials, and reference materials to help you navigate through our system effortlessly. Whether you're a beginner or an experienced user, this documentation is made for providing ForestRacks services with the necessary information to maximize client experience.
 
 ## Contributing
 
@@ -74,7 +74,7 @@ When you create a link in your Markdown, it is converted to the Next.js `Link` c
 
 Markdown example:
 
-```markdown 
+```markdown
 [Visit ForestRacks](https://forestracks.com)
 ```
 
@@ -117,7 +117,7 @@ Example:
 
 5. **Steps**
 
-In this guide, we utilize a `Stepper` component, which enables users to display step-by-step instructions directly within the markdown render. 
+In this guide, we utilize a `Stepper` component, which enables users to display step-by-step instructions directly within the markdown render.
 
 ```jsx
 <Stepper>

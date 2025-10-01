@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "ForestRacks » Reliability at a Low Cost",
-    "description": "High-quality servers, industry-leading support, and unique server locations all for an affordable price. Fed up with overpaying for servers? Turn to us!"
+    "description": "High-performance servers, exceptional support, and strategic global locations—all at competitive prices. Stop overpaying for hosting. Choose ForestRacks."
   },
   "navbar": {
     "links": {
@@ -11,8 +11,8 @@
     },
     "search": {
       "search_documentation": "Search documentation...",
-      "no_results_found": " No results found for",
-      "type_something": "Type something to search..."
+      "no_results_found": "No results found for",
+      "type_something": "Start typing to search..."
     },
     "theme": {
       "light": "Light",
@@ -32,8 +32,8 @@
     "previous": "Previous"
   },
   "blog": {
-    "title": "The latest ForestRacks Blogs",
-    "sub_title": "All the latest blogs and news, straight from the team.",
+    "title": "Latest from ForestRacks",
+    "sub_title": "News, updates, and insights from our team.",
     "published_on": "Published on",
     "back_to_blog": "Back to blog",
     "posted_by": "Posted by"
@@ -46,14 +46,14 @@
   "not_found": {
     "404": "404",
     "page_not_found": "Page not found",
-    "sub_text": "Oops! The page you're looking for doesn't exist.",
-    "back_to_homepage": "Back to homepage"
+    "sub_text": "The page you're looking for doesn't exist.",
+    "back_to_homepage": "Return to homepage"
   },
   "error": {
-    "oops": "Oops!",
-    "something_went_wrong": "Something went wrong.",
-    "sub_text": "We're sorry, but an error occurred while processing your request.",
-    "reload_page": "Reload Page",
-    "back_to_homepage": "Back to homepage"
+    "oops": "Error",
+    "something_went_wrong": "Something went wrong",
+    "sub_text": "An error occurred while processing your request. Please try again.",
+    "reload_page": "Reload page",
+    "back_to_homepage": "Return to homepage"
   }
 }
