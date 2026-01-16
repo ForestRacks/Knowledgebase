@@ -15,7 +15,7 @@ To understand how AAAA-Records function, let's break down the domain resolution 
 1. **User Request**: When a user enters a domain name (e.g., example.com) in their web browser, the browser initiates a DNS lookup.
 2. **DNS Query**: The user's device sends a DNS query to a DNS resolver, which may be provided by an ISP or a public DNS service like Google DNS or Cloudflare DNS.
 3. **Authoritative DNS Servers**: The DNS resolver forwards the query to the authoritative DNS servers responsible for the domain in question (e.g., example.com). These authoritative servers store DNS records, including AAAA-Records.
-4. **AAAA-Record Lookup**: The authoritative DNS servers retrieve the AAAA-Record associated with the requested domain (e.g., example.com) and return the corresponding IPv6 address (e.g., 192.0.2.1) to the DNS resolver.
+4. **AAAA-Record Lookup**: The authoritative DNS servers retrieve the AAAA-Record associated with the requested domain (e.g., example.com) and return the corresponding IPv6 address (e.g., 2001:db8::1) to the DNS resolver.
 5. **Response to User**: The DNS resolver sends the IP address back to the user's device.
 6. **Connection Established**: The user's device can now establish a connection with the web server associated with the IP address, enabling the requested webpage to load.
 

@@ -79,6 +79,108 @@ The status should indicate that the service is active.
 ```bash
 ufw enable
 ```
-2) Allow incoming SSH connections on the bast
+2) Allow incoming SSH connections on the bastion server:
+```bash
+ufw allow 22/tcp
+```
+3) Allow WireGuard connections:
+```bash
+ufw allow 51820/udp
+```
+4) Set default policies to deny incoming and allow outgoing:
+```bash
+ufw default deny incoming
+ufw default allow outgoing
+```
+5) Reload UFW to apply the rules:
+```bash
+ufw reload
+```
+6) Verify the firewall rules:
+```bash
+ufw status verbose
+```
+You should see rules allowing SSH (port 22) and WireGuard (port 51820).
+</StepperItem>
+<StepperItem title="Test the Connection">
+1) On your local machine, create a WireGuard client configuration file:
+```bash
+nano ~/wg-client.conf
+```
+2) Add the following configuration:
+```ini:wg-client.conf
+[Interface]
+Address = 10.0.0.2/24
+PrivateKey = <CLIENT_PRIVATE_KEY>
+
+[Peer]
+PublicKey = <BASTION_PUBLIC_KEY>
+Endpoint = <BASTION_IP>:51820
+AllowedIPs = 10.0.0.0/24
+PersistentKeepalive = 25
+```
+Replace `<CLIENT_PRIVATE_KEY>` with your client's private key, `<BASTION_PUBLIC_KEY>` with the bastion server's public key, and `<BASTION_IP>` with your bastion server's public IP address.
+3) Start the WireGuard connection:
+```bash
+wg-quick up ~/wg-client.conf
+```
+4) Verify the connection is active:
+```bash
+wg show
+```
+5) Test SSH access through the VPN:
+```bash
+ssh -i ~/.ssh/bastion_key username@10.0.0.1
+```
+If successful, you're now connected to your bastion server through the secure WireGuard tunnel.
+</StepperItem>
+<StepperItem title="Secure SSH Access">
+1) On the bastion server, edit the SSH configuration:
+```bash
+nano /etc/ssh/sshd_config
+```
+2) Make the following changes to enhance security:
+```bash
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+AllowUsers username
+```
+Replace `username` with your actual username.
+3) Restart the SSH service:
+```bash
+systemctl restart sshd
+```
+4) Verify SSH is running:
+```bash
+systemctl status sshd
+```
 </StepperItem>
 </Stepper>
+
+### Best Practices
+
+* **Regular Updates**: Keep your bastion server and WireGuard installation up to date with security patches.
+* **Key Rotation**: Periodically rotate SSH keys and WireGuard keys for enhanced security.
+* **Monitoring**: Set up logging and monitoring to detect unauthorized access attempts.
+* **Backup Configuration**: Keep backups of your WireGuard and SSH configurations.
+* **Limit Access**: Only allow trusted IP addresses to connect to your bastion server when possible.
+
+### Troubleshooting
+
+**WireGuard Connection Issues:**
+* Verify that port 51820/udp is open on your firewall and router
+* Check that the keys are correctly configured in both client and server configurations
+* Ensure the endpoint IP address is correct
+
+**SSH Connection Issues:**
+* Verify SSH keys are properly installed with `ssh-add -l`
+* Check SSH logs with `journalctl -u sshd`
+* Ensure the correct private key is being used with the `-i` flag
+
+**UFW Blocking Connections:**
+* Check UFW status with `ufw status verbose`
+* Temporarily disable UFW for testing with `ufw disable` (re-enable after testing)
+* Review UFW logs at `/var/log/ufw.log`
+
+Your bastion server is now configured and ready to provide secure access to your infrastructure. All connections will be encrypted through WireGuard, and authentication will be handled via SSH keys.

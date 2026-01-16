@@ -1,0 +1,205 @@
+---
+title: "Disable Brave's Ads"
+description: "Learn how to disable ads in the Brave browser."
+date: 01-07-2025
+authors:
+  - avatar: "https://avatars.githubusercontent.com/Zinidia?s=100"
+    handle: zinidia
+    username: Matthew Jacob
+    handleUrl: "https://github.com/Zinidia"
+cover: "/img/bg/city.svg"
+tags:
+  - tutorial
+  - tech
+---
+
+Brave Browser markets itself on privacy and blocking intrusive ads-so it might seem paradoxical that Brave shows its own ads. But here's the twist: Brave's advertising model is fundamentally different from what you encounter elsewhere on the web. These aren't third-party trackers or invasive pop-ups; they're optional, privacy-respecting notifications that you can choose to view in exchange for cryptocurrency rewards.
+
+That said, not everyone wants ads of any kind, even privacy-preserving ones. Maybe you find the notifications distracting. Perhaps you're not interested in earning crypto. Or you might simply prefer a completely clean browsing experience without any promotional content whatsoever. Whatever your reason, Brave gives you granular control over every aspect of its advertising system.
+
+In this guide, we'll walk through exactly how to disable Brave's various ad types, explain what you're giving up when you do, discuss the privacy implications, and help you understand how Brave's advertising model differs from the invasive tracking you've come to expect from traditional browsers.
+
+## Understanding Brave's Ad Model
+
+Before we disable anything, it's worth understanding what makes Brave's approach unique-because it's genuinely different from traditional online advertising.
+
+**Privacy-First Design**: Brave's ads don't track you across websites. Your browsing data never leaves your device. The ad-matching happens locally on your computer using machine learning, not through invasive tracking cookies or third-party data brokers.
+
+**Opt-In, Not Opt-Out**: Unlike every other browser where ads are forced upon you and you have to install blockers to escape them, Brave's ads are optional. By default, you're not enrolled in Brave Rewards-you have to explicitly choose to see ads.
+
+**Revenue Sharing**: When you do opt in, 70% of the ad revenue goes to you in the form of Basic Attention Tokens (BAT), a cryptocurrency. You can then tip your favorite content creators or cash out. Traditional advertising keeps 100% of the revenue while selling your data.
+
+**Non-Intrusive Formats**: Brave ads appear as system notifications or sponsored images on new tabs-not pop-ups, not auto-play videos, not content that masquerades as articles. They're clearly labeled and easily dismissed.
+
+**Supporting the Web**: The vision is to create a sustainable web economy where users, creators, and advertisers all benefit without the privacy violations of surveillance capitalism.
+
+So why would you disable this? Several legitimate reasons:
+
+- **Distraction**: Even privacy-respecting notifications can interrupt your workflow
+- **Not interested in crypto**: If you're not going to use BAT tokens, the ads provide no value
+- **Principle**: You want absolutely zero promotional content, regardless of how it's delivered
+- **Visual preference**: You prefer a completely clean new tab page without sponsored images
+- **Already supporting creators**: You support content creators through other means (Patreon, subscriptions, etc.)
+
+## Types of Brave Ads
+
+Brave has three distinct ad placements, each controllable independently:
+
+1. **New Tab Sponsored Images**: Background images on new tabs with subtle branding
+2. **Notification Ads**: System-level notifications that appear while browsing
+3. **New Tab Page Ads**: Promotional content in the new tab interface itself
+
+Let's disable each one.
+
+## Disable New Tab Ads
+
+New tab sponsored backgrounds are probably the least intrusive of Brave's ad formats-just background images with a subtle sponsor logo. But if you prefer a clean new tab page, here's how to remove them:
+
+Open a new tab > Customize > Show sponsored backgrounds > Untoggle
+
+That's it. Your new tabs will now show either Brave's default background or a custom image if you've set one, with no sponsored content.
+
+**What you lose**: The aesthetic variety of rotating backgrounds, and a small portion of potential BAT earnings if you had Rewards enabled. The impact is minimal since new tab ads contribute the smallest amount to your Rewards balance.
+
+**What you gain**: A cleaner, more consistent new tab experience without any branding. This is particularly valuable if you use the new tab page frequently and find the rotating sponsors distracting.
+
+## Disable Banners
+
+"Banners" in Brave's terminology refers to various ad-related flags in the browser's experimental features. These control underlying ad functionality and can be disabled through Brave's flags interface:
+
+Visit `brave://flags/` and search `brave-ads`. Then disable all the brave advertisement flags.
+
+**Important context**: The flags interface is for experimental features and advanced configuration. Most users won't need to touch this. The flags you'll find related to ads control things like ad serving mechanisms, reporting, and experimental ad formats.
+
+**Caution**: Flags can change between Brave versions. Disabling flags may cause unexpected behavior. Only disable flags if you're comfortable with potential browser instability or if you've exhausted the standard settings and still see unwanted ad behavior.
+
+**What you lose**: By disabling ad-related flags, you're turning off the underlying infrastructure that powers Brave Ads. This is more comprehensive than just opting out of Rewards-it disabled the systems themselves.
+
+**What you gain**: The most thorough removal of ad-related code execution, though this is overkill for most users. The standard Rewards toggle (covered next) is usually sufficient.
+
+## Disable Rewards
+
+This is the main control for Brave's advertising system. Disabling Brave Rewards completely opts you out of all ad formats:
+
+Visit `brave://rewards/` and untoggle the "New tab page ads" and "Notification ads" options.
+
+Alternatively, you can disable Brave Rewards entirely by turning off the master toggle on the same page, which disables all Rewards functionality including the ability to tip creators.
+
+**Understanding the options**:
+
+- **New tab page ads**: Controls promotional content in your new tab interface (distinct from background images)
+- **Notification ads**: System notifications that appear while browsing (these contribute most to BAT earnings)
+- **Master Rewards toggle**: Disables the entire Brave Rewards system
+
+**What you lose**:
+
+- All BAT earnings from ads (typically $3-10 per month depending on your browsing habits and location)
+- The ability to automatically tip your favorite creators through browsing
+- Participation in Brave's alternative web economy vision
+
+**What you gain**:
+
+- Zero interruptions from notifications
+- Completely clean new tab page
+- Slightly reduced memory usage (though minimal)
+- Peace of mind knowing no ad system is running, even a privacy-preserving one
+
+## The Privacy Implications
+
+Here's where Brave's approach differs from what you might expect. Disabling Brave's ads doesn't improve your privacy-it's already maximized by default. Let me explain why.
+
+**Brave blocks third-party ads by default**: Whether or not you enable Brave Rewards, the browser still blocks invasive third-party ads and trackers on websites you visit. Disabling Brave's own ads doesn't change this protection.
+
+**Local ad matching**: When Brave Ads are enabled, the ad selection happens entirely on your device. Your browsing history never leaves your computer. Disabling ads doesn't reduce data collection because there was no data collection to begin with.
+
+**No tracking**: Brave's ads don't use cookies, fingerprinting, or cross-site tracking. Each ad view is anonymous. Disabling them doesn't make you more anonymous because you were already anonymous.
+
+In other words: **Disabling Brave's ads is a preference choice, not a privacy choice**. You're already private either way.
+
+The actual privacy benefit of Brave comes from:
+- Blocking third-party ads and trackers site-wide
+- HTTPS Everywhere enforcement
+- Fingerprinting protection
+- Cookie and storage blocking
+- Built-in Tor browsing mode
+
+These features work regardless of your Brave Ads settings.
+
+## Impact on Supporting Content Creators
+
+Brave's vision includes helping content creators earn money without invasive ads. When you browse with Brave Rewards enabled, you automatically contribute to creators based on your attention-websites you spend time on receive a share of your ad earnings.
+
+When you disable Brave Ads:
+
+**Creators lose**: The automatic tipping mechanism stops. If you're not earning BAT, you can't distribute it to creators. This is particularly impactful for smaller creators who rely on diverse revenue streams.
+
+**Alternative support**: You can still support creators through traditional means-Patreon, YouTube memberships, direct donations, or by turning off Brave's ad blocker on their sites so they get traditional ad revenue. These methods require more active effort but give creators a larger share.
+
+**The philosophical question**: Is it better to support creators through privacy-respecting ads that give them a small share of your earnings, or to disable those ads and support creators through other means? There's no right answer-it depends on your browsing habits, financial situation, and values.
+
+If you care about supporting creators but don't want ads, consider:
+- Manually tipping creators through Brave's tip button (requires purchasing BAT)
+- Subscribing to creator memberships or Patreon
+- Allowing ads on specific trusted sites
+- Sharing and promoting content you value
+
+## Brave vs. Traditional Ad Blocking
+
+It's important not to confuse disabling Brave's own ads with ad blocking in general. Here's the distinction:
+
+**Brave blocks third-party ads by default**: This happens automatically and protects you from tracking. You don't need to disable Brave's ads to block invasive ads-they're already blocked.
+
+**Disabling Brave Ads only affects Brave's own optional ad system**: You're turning off the privacy-respecting notifications and sponsored backgrounds, not the ad blocking features.
+
+**You get the best of both worlds**: Even with Brave Ads disabled, you're still protected from tracking ads across the web. You're just choosing not to see Brave's optional ads.
+
+This is fundamentally different from traditional browsers where disabling the ad system would mean re-enabling all the invasive tracking ads. In Brave, those are blocked regardless.
+
+## Performance Considerations
+
+Does disabling Brave Ads improve performance? The answer is nuanced.
+
+**Minimal impact**: Brave Ads are designed to be lightweight. The local ad-matching uses minimal CPU, and notifications are system-level events. Most users won't notice a performance difference either way.
+
+**Memory**: Disabling Brave Rewards might free up a tiny amount of RAM, but we're talking megabytes at most. If your system is so resource-constrained that this matters, you have bigger performance issues to address.
+
+**Battery life**: On laptops, disabling background ad processing might save a trivial amount of battery-but again, the impact is negligible compared to other browser features like video playback or heavy JavaScript sites.
+
+**The reality**: Performance is not a compelling reason to disable Brave Ads for most users. If you're experiencing performance issues with Brave, the culprit is more likely browser extensions, too many tabs, or resource-heavy websites.
+
+## Re-Enabling Brave Ads Later
+
+Changed your mind? Maybe you want to try earning some BAT, or you've decided to support the alternative ad model. Re-enabling is just as simple as disabling:
+
+1. Visit `brave://rewards/`
+2. Toggle on the Brave Rewards master switch
+3. Enable "New tab page ads" and/or "Notification ads" as desired
+4. Set your preferred ad frequency (1-10 ads per hour)
+
+You'll start earning BAT with your next ad view. Your previous earnings history is preserved if you disabled and re-enabled Rewards.
+
+## Alternative: Customize Instead of Disable
+
+If you find Brave Ads mildly annoying but not intolerable, consider customization instead of full disablement:
+
+**Reduce frequency**: Set ads to 1 per hour instead of 5 or 10. This minimizes interruption while still supporting the ecosystem.
+
+**Disable only notifications**: Keep sponsored backgrounds but turn off notification ads. This gives you BAT earnings with zero interruption during browsing.
+
+**Use Brave on desktop, not mobile**: Mobile notifications are more intrusive. Enable Rewards on desktop where they're easier to ignore, disable on mobile.
+
+**Pause temporarily**: Going into focus mode for a project? Temporarily disable notifications and re-enable later.
+
+Brave's granular controls let you find a balance that works for you.
+
+## Wrapping Up
+
+Disabling Brave's ads is straightforward: untoggle sponsored backgrounds in the new tab customization menu, turn off Brave Rewards to eliminate notifications and other ad formats, and optionally disable ad-related flags for the most thorough removal. The process takes less than a minute.
+
+But it's worth understanding what you're disabling. Brave's advertising system is fundamentally different from the invasive tracking you've come to expect online. It's privacy-preserving, opt-in, and revenue-sharing. Disabling it doesn't improve your privacy-you're already private. It's purely a preference about whether you want to see optional promotional content in exchange for cryptocurrency.
+
+The trade-off is clear: keep ads enabled and you earn a few dollars a month while supporting creators through automatic attention-based tipping. Disable them and you get a completely clean interface without any promotional content whatsoever, but you lose those benefits.
+
+There's no wrong choice. Brave gives you the control to decide, which is itself a refreshing change from the surveillance-based advertising that dominates the rest of the web. Whether you enable or disable Brave's ads, you're still getting superior privacy protection compared to Chrome, Edge, or any other mainstream browser.
+
+Ready to customize your Brave experience? Follow the steps above to disable the ad formats you don't want, and remember-you can always change your mind later. The beauty of Brave is that it actually respects your choice.

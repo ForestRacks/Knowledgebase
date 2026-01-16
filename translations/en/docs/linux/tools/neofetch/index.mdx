@@ -1,0 +1,35 @@
+---
+title: "Installing Neofetch on Linux"
+description: "Neofetch is a useful tool for displaying basic machine metrics such as resource usage, uptime, hardware models, and your current operating system."
+---
+
+[Neofetch](https://github.com/dylanaraps/neofetch) is a useful tool for displaying basic machine metrics such as resource usage, uptime, hardware models, and your current operating system. Displaying the output of neofetch or its faster counterpart paleofetch can be useful information when a new terminal session is created. This can be acomplished by editing your motd or bashrc.
+
+<Tabs defaultValue="debian" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="debian">Debian/Ubuntu</TabsTrigger>
+    <TabsTrigger value="rhel">RHEL/CentOS</TabsTrigger>
+  </TabsList>
+  <TabsContent value="debian">
+    Update your packages:
+    ```bash
+    apt update && apt upgrade
+    ```
+    Installing the neofetch package:
+    ```bash
+    apt install neofetch
+    ```
+  </TabsContent>
+  <TabsContent value="rhel">
+    Update your packages:
+    ```bash
+    yum -y install dnf
+    dnf -y install dnf-plugins-core
+    ```
+    Then neofetch can be installed with:
+    ```bash
+    dnf -y copr enable konimex/neofetch
+    dnf -y install neofetch
+    ```
+  </TabsContent>
+</Tabs>

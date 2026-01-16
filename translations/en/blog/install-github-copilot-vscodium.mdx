@@ -1,0 +1,168 @@
+---
+title: "Install Github Copilot for VSCodium"
+description: "Install Github Copilot for VSCodium."
+date: 01-07-2025
+authors:
+  - avatar: "https://avatars.githubusercontent.com/Zinidia?s=100"
+    handle: zinidia
+    username: Matthew Jacob
+    handleUrl: "https://github.com/Zinidia"
+cover: "/img/bg/city.svg"
+tags:
+  - tutorial
+  - development
+  - tech
+---
+
+You want AI-powered code completion. You also want to use open-source software that respects your privacy. If you're using VSCodium-the fully open-source build of Visual Studio Code without Microsoft's telemetry and proprietary licensing-you've probably discovered that GitHub Copilot doesn't "just work" like it does in Microsoft's official VS Code release.
+
+This isn't an accident. Microsoft's VS Code marketplace restricts certain extensions from running in non-Microsoft builds, and Copilot is one of them. The irony is rich: GitHub (owned by Microsoft) provides Copilot as a service you're paying for, but artificially restricts it from working in the open-source editor that's otherwise identical to VS Code in functionality.
+
+Fortunately, with a manual installation process and a small configuration change, you can use GitHub Copilot in VSCodium without sacrificing the privacy and open-source principles that led you to choose VSCodium in the first place.
+
+## Understanding VSCodium vs VS Code
+
+Before diving into installation, it's worth understanding what you're choosing and why the workaround is necessary.
+
+**Visual Studio Code (VS Code)**: Microsoft's popular code editor, built on open-source foundations but distributed with proprietary Microsoft branding, telemetry collection, and licensing restrictions. The source code is largely open (MIT-licensed), but Microsoft's official builds include tracking, crash reporting, and other data collection enabled by default.
+
+**VSCodium**: Community-driven project that compiles VS Code from source without Microsoft's proprietary additions. It's the same editor-same features, same extension API, same UI-but with Microsoft telemetry removed, different branding, and MIT license honored in both source and binary distribution.
+
+**The Key Differences**:
+- **Telemetry**: VS Code sends usage data to Microsoft by default (you can disable it, but it's opt-out). VSCodium sends nothing-telemetry is completely removed from the build.
+- **Marketplace**: VS Code uses Microsoft's extension marketplace. VSCodium uses Open VSX Registry by default (though you can configure it to use Microsoft's marketplace).
+- **Licensing**: VS Code's binary distributions include Microsoft's proprietary license. VSCodium is pure MIT license.
+- **Updates**: VS Code updates through Microsoft's channels. VSCodium updates through community-maintained repositories.
+
+**Why This Matters for Privacy**: If you're concerned about Microsoft collecting data on your development patterns, file names, languages used, extensions installed, and usage telemetry, VSCodium provides the same editor experience without the data collection. For developers working with sensitive codebases, client projects under NDA, or simply preferring minimal corporate surveillance, VSCodium is the principled choice.
+
+## Why Copilot Doesn't Work by Default
+
+GitHub Copilot is technically available as a `.vsix` extension file that should work in any editor compatible with VS Code's extension API-which VSCodium is. However, Microsoft restricts certain extensions in their marketplace from running in non-Microsoft builds.
+
+**The Restriction Mechanism**: Extensions can declare required capabilities in their manifest. Copilot requires specific API capabilities that are technically available in VSCodium but are gated behind Microsoft's product.json configuration. Without manual configuration changes, VSCodium doesn't advertise these capabilities, causing Copilot to refuse activation.
+
+**The Workaround**: By manually installing the Copilot extension and editing VSCodium's product.json to grant the necessary permissions, you can bypass this artificial restriction. This isn't hacking or piracy-you're a paying Copilot subscriber modifying open-source software to use a service you're entitled to access. You're simply working around Microsoft's decision to restrict their marketplace extensions from open-source builds.
+
+## The Trade-Offs
+
+Before proceeding, consider whether this workaround aligns with your priorities:
+
+**Pros of Using Copilot with VSCodium**:
+- AI-powered code completion you're paying for
+- Privacy-respecting editor without Microsoft telemetry
+- Open-source software principles maintained
+- Full feature parity with VS Code plus your privacy preferences
+
+**Cons and Considerations**:
+- Manual installation required (not one-click like VS Code)
+- Manual configuration edits needed
+- Updates to Copilot extension require repeating manual install process
+- Potential for Microsoft to change Copilot's requirements, breaking the workaround
+- You're working against Microsoft's intended restrictions (though using software you've paid for)
+
+**Alternatives to Consider**:
+- **Use Official VS Code**: If Copilot integration matters more than telemetry concerns, official VS Code provides seamless experience. You can disable telemetry in settings (though you're trusting Microsoft to honor that setting).
+- **Alternative AI Assistants**: Tools like TabNine, Codeium, or Amazon CodeWhisperer work without marketplace restrictions and may better align with open-source principles.
+- **Local AI Models**: Projects like Continue.dev let you run local AI models (Llama, CodeLlama, etc.) entirely on your machine with no cloud dependencies.
+
+If you've decided the manual process is worth it for Copilot-in-VSCodium, here's how to make it work:
+
+## Installation Process
+
+### 1) Download the Copilot Extension
+
+Navigate to the [Github Copilot extension page](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot).
+
+### 2) Install the Extension Manually
+
+On the right-hand sidebar, click the "Download Extension" button to download the `.vsix` extension file.
+
+Go to the extensions page within VSCodium and click the ellipses (three dots) on the left-hand sidebar. You should see a dropdown with an option named "Install from VSIX" at the bottom.
+
+Select the extension file from your computer-it should be named similar to `GitHub.copilot-1.115.434.vsix`.
+
+### 3) Configure Trust Settings
+
+On VSCodium, select your GitHub user from the bottom left user icon and click "Manage Trusted Extensions."
+
+Uncheck GitHub Copilot if it's checked-this ensures you'll be prompted to the login page after restarting VSCodium.
+
+### 4) Grant Required Permissions
+
+This is the critical step that makes Copilot work in VSCodium. You need to edit VSCodium's product.json file to grant Copilot the API permissions it requires.
+
+Edit `VSCODIUM_FOLDER/resources/app/product.json`. Find the `GitHub.copilot` section and insert the following permission array:
+```json
+["inlineCompletions","inlineCompletionsNew","inlineCompletionsAdditions","textDocumentNotebook","interactive","terminalDataWriteEvent"]
+```
+
+**Common product.json locations by platform**:
+```
+Linux (system): /usr/share/codium/resources/app/product.json
+Linux (AUR): /opt/vscodium-bin/resources/app/product.json
+macOS: /Applications/VSCodium.app/Contents/Resources/app/product.json
+Linux (snap): /snap/codium/current/usr/share/codium/resources/app/product.json
+```
+
+**Note**: You may need sudo/administrator privileges to edit this file. Make a backup before editing in case something goes wrong.
+
+### 5) Restart and Authenticate
+
+Restart VSCodium completely (quit and relaunch, not just reload window).
+
+Follow the GitHub Copilot sign-in prompts that appear. You'll authenticate with your GitHub account that has Copilot access.
+
+Once authenticated, Copilot should work exactly as it does in official VS Code-inline completions, suggestion panels, and all features you're paying for.
+
+## Troubleshooting
+
+If authentication doesn't work automatically, you may need to manually create an access token and grant account access to the Copilot extension.
+
+### Manual Authentication via Device Code Flow
+
+**Step 1**: Open a terminal and initiate GitHub authorization:
+```bash
+curl https://github.com/login/device/code -X POST -d 'client_id=01ab8ac9400c4e429b23&scope=user:email'
+```
+
+You'll receive a response containing `device_code` and `user_code`.
+
+**Step 2**: Visit https://github.com/login/device/ in your browser and enter the `user_code` from the response.
+
+**Step 3**: Return to the terminal and exchange the device code for an access token (replace `YOUR_DEVICE_CODE` with the device_code from step 1):
+```bash
+curl https://github.com/login/oauth/access_token -X POST -d 'client_id=01ab8ac9400c4e429b23&scope=user:email&device_code=YOUR_DEVICE_CODE&grant_type=urn:ietf:params:oauth:grant-type:device_code'
+```
+
+**Step 4**: The response will contain your `access_token` (starts with `gho_`). Copy this token.
+
+**Step 5**: In VSCodium, when the Copilot extension prompts for authorization, paste your access token.
+
+### Common Issues
+
+**Copilot icon appears but suggestions don't work**: Verify you edited product.json correctly and restarted VSCodium completely (quit and relaunch).
+
+**"Extension requires newer version of VS Code"**: You may need to update VSCodium to a newer version that matches the Copilot extension's requirements.
+
+**Permissions denied when editing product.json**: Use `sudo` on Linux/macOS or run your editor as administrator on Windows.
+
+**Extension updates break functionality**: When Copilot updates, you may need to re-download the `.vsix` and reinstall manually. This is the trade-off for using an unsupported configuration.
+
+## Maintaining Your Setup
+
+**Extension Updates**: Unlike VS Code where Copilot auto-updates, you'll need to manually download and install new versions when GitHub releases updates. Check the marketplace page periodically or watch for functionality issues that might indicate your version is outdated.
+
+**VSCodium Updates**: When VSCodium updates, your product.json changes should persist, but it's worth verifying after major version upgrades.
+
+**Backup Your Configuration**: Keep a copy of your modified product.json or at least note the changes you made. If VSCodium overwrites it during an update, you can quickly restore functionality.
+
+## Wrapping Up
+
+Using GitHub Copilot with VSCodium requires more manual work than the plug-and-play experience in Microsoft's VS Code, but for developers who prioritize open-source software and privacy, it's a worthwhile trade-off. You get the powerful AI assistance you're paying for without compromising on the telemetry-free, fully open-source editor environment you've chosen.
+
+This workaround highlights the tension between corporate software ecosystems and open-source principles. Microsoft benefits from making VS Code's marketplace sticky and discouraging users from choosing community-built alternatives like VSCodium. But the MIT license under which VS Code is released-and your paid subscription to Copilot-gives you every right to make this combination work.
+
+If the manual installation process becomes burdensome or Microsoft further restricts Copilot's compatibility, consider the alternatives mentioned earlier: Codeium, TabNine, or local AI models offer similar functionality without marketplace restrictions. The AI code completion landscape is rapidly evolving, and vendor lock-in is avoidable if you're willing to explore options beyond the Microsoft ecosystem.
+
+For now, enjoy your freedom-privacy-respecting editor, powerful AI assistance, and the satisfaction of making proprietary restrictions bow to open-source determination.

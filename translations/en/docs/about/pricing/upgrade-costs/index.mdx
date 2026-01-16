@@ -13,11 +13,142 @@ ForestRacks' upgrade costs for standard plans can be seen on the billing panel u
   </TabsList>
   <TabsContent value="vps">
 
+### Value VPS Upgrade Pricing
+
+When upgrading an existing Value VPS, you'll be charged a prorated amount for the remaining time in your billing cycle based on the price difference between your current and new plan.
+
+#### Upgrade Cost Formula
+
+```
+Upgrade Cost = (New Plan Price - Current Plan Price) × (Days Remaining / Days in Billing Cycle)
+```
+
+#### Resource Upgrade Pricing
+
+| Resource Type | Upgrade Cost | Immediate Effect |
+|---------------|--------------|------------------|
+| Additional vCPU Core | $1.00/month | Yes, requires reboot |
+| Additional 1GB RAM | $0.75/month | Yes, requires reboot |
+| Additional 1GB SSD Storage | $0.10/month | Yes, requires reboot |
+| Additional 1TB Bandwidth | $0.50/month | Yes, effective immediately |
+| Additional IPv4 Address | $3.00/month | Yes, requires reboot |
+
+#### Example Upgrade Scenarios
+
+**Scenario 1: Mid-Cycle RAM Upgrade**
+* Current Plan: 2 vCPU, 4GB RAM, 40GB SSD, 5TB BW = $9.50/month
+* Desired Plan: 2 vCPU, 8GB RAM, 40GB SSD, 5TB BW = $12.50/month
+* Days Remaining: 15 days out of 30
+* Prorated Upgrade Cost: ($12.50 - $9.50) × (15/30) = $1.50
+
+**Scenario 2: Multiple Resource Upgrade**
+* Current: 2 vCPU, 4GB RAM, 40GB SSD, 5TB BW = $9.50/month
+* Upgrade to: 4 vCPU, 8GB RAM, 100GB SSD, 10TB BW = $22.50/month
+* Days Remaining: 20 days out of 30
+* Prorated Upgrade Cost: ($22.50 - $9.50) × (20/30) = $8.67
+
+#### Downgrade Policy
+
+Downgrades take effect at your next billing cycle renewal. No credit is provided for the current cycle.
+
+<Note>
+Downgrades that reduce storage capacity require you to first reduce your disk usage below the new limit.
+</Note>
+
+#### How to Upgrade
+
+1. Log into your billing panel at [billing.forestracks.com](https://billing.forestracks.com)
+2. Select the service you want to upgrade
+3. Click "Upgrade/Downgrade Options"
+4. Select your desired resources
+5. Review the prorated cost
+6. Confirm the upgrade
+
+Upgrades are typically applied within 5-15 minutes. You'll receive an email confirmation once complete.
+
   </TabsContent>
   <TabsContent value="premiumvps">
-    
+
+### Performance VPS Upgrade Pricing
+
+Performance VPS upgrades follow the same prorated pricing model as Value VPS, but with premium resource pricing.
+
+#### Upgrade Cost Formula
+
+```
+Upgrade Cost = (New Plan Price - Current Plan Price) × (Days Remaining / Days in Billing Cycle)
+```
+
+#### Resource Upgrade Pricing
+
+| Resource Type | Upgrade Cost | Immediate Effect |
+|---------------|--------------|------------------|
+| Additional vCPU Core | $2.50/month | Yes, applied within 5 minutes |
+| Additional 1GB RAM | $1.50/month | Yes, applied within 5 minutes |
+| Additional 1GB NVMe Storage | $0.10/month | Yes, applied within 15 minutes |
+| Additional 1TB Bandwidth | $0.50/month | Yes, effective immediately |
+| Additional IPv4 Address | $3.00/month | Manual provisioning (1-2 hours) |
+
+#### Example Upgrade Scenarios
+
+**Scenario 1: CPU and RAM Upgrade**
+* Current Plan: 2 vCPU, 4GB RAM, 40GB NVMe, 5TB BW = $13.50/month
+* Desired Plan: 6 vCPU, 16GB RAM, 40GB NVMe, 5TB BW = $41.50/month
+* Days Remaining: 10 days out of 30
+* Prorated Upgrade Cost: ($41.50 - $13.50) × (10/30) = $9.33
+
+**Scenario 2: Full Resource Upgrade**
+* Current: 2 vCPU, 4GB RAM, 40GB NVMe, 5TB BW = $13.50/month
+* Upgrade to: 8 vCPU, 32GB RAM, 200GB NVMe, 10TB BW = $93.00/month
+* Days Remaining: 15 days out of 30
+* Prorated Upgrade Cost: ($93.00 - $13.50) × (15/30) = $39.75
+
+#### Instant Upgrade Benefits
+
+Performance VPS upgrades include several benefits that take effect immediately:
+* **Zero Downtime:** All upgrades applied without rebooting (unless storage resize requires filesystem expansion)
+* **Immediate Performance:** CPU and RAM upgrades are live within 5 minutes
+* **Backup Included:** Free daily backups included with all Performance VPS plans
+* **Priority Support:** Faster response times for upgrade-related issues
+
+#### Migration from Value to Performance VPS
+
+If you're migrating from Value VPS to Performance VPS, special migration pricing applies:
+
+1. **Same Billing Cycle Migration:**
+   - Credit remaining Value VPS time toward Performance VPS
+   - Pay prorated difference for remaining cycle
+   - Free migration assistance included
+
+2. **End of Cycle Migration:**
+   - No prorated charges
+   - Switch plans seamlessly at renewal
+   - Optional: Schedule future migration date
+
+<Note>
+**Recommended:** Schedule Performance VPS upgrades during low-traffic periods. While zero-downtime, brief network reconnections may occur during live migration.
+</Note>
+
+#### How to Upgrade
+
+1. Access your service in the billing panel
+2. Click "Upgrade to Performance VPS" or select specific resources
+3. Review the upgrade summary and prorated costs
+4. Choose immediate or scheduled upgrade
+5. Confirm and complete payment
+
+For complex upgrades or assistance, contact support via Discord or open a ticket.
+
   </TabsContent>
   <TabsContent value="gameservers">
-    
+
+### Game Server Upgrade Pricing
+
+Game server upgrade pricing varies by game type and resource requirements. See our [game server marketplace](/apps/games) for current pricing on all supported games.
+
+<Note>
+All game server upgrades include free configuration assistance. Contact our support team for personalized recommendations.
+</Note>
+
   </TabsContent>
 </Tabs>
