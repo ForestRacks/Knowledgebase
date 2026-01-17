@@ -1,6 +1,6 @@
 ---
-title: "Use Biometric Fingerprint Authentication for Sudo"
-description: "Learn how to use fingerprint authentication instead of typing your password every time you use sudo."
+title: "Enable Touch ID for Sudo on macOS: Terminal Fingerprint Authentication Guide"
+description: "Configure Touch ID for sudo commands on Mac by editing PAM. Includes security analysis, tmux support with pam_reattach, and troubleshooting common issues."
 date: 01-07-2025
 authors:
   - avatar: "https://avatars.githubusercontent.com/Zinidia?s=100"
@@ -9,9 +9,12 @@ authors:
     handleUrl: "https://github.com/Zinidia"
 cover: "/img/bg/city.svg"
 tags:
-  - tutorial
-  - tech
-  - security
+  - macos
+  - touch-id
+  - sudo
+  - terminal
+  - pam
+  - biometric-authentication
 ---
 
 If you're a Mac power user who spends time in the terminal, you've experienced this countless times: you type a command, press enter, and immediately hit the `sudo` wall. Your hands leave the keyboard, move to the trackpad to wake the Touch ID prompt-wait, that's not happening. Instead, you're staring at a password prompt in the terminal, forcing you to type out your full password character by character. Again. For the tenth time today.
