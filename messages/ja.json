@@ -1,9 +1,54 @@
 {
   "metadata": {
-    "title": "ForestRacks » Reliability at a Low Cost",
-    "description": "High-quality servers, industry-leading support, and unique server locations all for an affordable price. Fed up with overpaying for servers? Turn to us!"
+    "title": "ForestRacks » 低価格で高い信頼性を実現",
+    "description": "高性能サーバー、優れたサポート、戦略的なグローバルロケーション、すべてを競争力のある価格で提供。過払いは今すぐ終わり。ForestRacksを選んでください。"
   },
   "navbar": {
+    "new_order": {
+      "title": "新規注文",
+      "app_marketplace": {
+        "title": "アプリマーケットプレイス",
+        "description": "アプリケーションとゲーム"
+      },
+      "dedicated_servers": {
+        "title": "専用サーバー",
+        "description": "ベアメタルサーバー"
+      },
+      "virtual_servers": {
+        "title": "仮想サーバー",
+        "description": "スケーラブルなVPSホスティング"
+      },
+      "object_storage": {
+        "title": "オブジェクトストレージ",
+        "description": "クラウドS3ストレージ"
+      },
+      "website_hosting": {
+        "title": "ウェブサイトホスティング",
+        "description": "高速Webホスティング"
+      },
+      "domain_names": {
+        "title": "ドメイン名",
+        "description": "ドメインを登録"
+      }
+    },
+    "partner_programs": {
+      "title": "パートナープログラム",
+      "partner": "パートナー",
+      "reseller": "リセラー",
+      "affiliate": "アフィリエイト",
+      "peering": "ピアリング"
+    },
+    "information": {
+      "title": "情報",
+      "support_tickets": "サポートチケット",
+      "documentation": "ドキュメント",
+      "blog_posts": "ブログ記事",
+      "partner_programs": "パートナープログラム",
+      "network_peering": "ネットワークピアリング",
+      "server_status": "サーバーステータス",
+      "legal_information": "法的情報"
+    },
+    "login": "ログイン",
     "links": {
       "documentation": "ドキュメント",
       "blog": "ブログ",
@@ -11,49 +56,318 @@
     },
     "search": {
       "search_documentation": "ドキュメントを検索...",
-      "no_results_found": "該当する結果が見つかりません",
-      "type_something": "検索する内容を入力..."
+      "no_results_found": "結果が見つかりませんでした",
+      "type_something": "入力して検索を開始...",
+      "placeholder": "検索...",
+      "not_available": "検索は利用できません"
     },
     "theme": {
       "light": "ライト",
       "dark": "ダーク",
-      "system": "システム"
+      "system": "システム",
+      "toggle": "テーマを切り替え"
     }
   },
   "footer": {
-    "join_our_discord": "Join our Discord"
+    "about_us": {
+      "title": "会社概要",
+      "description": "ForestRacksは、比類のない信頼性と手頃な価格を備えたエンタープライズグレードのサーバーホスティングを提供し、常にお客様の満足を最優先に考えています。"
+    },
+    "information": {
+      "title": "情報",
+      "client_portal": "クライアントポータル",
+      "submit_tickets": "チケットを送信",
+      "documentation": "ドキュメント",
+      "reviews": "レビューを読む",
+      "server_status": "サーバーステータス"
+    },
+    "legal": {
+      "title": "法的ヘルプ",
+      "terms_of_service": "利用規約",
+      "privacy_policy": "プライバシーポリシー",
+      "acceptable_use": "利用規定",
+      "dmca_policy": "DMCAポリシー"
+    },
+    "services": {
+      "title": "サービス",
+      "website_hosting": "ウェブサイトホスティング",
+      "game_servers": "ゲームサーバー",
+      "virtual_servers": "仮想サーバー",
+      "dedicated_servers": "専用サーバー",
+      "domain_registration": "ドメイン登録"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "submit_tickets": "チケットを送信",
+      "join_our_discord": "Discordに参加",
+      "report_abuse": "不正利用を報告"
+    },
+    "copyright": "Copyright © {year} All rights reserved by",
+    "company_name": "Forest Racks LLC",
+    "social": {
+      "discord": "Discordサーバー",
+      "twitter": "Twitterプロフィール",
+      "linkedin": "LinkedInプロフィール",
+      "youtube": "Youtubeチャンネル"
+    }
   },
   "home": {
-    "get_started": "Get Started"
+    "get_started": "今すぐ始める",
+    "enterprise_hosting": "エンタープライズホスティング",
+    "contact_sales": "営業担当に問い合わせる",
+    "hero_description": "ForestRacksは、世界的に信頼されているエンタープライズグレードのサーバーホスティングプロバイダーであり、比類のない信頼性と手頃な価格を提供し、お客様の満足を最優先に考えています。",
+    "start_journey": "今日から始めましょう"
   },
   "docs": {
-    "on_this_page": "On this page",
-    "next": "Next",
-    "previous": "Previous"
+    "on_this_page": "このページの内容",
+    "next": "次へ",
+    "previous": "前へ",
+    "no_documentation": "ドキュメントが見つかりません"
   },
   "blog": {
-    "title": "The latest ForestRacks Blogs",
-    "sub_title": "All the latest blogs and news, straight from the team.",
-    "published_on": "Published on",
-    "back_to_blog": "Back to blog",
-    "posted_by": "Posted by"
-  },
-  "leftbar": {
-    "getting_started": "Getting Started",
-    "introduction": "Introduction",
-    "installation": "Installation"
+    "title": "ForestRacksの最新情報",
+    "sub_title": "チームからのニュース、アップデート、インサイト。",
+    "published_on": "公開日",
+    "back_to_blog": "ブログに戻る",
+    "posted_by": "投稿者",
+    "filters": {
+      "all_posts": "すべての投稿",
+      "tutorials": "チュートリアル",
+      "updates": "アップデート",
+      "case_studies": "ケーススタディ",
+      "clear": "フィルターをクリア"
+    }
   },
   "not_found": {
     "404": "404",
+    "error_title": "404エラー",
     "page_not_found": "ページが見つかりません",
-    "sub_text": "おっと！お探しのページは存在しません。",
-    "back_to_homepage": "ホームページへ戻る"
+    "sub_text": "お探しのページは存在しません。",
+    "back_to_homepage": "ホームページに戻る",
+    "return_home": "ホームに戻る",
+    "documentation": "ドキュメント",
+    "need_help": "お困りですか?",
+    "contact_support": "サポートチームに連絡"
   },
   "error": {
-    "oops": "おっと！",
-    "something_went_wrong": "何かがうまくいきませんでした。",
-    "sub_text": "申し訳ありませんが、リクエストの処理中にエラーが発生しました。",
+    "oops": "エラー",
+    "something_went_wrong": "問題が発生しました",
+    "sub_text": "リクエストの処理中にエラーが発生しました。もう一度お試しください。",
     "reload_page": "ページを再読み込み",
-    "back_to_homepage": "ホームページへ戻る"
+    "back_to_homepage": "ホームページに戻る"
+  },
+  "products": {
+    "search_placeholder": "アプリケーションを検索...",
+    "filters": {
+      "clear": "フィルターをクリア",
+      "type": "タイプ",
+      "features": "機能",
+      "sandbox": "サンドボックス",
+      "simulation": "シミュレーション",
+      "database": "データベース",
+      "cms": "CMS",
+      "bot": "Bot",
+      "multiplayer": "マルチプレイヤー",
+      "extensible": "拡張可能",
+      "high_performance": "高性能"
+    },
+    "categories": {
+      "all": "すべてのアプリ",
+      "all_description": "アプリケーションマーケットプレイス",
+      "games": "ゲーム",
+      "games_description": "ゲームサーバーホスティング",
+      "websites": "ウェブサイト",
+      "websites_description": "ウェブサイトホスティング",
+      "databases": "データベース",
+      "databases_description": "データベースホスティング",
+      "developers": "開発者",
+      "developers_description": "開発者ホスティング"
+    },
+    "faqs": {
+      "games": {
+        "player_slots_q": "プレイヤースロットに制限はありますか?",
+        "player_slots_a": "プレイヤー数はプランによって異なります。ゲームがサポートする範囲で制限を変更できますが、ベースプランは少人数向けで、プレミアムプランはより多くのプレイヤーに対応できます。",
+        "uptime_q": "サーバーは24時間365日稼働していますか?",
+        "uptime_a": "はい、すべてのサーバーは、プランに関わらず、稼働率保証付きの信頼性の高いデータセンターで稼働しています。",
+        "custom_start_q": "独自の起動ファイルを使用できますか?",
+        "custom_start_a": "はい、コントロールパネルからカスタム実行ファイルをアップロードして実行できます。サーバーを完全にカスタマイズできます。",
+        "backups_q": "バックアップは含まれていますか?",
+        "backups_a": "はい、サーバーには複数のバックアップスロットが含まれており、パネルでバックアップスケジュールを設定して、毎日サーバーのコピーを保存できます。",
+        "hardware_q": "どのようなハードウェアを使用していますか?",
+        "hardware_a": "NVMeストレージ、DDR5メモリ、最低10Gbpsファイバー接続を備えた最新の構成を使用しています。主にRyzen 9 9950X3Dプロセッサーを使用しており、すべてのシステムは厳格なパフォーマンス基準を満たしていますが、仕様はフリート全体で若干異なります。プロビジョニングされるサーバーの具体的なハードウェア詳細については、営業チームにお問い合わせください。",
+        "plan_change_q": "後でプランを変更できますか?",
+        "plan_change_a": "はい、請求パネルからいつでもサーバープランをアップグレードまたはダウングレードできます。数回のクリックで完了します。",
+        "unmetered_q": "無制限または未指定のリソースはどのように処理されますか?",
+        "unmetered_a": "無制限RAMプランは、現在の使用量より100MB上に自動的にスケーリングされ、システムの制限(通常256GB DDR5)まで対応します。forgeなどの一部のソフトウェアでは厳密な制限が必要なため、サーバーは32GBで開始され、サポートに連絡して手動で増やすことができます。帯域幅などの未指定のリソースについては、通常無制限の使用を許可しています。",
+        "support_q": "サポートには何が含まれますか?",
+        "support_a": "請求、ソフトウェアのクラッシュ、障害のサポートを行います。MODやプラグインの設定は行いませんが、詳細なドキュメントがあり、一般的には正しい方向に導くことができます。"
+      },
+      "websites": {
+        "login_q": "パネルにログインするにはどうすればよいですか?",
+        "login_a": "クライアントエリアからウェブサイトコントロールパネルにログインできます。WordPressなどのCMS固有のログインには、ドメインに/wp-adminを追加してください。",
+        "plugins_q": "プラグインをインストールできますか?",
+        "plugins_a": "はい、すべてのウェブサイトホスティングプランは、互換性のあるコンテンツ管理システム用のプラグインインストールをサポートしています。",
+        "storage_q": "ストレージ容量はどのくらいですか?",
+        "storage_a": "ストレージ容量はプランによって異なります。ベーシックプランは5GBから始まり、プレミアムプランではさらに多くまたは無制限のストレージを提供します。"
+      },
+      "databases": {
+        "upgrade_q": "いつでもアップグレードできますか?",
+        "upgrade_a": "はい、いつでもデータベースプランをシームレスにアップグレードできます。変更は、ダウンタイムを最小限またはゼロに抑えて適用されます。",
+        "storage_q": "ストレージ容量はどのくらいですか?",
+        "storage_a": "ストレージ割り当ては選択したプランによって異なります。スタータープランは2GBから始まり、プレミアムプランでは50GB以上にスケールアップします。",
+        "support_q": "技術サポートは提供されますか?",
+        "support_a": "はい、すべてのデータベースサービスに技術サポートを提供しています。プレミアムプランには、データベースエキスパートによる優先24時間365日サポートが含まれます。",
+        "backups_q": "バックアップは含まれていますか?",
+        "backups_a": "はい、すべてのデータベースプランには自動バックアップが含まれています。すべてのプランには、毎日のバックアップをスケジュールする機能が含まれています。"
+      },
+      "developers": {
+        "upgrade_q": "いつでもアップグレードできますか?",
+        "upgrade_a": "はい、要件の増加に応じて、いつでもBotホスティングプランをアップグレードできます。",
+        "login_q": "パネルにログインするにはどうすればよいですか?",
+        "login_a": "ウェルカムメールで提供された認証情報を使用して、クライアントエリアからBotコントロールパネルにアクセスできます。",
+        "support_q": "技術サポートは提供されますか?",
+        "support_a": "はい、Botのデプロイとホスティングの問題について技術サポートを提供しています。コード固有の問題については、Discordでコミュニティサポートも利用できます。",
+        "languages_q": "サポートされているプログラミング言語は何ですか?",
+        "languages_a": "Python、JavaScript(Node.js)、Golang、Java、PHP、その他の人気のあるプログラミング言語で構築されたBotをサポートしています。"
+      }
+    },
+    "version_selector": {
+      "minecraft_version": "Minecraftバージョン",
+      "minecraft_description": "使用するMinecraftサーバーバージョンを選択してください",
+      "version_selection": "バージョン選択",
+      "select_version": "使用するバージョンを選択してください",
+      "selected": "選択済み:",
+      "versions": "バージョン",
+      "search_placeholder": "バージョンを検索...",
+      "no_results": "検索条件に一致するバージョンがありません",
+      "stable_versions": "安定版",
+      "legacy_versions": "レガシーバージョン"
+    },
+    "billing_cycles": {
+      "monthly": "月額",
+      "quarterly": "四半期ごと",
+      "annually": "年額"
+    }
+  },
+  "dedicated": {
+    "metadata": {
+      "title": "専用サーバー | ForestRacks",
+      "description": "即時デプロイ、高度なDDoS保護、24時間365日のエキスパートサポートを備えた高性能専用サーバー。15分以内にサーバーをデプロイします。",
+      "keywords": ["専用サーバー", "ベアメタルサーバー", "高性能ホスティング", "即時デプロイ", "DDoS保護", "24時間365日サポート"]
+    },
+    "hero": {
+      "badge": "高性能ベアメタル",
+      "title": "次世代専用サーバー",
+      "subtitle": "エンタープライズの信頼性",
+      "description": "即時デプロイ、高度なDDoS保護、保証されたリソースを備えたエンタープライズグレードの専用サーバー。完全なルートアクセスと10Gbps接続により、15分以内にベアメタルパフォーマンスを実現します。",
+      "get_started": "今すぐ始める",
+      "learn_more": "詳細を見る"
+    },
+    "stats": {
+      "ticket_response_value": "22分",
+      "ticket_response": "チケット対応平均時間",
+      "latency_value": "<2ms",
+      "latency": "平均レイテンシー",
+      "support_availability_value": "24時間365日",
+      "support_availability": "サポート対応時間",
+      "port_speed_value": "10 Gbps",
+      "port_speed": "基本ポート速度",
+      "priority_support": "必要な時に優先サポート",
+      "to_exchanges": "主要な地域エクスチェンジへ",
+      "support_247": "24時間365日のサポート",
+      "unmetered_bandwidth": "無制限帯域幅を利用可能"
+    },
+    "cta": {
+      "title": "今すぐ始める準備はできましたか?",
+      "subtitle": "数分で高性能専用サーバーをデプロイします。選択にお困りですか?エキスパートがサポートいたします。",
+      "deploy_now": "今すぐデプロイ",
+      "talk_to_sales": "営業担当と話す"
+    }
+  },
+  "vps": {
+    "metadata": {
+      "title": "VPSホスティング | ForestRacks",
+      "description": "最新の高性能ハードウェアを搭載したVPSホスティングで、超高速パフォーマンスを体験してください。当社の仮想プライベートサーバーは、トラフィックの多いウェブサイトや要求の厳しいアプリケーションに最適なソリューションです。VPSホスティングの柔軟性とスケーラビリティを享受し、オンラインプレゼンスを次のレベルに引き上げましょう。",
+      "keywords": ["VPSホスティング", "仮想プライベートサーバー", "KVM VPS"]
+    }
+  },
+  "storage": {
+    "metadata": {
+      "title": "オブジェクトストレージ | ForestRacks",
+      "description": "無制限帯域幅、グローバル可用性、エンタープライズグレードのパフォーマンスを備えたS3互換オブジェクトストレージ。バックアップ、メディアストレージ、CDNスケーリングに最適です。",
+      "keywords": ["オブジェクトストレージ", "S3互換", "無制限帯域幅", "クラウドストレージ", "エンタープライズストレージ"]
+    },
+    "hero": {
+      "badge": "S3互換",
+      "unmetered": "無制限帯域幅",
+      "title": "クラウドオブジェクトストレージ",
+      "title_highlight": "無制限帯域幅",
+      "description": "グローバルな可用性とノードあたり最低10Gbpsを備えた、安全でスケーラブルな高性能オブジェクトストレージ。毎日のバックアップやCDNインフラのスケーリングに最適です。",
+      "get_started": "今すぐ始める",
+      "learn_more": "詳細を見る"
+    },
+    "features": {
+      "title": "エンタープライズグレードのストレージを、",
+      "title_highlight": "手頃な価格で",
+      "subtitle": "当社のオブジェクトストレージは、複数の冗長性層を備えたエンタープライズハードウェア上に構築されています",
+      "global_title": "グローバル可用性",
+      "global_description": "グローバルに分散されたストレージネットワークにより、どこからでもデータにアクセスできます",
+      "network_title": "10Gbpsネットワーク",
+      "network_description": "無制限の共有帯域幅を備えた高速10Gbpsネットワーク",
+      "raid_title": "RAID保護",
+      "raid_description": "すべてのデータは、RAID保護されたエンタープライズストレージアレイに保存されます",
+      "s3_api_title": "S3互換API",
+      "s3_api_description": "S3 APIをサポートする任意のアプリケーションと簡単に統合できます"
+    },
+    "use_cases": {
+      "title": "多様なユースケースに最適",
+      "subtitle": "当社のS3互換ストレージは、さまざまなアプリケーションに対応するように設計されています",
+      "daily_backups_title": "毎日のバックアップ",
+      "daily_backups_description": "アプリケーションとデータベースの毎日のバックアップのための信頼性の高いストレージ",
+      "media_storage_title": "メディアストレージ",
+      "media_storage_description": "画像、動画、その他のメディアファイルを効率的に保存して配信",
+      "document_archives_title": "ドキュメントアーカイブ",
+      "document_archives_description": "冗長ストレージで重要なドキュメントを安全にアーカイブ",
+      "application_assets_title": "アプリケーションアセット",
+      "application_assets_description": "Webおよびモバイルアプリケーションの静的アセットをホスト",
+      "content_delivery_title": "コンテンツ配信",
+      "content_delivery_description": "グローバルな可用性でCDNインフラをスケール",
+      "log_storage_title": "ログストレージ",
+      "log_storage_description": "分析とコンプライアンスのためにアプリケーションログを一元化"
+    },
+    "specs": {
+      "title": "技術仕様",
+      "description": "当社のオブジェクトストレージは、複数の冗長性と高速接続を備えたエンタープライズグレードのハードウェア上に構築されており、データが常に利用可能でアクセス可能であることを保証します。",
+      "enterprise_hardware_title": "エンタープライズハードウェア",
+      "enterprise_hardware_description": "冗長コンポーネントを備えたエンタープライズグレードのハードウェア上にデプロイされたストレージ",
+      "network_title": "10Gbpsネットワーク",
+      "network_description": "無制限帯域幅を備えた高性能ネットワーク",
+      "raid_title": "RAID保護",
+      "raid_description": "すべてのデータはRAIDアレイに保存され、ディスク障害から保護されます",
+      "global_title": "グローバル可用性",
+      "global_description": "最適なパフォーマンスのために、複数のグローバルリージョンからデータにアクセスできます",
+      "s3_api_title": "S3互換API",
+      "s3_code_comment": "# AWS CLIで設定",
+      "s3_upload_comment": "# ファイルをアップロード",
+      "s3_list_comment": "# バケットをリスト"
+    },
+    "cta": {
+      "title": "ストレージをスケールする準備はできましたか?",
+      "subtitle": "無制限帯域幅を備えたプランから選択して、数分でファイルのアップロードを開始できます。",
+      "get_started": "今すぐ始める",
+      "talk_to_sales": "営業担当と話す"
+    }
+  },
+  "locations": {
+    "title": "拠点",
+    "description": "ForestRacksはグローバルに展開しています..."
+  },
+  "leftbar": {
+    "getting_started": "はじめに",
+    "introduction": "紹介",
+    "installation": "インストール"
+  },
+  "lang_select": {
+    "select_language": "言語を選択"
   }
 }

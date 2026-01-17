@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "ForestRacks » 低成本高可靠性",
+    "description": "高性能服务器、卓越支持和全球战略位置——所有这些都以极具竞争力的价格提供。不要再为托管服务多花冤枉钱。选择 ForestRacks。"
+  },
+  "navbar": {
+    "new_order": {
+      "title": "新订单",
+      "app_marketplace": {
+        "title": "应用市场",
+        "description": "应用程序与游戏"
+      },
+      "dedicated_servers": {
+        "title": "独立服务器",
+        "description": "裸机服务器"
+      },
+      "virtual_servers": {
+        "title": "虚拟服务器",
+        "description": "可扩展的 VPS 托管"
+      },
+      "object_storage": {
+        "title": "对象存储",
+        "description": "云 S3 存储"
+      },
+      "website_hosting": {
+        "title": "网站托管",
+        "description": "快速网站托管"
+      },
+      "domain_names": {
+        "title": "域名",
+        "description": "注册域名"
+      }
+    },
+    "partner_programs": {
+      "title": "合作伙伴计划",
+      "partner": "合作伙伴",
+      "reseller": "经销商",
+      "affiliate": "联盟",
+      "peering": "对等互联"
+    },
+    "information": {
+      "title": "信息",
+      "support_tickets": "支持工单",
+      "documentation": "文档",
+      "blog_posts": "博客文章",
+      "partner_programs": "合作伙伴计划",
+      "network_peering": "网络对等互联",
+      "server_status": "服务器状态",
+      "legal_information": "法律信息"
+    },
+    "login": "登录",
+    "links": {
+      "documentation": "文档",
+      "blog": "博客",
+      "community": "社区"
+    },
+    "search": {
+      "search_documentation": "搜索文档...",
+      "no_results_found": "未找到结果",
+      "type_something": "开始输入以搜索...",
+      "placeholder": "搜索...",
+      "not_available": "搜索不可用"
+    },
+    "theme": {
+      "light": "浅色",
+      "dark": "深色",
+      "system": "系统",
+      "toggle": "切换主题"
+    }
+  },
+  "footer": {
+    "about_us": {
+      "title": "关于我们",
+      "description": "ForestRacks 提供企业级服务器托管服务,具有无与伦比的可靠性和实惠价格,始终将客户满意度放在首位。"
+    },
+    "information": {
+      "title": "信息",
+      "client_portal": "客户门户",
+      "submit_tickets": "提交工单",
+      "documentation": "文档",
+      "reviews": "阅读我们的评价",
+      "server_status": "服务器状态"
+    },
+    "legal": {
+      "title": "法律帮助",
+      "terms_of_service": "服务条款",
+      "privacy_policy": "隐私政策",
+      "acceptable_use": "可接受使用政策",
+      "dmca_policy": "DMCA 政策"
+    },
+    "services": {
+      "title": "我们的服务",
+      "website_hosting": "网站托管",
+      "game_servers": "游戏服务器",
+      "virtual_servers": "虚拟服务器",
+      "dedicated_servers": "独立服务器",
+      "domain_registration": "域名注册"
+    },
+    "contact": {
+      "title": "联系我们",
+      "submit_tickets": "提交工单",
+      "join_our_discord": "加入我们的 Discord",
+      "report_abuse": "举报滥用"
+    },
+    "copyright": "版权所有 © {year} 保留所有权利",
+    "company_name": "Forest Racks LLC",
+    "social": {
+      "discord": "Discord 服务器",
+      "twitter": "Twitter 主页",
+      "linkedin": "LinkedIn 主页",
+      "youtube": "Youtube 频道"
+    }
+  },
+  "home": {
+    "get_started": "立即开始",
+    "enterprise_hosting": "企业托管",
+    "contact_sales": "联系销售",
+    "hero_description": "ForestRacks 是全球信赖的企业级服务器托管提供商,提供无与伦比的可靠性和实惠价格,同时将客户满意度置于我们所做一切的首位。",
+    "start_journey": "今天开始您的旅程"
+  },
+  "docs": {
+    "on_this_page": "本页内容",
+    "next": "下一页",
+    "previous": "上一页",
+    "no_documentation": "未找到文档"
+  },
+  "blog": {
+    "title": "ForestRacks 最新动态",
+    "sub_title": "来自我们团队的新闻、更新和见解。",
+    "published_on": "发布于",
+    "back_to_blog": "返回博客",
+    "posted_by": "发布者",
+    "filters": {
+      "all_posts": "所有文章",
+      "tutorials": "教程",
+      "updates": "更新",
+      "case_studies": "案例研究",
+      "clear": "清除筛选"
+    }
+  },
+  "not_found": {
+    "404": "404",
+    "error_title": "404 错误",
+    "page_not_found": "页面未找到",
+    "sub_text": "您寻找的页面不存在。",
+    "back_to_homepage": "返回主页",
+    "return_home": "返回主页",
+    "documentation": "文档",
+    "need_help": "需要帮助?",
+    "contact_support": "联系我们的支持团队"
+  },
+  "error": {
+    "oops": "错误",
+    "something_went_wrong": "出现问题",
+    "sub_text": "处理您的请求时发生错误。请重试。",
+    "reload_page": "重新加载页面",
+    "back_to_homepage": "返回主页"
+  },
+  "products": {
+    "search_placeholder": "搜索应用程序...",
+    "filters": {
+      "clear": "清除筛选",
+      "type": "类型",
+      "features": "特性",
+      "sandbox": "沙盒",
+      "simulation": "模拟",
+      "database": "数据库",
+      "cms": "内容管理系统",
+      "bot": "机器人",
+      "multiplayer": "多人游戏",
+      "extensible": "可扩展",
+      "high_performance": "高性能"
+    },
+    "categories": {
+      "all": "所有应用",
+      "all_description": "应用市场",
+      "games": "游戏",
+      "games_description": "游戏服务器托管",
+      "websites": "网站",
+      "websites_description": "网站托管",
+      "databases": "数据库",
+      "databases_description": "数据库托管",
+      "developers": "开发者",
+      "developers_description": "开发者托管"
+    },
+    "faqs": {
+      "games": {
+        "player_slots_q": "你们限制玩家位数吗?",
+        "player_slots_a": "玩家数量取决于您的套餐。虽然您可以将限制更改为游戏支持的任何值,但我们的基础套餐支持较少的玩家,而高级套餐可以容纳更多玩家。",
+        "uptime_q": "服务器是否全天候在线?",
+        "uptime_a": "是的,无论您选择哪种套餐,所有服务器都在可靠的数据中心运行,并提供正常运行时间保证。",
+        "custom_start_q": "我可以使用自己的启动文件吗?",
+        "custom_start_a": "是的,您可以通过我们的控制面板上传并运行自定义可执行文件,以实现完全的服务器自定义。",
+        "backups_q": "包含备份吗?",
+        "backups_a": "是的,服务器包含多个备份位,您可以在面板中配置备份计划,每天保存服务器副本。",
+        "hardware_q": "你们使用什么硬件?",
+        "hardware_a": "现代化的构建配置,配备 NVMe 存储、DDR5 内存,以及至少 10Gbps 光纤连接。虽然我们主要使用 Ryzen 9 9950X3D 处理器,但所有系统都符合我们严格的性能标准,具体规格在我们的服务器群中略有不同。如需了解您将获得的服务器的具体硬件详情,请联系我们的销售团队。",
+        "plan_change_q": "我以后可以更改套餐吗?",
+        "plan_change_a": "是的,您可以随时从计费面板升级或降级您的服务器套餐,只需点击几下即可。",
+        "unmetered_q": "如何处理无限量或未指定的资源?",
+        "unmetered_a": "无限量内存套餐会自动扩展到当前使用量以上 100MB,最高可达系统限制(通常为 256GB DDR5)。某些软件(如 Forge)需要硬性限制,因此您的服务器初始为 32GB,您需要联系支持以手动增加。对于未指定的资源(如带宽),我们通常允许无限使用。",
+        "support_q": "你们的支持涵盖哪些内容?",
+        "support_a": "我们帮助解决计费、软件崩溃和中断问题。虽然我们不配置模组或插件,但我们有详细的文档,通常可以为您指明正确的方向。"
+      },
+      "websites": {
+        "login_q": "如何登录面板?",
+        "login_a": "您可以通过客户区登录网站控制面板。对于特定 CMS 的登录(如 WordPress),请在域名后添加 /wp-admin。",
+        "plugins_q": "我可以安装插件吗?",
+        "plugins_a": "是的,我们所有的网站托管套餐都支持为兼容的内容管理系统安装插件。",
+        "storage_q": "我可以获得多少存储空间?",
+        "storage_a": "存储空间因套餐而异。基础套餐从 5GB 开始,而高级套餐提供明显更多或无限存储空间。"
+      },
+      "databases": {
+        "upgrade_q": "我可以随时升级吗?",
+        "upgrade_a": "是的,您可以随时无缝升级数据库套餐。更改将以最少甚至零停机时间应用。",
+        "storage_q": "我可以获得多少存储空间?",
+        "storage_a": "存储分配取决于您选择的套餐。我们的入门套餐从 2GB 开始,高级套餐可扩展至 50GB 或更多。",
+        "support_q": "你们提供技术支持吗?",
+        "support_a": "是的,我们为所有数据库服务提供技术支持。高级套餐包括来自我们数据库专家的全天候优先支持。",
+        "backups_q": "包含备份吗?",
+        "backups_a": "是的,所有数据库套餐都包含自动备份。所有套餐都包括设置每日备份计划的功能。"
+      },
+      "developers": {
+        "upgrade_q": "我可以随时升级吗?",
+        "upgrade_a": "是的,随着您需求的增长,您可以随时升级机器人托管套餐。",
+        "login_q": "如何登录面板?",
+        "login_a": "您可以使用欢迎邮件中提供的凭据通过我们的客户区访问机器人控制面板。",
+        "support_q": "你们提供技术支持吗?",
+        "support_a": "是的,我们为机器人部署和托管问题提供技术支持。我们的 Discord 社区还为代码特定问题提供支持。",
+        "languages_q": "支持哪些编程语言?",
+        "languages_a": "我们支持使用 Python、JavaScript (Node.js)、Golang、Java、PHP 和其他流行编程语言构建的机器人。"
+      }
+    },
+    "version_selector": {
+      "minecraft_version": "Minecraft 版本",
+      "minecraft_description": "选择您要使用的 Minecraft 服务器版本",
+      "version_selection": "版本选择",
+      "select_version": "选择您要使用的版本",
+      "selected": "已选择:",
+      "versions": "版本",
+      "search_placeholder": "搜索版本...",
+      "no_results": "没有与您的搜索条件匹配的版本",
+      "stable_versions": "稳定版本",
+      "legacy_versions": "旧版本"
+    },
+    "billing_cycles": {
+      "monthly": "月付",
+      "quarterly": "季付",
+      "annually": "年付"
+    }
+  },
+  "dedicated": {
+    "metadata": {
+      "title": "独立服务器 | ForestRacks",
+      "description": "高性能独立服务器,即时部署,高级 DDoS 防护,以及全天候专家支持。在 15 分钟内部署您的服务器。",
+      "keywords": ["独立服务器", "裸机服务器", "高性能托管", "即时部署", "DDoS 防护", "全天候支持"]
+    },
+    "hero": {
+      "badge": "高性能裸机",
+      "title": "下一代独立服务器",
+      "subtitle": "企业级可靠性",
+      "description": "企业级独立服务器,即时部署,高级 DDoS 防护,以及保证资源。获得裸机性能,完全 root 访问权限和 10Gbps 连接,仅需 15 分钟。",
+      "get_started": "立即开始",
+      "learn_more": "了解更多"
+    },
+    "stats": {
+      "ticket_response_value": "22 分钟",
+      "ticket_response": "工单平均响应时间",
+      "latency_value": "<2ms",
+      "latency": "平均延迟",
+      "support_availability_value": "24/7",
+      "support_availability": "支持可用性",
+      "port_speed_value": "10 Gbps",
+      "port_speed": "基础端口速度",
+      "priority_support": "需要时的优先支持",
+      "to_exchanges": "到主要区域交换点",
+      "support_247": "全天候支持",
+      "unmetered_bandwidth": "提供无限流量"
+    },
+    "cta": {
+      "title": "准备好开始了吗?",
+      "subtitle": "在几分钟内部署您的高性能独立服务器。需要帮助选择?我们的专家随时为您提供帮助。",
+      "deploy_now": "立即部署",
+      "talk_to_sales": "联系销售"
+    }
+  },
+  "vps": {
+    "metadata": {
+      "title": "VPS 托管 | ForestRacks",
+      "description": "体验由最新高性能硬件驱动的闪电般快速的 VPS 托管。我们的虚拟专用服务器是高流量网站和高要求应用程序的完美解决方案。享受我们 VPS 托管的灵活性和可扩展性,将您的在线业务提升到新的水平。",
+      "keywords": ["VPS 托管", "虚拟专用服务器", "KVM VPS"]
+    }
+  },
+  "storage": {
+    "metadata": {
+      "title": "对象存储 | ForestRacks",
+      "description": "S3 兼容对象存储,无限流量、全球可用性和企业级性能。非常适合备份、媒体存储和 CDN 扩展。",
+      "keywords": ["对象存储", "S3 兼容", "无限流量", "云存储", "企业存储"]
+    },
+    "hero": {
+      "badge": "S3 兼容",
+      "unmetered": "无限流量",
+      "title": "云对象存储,提供",
+      "title_highlight": "无限流量",
+      "description": "安全、可扩展且高性能的对象存储,具有全球可用性,每个节点至少 10Gbps。非常适合每日备份或扩展您的 CDN 基础设施。",
+      "get_started": "立即开始",
+      "learn_more": "了解更多"
+    },
+    "features": {
+      "title": "企业级存储,",
+      "title_highlight": "实惠价格",
+      "subtitle": "我们的对象存储建立在企业硬件之上,具有多层冗余",
+      "global_title": "全球可用性",
+      "global_description": "通过我们的全球分布式存储网络,从任何地方访问您的数据",
+      "network_title": "10Gbps 网络",
+      "network_description": "高速 10Gbps 网络,提供无限共享带宽",
+      "raid_title": "RAID 保护",
+      "raid_description": "所有数据都存储在受 RAID 保护的企业存储阵列上",
+      "s3_api_title": "S3 兼容 API",
+      "s3_api_description": "轻松与任何支持 S3 API 的应用程序集成"
+    },
+    "use_cases": {
+      "title": "适用于多种使用场景",
+      "subtitle": "我们的 S3 兼容存储旨在处理各种应用程序",
+      "daily_backups_title": "每日备份",
+      "daily_backups_description": "为您的应用程序和数据库每日备份提供可靠存储",
+      "media_storage_title": "媒体存储",
+      "media_storage_description": "高效存储和提供图像、视频和其他媒体文件",
+      "document_archives_title": "文档存档",
+      "document_archives_description": "使用冗余存储安全存档重要文档",
+      "application_assets_title": "应用程序资源",
+      "application_assets_description": "为您的 Web 和移动应用程序托管静态资源",
+      "content_delivery_title": "内容分发",
+      "content_delivery_description": "通过全球可用性扩展您的 CDN 基础设施",
+      "log_storage_title": "日志存储",
+      "log_storage_description": "集中存储应用程序日志以进行分析和合规性检查"
+    },
+    "specs": {
+      "title": "技术规格",
+      "description": "我们的对象存储建立在企业级硬件之上,具有多重冗余和高速连接,以确保您的数据始终可用和可访问。",
+      "enterprise_hardware_title": "企业硬件",
+      "enterprise_hardware_description": "存储部署在具有冗余组件的企业级硬件上",
+      "network_title": "10Gbps 网络",
+      "network_description": "具有无限带宽的高性能网络",
+      "raid_title": "RAID 保护",
+      "raid_description": "所有数据都存储在 RAID 阵列上,以防止磁盘故障",
+      "global_title": "全球可用性",
+      "global_description": "从多个全球区域访问您的数据以获得最佳性能",
+      "s3_api_title": "S3 兼容 API",
+      "s3_code_comment": "# 使用 AWS CLI 配置",
+      "s3_upload_comment": "# 上传文件",
+      "s3_list_comment": "# 列出存储桶"
+    },
+    "cta": {
+      "title": "准备好扩展您的存储了吗?",
+      "subtitle": "从我们的无限流量套餐中选择,并在几分钟内开始上传您的文件。",
+      "get_started": "立即开始",
+      "talk_to_sales": "联系销售"
+    }
+  },
+  "locations": {
+    "title": "我们的位置",
+    "description": "ForestRacks 在全球范围内运营..."
+  },
+  "leftbar": {
+    "getting_started": "入门指南",
+    "introduction": "介绍",
+    "installation": "安装"
+  },
+  "lang_select": {
+    "select_language": "选择语言"
+  }
+}

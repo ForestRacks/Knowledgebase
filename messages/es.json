@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "ForestRacks » Confiabilidad a Bajo Costo",
+    "description": "Servidores de alto rendimiento, soporte excepcional y ubicaciones estratégicas globales, todo a precios competitivos. Deja de pagar de más por hosting. Elige ForestRacks."
+  },
+  "navbar": {
+    "new_order": {
+      "title": "Nueva Orden",
+      "app_marketplace": {
+        "title": "Marketplace de Apps",
+        "description": "Aplicaciones y juegos"
+      },
+      "dedicated_servers": {
+        "title": "Servidores Dedicados",
+        "description": "Servidores bare metal"
+      },
+      "virtual_servers": {
+        "title": "Servidores Virtuales",
+        "description": "Hosting VPS escalable"
+      },
+      "object_storage": {
+        "title": "Almacenamiento de Objetos",
+        "description": "Almacenamiento S3 en la nube"
+      },
+      "website_hosting": {
+        "title": "Hosting de Sitios Web",
+        "description": "Hosting web rápido"
+      },
+      "domain_names": {
+        "title": "Nombres de Dominio",
+        "description": "Registrar dominios"
+      }
+    },
+    "partner_programs": {
+      "title": "Programas de Socios",
+      "partner": "Socio",
+      "reseller": "Revendedor",
+      "affiliate": "Afiliado",
+      "peering": "Peering"
+    },
+    "information": {
+      "title": "Información",
+      "support_tickets": "Tickets de Soporte",
+      "documentation": "Documentación",
+      "blog_posts": "Artículos del Blog",
+      "partner_programs": "Programas de Socios",
+      "network_peering": "Peering de Red",
+      "server_status": "Estado del Servidor",
+      "legal_information": "Información Legal"
+    },
+    "login": "Iniciar Sesión",
+    "links": {
+      "documentation": "Documentación",
+      "blog": "Blog",
+      "community": "Comunidad"
+    },
+    "search": {
+      "search_documentation": "Buscar en la documentación...",
+      "no_results_found": "No se encontraron resultados para",
+      "type_something": "Comienza a escribir para buscar...",
+      "placeholder": "Buscar...",
+      "not_available": "Búsqueda no disponible"
+    },
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema",
+      "toggle": "Cambiar tema"
+    }
+  },
+  "footer": {
+    "about_us": {
+      "title": "Acerca de Nosotros",
+      "description": "ForestRacks ofrece hosting de servidores de grado corporativo con confiabilidad y asequibilidad incomparables, siempre poniendo la satisfacción del cliente en primer lugar."
+    },
+    "information": {
+      "title": "Información",
+      "client_portal": "Portal del Cliente",
+      "submit_tickets": "Enviar Tickets",
+      "documentation": "Documentación",
+      "reviews": "Lee nuestras reseñas",
+      "server_status": "Estado del Servidor"
+    },
+    "legal": {
+      "title": "Ayuda Legal",
+      "terms_of_service": "Términos de Servicio",
+      "privacy_policy": "Política de Privacidad",
+      "acceptable_use": "Uso Aceptable",
+      "dmca_policy": "Política DMCA"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "website_hosting": "Hosting de Sitios Web",
+      "game_servers": "Servidores de Juegos",
+      "virtual_servers": "Servidores Virtuales",
+      "dedicated_servers": "Servidores Dedicados",
+      "domain_registration": "Registro de Dominios"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "submit_tickets": "Enviar Tickets",
+      "join_our_discord": "Únete a nuestro Discord",
+      "report_abuse": "Reportar Abuso"
+    },
+    "copyright": "Copyright © {year} Todos los derechos reservados por",
+    "company_name": "Forest Racks LLC",
+    "social": {
+      "discord": "Servidor de Discord",
+      "twitter": "Perfil de Twitter",
+      "linkedin": "Perfil de LinkedIn",
+      "youtube": "Canal de Youtube"
+    }
+  },
+  "home": {
+    "get_started": "Comenzar",
+    "enterprise_hosting": "Hosting Empresarial",
+    "contact_sales": "Contactar Ventas",
+    "hero_description": "ForestRacks es un proveedor de hosting de servidores de grado empresarial confiable a nivel mundial, que ofrece confiabilidad y asequibilidad incomparables mientras pone la satisfacción del cliente en el centro de todo lo que hacemos.",
+    "start_journey": "Comienza Tu Viaje Hoy"
+  },
+  "docs": {
+    "on_this_page": "En esta página",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "no_documentation": "No se encontró documentación"
+  },
+  "blog": {
+    "title": "Lo Último de ForestRacks",
+    "sub_title": "Noticias, actualizaciones y perspectivas de nuestro equipo.",
+    "published_on": "Publicado el",
+    "back_to_blog": "Volver al blog",
+    "posted_by": "Publicado por",
+    "filters": {
+      "all_posts": "Todos los Artículos",
+      "tutorials": "Tutoriales",
+      "updates": "Actualizaciones",
+      "case_studies": "Casos de Estudio",
+      "clear": "Limpiar filtros"
+    }
+  },
+  "not_found": {
+    "404": "404",
+    "error_title": "Error 404",
+    "page_not_found": "Página no encontrada",
+    "sub_text": "La página que buscas no existe.",
+    "back_to_homepage": "Volver a la página principal",
+    "return_home": "Volver al Inicio",
+    "documentation": "Documentación",
+    "need_help": "¿Necesitas ayuda?",
+    "contact_support": "Contacta a nuestro equipo de soporte"
+  },
+  "error": {
+    "oops": "Error",
+    "something_went_wrong": "Algo salió mal",
+    "sub_text": "Ocurrió un error al procesar tu solicitud. Por favor, intenta nuevamente.",
+    "reload_page": "Recargar página",
+    "back_to_homepage": "Volver a la página principal"
+  },
+  "products": {
+    "search_placeholder": "Buscar aplicaciones...",
+    "filters": {
+      "clear": "Limpiar filtros",
+      "type": "Tipo",
+      "features": "Características",
+      "sandbox": "Sandbox",
+      "simulation": "Simulación",
+      "database": "Base de Datos",
+      "cms": "CMS",
+      "bot": "Bot",
+      "multiplayer": "Multijugador",
+      "extensible": "Extensible",
+      "high_performance": "Alto Rendimiento"
+    },
+    "categories": {
+      "all": "Todas las Apps",
+      "all_description": "Marketplace de Aplicaciones",
+      "games": "Juegos",
+      "games_description": "Hosting de Servidores de Juegos",
+      "websites": "Sitios Web",
+      "websites_description": "Hosting de Sitios Web",
+      "databases": "Bases de Datos",
+      "databases_description": "Hosting de Bases de Datos",
+      "developers": "Desarrolladores",
+      "developers_description": "Hosting para Desarrolladores"
+    },
+    "faqs": {
+      "games": {
+        "player_slots_q": "¿Limitan los espacios de jugadores?",
+        "player_slots_a": "El número de jugadores depende de tu plan. Aunque puedes cambiar el límite a cualquier valor soportado por el juego, nuestros planes base admiten menos jugadores mientras que los planes premium pueden manejar más jugadores.",
+        "uptime_q": "¿Los servidores están en línea 24/7?",
+        "uptime_a": "Sí, todos los servidores funcionan en centros de datos confiables con nuestra garantía de tiempo de actividad, independientemente de tu plan.",
+        "custom_start_q": "¿Puedo usar mi propio archivo de inicio?",
+        "custom_start_a": "Sí, puedes subir y ejecutar archivos ejecutables personalizados a través de nuestro panel de control para una personalización completa del servidor.",
+        "backups_q": "¿Están incluidos los respaldos?",
+        "backups_a": "Sí, los servidores incluyen múltiples espacios de respaldo y puedes configurar la programación de respaldos en el panel para guardar una copia de tu servidor diariamente.",
+        "hardware_q": "¿Qué hardware utilizan?",
+        "hardware_a": "Configuraciones de construcción modernas con almacenamiento NVMe, memoria DDR5 y como mínimo conectividad de fibra de 10Gbps. Si bien utilizamos principalmente procesadores Ryzen 9 9950X3D y todos los sistemas cumplen con nuestros rigurosos estándares de rendimiento, las especificaciones varían ligeramente en nuestra flota. Para detalles específicos del hardware del servidor que se te asignará, por favor contacta a nuestro equipo de ventas.",
+        "plan_change_q": "¿Puedo cambiar mi plan más adelante?",
+        "plan_change_a": "Sí, puedes mejorar o reducir tu plan de servidor en cualquier momento desde el panel de facturación con solo un par de clics.",
+        "unmetered_q": "¿Cómo se manejan los recursos sin medición o no especificados?",
+        "unmetered_a": "Los planes de RAM sin medición se escalan automáticamente a 100MB por encima del uso actual, hasta los límites del sistema que generalmente son 256GB DDR5. Algunos programas como Forge requieren un límite fijo, por lo que tu servidor comienza con 32GB y contactas a soporte para un aumento manual. Para recursos no especificados como el ancho de banda, generalmente permitimos uso ilimitado.",
+        "support_q": "¿Qué cubre su soporte?",
+        "support_a": "Ayudamos con facturación, caídas de software y cortes de servicio. Aunque no configuramos mods o plugins, tenemos documentación detallada y generalmente podemos orientarte en la dirección correcta."
+      },
+      "websites": {
+        "login_q": "¿Cómo inicio sesión en el panel?",
+        "login_a": "Puedes iniciar sesión en el panel de control de tu sitio web a través del área de clientes. Para inicios de sesión específicos de CMS (como WordPress), agrega /wp-admin a tu dominio.",
+        "plugins_q": "¿Puedo instalar plugins?",
+        "plugins_a": "Sí, todos nuestros planes de hosting de sitios web admiten la instalación de plugins para sistemas de gestión de contenido compatibles.",
+        "storage_q": "¿Cuánto almacenamiento obtengo?",
+        "storage_a": "El espacio de almacenamiento varía según el plan. Los planes básicos comienzan en 5GB, mientras que los planes premium ofrecen significativamente más o almacenamiento ilimitado."
+      },
+      "databases": {
+        "upgrade_q": "¿Puedo mejorar en cualquier momento?",
+        "upgrade_a": "Sí, puedes mejorar tu plan de base de datos sin problemas en cualquier momento. Los cambios se aplicarán con un tiempo de inactividad mínimo o nulo.",
+        "storage_q": "¿Cuánto almacenamiento obtengo?",
+        "storage_a": "La asignación de almacenamiento depende del plan elegido. Nuestros planes de inicio comienzan en 2GB y escalan hasta 50GB o más con planes premium.",
+        "support_q": "¿Proporcionan soporte técnico?",
+        "support_a": "Sí, proporcionamos soporte técnico para todos los servicios de bases de datos. Los planes premium incluyen soporte prioritario 24/7 de nuestros expertos en bases de datos.",
+        "backups_q": "¿Están incluidos los respaldos?",
+        "backups_a": "Sí, todos los planes de bases de datos incluyen respaldos automatizados. Todos los planes incluyen la capacidad de programar respaldos diarios."
+      },
+      "developers": {
+        "upgrade_q": "¿Puedo mejorar en cualquier momento?",
+        "upgrade_a": "Sí, puedes mejorar tu plan de hosting de bots en cualquier momento a medida que tus requisitos crezcan.",
+        "login_q": "¿Cómo inicio sesión en el panel?",
+        "login_a": "Puedes acceder al panel de control de tu bot a través de nuestra área de clientes con las credenciales proporcionadas en tu correo de bienvenida.",
+        "support_q": "¿Proporcionan soporte técnico?",
+        "support_a": "Sí, ofrecemos soporte técnico para problemas de implementación y hosting de bots. El soporte de la comunidad también está disponible para problemas específicos de código en nuestro Discord.",
+        "languages_q": "¿Qué lenguajes de programación son compatibles?",
+        "languages_a": "Admitimos bots construidos en Python, JavaScript (Node.js), Golang, Java, PHP y otros lenguajes de programación populares."
+      }
+    },
+    "version_selector": {
+      "minecraft_version": "Versión de Minecraft",
+      "minecraft_description": "Selecciona la versión del servidor de Minecraft que deseas usar",
+      "version_selection": "Selección de Versión",
+      "select_version": "Selecciona la versión que deseas usar",
+      "selected": "Seleccionado:",
+      "versions": "versiones",
+      "search_placeholder": "Buscar versiones...",
+      "no_results": "Ninguna versión coincide con tus criterios de búsqueda",
+      "stable_versions": "Versiones Estables",
+      "legacy_versions": "Versiones Anteriores"
+    },
+    "billing_cycles": {
+      "monthly": "Mensual",
+      "quarterly": "Trimestral",
+      "annually": "Anual"
+    }
+  },
+  "dedicated": {
+    "metadata": {
+      "title": "Servidores Dedicados | ForestRacks",
+      "description": "Servidores dedicados de alto rendimiento con implementación instantánea, protección DDoS avanzada y soporte experto 24/7. Implementa tu servidor en menos de 15 minutos.",
+      "keywords": ["Servidores Dedicados", "Servidores Bare Metal", "Hosting de Alto Rendimiento", "Implementación Instantánea", "Protección DDoS", "Soporte 24/7"]
+    },
+    "hero": {
+      "badge": "Bare Metal de Alto Rendimiento",
+      "title": "Servidores Dedicados de Nueva Generación",
+      "subtitle": "Confiabilidad Empresarial",
+      "description": "Servidores dedicados de grado empresarial con implementación instantánea, protección DDoS avanzada y recursos garantizados. Obtén rendimiento bare metal con acceso root completo y conectividad de 10Gbps en menos de 15 minutos.",
+      "get_started": "Comenzar",
+      "learn_more": "Más Información"
+    },
+    "stats": {
+      "ticket_response_value": "22 min",
+      "ticket_response": "Promedio de Respuesta de Tickets",
+      "latency_value": "<2ms",
+      "latency": "Latencia Promedio",
+      "support_availability_value": "24/7",
+      "support_availability": "Disponibilidad de Soporte",
+      "port_speed_value": "10 Gbps",
+      "port_speed": "Velocidad de Puerto Base",
+      "priority_support": "Soporte prioritario cuando lo necesitas",
+      "to_exchanges": "Hacia los principales intercambios regionales",
+      "support_247": "Soporte las 24 horas",
+      "unmetered_bandwidth": "Ancho de banda sin medición disponible"
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "subtitle": "Implementa tu servidor dedicado de alto rendimiento en minutos. ¿Necesitas ayuda para elegir? Nuestros expertos están aquí para asistirte.",
+      "deploy_now": "Implementar Ahora",
+      "talk_to_sales": "Hablar con Ventas"
+    }
+  },
+  "vps": {
+    "metadata": {
+      "title": "Hosting VPS | ForestRacks",
+      "description": "Experimenta un rendimiento ultrarrápido con nuestro hosting VPS, impulsado por el hardware de alto rendimiento más reciente. Nuestros servidores privados virtuales son la solución perfecta para sitios web de alto tráfico y aplicaciones exigentes. Disfruta de la flexibilidad y escalabilidad de nuestro hosting VPS y lleva tu presencia en línea al siguiente nivel.",
+      "keywords": ["hosting VPS", "servidor privado virtual", "KVM VPS"]
+    }
+  },
+  "storage": {
+    "metadata": {
+      "title": "Almacenamiento de Objetos | ForestRacks",
+      "description": "Almacenamiento de objetos compatible con S3 con ancho de banda sin medición, disponibilidad global y rendimiento de grado empresarial. Perfecto para respaldos, almacenamiento de medios y escalado de CDN.",
+      "keywords": ["Almacenamiento de Objetos", "Compatible con S3", "Ancho de Banda sin Medición", "Almacenamiento en la Nube", "Almacenamiento Empresarial"]
+    },
+    "hero": {
+      "badge": "Compatible con S3",
+      "unmetered": "Ancho de Banda sin Medición",
+      "title": "Almacenamiento de Objetos en la Nube con",
+      "title_highlight": "Ancho de Banda sin Medición",
+      "description": "Almacenamiento de objetos seguro, escalable y de alto rendimiento con disponibilidad global y mínimo 10Gbps por nodo. Perfecto para respaldos diarios o para escalar tu infraestructura de CDN.",
+      "get_started": "Comenzar",
+      "learn_more": "Más Información"
+    },
+    "features": {
+      "title": "Almacenamiento de Grado Empresarial,",
+      "title_highlight": "Precio Asequible",
+      "subtitle": "Nuestro almacenamiento de objetos está construido sobre hardware empresarial con múltiples capas de redundancia",
+      "global_title": "Disponibilidad Global",
+      "global_description": "Accede a tus datos desde cualquier lugar con nuestra red de almacenamiento distribuida globalmente",
+      "network_title": "Red de 10Gbps",
+      "network_description": "Red de alta velocidad de 10Gbps con ancho de banda compartido sin medición",
+      "raid_title": "Protección RAID",
+      "raid_description": "Todos los datos se almacenan en arrays de almacenamiento empresarial protegidos por RAID",
+      "s3_api_title": "API Compatible con S3",
+      "s3_api_description": "Integra fácilmente con cualquier aplicación que admita la API de S3"
+    },
+    "use_cases": {
+      "title": "Perfecto para Muchos Casos de Uso",
+      "subtitle": "Nuestro almacenamiento compatible con S3 está diseñado para manejar una variedad de aplicaciones",
+      "daily_backups_title": "Respaldos Diarios",
+      "daily_backups_description": "Almacenamiento confiable para tus respaldos diarios de aplicaciones y bases de datos",
+      "media_storage_title": "Almacenamiento de Medios",
+      "media_storage_description": "Almacena y sirve imágenes, videos y otros archivos multimedia de manera eficiente",
+      "document_archives_title": "Archivos de Documentos",
+      "document_archives_description": "Archiva de forma segura documentos importantes con almacenamiento redundante",
+      "application_assets_title": "Recursos de Aplicaciones",
+      "application_assets_description": "Aloja recursos estáticos para tus aplicaciones web y móviles",
+      "content_delivery_title": "Entrega de Contenido",
+      "content_delivery_description": "Escala tu infraestructura de CDN con disponibilidad global",
+      "log_storage_title": "Almacenamiento de Registros",
+      "log_storage_description": "Centraliza los registros de tus aplicaciones para análisis y cumplimiento"
+    },
+    "specs": {
+      "title": "Especificaciones Técnicas",
+      "description": "Nuestro almacenamiento de objetos está construido sobre hardware de grado empresarial con múltiples redundancias y conectividad de alta velocidad para garantizar que tus datos estén siempre disponibles y accesibles.",
+      "enterprise_hardware_title": "Hardware Empresarial",
+      "enterprise_hardware_description": "Almacenamiento implementado en hardware de grado empresarial con componentes redundantes",
+      "network_title": "Red de 10Gbps",
+      "network_description": "Red de alto rendimiento con ancho de banda sin medición",
+      "raid_title": "Protección RAID",
+      "raid_description": "Todos los datos se almacenan en arrays RAID para proteger contra fallas de disco",
+      "global_title": "Disponibilidad Global",
+      "global_description": "Accede a tus datos desde múltiples regiones globales para un rendimiento óptimo",
+      "s3_api_title": "API Compatible con S3",
+      "s3_code_comment": "# Configurar con AWS CLI",
+      "s3_upload_comment": "# Subir un archivo",
+      "s3_list_comment": "# Listar buckets"
+    },
+    "cta": {
+      "title": "¿Listo para Escalar tu Almacenamiento?",
+      "subtitle": "Elige entre nuestra gama de planes con ancho de banda sin medición y comienza a subir tus archivos en minutos.",
+      "get_started": "Comenzar",
+      "talk_to_sales": "Hablar con Ventas"
+    }
+  },
+  "locations": {
+    "title": "Nuestras Ubicaciones",
+    "description": "ForestRacks opera globalmente..."
+  },
+  "leftbar": {
+    "getting_started": "Comenzando",
+    "introduction": "Introducción",
+    "installation": "Instalación"
+  },
+  "lang_select": {
+    "select_language": "Seleccionar idioma"
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "ForestRacks » कम लागत पर विश्वसनीयता",
+    "description": "उच्च-प्रदर्शन सर्वर, असाधारण सहायता, और रणनीतिक वैश्विक स्थान—सभी प्रतिस्पर्धी मूल्यों पर। होस्टिंग के लिए अधिक भुगतान करना बंद करें। ForestRacks चुनें।"
+  },
+  "navbar": {
+    "new_order": {
+      "title": "नया ऑर्डर",
+      "app_marketplace": {
+        "title": "ऐप मार्केटप्लेस",
+        "description": "एप्लिकेशन और गेम"
+      },
+      "dedicated_servers": {
+        "title": "Dedicated सर्वर",
+        "description": "Bare metal सर्वर"
+      },
+      "virtual_servers": {
+        "title": "Virtual सर्वर",
+        "description": "स्केलेबल VPS होस्टिंग"
+      },
+      "object_storage": {
+        "title": "Object Storage",
+        "description": "Cloud S3 storage"
+      },
+      "website_hosting": {
+        "title": "वेबसाइट होस्टिंग",
+        "description": "तेज वेब होस्टिंग"
+      },
+      "domain_names": {
+        "title": "डोमेन नाम",
+        "description": "डोमेन पंजीकृत करें"
+      }
+    },
+    "partner_programs": {
+      "title": "साझेदार कार्यक्रम",
+      "partner": "साझेदार",
+      "reseller": "रीसेलर",
+      "affiliate": "एफिलिएट",
+      "peering": "Peering"
+    },
+    "information": {
+      "title": "जानकारी",
+      "support_tickets": "सहायता टिकट",
+      "documentation": "प्रलेखन",
+      "blog_posts": "ब्लॉग पोस्ट",
+      "partner_programs": "साझेदार कार्यक्रम",
+      "network_peering": "Network Peering",
+      "server_status": "सर्वर स्थिति",
+      "legal_information": "कानूनी जानकारी"
+    },
+    "login": "लॉगिन",
+    "links": {
+      "documentation": "प्रलेखन",
+      "blog": "ब्लॉग",
+      "community": "समुदाय"
+    },
+    "search": {
+      "search_documentation": "प्रलेखन खोजें...",
+      "no_results_found": "के लिए कोई परिणाम नहीं मिला",
+      "type_something": "खोजने के लिए टाइप करना शुरू करें...",
+      "placeholder": "खोजें...",
+      "not_available": "खोज उपलब्ध नहीं है"
+    },
+    "theme": {
+      "light": "लाइट",
+      "dark": "डार्क",
+      "system": "सिस्टम",
+      "toggle": "थीम बदलें"
+    }
+  },
+  "footer": {
+    "about_us": {
+      "title": "हमारे बारे में",
+      "description": "ForestRacks अद्वितीय विश्वसनीयता और सामर्थ्य के साथ कॉर्पोरेट-ग्रेड सर्वर होस्टिंग प्रदान करता है, हमेशा ग्राहक संतुष्टि को सर्वोच्च प्राथमिकता देता है।"
+    },
+    "information": {
+      "title": "जानकारी",
+      "client_portal": "क्लाइंट पोर्टल",
+      "submit_tickets": "टिकट सबमिट करें",
+      "documentation": "प्रलेखन",
+      "reviews": "हमारी समीक्षाएं पढ़ें",
+      "server_status": "सर्वर स्थिति"
+    },
+    "legal": {
+      "title": "कानूनी सहायता",
+      "terms_of_service": "सेवा की शर्तें",
+      "privacy_policy": "गोपनीयता नीति",
+      "acceptable_use": "स्वीकार्य उपयोग",
+      "dmca_policy": "DMCA नीति"
+    },
+    "services": {
+      "title": "हमारी सेवाएं",
+      "website_hosting": "वेबसाइट होस्टिंग",
+      "game_servers": "गेम सर्वर",
+      "virtual_servers": "Virtual सर्वर",
+      "dedicated_servers": "Dedicated सर्वर",
+      "domain_registration": "डोमेन पंजीकरण"
+    },
+    "contact": {
+      "title": "हमसे संपर्क करें",
+      "submit_tickets": "टिकट सबमिट करें",
+      "join_our_discord": "हमारे Discord में शामिल हों",
+      "report_abuse": "दुरुपयोग की रिपोर्ट करें"
+    },
+    "copyright": "Copyright © {year} सभी अधिकार सुरक्षित",
+    "company_name": "Forest Racks LLC",
+    "social": {
+      "discord": "Discord सर्वर",
+      "twitter": "Twitter प्रोफाइल",
+      "linkedin": "LinkedIn प्रोफाइल",
+      "youtube": "Youtube चैनल"
+    }
+  },
+  "home": {
+    "get_started": "शुरू करें",
+    "enterprise_hosting": "एंटरप्राइज होस्टिंग",
+    "contact_sales": "विक्रय से संपर्क करें",
+    "hero_description": "ForestRacks एक विश्वव्यापी विश्वसनीय एंटरप्राइज-ग्रेड सर्वर होस्टिंग प्रदाता है, जो अद्वितीय विश्वसनीयता और सामर्थ्य प्रदान करता है जबकि ग्राहक संतुष्टि को हमारे सभी कार्यों में सर्वोपरि रखता है।",
+    "start_journey": "आज ही अपनी यात्रा शुरू करें"
+  },
+  "docs": {
+    "on_this_page": "इस पृष्ठ पर",
+    "next": "अगला",
+    "previous": "पिछला",
+    "no_documentation": "कोई प्रलेखन नहीं मिला"
+  },
+  "blog": {
+    "title": "ForestRacks से नवीनतम",
+    "sub_title": "हमारी टीम से समाचार, अपडेट और अंतर्दृष्टि।",
+    "published_on": "प्रकाशित",
+    "back_to_blog": "ब्लॉग पर वापस जाएं",
+    "posted_by": "द्वारा पोस्ट किया गया",
+    "filters": {
+      "all_posts": "सभी पोस्ट",
+      "tutorials": "ट्यूटोरियल",
+      "updates": "अपडेट",
+      "case_studies": "केस स्टडीज",
+      "clear": "फ़िल्टर साफ़ करें"
+    }
+  },
+  "not_found": {
+    "404": "404",
+    "error_title": "404 त्रुटि",
+    "page_not_found": "पृष्ठ नहीं मिला",
+    "sub_text": "जिस पृष्ठ को आप खोज रहे हैं वह मौजूद नहीं है।",
+    "back_to_homepage": "होमपेज पर वापस जाएं",
+    "return_home": "होम पर वापस जाएं",
+    "documentation": "प्रलेखन",
+    "need_help": "मदद चाहिए?",
+    "contact_support": "हमारी सहायता टीम से संपर्क करें"
+  },
+  "error": {
+    "oops": "त्रुटि",
+    "something_went_wrong": "कुछ गलत हो गया",
+    "sub_text": "आपके अनुरोध को संसाधित करते समय एक त्रुटि हुई। कृपया पुनः प्रयास करें।",
+    "reload_page": "पृष्ठ पुनः लोड करें",
+    "back_to_homepage": "होमपेज पर वापस जाएं"
+  },
+  "products": {
+    "search_placeholder": "एप्लिकेशन खोजें...",
+    "filters": {
+      "clear": "फ़िल्टर साफ़ करें",
+      "type": "प्रकार",
+      "features": "विशेषताएं",
+      "sandbox": "Sandbox",
+      "simulation": "Simulation",
+      "database": "Database",
+      "cms": "CMS",
+      "bot": "Bot",
+      "multiplayer": "Multiplayer",
+      "extensible": "Extensible",
+      "high_performance": "High Performance"
+    },
+    "categories": {
+      "all": "सभी ऐप",
+      "all_description": "एप्लिकेशन मार्केटप्लेस",
+      "games": "गेम",
+      "games_description": "गेम सर्वर होस्टिंग",
+      "websites": "वेबसाइट",
+      "websites_description": "वेबसाइट होस्टिंग",
+      "databases": "डेटाबेस",
+      "databases_description": "डेटाबेस होस्टिंग",
+      "developers": "डेवलपर",
+      "developers_description": "डेवलपर होस्टिंग"
+    },
+    "faqs": {
+      "games": {
+        "player_slots_q": "क्या आप प्लेयर स्लॉट को सीमित करते हैं?",
+        "player_slots_a": "प्लेयर संख्या आपकी योजना पर निर्भर करती है। जबकि आप गेम द्वारा समर्थित किसी भी सीमा में बदलाव कर सकते हैं, हमारी बेस योजनाएं कम प्लेयर्स का समर्थन करती हैं जबकि प्रीमियम योजनाएं अधिक प्लेयर्स को संभाल सकती हैं।",
+        "uptime_q": "क्या सर्वर 24/7 ऑनलाइन रहते हैं?",
+        "uptime_a": "हाँ, आपकी योजना की परवाह किए बिना, सभी सर्वर हमारी अपटाइम गारंटी के साथ विश्वसनीय डेटासेंटर में चलते हैं।",
+        "custom_start_q": "क्या मैं अपनी स्वयं की स्टार्ट फाइल का उपयोग कर सकता हूं?",
+        "custom_start_a": "हाँ, आप पूर्ण सर्वर अनुकूलन के लिए हमारे कंट्रोल पैनल के माध्यम से कस्टम एक्ज़ीक्यूटेबल अपलोड और चला सकते हैं।",
+        "backups_q": "क्या बैकअप शामिल हैं?",
+        "backups_a": "हाँ, सर्वर में कई बैकअप स्लॉट शामिल हैं और पैनल में बैकअप शेड्यूलिंग को कॉन्फ़िगर करें ताकि आपके सर्वर की प्रतिदिन एक प्रति सहेजी जा सके।",
+        "hardware_q": "आप किस हार्डवेयर का उपयोग करते हैं?",
+        "hardware_a": "NVMe storage, DDR5 मेमोरी और न्यूनतम 10Gbps फाइबर कनेक्टिविटी के साथ आधुनिक बिल्ड कॉन्फ़िगरेशन। जबकि हम मुख्य रूप से Ryzen 9 9950X3D प्रोसेसर का उपयोग करते हैं और सभी सिस्टम हमारे कठोर प्रदर्शन मानकों को पूरा करते हैं, हमारे बेड़े में विशिष्टताएं थोड़ी भिन्न हैं। जिस सर्वर पर आप प्रावधानित होंगे उसके विशिष्ट हार्डवेयर विवरण के लिए, कृपया हमारी विक्रय टीम से संपर्क करें।",
+        "plan_change_q": "क्या मैं बाद में अपनी योजना बदल सकता हूं?",
+        "plan_change_a": "हाँ, आप बिलिंग पैनल से कभी भी केवल कुछ क्लिक में अपनी सर्वर योजना को अपग्रेड या डाउनग्रेड कर सकते हैं।",
+        "unmetered_q": "अनमीटर्ड या अनिर्दिष्ट संसाधनों को कैसे संभाला जाता है?",
+        "unmetered_a": "अनमीटर्ड RAM योजनाएं स्वचालित रूप से वर्तमान उपयोग से 100MB ऊपर तक स्केल करती हैं, सिस्टम की सीमा तक जो आम तौर पर 256GB DDR5 है। Forge जैसे कुछ सॉफ्टवेयर को एक हार्ड लिमिट की आवश्यकता होती है इसलिए आपका सर्वर 32GB के रूप में शुरू होता है और आप मैनुअल वृद्धि के लिए सहायता से संपर्क करते हैं। बैंडविड्थ जैसे अनिर्दिष्ट संसाधनों के लिए, हम आम तौर पर असीमित उपयोग की अनुमति देते हैं।",
+        "support_q": "आपका सहायता क्या कवर करता है?",
+        "support_a": "हम बिलिंग, सॉफ्टवेयर क्रैश और आउटेज में मदद करते हैं। जबकि हम mods या plugins को कॉन्फ़िगर नहीं करते हैं, हमारे पास विस्तृत प्रलेखन है और आम तौर पर हम आपको सही दिशा में मार्गदर्शन कर सकते हैं।"
+      },
+      "websites": {
+        "login_q": "मैं पैनल में कैसे लॉगिन करूं?",
+        "login_a": "आप क्लाइंट एरिया के माध्यम से अपने वेबसाइट कंट्रोल पैनल में लॉगिन कर सकते हैं। CMS-विशिष्ट लॉगिन (जैसे WordPress) के लिए, अपने डोमेन में /wp-admin जोड़ें।",
+        "plugins_q": "क्या मैं plugins इंस्टॉल कर सकता हूं?",
+        "plugins_a": "हाँ, हमारी सभी वेबसाइट होस्टिंग योजनाएं संगत content management सिस्टम के लिए plugin इंस्टॉलेशन का समर्थन करती हैं।",
+        "storage_q": "मुझे कितना storage मिलेगा?",
+        "storage_a": "Storage स्पेस योजना के अनुसार भिन्न होता है। बेसिक योजनाएं 5GB से शुरू होती हैं, जबकि प्रीमियम योजनाएं काफी अधिक या असीमित storage प्रदान करती हैं।"
+      },
+      "databases": {
+        "upgrade_q": "क्या मैं किसी भी समय अपग्रेड कर सकता हूं?",
+        "upgrade_a": "हाँ, आप किसी भी समय अपनी डेटाबेस योजना को आसानी से अपग्रेड कर सकते हैं। परिवर्तन न्यूनतम या बिना डाउनटाइम के लागू किए जाएंगे।",
+        "storage_q": "मुझे कितना storage मिलेगा?",
+        "storage_a": "Storage आवंटन आपकी चुनी गई योजना पर निर्भर करता है। हमारी स्टार्टर योजनाएं 2GB से शुरू होती हैं और प्रीमियम योजनाओं के साथ 50GB या अधिक तक बढ़ती हैं।",
+        "support_q": "क्या आप तकनीकी सहायता प्रदान करते हैं?",
+        "support_a": "हाँ, हम सभी डेटाबेस सेवाओं के लिए तकनीकी सहायता प्रदान करते हैं। प्रीमियम योजनाओं में हमारे डेटाबेस विशेषज्ञों से प्राथमिकता 24/7 सहायता शामिल है।",
+        "backups_q": "क्या बैकअप शामिल हैं?",
+        "backups_a": "हाँ, सभी डेटाबेस योजनाओं में स्वचालित बैकअप शामिल हैं। सभी योजनाओं में दैनिक बैकअप शेड्यूल करने की क्षमता शामिल है।"
+      },
+      "developers": {
+        "upgrade_q": "क्या मैं किसी भी समय अपग्रेड कर सकता हूं?",
+        "upgrade_a": "हाँ, जैसे-जैसे आपकी आवश्यकताएं बढ़ती हैं, आप किसी भी समय अपनी bot होस्टिंग योजना को अपग्रेड कर सकते हैं।",
+        "login_q": "मैं पैनल में कैसे लॉगिन करूं?",
+        "login_a": "आप अपने स्वागत ईमेल में प्रदान किए गए क्रेडेंशियल के साथ हमारे क्लाइंट एरिया के माध्यम से अपने bot कंट्रोल पैनल तक पहुंच सकते हैं।",
+        "support_q": "क्या आप तकनीकी सहायता प्रदान करते हैं?",
+        "support_a": "हाँ, हम bot deployment और होस्टिंग मुद्दों के लिए तकनीकी सहायता प्रदान करते हैं। हमारे Discord में कोड-विशिष्ट मुद्दों के लिए सामुदायिक सहायता भी उपलब्ध है।",
+        "languages_q": "कौन सी प्रोग्रामिंग भाषाएं समर्थित हैं?",
+        "languages_a": "हम Python, JavaScript (Node.js), Golang, Java, PHP और अन्य लोकप्रिय प्रोग्रामिंग भाषाओं में बनाए गए bots का समर्थन करते हैं।"
+      }
+    },
+    "version_selector": {
+      "minecraft_version": "Minecraft संस्करण",
+      "minecraft_description": "उस Minecraft सर्वर संस्करण का चयन करें जिसे आप उपयोग करना चाहते हैं",
+      "version_selection": "संस्करण चयन",
+      "select_version": "उस संस्करण का चयन करें जिसे आप उपयोग करना चाहते हैं",
+      "selected": "चयनित:",
+      "versions": "संस्करण",
+      "search_placeholder": "संस्करण खोजें...",
+      "no_results": "आपके खोज मानदंड से मेल खाने वाला कोई संस्करण नहीं",
+      "stable_versions": "स्थिर संस्करण",
+      "legacy_versions": "पुराने संस्करण"
+    },
+    "billing_cycles": {
+      "monthly": "मासिक",
+      "quarterly": "त्रैमासिक",
+      "annually": "वार्षिक"
+    }
+  },
+  "dedicated": {
+    "metadata": {
+      "title": "Dedicated सर्वर | ForestRacks",
+      "description": "तत्काल deployment, उन्नत DDoS सुरक्षा और 24/7 विशेषज्ञ सहायता के साथ उच्च-प्रदर्शन dedicated सर्वर। अपने सर्वर को 15 मिनट से कम समय में deploy करें।",
+      "keywords": ["Dedicated Servers", "Bare Metal Servers", "High-Performance Hosting", "Instant Deployment", "DDoS Protection", "24/7 Support"]
+    },
+    "hero": {
+      "badge": "उच्च-प्रदर्शन Bare Metal",
+      "title": "अगली पीढ़ी के Dedicated सर्वर",
+      "subtitle": "एंटरप्राइज विश्वसनीयता",
+      "description": "तत्काल deployment, उन्नत DDoS सुरक्षा और गारंटीकृत संसाधनों के साथ एंटरप्राइज-ग्रेड dedicated सर्वर। 15 मिनट से कम समय में पूर्ण root एक्सेस और 10Gbps कनेक्टिविटी के साथ bare metal प्रदर्शन प्राप्त करें।",
+      "get_started": "शुरू करें",
+      "learn_more": "अधिक जानें"
+    },
+    "stats": {
+      "ticket_response_value": "22 मिनट",
+      "ticket_response": "टिकट प्रतिक्रिया औसत",
+      "latency_value": "<2ms",
+      "latency": "औसत विलंबता",
+      "support_availability_value": "24/7",
+      "support_availability": "सहायता उपलब्धता",
+      "port_speed_value": "10 Gbps",
+      "port_speed": "बेस पोर्ट स्पीड",
+      "priority_support": "जब आपको आवश्यकता हो तब प्राथमिकता सहायता",
+      "to_exchanges": "प्रमुख क्षेत्रीय एक्सचेंजों के लिए",
+      "support_247": "चौबीसों घंटे सहायता",
+      "unmetered_bandwidth": "अनमीटर्ड बैंडविड्थ उपलब्ध"
+    },
+    "cta": {
+      "title": "शुरू करने के लिए तैयार हैं?",
+      "subtitle": "मिनटों में अपना उच्च-प्रदर्शन dedicated सर्वर deploy करें। चुनने में मदद चाहिए? हमारे विशेषज्ञ सहायता के लिए यहां हैं।",
+      "deploy_now": "अभी Deploy करें",
+      "talk_to_sales": "विक्रय से बात करें"
+    }
+  },
+  "vps": {
+    "metadata": {
+      "title": "VPS होस्टिंग | ForestRacks",
+      "description": "नवीनतम उच्च-प्रदर्शन हार्डवेयर द्वारा संचालित हमारी VPS होस्टिंग के साथ बिजली-तेज़ प्रदर्शन का अनुभव करें। हमारे virtual private सर्वर भारी-ट्रैफिक वेबसाइटों और मांग वाले एप्लिकेशन के लिए सही समाधान हैं। हमारी VPS होस्टिंग की लचीलापन और स्केलेबिलिटी का आनंद लें और अपनी ऑनलाइन उपस्थिति को अगले स्तर पर ले जाएं।",
+      "keywords": ["VPS hosting", "virtual private server", "KVM VPS"]
+    }
+  },
+  "storage": {
+    "metadata": {
+      "title": "Object Storage | ForestRacks",
+      "description": "अनमीटर्ड बैंडविड्थ, वैश्विक उपलब्धता और एंटरप्राइज-ग्रेड प्रदर्शन के साथ S3-Compatible object storage। बैकअप, मीडिया storage और CDN स्केलिंग के लिए उत्तम।",
+      "keywords": ["Object Storage", "S3-Compatible", "Unmetered Bandwidth", "Cloud Storage", "Enterprise Storage"]
+    },
+    "hero": {
+      "badge": "S3-Compatible",
+      "unmetered": "अनमीटर्ड बैंडविड्थ",
+      "title": "Cloud Object Storage के साथ",
+      "title_highlight": "अनमीटर्ड बैंडविड्थ",
+      "description": "वैश्विक उपलब्धता और प्रति node न्यूनतम 10Gbps के साथ सुरक्षित, स्केलेबल और उच्च-प्रदर्शन object storage। दैनिक बैकअप या अपने CDN इंफ्रास्ट्रक्चर को स्केल करने के लिए उत्तम।",
+      "get_started": "शुरू करें",
+      "learn_more": "अधिक जानें"
+    },
+    "features": {
+      "title": "एंटरप्राइज-ग्रेड Storage,",
+      "title_highlight": "सस्ती कीमत",
+      "subtitle": "हमारा object storage कई स्तरों की अतिरेक के साथ एंटरप्राइज हार्डवेयर पर बनाया गया है",
+      "global_title": "वैश्विक उपलब्धता",
+      "global_description": "हमारे विश्वव्यापी वितरित storage नेटवर्क के साथ कहीं से भी अपने डेटा तक पहुंचें",
+      "network_title": "10Gbps नेटवर्क",
+      "network_description": "अनमीटर्ड shared बैंडविड्थ के साथ उच्च-गति 10Gbps नेटवर्क",
+      "raid_title": "RAID सुरक्षा",
+      "raid_description": "सभी डेटा RAID-सुरक्षित एंटरप्राइज storage arrays पर संग्रहीत है",
+      "s3_api_title": "S3-Compatible API",
+      "s3_api_description": "S3 API का समर्थन करने वाले किसी भी एप्लिकेशन के साथ आसानी से integrate करें"
+    },
+    "use_cases": {
+      "title": "कई उपयोग मामलों के लिए उत्तम",
+      "subtitle": "हमारा S3-Compatible storage विभिन्न एप्लिकेशन को संभालने के लिए डिज़ाइन किया गया है",
+      "daily_backups_title": "दैनिक बैकअप",
+      "daily_backups_description": "आपके दैनिक एप्लिकेशन और डेटाबेस बैकअप के लिए विश्वसनीय storage",
+      "media_storage_title": "मीडिया Storage",
+      "media_storage_description": "छवियों, वीडियो और अन्य मीडिया फ़ाइलों को कुशलता से संग्रहीत और परोसें",
+      "document_archives_title": "दस्तावेज़ अभिलेखागार",
+      "document_archives_description": "अतिरिक्त storage के साथ महत्वपूर्ण दस्तावेज़ों को सुरक्षित रूप से archive करें",
+      "application_assets_title": "एप्लिकेशन Assets",
+      "application_assets_description": "अपने वेब और मोबाइल एप्लिकेशन के लिए static assets होस्ट करें",
+      "content_delivery_title": "Content Delivery",
+      "content_delivery_description": "वैश्विक उपलब्धता के साथ अपने CDN इंफ्रास्ट्रक्चर को स्केल करें",
+      "log_storage_title": "Log Storage",
+      "log_storage_description": "विश्लेषण और अनुपालन के लिए अपने एप्लिकेशन logs को केंद्रीकृत करें"
+    },
+    "specs": {
+      "title": "तकनीकी विशिष्टताएं",
+      "description": "हमारा object storage एंटरप्राइज-ग्रेड हार्डवेयर पर कई अतिरेक और उच्च-गति कनेक्टिविटी के साथ बनाया गया है ताकि यह सुनिश्चित हो सके कि आपका डेटा हमेशा उपलब्ध और सुलभ है।",
+      "enterprise_hardware_title": "एंटरप्राइज हार्डवेयर",
+      "enterprise_hardware_description": "अतिरिक्त घटकों के साथ एंटरप्राइज-ग्रेड हार्डवेयर पर deployed storage",
+      "network_title": "10Gbps नेटवर्क",
+      "network_description": "अनमीटर्ड बैंडविड्थ के साथ उच्च-प्रदर्शन नेटवर्क",
+      "raid_title": "RAID सुरक्षा",
+      "raid_description": "डिस्क विफलताओं से बचाने के लिए सभी डेटा RAID arrays पर संग्रहीत है",
+      "global_title": "वैश्विक उपलब्धता",
+      "global_description": "इष्टतम प्रदर्शन के लिए कई वैश्विक क्षेत्रों से अपने डेटा तक पहुंचें",
+      "s3_api_title": "S3-Compatible API",
+      "s3_code_comment": "# AWS CLI के साथ कॉन्फ़िगर करें",
+      "s3_upload_comment": "# एक फ़ाइल अपलोड करें",
+      "s3_list_comment": "# Buckets की सूची बनाएं"
+    },
+    "cta": {
+      "title": "अपने Storage को स्केल करने के लिए तैयार हैं?",
+      "subtitle": "अनमीटर्ड बैंडविड्थ के साथ हमारी योजनाओं की श्रृंखला से चुनें और मिनटों में अपनी फ़ाइलें अपलोड करना शुरू करें।",
+      "get_started": "शुरू करें",
+      "talk_to_sales": "विक्रय से बात करें"
+    }
+  },
+  "locations": {
+    "title": "हमारे स्थान",
+    "description": "ForestRacks विश्वव्यापी संचालित होता है..."
+  },
+  "leftbar": {
+    "getting_started": "शुरुआत करना",
+    "introduction": "परिचय",
+    "installation": "इंस्टॉलेशन"
+  },
+  "lang_select": {
+    "select_language": "भाषा चुनें"
+  }
+}

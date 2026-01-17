@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "ForestRacks » 저렴한 가격의 신뢰성",
+    "description": "고성능 서버, 탁월한 지원, 전략적 글로벌 위치 - 모두 경쟁력 있는 가격으로 제공됩니다. 호스팅 비용을 과다 지불하지 마세요. ForestRacks를 선택하세요."
+  },
+  "navbar": {
+    "new_order": {
+      "title": "신규 주문",
+      "app_marketplace": {
+        "title": "앱 마켓플레이스",
+        "description": "애플리케이션 및 게임"
+      },
+      "dedicated_servers": {
+        "title": "전용 서버",
+        "description": "베어메탈 서버"
+      },
+      "virtual_servers": {
+        "title": "가상 서버",
+        "description": "확장 가능한 VPS 호스팅"
+      },
+      "object_storage": {
+        "title": "오브젝트 스토리지",
+        "description": "클라우드 S3 스토리지"
+      },
+      "website_hosting": {
+        "title": "웹사이트 호스팅",
+        "description": "빠른 웹 호스팅"
+      },
+      "domain_names": {
+        "title": "도메인 이름",
+        "description": "도메인 등록"
+      }
+    },
+    "partner_programs": {
+      "title": "파트너 프로그램",
+      "partner": "파트너",
+      "reseller": "리셀러",
+      "affiliate": "제휴사",
+      "peering": "피어링"
+    },
+    "information": {
+      "title": "정보",
+      "support_tickets": "지원 티켓",
+      "documentation": "문서",
+      "blog_posts": "블로그 게시물",
+      "partner_programs": "파트너 프로그램",
+      "network_peering": "네트워크 피어링",
+      "server_status": "서버 상태",
+      "legal_information": "법적 정보"
+    },
+    "login": "로그인",
+    "links": {
+      "documentation": "문서",
+      "blog": "블로그",
+      "community": "커뮤니티"
+    },
+    "search": {
+      "search_documentation": "문서 검색...",
+      "no_results_found": "검색 결과가 없습니다",
+      "type_something": "검색을 시작하려면 입력하세요...",
+      "placeholder": "검색...",
+      "not_available": "검색을 사용할 수 없습니다"
+    },
+    "theme": {
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템",
+      "toggle": "테마 전환"
+    }
+  },
+  "footer": {
+    "about_us": {
+      "title": "회사 소개",
+      "description": "ForestRacks는 비교할 수 없는 신뢰성과 저렴한 가격의 기업급 서버 호스팅을 제공하며, 항상 고객 만족을 최우선으로 생각합니다."
+    },
+    "information": {
+      "title": "정보",
+      "client_portal": "고객 포털",
+      "submit_tickets": "티켓 제출",
+      "documentation": "문서",
+      "reviews": "리뷰 읽기",
+      "server_status": "서버 상태"
+    },
+    "legal": {
+      "title": "법적 도움",
+      "terms_of_service": "서비스 약관",
+      "privacy_policy": "개인정보 보호정책",
+      "acceptable_use": "허용 가능한 사용",
+      "dmca_policy": "DMCA 정책"
+    },
+    "services": {
+      "title": "서비스",
+      "website_hosting": "웹사이트 호스팅",
+      "game_servers": "게임 서버",
+      "virtual_servers": "가상 서버",
+      "dedicated_servers": "전용 서버",
+      "domain_registration": "도메인 등록"
+    },
+    "contact": {
+      "title": "문의하기",
+      "submit_tickets": "티켓 제출",
+      "join_our_discord": "Discord 참여",
+      "report_abuse": "악용 신고"
+    },
+    "copyright": "Copyright © {year} All rights reserved by",
+    "company_name": "Forest Racks LLC",
+    "social": {
+      "discord": "Discord 서버",
+      "twitter": "Twitter 프로필",
+      "linkedin": "LinkedIn 프로필",
+      "youtube": "Youtube 채널"
+    }
+  },
+  "home": {
+    "get_started": "시작하기",
+    "enterprise_hosting": "엔터프라이즈 호스팅",
+    "contact_sales": "영업팀 문의",
+    "hero_description": "ForestRacks는 전 세계적으로 신뢰받는 엔터프라이즈급 서버 호스팅 제공업체로, 비교할 수 없는 신뢰성과 저렴한 가격을 제공하며 고객 만족을 모든 업무의 최우선으로 합니다.",
+    "start_journey": "오늘 여정을 시작하세요"
+  },
+  "docs": {
+    "on_this_page": "이 페이지에서",
+    "next": "다음",
+    "previous": "이전",
+    "no_documentation": "문서를 찾을 수 없습니다"
+  },
+  "blog": {
+    "title": "ForestRacks 최신 소식",
+    "sub_title": "우리 팀의 뉴스, 업데이트 및 인사이트입니다.",
+    "published_on": "게시일",
+    "back_to_blog": "블로그로 돌아가기",
+    "posted_by": "작성자",
+    "filters": {
+      "all_posts": "모든 게시물",
+      "tutorials": "튜토리얼",
+      "updates": "업데이트",
+      "case_studies": "사례 연구",
+      "clear": "필터 지우기"
+    }
+  },
+  "not_found": {
+    "404": "404",
+    "error_title": "404 오류",
+    "page_not_found": "페이지를 찾을 수 없습니다",
+    "sub_text": "찾으시는 페이지가 존재하지 않습니다.",
+    "back_to_homepage": "홈페이지로 돌아가기",
+    "return_home": "홈으로 돌아가기",
+    "documentation": "문서",
+    "need_help": "도움이 필요하신가요?",
+    "contact_support": "지원팀에 문의하세요"
+  },
+  "error": {
+    "oops": "오류",
+    "something_went_wrong": "문제가 발생했습니다",
+    "sub_text": "요청을 처리하는 중에 오류가 발생했습니다. 다시 시도해 주세요.",
+    "reload_page": "페이지 새로고침",
+    "back_to_homepage": "홈페이지로 돌아가기"
+  },
+  "products": {
+    "search_placeholder": "애플리케이션 검색...",
+    "filters": {
+      "clear": "필터 지우기",
+      "type": "유형",
+      "features": "기능",
+      "sandbox": "샌드박스",
+      "simulation": "시뮬레이션",
+      "database": "데이터베이스",
+      "cms": "CMS",
+      "bot": "봇",
+      "multiplayer": "멀티플레이어",
+      "extensible": "확장 가능",
+      "high_performance": "고성능"
+    },
+    "categories": {
+      "all": "모든 앱",
+      "all_description": "애플리케이션 마켓플레이스",
+      "games": "게임",
+      "games_description": "게임 서버 호스팅",
+      "websites": "웹사이트",
+      "websites_description": "웹사이트 호스팅",
+      "databases": "데이터베이스",
+      "databases_description": "데이터베이스 호스팅",
+      "developers": "개발자",
+      "developers_description": "개발자 호스팅"
+    },
+    "faqs": {
+      "games": {
+        "player_slots_q": "플레이어 슬롯을 제한하나요?",
+        "player_slots_a": "플레이어 수는 요금제에 따라 다릅니다. 게임에서 지원하는 모든 제한으로 변경할 수 있지만, 기본 요금제는 더 적은 플레이어를 지원하고 프리미엄 요금제는 더 많은 플레이어를 처리할 수 있습니다.",
+        "uptime_q": "서버가 24시간 온라인 상태인가요?",
+        "uptime_a": "네, 모든 서버는 요금제에 관계없이 가동 시간 보장이 있는 신뢰할 수 있는 데이터센터에서 운영됩니다.",
+        "custom_start_q": "자체 시작 파일을 사용할 수 있나요?",
+        "custom_start_a": "네, 제어판을 통해 사용자 지정 실행 파일을 업로드하고 실행하여 서버를 완전히 사용자 지정할 수 있습니다.",
+        "backups_q": "백업이 포함되나요?",
+        "backups_a": "네, 서버에는 여러 백업 슬롯이 포함되어 있으며 패널에서 백업 일정을 구성하여 매일 서버 복사본을 저장할 수 있습니다.",
+        "hardware_q": "어떤 하드웨어를 사용하나요?",
+        "hardware_a": "NVMe 스토리지, DDR5 메모리 및 최소 10Gbps 광섬유 연결을 갖춘 최신 빌드 구성을 사용합니다. 주로 Ryzen 9 9950X3D 프로세서를 사용하며 모든 시스템은 엄격한 성능 기준을 충족하지만, 사양은 장비에 따라 약간 다를 수 있습니다. 프로비저닝될 서버의 특정 하드웨어 세부 정보는 영업팀에 문의하세요.",
+        "plan_change_q": "나중에 요금제를 변경할 수 있나요?",
+        "plan_change_a": "네, 청구 패널에서 클릭 몇 번으로 언제든지 서버 요금제를 업그레이드하거나 다운그레이드할 수 있습니다.",
+        "unmetered_q": "무제한 또는 지정되지 않은 리소스는 어떻게 처리되나요?",
+        "unmetered_a": "무제한 RAM 요금제는 현재 사용량보다 100MB 높게 자동으로 확장되며, 일반적으로 256GB DDR5인 시스템 한계까지 확장됩니다. Forge와 같은 일부 소프트웨어는 하드 제한이 필요하므로 서버는 32GB로 시작하며 수동 증가를 위해 지원팀에 문의하셔야 합니다. 대역폭과 같이 지정되지 않은 리소스의 경우 일반적으로 무제한 사용을 허용합니다.",
+        "support_q": "지원 서비스는 무엇을 다루나요?",
+        "support_a": "청구, 소프트웨어 충돌 및 중단 문제를 지원합니다. 모드나 플러그인을 구성하지는 않지만, 자세한 문서가 있으며 일반적으로 올바른 방향으로 안내할 수 있습니다."
+      },
+      "websites": {
+        "login_q": "패널에 어떻게 로그인하나요?",
+        "login_a": "고객 영역을 통해 웹사이트 제어판에 로그인할 수 있습니다. CMS별 로그인(WordPress 등)의 경우 도메인에 /wp-admin을 추가하세요.",
+        "plugins_q": "플러그인을 설치할 수 있나요?",
+        "plugins_a": "네, 모든 웹사이트 호스팅 요금제는 호환되는 콘텐츠 관리 시스템에 대한 플러그인 설치를 지원합니다.",
+        "storage_q": "스토리지는 얼마나 제공되나요?",
+        "storage_a": "스토리지 공간은 요금제에 따라 다릅니다. 기본 요금제는 5GB부터 시작하며, 프리미엄 요금제는 훨씬 더 많거나 무제한 스토리지를 제공합니다."
+      },
+      "databases": {
+        "upgrade_q": "언제든지 업그레이드할 수 있나요?",
+        "upgrade_a": "네, 언제든지 데이터베이스 요금제를 원활하게 업그레이드할 수 있습니다. 변경 사항은 최소한의 다운타임 또는 다운타임 없이 적용됩니다.",
+        "storage_q": "스토리지는 얼마나 제공되나요?",
+        "storage_a": "스토리지 할당은 선택한 요금제에 따라 다릅니다. 스타터 요금제는 2GB부터 시작하며 프리미엄 요금제는 50GB 이상으로 확장됩니다.",
+        "support_q": "기술 지원을 제공하나요?",
+        "support_a": "네, 모든 데이터베이스 서비스에 대해 기술 지원을 제공합니다. 프리미엄 요금제에는 데이터베이스 전문가의 우선 24/7 지원이 포함됩니다.",
+        "backups_q": "백업이 포함되나요?",
+        "backups_a": "네, 모든 데이터베이스 요금제에는 자동 백업이 포함됩니다. 모든 요금제에는 일일 백업을 예약할 수 있는 기능이 포함되어 있습니다."
+      },
+      "developers": {
+        "upgrade_q": "언제든지 업그레이드할 수 있나요?",
+        "upgrade_a": "네, 요구 사항이 증가함에 따라 언제든지 봇 호스팅 요금제를 업그레이드할 수 있습니다.",
+        "login_q": "패널에 어떻게 로그인하나요?",
+        "login_a": "환영 이메일에 제공된 자격 증명으로 고객 영역을 통해 봇 제어판에 액세스할 수 있습니다.",
+        "support_q": "기술 지원을 제공하나요?",
+        "support_a": "네, 봇 배포 및 호스팅 문제에 대한 기술 지원을 제공합니다. Discord에서 코드 관련 문제에 대한 커뮤니티 지원도 이용 가능합니다.",
+        "languages_q": "어떤 프로그래밍 언어가 지원되나요?",
+        "languages_a": "Python, JavaScript(Node.js), Golang, Java, PHP 및 기타 인기 있는 프로그래밍 언어로 작성된 봇을 지원합니다."
+      }
+    },
+    "version_selector": {
+      "minecraft_version": "Minecraft 버전",
+      "minecraft_description": "사용할 Minecraft 서버 버전을 선택하세요",
+      "version_selection": "버전 선택",
+      "select_version": "사용할 버전을 선택하세요",
+      "selected": "선택됨:",
+      "versions": "버전",
+      "search_placeholder": "버전 검색...",
+      "no_results": "검색 조건과 일치하는 버전이 없습니다",
+      "stable_versions": "안정 버전",
+      "legacy_versions": "레거시 버전"
+    },
+    "billing_cycles": {
+      "monthly": "월간",
+      "quarterly": "분기",
+      "annually": "연간"
+    }
+  },
+  "dedicated": {
+    "metadata": {
+      "title": "전용 서버 | ForestRacks",
+      "description": "즉시 배포, 고급 DDoS 보호, 연중무휴 전문가 지원을 제공하는 고성능 전용 서버입니다. 15분 이내에 서버를 배포하세요.",
+      "keywords": ["전용 서버", "베어메탈 서버", "고성능 호스팅", "즉시 배포", "DDoS 보호", "24/7 지원"]
+    },
+    "hero": {
+      "badge": "고성능 베어메탈",
+      "title": "차세대 전용 서버",
+      "subtitle": "엔터프라이즈 신뢰성",
+      "description": "즉시 배포, 고급 DDoS 보호 및 보장된 리소스를 갖춘 엔터프라이즈급 전용 서버입니다. 15분 이내에 전체 루트 액세스 및 10Gbps 연결로 베어메탈 성능을 확보하세요.",
+      "get_started": "시작하기",
+      "learn_more": "자세히 알아보기"
+    },
+    "stats": {
+      "ticket_response_value": "22분",
+      "ticket_response": "티켓 응답 평균",
+      "latency_value": "<2ms",
+      "latency": "평균 지연 시간",
+      "support_availability_value": "24/7",
+      "support_availability": "지원 가용성",
+      "port_speed_value": "10 Gbps",
+      "port_speed": "기본 포트 속도",
+      "priority_support": "필요할 때 우선 지원",
+      "to_exchanges": "주요 지역 거래소까지",
+      "support_247": "연중무휴 지원",
+      "unmetered_bandwidth": "무제한 대역폭 제공"
+    },
+    "cta": {
+      "title": "시작할 준비가 되셨나요?",
+      "subtitle": "몇 분 안에 고성능 전용 서버를 배포하세요. 선택에 도움이 필요하신가요? 전문가가 도와드립니다.",
+      "deploy_now": "지금 배포",
+      "talk_to_sales": "영업팀과 상담"
+    }
+  },
+  "vps": {
+    "metadata": {
+      "title": "VPS 호스팅 | ForestRacks",
+      "description": "최신 고성능 하드웨어로 구동되는 VPS 호스팅으로 놀라운 속도의 성능을 경험하세요. 당사의 가상 사설 서버는 트래픽이 많은 웹사이트와 까다로운 애플리케이션을 위한 완벽한 솔루션입니다. VPS 호스팅의 유연성과 확장성을 즐기고 온라인 존재감을 한 단계 끌어올리세요.",
+      "keywords": ["VPS 호스팅", "가상 사설 서버", "KVM VPS"]
+    }
+  },
+  "storage": {
+    "metadata": {
+      "title": "오브젝트 스토리지 | ForestRacks",
+      "description": "무제한 대역폭, 글로벌 가용성 및 엔터프라이즈급 성능을 갖춘 S3 호환 오브젝트 스토리지입니다. 백업, 미디어 스토리지 및 CDN 확장에 완벽합니다.",
+      "keywords": ["오브젝트 스토리지", "S3 호환", "무제한 대역폭", "클라우드 스토리지", "엔터프라이즈 스토리지"]
+    },
+    "hero": {
+      "badge": "S3 호환",
+      "unmetered": "무제한 대역폭",
+      "title": "클라우드 오브젝트 스토리지 -",
+      "title_highlight": "무제한 대역폭",
+      "description": "글로벌 가용성과 노드당 최소 10Gbps를 갖춘 안전하고 확장 가능한 고성능 오브젝트 스토리지입니다. 일일 백업이나 CDN 인프라 확장에 완벽합니다.",
+      "get_started": "시작하기",
+      "learn_more": "자세히 알아보기"
+    },
+    "features": {
+      "title": "엔터프라이즈급 스토리지,",
+      "title_highlight": "저렴한 가격",
+      "subtitle": "당사의 오브젝트 스토리지는 다중 계층 중복성을 갖춘 엔터프라이즈 하드웨어 기반입니다",
+      "global_title": "글로벌 가용성",
+      "global_description": "전 세계에 분산된 스토리지 네트워크를 통해 어디서나 데이터에 액세스하세요",
+      "network_title": "10Gbps 네트워크",
+      "network_description": "무제한 공유 대역폭을 제공하는 고속 10Gbps 네트워크",
+      "raid_title": "RAID 보호",
+      "raid_description": "모든 데이터는 RAID 보호 엔터프라이즈 스토리지 어레이에 저장됩니다",
+      "s3_api_title": "S3 호환 API",
+      "s3_api_description": "S3 API를 지원하는 모든 애플리케이션과 쉽게 통합됩니다"
+    },
+    "use_cases": {
+      "title": "다양한 사용 사례에 완벽",
+      "subtitle": "당사의 S3 호환 스토리지는 다양한 애플리케이션을 처리하도록 설계되었습니다",
+      "daily_backups_title": "일일 백업",
+      "daily_backups_description": "애플리케이션 및 데이터베이스 일일 백업을 위한 신뢰할 수 있는 스토리지",
+      "media_storage_title": "미디어 스토리지",
+      "media_storage_description": "이미지, 비디오 및 기타 미디어 파일을 효율적으로 저장하고 제공합니다",
+      "document_archives_title": "문서 아카이브",
+      "document_archives_description": "중복 스토리지로 중요한 문서를 안전하게 아카이브합니다",
+      "application_assets_title": "애플리케이션 자산",
+      "application_assets_description": "웹 및 모바일 애플리케이션의 정적 자산을 호스팅합니다",
+      "content_delivery_title": "콘텐츠 전송",
+      "content_delivery_description": "글로벌 가용성으로 CDN 인프라를 확장합니다",
+      "log_storage_title": "로그 스토리지",
+      "log_storage_description": "분석 및 규정 준수를 위해 애플리케이션 로그를 중앙 집중화합니다"
+    },
+    "specs": {
+      "title": "기술 사양",
+      "description": "당사의 오브젝트 스토리지는 데이터가 항상 사용 가능하고 액세스 가능하도록 다중 중복성 및 고속 연결을 갖춘 엔터프라이즈급 하드웨어 기반입니다.",
+      "enterprise_hardware_title": "엔터프라이즈 하드웨어",
+      "enterprise_hardware_description": "중복 구성 요소를 갖춘 엔터프라이즈급 하드웨어에 배포된 스토리지",
+      "network_title": "10Gbps 네트워크",
+      "network_description": "무제한 대역폭을 제공하는 고성능 네트워크",
+      "raid_title": "RAID 보호",
+      "raid_description": "모든 데이터는 디스크 장애로부터 보호하기 위해 RAID 어레이에 저장됩니다",
+      "global_title": "글로벌 가용성",
+      "global_description": "최적의 성능을 위해 여러 글로벌 지역에서 데이터에 액세스하세요",
+      "s3_api_title": "S3 호환 API",
+      "s3_code_comment": "# AWS CLI로 구성",
+      "s3_upload_comment": "# 파일 업로드",
+      "s3_list_comment": "# 버킷 목록"
+    },
+    "cta": {
+      "title": "스토리지를 확장할 준비가 되셨나요?",
+      "subtitle": "무제한 대역폭을 제공하는 다양한 요금제 중에서 선택하고 몇 분 안에 파일 업로드를 시작하세요.",
+      "get_started": "시작하기",
+      "talk_to_sales": "영업팀과 상담"
+    }
+  },
+  "locations": {
+    "title": "우리의 위치",
+    "description": "ForestRacks는 전 세계적으로 운영됩니다..."
+  },
+  "leftbar": {
+    "getting_started": "시작하기",
+    "introduction": "소개",
+    "installation": "설치"
+  },
+  "lang_select": {
+    "select_language": "언어 선택"
+  }
+}
