@@ -310,13 +310,13 @@
       "title": "Enterprise-Grade Storage,",
       "title_highlight": "Affordable Price",
       "subtitle": "Our object storage is built on enterprise hardware with multiple layers of redundancy",
-      "global_title": "Global Availability",
+      "global_title": "Scalable",
       "global_description": "Access your data from anywhere with our globally distributed storage network",
-      "network_title": "10Gbps Network",
+      "network_title": "Speed",
       "network_description": "High-speed 10Gbps network with unmetered shared bandwidth",
-      "raid_title": "RAID Protection",
+      "raid_title": "Reliability",
       "raid_description": "All data is stored on RAID-protected enterprise storage arrays",
-      "s3_api_title": "S3-Compatible API",
+      "s3_api_title": "S3 API",
       "s3_api_description": "Easily integrate with any application that supports the S3 API"
     },
     "use_cases": {
