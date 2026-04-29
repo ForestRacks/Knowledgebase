@@ -194,7 +194,7 @@
         "backups_q": "Are backups included?",
         "backups_a": "Yes, servers include multiple backup slots and configure backup scheduling in the panel to save a copy of your server daily.",
         "hardware_q": "What hardware do you use?",
-        "hardware_a": "Modern build configurations with NVMe storage, DDR5 memory and at minimum 10Gbps fiber connectivity. While we primarily use Ryzen 9 9950X3D processors and all systems meet our rigorous performance standards, specifications vary slightly across our fleet. For specific hardware details of the server you will be provisioned on, please contact our sales team.",
+        "hardware_a": "Cutting-edge build configurations with NVMe storage, DDR5 memory and at minimum 10Gbps fiber connectivity. While we primarily use Ryzen 9 9950X3D processors and all systems meet our rigorous performance standards, specifications vary slightly across our fleet. For specific hardware details of the server you will be provisioned on, please contact our sales team.",
         "plan_change_q": "Can I change my plan later?",
         "plan_change_a": "Yes, you can upgrade or downgrade your server plan anytime from the billing panel with just a couple clicks.",
         "unmetered_q": "How are unmetered or unspecified resources handled?",
