@@ -253,7 +253,14 @@
     "metadata": {
       "title": "独立服务器 | ForestRacks",
       "description": "高性能独立服务器,即时部署,高级 DDoS 防护,以及全天候专家支持。在 15 分钟内部署您的服务器。",
-      "keywords": ["独立服务器", "裸机服务器", "高性能托管", "即时部署", "DDoS 防护", "全天候支持"]
+      "keywords": [
+        "独立服务器",
+        "裸机服务器",
+        "高性能托管",
+        "即时部署",
+        "DDoS 防护",
+        "全天候支持"
+      ]
     },
     "hero": {
       "badge": "高性能裸机",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPS 托管 | ForestRacks",
       "description": "体验由最新高性能硬件驱动的闪电般快速的 VPS 托管。我们的虚拟专用服务器是高流量网站和高要求应用程序的完美解决方案。享受我们 VPS 托管的灵活性和可扩展性,将您的在线业务提升到新的水平。",
-      "keywords": ["VPS 托管", "虚拟专用服务器", "KVM VPS"]
+      "keywords": [
+        "VPS 托管",
+        "虚拟专用服务器",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "对象存储 | ForestRacks",
       "description": "S3 兼容对象存储,无限流量、全球可用性和企业级性能。非常适合备份、媒体存储和 CDN 扩展。",
-      "keywords": ["对象存储", "S3 兼容", "无限流量", "云存储", "企业存储"]
+      "keywords": [
+        "对象存储",
+        "S3 兼容",
+        "无限流量",
+        "云存储",
+        "企业存储"
+      ]
     },
     "hero": {
       "badge": "S3 兼容",
@@ -307,8 +324,7 @@
       "learn_more": "了解更多"
     },
     "features": {
-      "title": "企业级存储,",
-      "title_highlight": "实惠价格",
+      "title": "企业级存储, 实惠价格",
       "subtitle": "我们的对象存储建立在企业硬件之上,具有多层冗余",
       "global_title": "全球可用性",
       "global_description": "通过我们的全球分布式存储网络,从任何地方访问您的数据",
@@ -317,7 +333,9 @@
       "raid_title": "RAID 保护",
       "raid_description": "所有数据都存储在受 RAID 保护的企业存储阵列上",
       "s3_api_title": "S3 兼容 API",
-      "s3_api_description": "轻松与任何支持 S3 API 的应用程序集成"
+      "s3_api_description": "轻松与任何支持 S3 API 的应用程序集成",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "适用于多种使用场景",

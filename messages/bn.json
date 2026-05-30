@@ -253,7 +253,14 @@
     "metadata": {
       "title": "ডেডিকেটেড সার্ভার | ForestRacks",
       "description": "তাৎক্ষণিক ডিপ্লয়মেন্ট, উন্নত DDoS সুরক্ষা এবং ২৪/৭ বিশেষজ্ঞ সাপোর্ট সহ উচ্চ-কর্মক্ষম ডেডিকেটেড সার্ভার। ১৫ মিনিটের মধ্যে আপনার সার্ভার ডিপ্লয় করুন।",
-      "keywords": ["Dedicated Servers", "Bare Metal Servers", "High-Performance Hosting", "Instant Deployment", "DDoS Protection", "24/7 Support"]
+      "keywords": [
+        "Dedicated Servers",
+        "Bare Metal Servers",
+        "High-Performance Hosting",
+        "Instant Deployment",
+        "DDoS Protection",
+        "24/7 Support"
+      ]
     },
     "hero": {
       "badge": "উচ্চ-কর্মক্ষম বেয়ার মেটাল",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPS হোস্টিং | ForestRacks",
       "description": "সর্বশেষ উচ্চ-কর্মক্ষম হার্ডওয়্যার দ্বারা চালিত আমাদের VPS হোস্টিং এর সাথে বিদ্যুৎ-দ্রুত কর্মক্ষমতা অনুভব করুন। আমাদের ভার্চুয়াল প্রাইভেট সার্ভার ভারী-ট্রাফিক ওয়েবসাইট এবং চাহিদাপূর্ণ অ্যাপ্লিকেশনের জন্য নিখুঁত সমাধান। আমাদের VPS হোস্টিং এর নমনীয়তা এবং স্কেলেবিলিটি উপভোগ করুন এবং আপনার অনলাইন উপস্থিতি পরবর্তী স্তরে নিয়ে যান।",
-      "keywords": ["VPS hosting", "virtual private server", "KVM VPS"]
+      "keywords": [
+        "VPS hosting",
+        "virtual private server",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "অবজেক্ট স্টোরেজ | ForestRacks",
       "description": "আনমিটার্ড ব্যান্ডউইথ, বৈশ্বিক উপলব্ধতা এবং এন্টারপ্রাইজ-গ্রেড কর্মক্ষমতা সহ S3-কম্প্যাটিবল অবজেক্ট স্টোরেজ। ব্যাকআপ, মিডিয়া স্টোরেজ এবং CDN স্কেলিং এর জন্য নিখুঁত।",
-      "keywords": ["Object Storage", "S3-Compatible", "Unmetered Bandwidth", "Cloud Storage", "Enterprise Storage"]
+      "keywords": [
+        "Object Storage",
+        "S3-Compatible",
+        "Unmetered Bandwidth",
+        "Cloud Storage",
+        "Enterprise Storage"
+      ]
     },
     "hero": {
       "badge": "S3-কম্প্যাটিবল",
@@ -307,8 +324,7 @@
       "learn_more": "আরও জানুন"
     },
     "features": {
-      "title": "এন্টারপ্রাইজ-গ্রেড স্টোরেজ,",
-      "title_highlight": "সাশ্রয়ী মূল্য",
+      "title": "এন্টারপ্রাইজ-গ্রেড স্টোরেজ, সাশ্রয়ী মূল্য",
       "subtitle": "আমাদের অবজেক্ট স্টোরেজ একাধিক স্তরের রিডান্ড্যান্সি সহ এন্টারপ্রাইজ হার্ডওয়্যারে নির্মিত",
       "global_title": "বৈশ্বিক উপলব্ধতা",
       "global_description": "আমাদের বিশ্বব্যাপী বিতরণ করা স্টোরেজ নেটওয়ার্কের সাথে যেকোনো স্থান থেকে আপনার ডেটা অ্যাক্সেস করুন",
@@ -317,7 +333,9 @@
       "raid_title": "RAID সুরক্ষা",
       "raid_description": "সকল ডেটা RAID-সুরক্ষিত এন্টারপ্রাইজ স্টোরেজ অ্যারেতে সংরক্ষিত",
       "s3_api_title": "S3-কম্প্যাটিবল API",
-      "s3_api_description": "S3 API সমর্থন করে এমন যেকোনো অ্যাপ্লিকেশনের সাথে সহজেই ইন্টিগ্রেট করুন"
+      "s3_api_description": "S3 API সমর্থন করে এমন যেকোনো অ্যাপ্লিকেশনের সাথে সহজেই ইন্টিগ্রেট করুন",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "অনেক ব্যবহারের ক্ষেত্রের জন্য নিখুঁত",

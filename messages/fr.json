@@ -253,7 +253,14 @@
     "metadata": {
       "title": "Serveurs Dédiés | ForestRacks",
       "description": "Serveurs dédiés haute performance avec déploiement instantané, protection DDoS avancée et support expert 24h/24 et 7j/7. Déployez votre serveur en moins de 15 minutes.",
-      "keywords": ["Serveurs Dédiés", "Serveurs Bare Metal", "Hébergement Haute Performance", "Déploiement Instantané", "Protection DDoS", "Support 24/7"]
+      "keywords": [
+        "Serveurs Dédiés",
+        "Serveurs Bare Metal",
+        "Hébergement Haute Performance",
+        "Déploiement Instantané",
+        "Protection DDoS",
+        "Support 24/7"
+      ]
     },
     "hero": {
       "badge": "Bare Metal Haute Performance",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "Hébergement VPS | ForestRacks",
       "description": "Profitez de performances ultra-rapides avec notre hébergement VPS, propulsé par du matériel haute performance de dernière génération. Nos serveurs privés virtuels sont la solution parfaite pour les sites web à fort trafic et les applications exigeantes. Profitez de la flexibilité et de l'évolutivité de notre hébergement VPS et faites passer votre présence en ligne au niveau supérieur.",
-      "keywords": ["hébergement VPS", "serveur privé virtuel", "KVM VPS"]
+      "keywords": [
+        "hébergement VPS",
+        "serveur privé virtuel",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "Stockage Objet | ForestRacks",
       "description": "Stockage objet compatible S3 avec bande passante illimitée, disponibilité mondiale et performances de niveau entreprise. Parfait pour les sauvegardes, le stockage multimédia et la mise à l'échelle CDN.",
-      "keywords": ["Stockage Objet", "Compatible S3", "Bande Passante Illimitée", "Stockage Cloud", "Stockage Entreprise"]
+      "keywords": [
+        "Stockage Objet",
+        "Compatible S3",
+        "Bande Passante Illimitée",
+        "Stockage Cloud",
+        "Stockage Entreprise"
+      ]
     },
     "hero": {
       "badge": "Compatible S3",
@@ -307,8 +324,7 @@
       "learn_more": "En Savoir Plus"
     },
     "features": {
-      "title": "Stockage de Niveau Entreprise,",
-      "title_highlight": "Prix Abordable",
+      "title": "Stockage de Niveau Entreprise, Prix Abordable",
       "subtitle": "Notre stockage objet est construit sur du matériel d'entreprise avec plusieurs couches de redondance",
       "global_title": "Disponibilité Mondiale",
       "global_description": "Accédez à vos données de n'importe où avec notre réseau de stockage mondialement distribué",
@@ -317,7 +333,9 @@
       "raid_title": "Protection RAID",
       "raid_description": "Toutes les données sont stockées sur des baies de stockage d'entreprise protégées par RAID",
       "s3_api_title": "API Compatible S3",
-      "s3_api_description": "Intégrez facilement avec n'importe quelle application prenant en charge l'API S3"
+      "s3_api_description": "Intégrez facilement avec n'importe quelle application prenant en charge l'API S3",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "Parfait pour de Nombreux Cas d'Usage",

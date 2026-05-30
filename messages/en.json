@@ -253,7 +253,14 @@
     "metadata": {
       "title": "Dedicated Servers | ForestRacks",
       "description": "High-performance dedicated servers with instant deployment, advanced DDoS protection, and 24/7 expert support. Deploy your server in under 15 minutes.",
-      "keywords": ["Dedicated Servers", "Bare Metal Servers", "High-Performance Hosting", "Instant Deployment", "DDoS Protection", "24/7 Support"]
+      "keywords": [
+        "Dedicated Servers",
+        "Bare Metal Servers",
+        "High-Performance Hosting",
+        "Instant Deployment",
+        "DDoS Protection",
+        "24/7 Support"
+      ]
     },
     "hero": {
       "badge": "High-Performance Bare Metal",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPS Hosting | ForestRacks",
       "description": "Experience lightning-fast performance with our VPS hosting, powered by the latest high-performance hardware. Our virtual private servers are the perfect solution for heavy-traffic websites and demanding applications. Enjoy the flexibility and scalability of our VPS hosting and take your online presence to the next level.",
-      "keywords": ["VPS hosting", "virtual private server", "KVM VPS"]
+      "keywords": [
+        "VPS hosting",
+        "virtual private server",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "Object Storage | ForestRacks",
       "description": "S3-Compatible object storage with unmetered bandwidth, global availability, and enterprise-grade performance. Perfect for backups, media storage, and CDN scaling.",
-      "keywords": ["Object Storage", "S3-Compatible", "Unmetered Bandwidth", "Cloud Storage", "Enterprise Storage"]
+      "keywords": [
+        "Object Storage",
+        "S3-Compatible",
+        "Unmetered Bandwidth",
+        "Cloud Storage",
+        "Enterprise Storage"
+      ]
     },
     "hero": {
       "badge": "S3-Compatible",
@@ -307,8 +324,7 @@
       "learn_more": "Learn More"
     },
     "features": {
-      "title": "Enterprise-Grade Storage,",
-      "title_highlight": "Affordable Price",
+      "title": "Enterprise-Grade Storage, Affordable Price",
       "subtitle": "Our object storage is built on enterprise hardware with multiple layers of redundancy",
       "global_title": "Scalable",
       "global_description": "Access your data from anywhere with our globally distributed storage network",
@@ -317,7 +333,9 @@
       "raid_title": "Reliability",
       "raid_description": "All data is stored on RAID-protected enterprise storage arrays",
       "s3_api_title": "S3 API",
-      "s3_api_description": "Easily integrate with any application that supports the S3 API"
+      "s3_api_description": "Easily integrate with any application that supports the S3 API",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "Perfect For Many Use Cases",

@@ -253,7 +253,14 @@
     "metadata": {
       "title": "専用サーバー | ForestRacks",
       "description": "即時デプロイ、高度なDDoS保護、24時間365日のエキスパートサポートを備えた高性能専用サーバー。15分以内にサーバーをデプロイします。",
-      "keywords": ["専用サーバー", "ベアメタルサーバー", "高性能ホスティング", "即時デプロイ", "DDoS保護", "24時間365日サポート"]
+      "keywords": [
+        "専用サーバー",
+        "ベアメタルサーバー",
+        "高性能ホスティング",
+        "即時デプロイ",
+        "DDoS保護",
+        "24時間365日サポート"
+      ]
     },
     "hero": {
       "badge": "高性能ベアメタル",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPSホスティング | ForestRacks",
       "description": "最新の高性能ハードウェアを搭載したVPSホスティングで、超高速パフォーマンスを体験してください。当社の仮想プライベートサーバーは、トラフィックの多いウェブサイトや要求の厳しいアプリケーションに最適なソリューションです。VPSホスティングの柔軟性とスケーラビリティを享受し、オンラインプレゼンスを次のレベルに引き上げましょう。",
-      "keywords": ["VPSホスティング", "仮想プライベートサーバー", "KVM VPS"]
+      "keywords": [
+        "VPSホスティング",
+        "仮想プライベートサーバー",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "オブジェクトストレージ | ForestRacks",
       "description": "無制限帯域幅、グローバル可用性、エンタープライズグレードのパフォーマンスを備えたS3互換オブジェクトストレージ。バックアップ、メディアストレージ、CDNスケーリングに最適です。",
-      "keywords": ["オブジェクトストレージ", "S3互換", "無制限帯域幅", "クラウドストレージ", "エンタープライズストレージ"]
+      "keywords": [
+        "オブジェクトストレージ",
+        "S3互換",
+        "無制限帯域幅",
+        "クラウドストレージ",
+        "エンタープライズストレージ"
+      ]
     },
     "hero": {
       "badge": "S3互換",
@@ -307,8 +324,7 @@
       "learn_more": "詳細を見る"
     },
     "features": {
-      "title": "エンタープライズグレードのストレージを、",
-      "title_highlight": "手頃な価格で",
+      "title": "エンタープライズグレードのストレージを、 手頃な価格で",
       "subtitle": "当社のオブジェクトストレージは、複数の冗長性層を備えたエンタープライズハードウェア上に構築されています",
       "global_title": "グローバル可用性",
       "global_description": "グローバルに分散されたストレージネットワークにより、どこからでもデータにアクセスできます",
@@ -317,7 +333,9 @@
       "raid_title": "RAID保護",
       "raid_description": "すべてのデータは、RAID保護されたエンタープライズストレージアレイに保存されます",
       "s3_api_title": "S3互換API",
-      "s3_api_description": "S3 APIをサポートする任意のアプリケーションと簡単に統合できます"
+      "s3_api_description": "S3 APIをサポートする任意のアプリケーションと簡単に統合できます",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "多様なユースケースに最適",
