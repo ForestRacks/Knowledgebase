@@ -253,7 +253,14 @@
     "metadata": {
       "title": "Server Dedicati | ForestRacks",
       "description": "Server dedicati ad alte prestazioni con distribuzione istantanea, protezione DDoS avanzata e supporto esperto 24/7. Distribuisci il tuo server in meno di 15 minuti.",
-      "keywords": ["Server Dedicati", "Server Bare Metal", "Hosting ad Alte Prestazioni", "Distribuzione Istantanea", "Protezione DDoS", "Supporto 24/7"]
+      "keywords": [
+        "Server Dedicati",
+        "Server Bare Metal",
+        "Hosting ad Alte Prestazioni",
+        "Distribuzione Istantanea",
+        "Protezione DDoS",
+        "Supporto 24/7"
+      ]
     },
     "hero": {
       "badge": "Bare Metal ad Alte Prestazioni",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "Hosting VPS | ForestRacks",
       "description": "Sperimenta prestazioni fulminee con il nostro hosting VPS, alimentato dall'hardware più recente ad alte prestazioni. I nostri server privati virtuali sono la soluzione perfetta per siti web ad alto traffico e applicazioni esigenti. Goditi la flessibilità e la scalabilità del nostro hosting VPS e porta la tua presenza online al livello successivo.",
-      "keywords": ["hosting VPS", "server privato virtuale", "KVM VPS"]
+      "keywords": [
+        "hosting VPS",
+        "server privato virtuale",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "Object Storage | ForestRacks",
       "description": "Object storage compatibile S3 con larghezza di banda illimitata, disponibilità globale e prestazioni di livello aziendale. Perfetto per backup, archiviazione media e scaling CDN.",
-      "keywords": ["Object Storage", "Compatibile S3", "Larghezza di Banda Illimitata", "Cloud Storage", "Storage Enterprise"]
+      "keywords": [
+        "Object Storage",
+        "Compatibile S3",
+        "Larghezza di Banda Illimitata",
+        "Cloud Storage",
+        "Storage Enterprise"
+      ]
     },
     "hero": {
       "badge": "Compatibile S3",
@@ -307,8 +324,7 @@
       "learn_more": "Scopri di Più"
     },
     "features": {
-      "title": "Storage di Livello Enterprise,",
-      "title_highlight": "Prezzo Conveniente",
+      "title": "Storage di Livello Enterprise, Prezzo Conveniente",
       "subtitle": "Il nostro object storage è costruito su hardware enterprise con molteplici livelli di ridondanza",
       "global_title": "Disponibilità Globale",
       "global_description": "Accedi ai tuoi dati da qualsiasi luogo con la nostra rete di storage distribuita globalmente",
@@ -317,7 +333,9 @@
       "raid_title": "Protezione RAID",
       "raid_description": "Tutti i dati sono archiviati su array di storage enterprise protetti RAID",
       "s3_api_title": "API Compatibile S3",
-      "s3_api_description": "Integra facilmente con qualsiasi applicazione che supporti l'API S3"
+      "s3_api_description": "Integra facilmente con qualsiasi applicazione che supporti l'API S3",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "Perfetto per Molti Casi d'Uso",

@@ -253,7 +253,14 @@
     "metadata": {
       "title": "전용 서버 | ForestRacks",
       "description": "즉시 배포, 고급 DDoS 보호, 연중무휴 전문가 지원을 제공하는 고성능 전용 서버입니다. 15분 이내에 서버를 배포하세요.",
-      "keywords": ["전용 서버", "베어메탈 서버", "고성능 호스팅", "즉시 배포", "DDoS 보호", "24/7 지원"]
+      "keywords": [
+        "전용 서버",
+        "베어메탈 서버",
+        "고성능 호스팅",
+        "즉시 배포",
+        "DDoS 보호",
+        "24/7 지원"
+      ]
     },
     "hero": {
       "badge": "고성능 베어메탈",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPS 호스팅 | ForestRacks",
       "description": "최신 고성능 하드웨어로 구동되는 VPS 호스팅으로 놀라운 속도의 성능을 경험하세요. 당사의 가상 사설 서버는 트래픽이 많은 웹사이트와 까다로운 애플리케이션을 위한 완벽한 솔루션입니다. VPS 호스팅의 유연성과 확장성을 즐기고 온라인 존재감을 한 단계 끌어올리세요.",
-      "keywords": ["VPS 호스팅", "가상 사설 서버", "KVM VPS"]
+      "keywords": [
+        "VPS 호스팅",
+        "가상 사설 서버",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "오브젝트 스토리지 | ForestRacks",
       "description": "무제한 대역폭, 글로벌 가용성 및 엔터프라이즈급 성능을 갖춘 S3 호환 오브젝트 스토리지입니다. 백업, 미디어 스토리지 및 CDN 확장에 완벽합니다.",
-      "keywords": ["오브젝트 스토리지", "S3 호환", "무제한 대역폭", "클라우드 스토리지", "엔터프라이즈 스토리지"]
+      "keywords": [
+        "오브젝트 스토리지",
+        "S3 호환",
+        "무제한 대역폭",
+        "클라우드 스토리지",
+        "엔터프라이즈 스토리지"
+      ]
     },
     "hero": {
       "badge": "S3 호환",
@@ -307,8 +324,7 @@
       "learn_more": "자세히 알아보기"
     },
     "features": {
-      "title": "엔터프라이즈급 스토리지,",
-      "title_highlight": "저렴한 가격",
+      "title": "엔터프라이즈급 스토리지, 저렴한 가격",
       "subtitle": "당사의 오브젝트 스토리지는 다중 계층 중복성을 갖춘 엔터프라이즈 하드웨어 기반입니다",
       "global_title": "글로벌 가용성",
       "global_description": "전 세계에 분산된 스토리지 네트워크를 통해 어디서나 데이터에 액세스하세요",
@@ -317,7 +333,9 @@
       "raid_title": "RAID 보호",
       "raid_description": "모든 데이터는 RAID 보호 엔터프라이즈 스토리지 어레이에 저장됩니다",
       "s3_api_title": "S3 호환 API",
-      "s3_api_description": "S3 API를 지원하는 모든 애플리케이션과 쉽게 통합됩니다"
+      "s3_api_description": "S3 API를 지원하는 모든 애플리케이션과 쉽게 통합됩니다",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "다양한 사용 사례에 완벽",

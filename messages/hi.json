@@ -253,7 +253,14 @@
     "metadata": {
       "title": "Dedicated सर्वर | ForestRacks",
       "description": "तत्काल deployment, उन्नत DDoS सुरक्षा और 24/7 विशेषज्ञ सहायता के साथ उच्च-प्रदर्शन dedicated सर्वर। अपने सर्वर को 15 मिनट से कम समय में deploy करें।",
-      "keywords": ["Dedicated Servers", "Bare Metal Servers", "High-Performance Hosting", "Instant Deployment", "DDoS Protection", "24/7 Support"]
+      "keywords": [
+        "Dedicated Servers",
+        "Bare Metal Servers",
+        "High-Performance Hosting",
+        "Instant Deployment",
+        "DDoS Protection",
+        "24/7 Support"
+      ]
     },
     "hero": {
       "badge": "उच्च-प्रदर्शन Bare Metal",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPS होस्टिंग | ForestRacks",
       "description": "नवीनतम उच्च-प्रदर्शन हार्डवेयर द्वारा संचालित हमारी VPS होस्टिंग के साथ बिजली-तेज़ प्रदर्शन का अनुभव करें। हमारे virtual private सर्वर भारी-ट्रैफिक वेबसाइटों और मांग वाले एप्लिकेशन के लिए सही समाधान हैं। हमारी VPS होस्टिंग की लचीलापन और स्केलेबिलिटी का आनंद लें और अपनी ऑनलाइन उपस्थिति को अगले स्तर पर ले जाएं।",
-      "keywords": ["VPS hosting", "virtual private server", "KVM VPS"]
+      "keywords": [
+        "VPS hosting",
+        "virtual private server",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "Object Storage | ForestRacks",
       "description": "अनमीटर्ड बैंडविड्थ, वैश्विक उपलब्धता और एंटरप्राइज-ग्रेड प्रदर्शन के साथ S3-Compatible object storage। बैकअप, मीडिया storage और CDN स्केलिंग के लिए उत्तम।",
-      "keywords": ["Object Storage", "S3-Compatible", "Unmetered Bandwidth", "Cloud Storage", "Enterprise Storage"]
+      "keywords": [
+        "Object Storage",
+        "S3-Compatible",
+        "Unmetered Bandwidth",
+        "Cloud Storage",
+        "Enterprise Storage"
+      ]
     },
     "hero": {
       "badge": "S3-Compatible",
@@ -307,8 +324,7 @@
       "learn_more": "अधिक जानें"
     },
     "features": {
-      "title": "एंटरप्राइज-ग्रेड Storage,",
-      "title_highlight": "सस्ती कीमत",
+      "title": "एंटरप्राइज-ग्रेड Storage, सस्ती कीमत",
       "subtitle": "हमारा object storage कई स्तरों की अतिरेक के साथ एंटरप्राइज हार्डवेयर पर बनाया गया है",
       "global_title": "वैश्विक उपलब्धता",
       "global_description": "हमारे विश्वव्यापी वितरित storage नेटवर्क के साथ कहीं से भी अपने डेटा तक पहुंचें",
@@ -317,7 +333,9 @@
       "raid_title": "RAID सुरक्षा",
       "raid_description": "सभी डेटा RAID-सुरक्षित एंटरप्राइज storage arrays पर संग्रहीत है",
       "s3_api_title": "S3-Compatible API",
-      "s3_api_description": "S3 API का समर्थन करने वाले किसी भी एप्लिकेशन के साथ आसानी से integrate करें"
+      "s3_api_description": "S3 API का समर्थन करने वाले किसी भी एप्लिकेशन के साथ आसानी से integrate करें",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "कई उपयोग मामलों के लिए उत्तम",

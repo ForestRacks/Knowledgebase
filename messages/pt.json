@@ -253,7 +253,14 @@
     "metadata": {
       "title": "Servidores Dedicados | ForestRacks",
       "description": "Servidores dedicados de alto desempenho com implantação instantânea, proteção avançada contra DDoS e suporte especializado 24/7. Implante seu servidor em menos de 15 minutos.",
-      "keywords": ["Servidores Dedicados", "Servidores Bare Metal", "Hospedagem de Alto Desempenho", "Implantação Instantânea", "Proteção DDoS", "Suporte 24/7"]
+      "keywords": [
+        "Servidores Dedicados",
+        "Servidores Bare Metal",
+        "Hospedagem de Alto Desempenho",
+        "Implantação Instantânea",
+        "Proteção DDoS",
+        "Suporte 24/7"
+      ]
     },
     "hero": {
       "badge": "Bare Metal de Alto Desempenho",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "Hospedagem VPS | ForestRacks",
       "description": "Experimente desempenho ultrarrápido com nossa hospedagem VPS, alimentada pelo hardware de alto desempenho mais recente. Nossos servidores privados virtuais são a solução perfeita para sites com alto tráfego e aplicações exigentes. Aproveite a flexibilidade e escalabilidade da nossa hospedagem VPS e leve sua presença online para o próximo nível.",
-      "keywords": ["Hospedagem VPS", "servidor privado virtual", "KVM VPS"]
+      "keywords": [
+        "Hospedagem VPS",
+        "servidor privado virtual",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "Armazenamento de Objetos | ForestRacks",
       "description": "Armazenamento de objetos compatível com S3 com largura de banda ilimitada, disponibilidade global e desempenho de nível empresarial. Perfeito para backups, armazenamento de mídia e escalabilidade de CDN.",
-      "keywords": ["Armazenamento de Objetos", "Compatível com S3", "Largura de Banda Ilimitada", "Armazenamento em Nuvem", "Armazenamento Empresarial"]
+      "keywords": [
+        "Armazenamento de Objetos",
+        "Compatível com S3",
+        "Largura de Banda Ilimitada",
+        "Armazenamento em Nuvem",
+        "Armazenamento Empresarial"
+      ]
     },
     "hero": {
       "badge": "Compatível com S3",
@@ -307,8 +324,7 @@
       "learn_more": "Saiba Mais"
     },
     "features": {
-      "title": "Armazenamento de Nível Empresarial,",
-      "title_highlight": "Preço Acessível",
+      "title": "Armazenamento de Nível Empresarial, Preço Acessível",
       "subtitle": "Nosso armazenamento de objetos é construído em hardware empresarial com múltiplas camadas de redundância",
       "global_title": "Disponibilidade Global",
       "global_description": "Acesse seus dados de qualquer lugar com nossa rede de armazenamento distribuída globalmente",
@@ -317,7 +333,9 @@
       "raid_title": "Proteção RAID",
       "raid_description": "Todos os dados são armazenados em arrays de armazenamento empresarial protegidos por RAID",
       "s3_api_title": "API Compatível com S3",
-      "s3_api_description": "Integre facilmente com qualquer aplicativo que suporte a API S3"
+      "s3_api_description": "Integre facilmente com qualquer aplicativo que suporte a API S3",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "Perfeito para Muitos Casos de Uso",

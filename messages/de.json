@@ -253,7 +253,14 @@
     "metadata": {
       "title": "Dedicated Server | ForestRacks",
       "description": "Hochleistungs-Dedicated-Server mit sofortiger Bereitstellung, fortschrittlichem DDoS-Schutz und 24/7-Experten-Support. Stellen Sie Ihren Server in unter 15 Minuten bereit.",
-      "keywords": ["Dedicated Server", "Bare-Metal-Server", "Hochleistungs-Hosting", "Sofortige Bereitstellung", "DDoS-Schutz", "24/7-Support"]
+      "keywords": [
+        "Dedicated Server",
+        "Bare-Metal-Server",
+        "Hochleistungs-Hosting",
+        "Sofortige Bereitstellung",
+        "DDoS-Schutz",
+        "24/7-Support"
+      ]
     },
     "hero": {
       "badge": "Hochleistungs-Bare-Metal",
@@ -288,14 +295,24 @@
     "metadata": {
       "title": "VPS-Hosting | ForestRacks",
       "description": "Erleben Sie blitzschnelle Leistung mit unserem VPS-Hosting, betrieben von der neuesten Hochleistungs-Hardware. Unsere virtuellen privaten Server sind die perfekte Lösung für Websites mit hohem Traffic und anspruchsvolle Anwendungen. Genießen Sie die Flexibilität und Skalierbarkeit unseres VPS-Hostings und bringen Sie Ihre Online-Präsenz auf die nächste Stufe.",
-      "keywords": ["VPS-Hosting", "virtueller privater Server", "KVM VPS"]
+      "keywords": [
+        "VPS-Hosting",
+        "virtueller privater Server",
+        "KVM VPS"
+      ]
     }
   },
   "storage": {
     "metadata": {
       "title": "Object Storage | ForestRacks",
       "description": "S3-kompatibler Object Storage mit unbegrenzter Bandbreite, globaler Verfügbarkeit und Unternehmens-Performance. Perfekt für Backups, Medienspeicherung und CDN-Skalierung.",
-      "keywords": ["Object Storage", "S3-kompatibel", "Unbegrenzte Bandbreite", "Cloud-Speicher", "Enterprise-Speicher"]
+      "keywords": [
+        "Object Storage",
+        "S3-kompatibel",
+        "Unbegrenzte Bandbreite",
+        "Cloud-Speicher",
+        "Enterprise-Speicher"
+      ]
     },
     "hero": {
       "badge": "S3-kompatibel",
@@ -307,8 +324,7 @@
       "learn_more": "Mehr erfahren"
     },
     "features": {
-      "title": "Enterprise-Speicher,",
-      "title_highlight": "erschwinglicher Preis",
+      "title": "Enterprise-Speicher, erschwinglicher Preis",
       "subtitle": "Unser Object Storage basiert auf Enterprise-Hardware mit mehreren Redundanzebenen",
       "global_title": "Globale Verfügbarkeit",
       "global_description": "Greifen Sie von überall auf Ihre Daten mit unserem global verteilten Speichernetzwerk zu",
@@ -317,7 +333,9 @@
       "raid_title": "RAID-Schutz",
       "raid_description": "Alle Daten werden auf RAID-geschützten Enterprise-Speicher-Arrays gespeichert",
       "s3_api_title": "S3-kompatible API",
-      "s3_api_description": "Einfache Integration mit jeder Anwendung, die die S3-API unterstützt"
+      "s3_api_description": "Einfache Integration mit jeder Anwendung, die die S3-API unterstützt",
+      "sftp_title": "Secure SFTP Access",
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
       "title": "Perfekt für viele Anwendungsfälle",
