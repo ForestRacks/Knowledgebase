@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "ForestRacks » Reliability at a Low Cost",
-    "description": "High-performance servers, exceptional support, and strategic global locations—all at competitive prices. Stop overpaying for hosting. Choose ForestRacks."
+    "title": "ForestRacks | Reliability at a Low Cost",
+    "description": "Reliable servers, responsive support, and locations worldwide at competitive prices. Stop overpaying for hosting. Choose ForestRacks."
   },
   "navbar": {
     "new_order": {
@@ -71,7 +71,7 @@
   "footer": {
     "about_us": {
       "title": "About Us",
-      "description": "ForestRacks offers corporate-grade server hosting with unparalleled reliability and affordability, always putting customer satisfaction at the forefront."
+      "description": "ForestRacks offers game, VPS, and dedicated server hosting with a 99.9% uptime guarantee and 24/7 support."
     },
     "information": {
       "title": "Information",
@@ -115,8 +115,8 @@
     "get_started": "Get Started",
     "enterprise_hosting": "Enterprise Hosting",
     "contact_sales": "Contact Sales",
-    "hero_description": "ForestRacks is a globally trusted enterprise-grade server hosting provider, offering unparalleled reliability and affordability while putting customer satisfaction at the forefront of all we do.",
-    "start_journey": "Start Your Journey Today"
+    "hero_description": "ForestRacks is a globally trusted server hosting provider serving nonprofits, publicly traded corporations, game studios, school districts, and universities with compliant services backed by fair pricing and exceptional customer satisfaction.",
+    "start_journey": "Get Started Today"
   },
   "docs": {
     "on_this_page": "On this page",
@@ -154,7 +154,7 @@
     "something_went_wrong": "Something went wrong",
     "sub_text": "An error occurred while processing your request. Please try again.",
     "reload_page": "Reload page",
-    "back_to_homepage": "Return to homepage"
+    "back_to_homepage": "Return home"
   },
   "products": {
     "search_placeholder": "Search applications...",
@@ -194,7 +194,7 @@
         "backups_q": "Are backups included?",
         "backups_a": "Yes, servers include multiple backup slots and configure backup scheduling in the panel to save a copy of your server daily.",
         "hardware_q": "What hardware do you use?",
-        "hardware_a": "Cutting-edge build configurations with NVMe storage, DDR5 memory and at minimum 10Gbps fiber connectivity. While we primarily use Ryzen 9 9950X3D processors and all systems meet our rigorous performance standards, specifications vary slightly across our fleet. For specific hardware details of the server you will be provisioned on, please contact our sales team.",
+        "hardware_a": "Build configurations use NVMe storage, DDR5 memory, and at minimum 10Gbps fiber connectivity. We primarily use Ryzen 9 9950X3D processors, though specifications vary slightly across our fleet. For the specific hardware of the server you will be provisioned on, please contact our sales team.",
         "plan_change_q": "Can I change my plan later?",
         "plan_change_a": "Yes, you can upgrade or downgrade your server plan anytime from the billing panel with just a couple clicks.",
         "unmetered_q": "How are unmetered or unspecified resources handled?",
@@ -212,7 +212,7 @@
       },
       "databases": {
         "upgrade_q": "Can I upgrade at any time?",
-        "upgrade_a": "Yes, you can seamlessly upgrade your database plan at any time. The changes will be applied with minimal to no downtime.",
+        "upgrade_a": "Yes, you can upgrade your database plan at any time. The changes will be applied with minimal to no downtime.",
         "storage_q": "How much storage do I get?",
         "storage_a": "Storage allocation depends on your chosen plan. Our starter plans begin at 2GB and scale up to 50GB or more with premium plans.",
         "support_q": "Do you provide technical support?",
@@ -252,7 +252,7 @@
   "dedicated": {
     "metadata": {
       "title": "Dedicated Servers | ForestRacks",
-      "description": "High-performance dedicated servers with instant deployment, advanced DDoS protection, and 24/7 expert support. Deploy your server in under 15 minutes.",
+      "description": "Dedicated servers with instant deployment, DDoS protection, and 24/7 support. Deploy in under 15 minutes.",
       "keywords": [
         "Dedicated Servers",
         "Bare Metal Servers",
@@ -263,10 +263,10 @@
       ]
     },
     "hero": {
-      "badge": "High-Performance Bare Metal",
-      "title": "Next-Gen Dedicated Servers",
-      "subtitle": "Enterprise Reliability",
-      "description": "Enterprise-grade dedicated servers with instant deployment, advanced DDoS protection, and guaranteed resources. Get bare metal performance with full root access and 10Gbps connectivity in under 15 minutes.",
+      "badge": "Bare Metal Servers",
+      "title": "Dedicated Servers",
+      "subtitle": "Single-Tenant Hardware",
+      "description": "Dedicated servers with instant deployment, DDoS protection, and guaranteed resources. Bare metal with full root access and 10Gbps connectivity in under 15 minutes.",
       "get_started": "Get Started",
       "learn_more": "Learn More"
     },
@@ -286,7 +286,7 @@
     },
     "cta": {
       "title": "Ready to Get Started?",
-      "subtitle": "Deploy your high-performance dedicated server in minutes. Need help choosing? Our experts are here to assist.",
+      "subtitle": "Deploy a dedicated server in minutes. Need help choosing? Our team can assist.",
       "deploy_now": "Deploy Now",
       "talk_to_sales": "Talk to Sales"
     }
@@ -294,7 +294,7 @@
   "vps": {
     "metadata": {
       "title": "VPS Hosting | ForestRacks",
-      "description": "Experience lightning-fast performance with our VPS hosting, powered by the latest high-performance hardware. Our virtual private servers are the perfect solution for heavy-traffic websites and demanding applications. Enjoy the flexibility and scalability of our VPS hosting and take your online presence to the next level.",
+      "description": "VPS hosting on NVMe storage and DDR5 memory, sized for heavy-traffic sites and demanding apps. Scale CPU, RAM, and storage independently as you grow.",
       "keywords": [
         "VPS hosting",
         "virtual private server",
@@ -305,7 +305,7 @@
   "storage": {
     "metadata": {
       "title": "Object Storage | ForestRacks",
-      "description": "S3-Compatible object storage with unmetered bandwidth, global availability, and enterprise-grade performance. Perfect for backups, media storage, and CDN scaling.",
+      "description": "S3-compatible object storage with unmetered bandwidth and global availability. Suited to backups, media storage, and CDN origin.",
       "keywords": [
         "Object Storage",
         "S3-Compatible",
@@ -319,27 +319,27 @@
       "unmetered": "Unmetered Bandwidth",
       "title": "Cloud Object Storage with",
       "title_highlight": "Unmetered Bandwidth",
-      "description": "Secure, scalable, and high-performance object storage with global availability and at minimum 10Gbps per node. Perfect for daily backups or scaling your CDN infrastructure.",
+      "description": "S3-compatible object storage with global availability and at minimum 10Gbps per node. Suited to daily backups or CDN scaling.",
       "get_started": "Get Started",
       "learn_more": "Learn More"
     },
     "features": {
-      "title": "Enterprise-Grade Storage, Affordable Price",
-      "subtitle": "Our object storage is built on enterprise hardware with multiple layers of redundancy",
+      "title": "Object Storage, Affordable Price",
+      "subtitle": "Our object storage runs on hardware with multiple layers of redundancy",
       "global_title": "Scalable",
       "global_description": "Access your data from anywhere with our globally distributed storage network",
       "network_title": "Speed",
       "network_description": "High-speed 10Gbps network with unmetered shared bandwidth",
       "raid_title": "Reliability",
-      "raid_description": "All data is stored on RAID-protected enterprise storage arrays",
+      "raid_description": "All data is stored on RAID-protected storage arrays",
       "s3_api_title": "S3 API",
       "s3_api_description": "Easily integrate with any application that supports the S3 API",
       "sftp_title": "Secure SFTP Access",
-      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH — drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
+      "sftp_description": "Manage your buckets like a filesystem over SFTP/SSH: drag-and-drop uploads, scripted transfers, and familiar tooling, no S3 client required."
     },
     "use_cases": {
-      "title": "Perfect For Many Use Cases",
-      "subtitle": "Our S3-Compatible storage is designed to handle a variety of applications",
+      "title": "Common Use Cases",
+      "subtitle": "Our S3-compatible storage handles a variety of workloads",
       "daily_backups_title": "Daily Backups",
       "daily_backups_description": "Reliable storage for your daily application and database backups",
       "media_storage_title": "Media Storage",
@@ -355,11 +355,11 @@
     },
     "specs": {
       "title": "Technical Specifications",
-      "description": "Our object storage is built on enterprise-grade hardware with multiple redundancies and high-speed connectivity to ensure your data is always available and accessible.",
-      "enterprise_hardware_title": "Enterprise Hardware",
-      "enterprise_hardware_description": "Storage deployed on enterprise-grade hardware with redundant components",
+      "description": "Our object storage runs on redundant hardware with high-speed connectivity, so your data stays available.",
+      "enterprise_hardware_title": "Redundant Hardware",
+      "enterprise_hardware_description": "Storage deployed on redundant hardware with component-level failover",
       "network_title": "10Gbps Network",
-      "network_description": "High-performance network with unmetered bandwidth",
+      "network_description": "Multi-homed network with unmetered bandwidth",
       "raid_title": "RAID Protection",
       "raid_description": "All data is stored on RAID arrays to protect against disk failures",
       "global_title": "Global Availability",
