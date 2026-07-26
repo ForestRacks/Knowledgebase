@@ -3,6 +3,11 @@
     "title": "ForestRacks » Fiabilité à Petit Prix",
     "description": "Serveurs haute performance, support exceptionnel et emplacements stratégiques mondiaux—le tout à des prix compétitifs. Arrêtez de surpayer pour l'hébergement. Choisissez ForestRacks."
   },
+  "banner": {
+    "message": "Certains serveurs fonctionnent avec des performances dégradées. Notre équipe travaille sur un correctif.",
+    "link": "Voir le statut",
+    "dismiss": "Fermer l'avis"
+  },
   "navbar": {
     "new_order": {
       "title": "Nouvelle Commande",

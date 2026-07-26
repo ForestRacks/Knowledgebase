@@ -3,6 +3,11 @@
     "title": "ForestRacks » Zuverlässigkeit zu günstigen Preisen",
     "description": "Hochleistungsserver, außergewöhnlicher Support und strategische globale Standorte – alles zu wettbewerbsfähigen Preisen. Schluss mit überhöhten Hosting-Kosten. Wählen Sie ForestRacks."
   },
+  "banner": {
+    "message": "Einige Server laufen mit eingeschränkter Leistung. Unser Team arbeitet an einer Lösung.",
+    "link": "Status ansehen",
+    "dismiss": "Hinweis schließen"
+  },
   "navbar": {
     "new_order": {
       "title": "Neue Bestellung",

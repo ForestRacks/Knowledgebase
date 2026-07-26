@@ -3,6 +3,11 @@
     "title": "ForestRacks » Reliability at a Low Cost",
     "description": "Reliable servers, responsive support, and locations worldwide at competitive prices. Stop overpaying for hosting. Choose ForestRacks."
   },
+  "banner": {
+    "message": "Some servers are running with degraded performance. Our team is working on a fix.",
+    "link": "View status",
+    "dismiss": "Dismiss notice"
+  },
   "navbar": {
     "new_order": {
       "title": "New Order",
@@ -115,7 +120,7 @@
     "get_started": "Get Started",
     "enterprise_hosting": "Enterprise Hosting",
     "contact_sales": "Contact Sales",
-    "hero_description": "ForestRacks is a globally trusted datacenter solutions provider serving nonprofits, publicly traded corporations, game studios, school districts, and universities with compliant services backed by fair pricing and exceptional customer satisfaction.",
+    "hero_description": "ForestRacks is a globally trusted cloud solutions provider serving nonprofits, publicly traded corporations, game studios, school districts, and universities with compliant services backed by fair pricing and exceptional customer satisfaction.",
     "start_journey": "Get Started Today"
   },
   "docs": {

@@ -3,6 +3,11 @@
     "title": "ForestRacks » Affidabilità a Basso Costo",
     "description": "Server ad alte prestazioni, supporto eccezionale e posizioni strategiche globali—tutto a prezzi competitivi. Smetti di pagare troppo per l'hosting. Scegli ForestRacks."
   },
+  "banner": {
+    "message": "Alcuni server funzionano con prestazioni ridotte. Il nostro team sta lavorando a una soluzione.",
+    "link": "Vedi stato",
+    "dismiss": "Chiudi avviso"
+  },
   "navbar": {
     "new_order": {
       "title": "Nuovo Ordine",

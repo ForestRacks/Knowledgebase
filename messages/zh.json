@@ -3,6 +3,11 @@
     "title": "ForestRacks » 低成本高可靠性",
     "description": "高性能服务器、卓越支持和全球战略位置——所有这些都以极具竞争力的价格提供。不要再为托管服务多花冤枉钱。选择 ForestRacks。"
   },
+  "banner": {
+    "message": "部分服务器性能下降。我们的团队正在修复。",
+    "link": "查看状态",
+    "dismiss": "关闭通知"
+  },
   "navbar": {
     "new_order": {
       "title": "新订单",

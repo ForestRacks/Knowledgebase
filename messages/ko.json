@@ -3,6 +3,11 @@
     "title": "ForestRacks » 저렴한 가격의 신뢰성",
     "description": "고성능 서버, 탁월한 지원, 전략적 글로벌 위치 - 모두 경쟁력 있는 가격으로 제공됩니다. 호스팅 비용을 과다 지불하지 마세요. ForestRacks를 선택하세요."
   },
+  "banner": {
+    "message": "일부 서버의 성능이 저하되었습니다. 팀에서 복구 작업을 진행 중입니다.",
+    "link": "상태 보기",
+    "dismiss": "알림 닫기"
+  },
   "navbar": {
     "new_order": {
       "title": "신규 주문",
