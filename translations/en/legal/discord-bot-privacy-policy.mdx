@@ -1,0 +1,92 @@
+---
+title: Discord Bot Privacy Policy
+description: How our Discord support-ticket bot collects, uses, stores, and protects data in servers where it is installed.
+date: 2026-08-23
+hidden: true
+---
+
+This Privacy Policy explains how Forest Racks, LLC ("we," "us," or "our") collects, uses, stores, and protects data in connection with the ForestRacks Support Bot (the "Bot"), a Discord application used for support-ticket management. This policy applies to servers where the Bot is installed, including our own Discord server(s) and partner organizations' servers.
+
+By using the Bot or a server on which it is installed, you agree to the data practices described in this policy.
+
+## 1. Data We Collect
+
+When you interact with the Bot, we may collect and process the following:
+
+- **Ticket transcripts**: the content of messages exchanged in support-ticket channels, including message text, attachments' filenames/links, and timestamps.
+- **User identifiers**: Discord user IDs and usernames of ticket participants and staff.
+- **Server and role data**: Discord server (guild) IDs, member role assignments, and staff availability status, used to route and permission tickets.
+- **Presence data**: online/idle/offline status of support staff, used transiently to assign new tickets to available staff. This is not stored long-term.
+
+We do not collect data from users who are not participants in a support ticket, and we do not access messages outside of ticket channels the Bot creates and manages.
+
+## 2. How We Use Data
+
+We use the data described above to:
+
+- Create, permission, and manage support-ticket channels
+- Verify staff roles to control access to tickets
+- Automatically assign new tickets to available support staff
+- Generate and store transcripts of closed tickets for follow-up, quality assurance, and dispute resolution
+- Maintain the security and reliability of the Bot and our infrastructure
+
+We do **not** use message content or transcript data to train machine learning or AI models, and we do not sell or share your data with advertisers or data brokers.
+
+## 3. Where Data Is Stored
+
+**Ticket transcripts are stored off-platform (outside Discord) in Cloudflare R2 object storage.** Transcripts are retained for [RETENTION PERIOD: e.g., "90 days after ticket closure"], after which they are automatically deleted, unless a longer retention period is required to resolve an open dispute or legal request.
+
+**Cloudflare request logging.** Because transcripts are served via Cloudflare's network, HTTP requests made to access stored transcripts (e.g., IP address, request timestamp, user agent, and request metadata) are logged by Cloudflare as part of its standard infrastructure security services, including DDoS mitigation and abuse prevention. These logs are collected and retained by Cloudflare under its own [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/) and are used by us only for security, abuse prevention, and troubleshooting purposes, not for tracking or profiling individual users.
+
+Member and role data used for ticket permissioning is cached in our database and is purged when the Bot is removed from a server or when it is no longer needed for the functions described above.
+
+## 4. Data Security
+
+We take reasonable steps to protect the data we store, including:
+
+- **Encryption at rest** for transcripts stored in Cloudflare R2
+- Access controls limiting transcript and database access to authorized staff only
+- Secured, credentialed access to our database and storage infrastructure
+- Reliance on Cloudflare's infrastructure-level security (DDoS mitigation, network protection) for data in transit and while served
+
+No method of storage or transmission is 100% secure, and we cannot guarantee absolute security, but we work to maintain safeguards appropriate to the sensitivity of the data involved.
+
+## 5. Data Sharing
+
+We do not sell your data. We share data only with:
+
+- **Cloudflare**, as our storage and infrastructure provider, solely to host and serve transcript data and to provide security services such as DDoS mitigation
+- Service providers who process data strictly on our behalf and under obligations consistent with this policy
+- Third parties when required by law, legal process, or to protect the rights, property, or safety of Forest Racks, LLC, our users, or others
+
+## 6. Your Rights and Choices
+
+- **Opt-out / consent**: Users are informed that ticket conversations are recorded as transcripts when a ticket is opened. If you do not wish your ticket conversation to be transcribed, you may notify the support staff handling your ticket at the start of the conversation.
+- **Deletion requests**: You may request deletion of your transcript or member data at any time by contacting us at legal+privacy@forestracks.com. We will delete the requested data within thirty (30) days, except where retention is required to resolve an active dispute or comply with law.
+- **Access requests**: You may request a copy of the data we hold about you by contacting us at the address below.
+- **Server removal**: Server administrators may remove the Bot from their server at any time, which will trigger deletion of cached member/role data associated with that server per our retention practices.
+
+## 7. Children's Privacy
+
+The Bot is not directed at children under 13 (or the minimum age required by Discord's Terms of Service in your jurisdiction), and we do not knowingly collect data from users who do not meet Discord's minimum age requirements.
+
+## 8. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last Modified" date shown with this policy. Continued use of the Bot after changes take effect constitutes acceptance of the revised policy.
+
+## 9. Contact Us
+
+If you have questions about this Privacy Policy, or wish to make a data access or deletion request, contact us at:
+
+**Privacy Requests**
+Email: legal+privacy@forestracks.com
+
+**Legal Department**
+Email: contact+legal@forestracks.com
+
+**Mailing Address**
+Forest Racks, LLC
+Attn: Privacy Department
+736 N Western Ave Suite 250
+Lake Forest, IL 60045
+United States
