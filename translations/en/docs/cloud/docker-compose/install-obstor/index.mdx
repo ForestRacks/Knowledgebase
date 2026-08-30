@@ -1,0 +1,35 @@
+---
+title: Deploy Obstor with Docker Compose - S3 Object Storage
+toc: "Install Obstor"
+description: Set up self-hosted S3-compatible object storage using Obstor and Docker Compose. Includes web console access, persistent storage, TLS, and SFTP support.
+---
+
+```yml:docker-compose.yml
+services:
+  obstor:
+    image: ghcr.io/cloudment/obstor:latest
+    command: obstor server /data --certs-dir=/opts/certs --s3-address :443 --sftp-address :2022 --web-address :9000
+    hostname: s3.example.com
+    restart: unless-stopped
+    ports:
+      - "443:443"
+      - "2022:2022"
+      - "9000:9000"
+    environment:
+      OBSTOR_ROOT_USER: your_access_key_here
+      OBSTOR_ROOT_PASSWORD: your_secret_key_here
+      OBSTOR_DOMAIN: s3.example.com
+      OBSTOR_BROWSER_REDIRECT_URL: https://s3.example.com:9000
+    volumes:
+      - ./data:/data
+      - ./certs/public.crt:/opts/certs/public.crt:ro
+      - ./certs/private.key:/opts/certs/private.key:ro
+```
+
+Replace `s3.example.com` with the hostname you will use for Obstor and add its TLS certificate and private key to the `certs` directory.
+
+### Start Docker Compose
+
+```bash
+docker compose up -d obstor
+```
