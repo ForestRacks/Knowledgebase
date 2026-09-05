@@ -199,7 +199,7 @@
         "backups_q": "Are backups included?",
         "backups_a": "Yes, servers include multiple backup slots and configure backup scheduling in the panel to save a copy of your server daily.",
         "hardware_q": "What hardware do you use?",
-        "hardware_a": "Build configurations use NVMe storage, DDR5 memory, and at minimum 10Gbps fiber connectivity. We primarily use Ryzen 9 9950X3D processors, though specifications vary slightly across our fleet. For the specific hardware of the server you will be provisioned on, please contact our sales team.",
+        "hardware_a": "Build configurations use NVMe storage, DDR5 memory, and 10Gbps+ fiber connectivity. We primarily use Ryzen 9 9950X3D processors, though specifications vary slightly across our fleet. For the specific hardware of the server you will be provisioned on, please contact our sales team.",
         "plan_change_q": "Can I change my plan later?",
         "plan_change_a": "Yes, you can upgrade or downgrade your server plan anytime from the billing panel with just a couple clicks.",
         "unmetered_q": "How are unmetered or unspecified resources handled?",
@@ -324,7 +324,7 @@
       "unmetered": "Unmetered Bandwidth",
       "title": "Cloud Object Storage with",
       "title_highlight": "Unmetered Bandwidth",
-      "description": "S3-compatible object storage with global availability and at minimum 10Gbps per node. Suited to daily backups or CDN scaling.",
+      "description": "S3-compatible object storage with global availability and 10Gbps+ per node. Suited to daily backups or CDN scaling.",
       "get_started": "Get Started",
       "learn_more": "Learn More"
     },
